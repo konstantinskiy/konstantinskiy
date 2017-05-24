@@ -1,0 +1,545 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Gerist 12.5.registration</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="layout">
+
+	<div class="header-adaptive-menu-wrap">
+		<a href="#" class="header-adaptive-menu-close"></a>
+		<nav class="header-adaptive-menu">
+			<ul>
+				<li><a href="#">Ищу работу</a></li>
+				<li><a href="#">Ищу мастеров</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Карта вакансий</a></li>
+				<li><a href="#">Кандидаты</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">На карте</a></li>
+				<li><a href="#">Компании</a></li>
+				<li><a href="#">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+			</ul>
+		</nav>
+	</div>
+	<header class="header">
+		<a href="#" class="header-menu-toggler visible-sm">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="header-top-row">
+			<div class="wrapper">
+				<div class="header-logo-col">
+					<a href="#"><img src="images/logo.png" alt="Все строительные вакансии и резюме - Gerist"></a>
+				</div>
+				<div class="header-location-col">
+					<div class="header-location-col-inner">
+						<div class="header-location-title">Ваш город</div>
+						<div class="header-location-select">
+							<a href="#" class="header-location-select-btn header-location-trigger"><span>Санкт-Петербург</span></a>
+							<div class="header-location-select-toggle">
+								<form action="/" class="header-location-search-form">
+									<div class="default-form-row">
+										<label for="" class="default-form-label">Начинайте вводить название:</label>
+										<div class="location-input-row">
+											<input type="text" name="city-location" class="default-form-input location-form-input">
+											<span class="header-location-clear-btn"></span>
+										</div>
+									</div>
+								</form>
+								<div class="header-location-result">
+									<ul>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Московская область</a></li>
+										<li><a href="#">Могилев</a></li>
+										<li><a href="#">Могилевская область</a></li>
+										<li><a href="#">Моготуй</a></li>
+										<li><a href="#">Можайск</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-cabinet-col">
+					<div class="header-cabinet-col-inner">
+						<div class="header-cabinet-title">Личный кабинет</div>
+						<div class="header-reg-auth-btns">
+							<a href="#auth-modal" class="header-auth-btn modal-trigger">Вход</a>
+							<a href="#" class="header-reg-btn">Регистрация</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-telephone-col">
+					<div class="header-telephone-title">
+						<a href="#callback-modal" class="header-callback-btn modal-trigger">Перезвонить?</a>
+					</div>
+					<div class="header-telephone-tel">
+						<a href="tel:88002000600">8 800 2000 600</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-row hidden-sm">
+			<div class="wrapper">
+				<a href="#" class="header-menu-toggler visible-md">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div class="header-bottom-menu-col">
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#">Ищу работу</a></li>
+							<li><a href="#">Ищу мастеров</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Карта вакансий</a></li>
+							<li><a href="#">Кандидаты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">На карте</a></li>
+							<li><a href="#">Компании</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-bottom-search-col">
+					<form action="index.php" class="header-search-form">
+						<input type="text" name="s" class="header-search-input" placeholder="Поиск">
+						<input type="submit" class="header-search-btn" value="">
+						<span class="header-search-trigger"></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="page-bg-head">
+		<div class="wrapper">
+			<h1>Регистрация мастера</h1>
+			<div class="reg-bg-head-img"><img src="images/reg-customer-img.png" alt="reg-img"></div>
+		</div>
+	</div>
+
+	<div class="registration-page-container">
+		<div class="wrapper">
+			<div class="page-title registration-success-title text-center">
+				<h1>Ищете работу? Зарегистрируйтесь и откликайтесь на вакансии. Это бесплатно!</h1>
+			</div>			
+
+			<div class="registration-steps-wrap registration-steps-wrap_step-2">
+				<div class="registration-steps-line"></div>
+				<div class="registration-steps-progress-line"></div>
+				<div class="registration-steps-list">
+					<div class="registration-steps-item">
+						<div class="registration-steps-text">Шаг 1</div>
+						<a href="#" class="registration-steps-link"></a>
+					</div>
+					<div class="registration-steps-item">
+						<div class="registration-steps-text">Шаг 2</div>
+						<a href="#" class="registration-steps-link"></a>
+					</div>
+					<div class="registration-steps-item">
+						<div class="registration-steps-text">Шаг 3</div>
+						<a href="#" class="registration-steps-link"></a>
+					</div>
+					<div class="registration-steps-item">
+						<div class="registration-steps-text">Шаг 4</div>
+						<a href="#" class="registration-steps-link"></a>
+					</div>
+				</div>
+			</div>
+		
+			<form class="registration-form">
+				<div class="registration-form-errors-container">
+					<div class="registration-form-error-item">
+						Ошибка в поле Институт
+					</div>
+				</div>				
+				<div class="registration-form-step-title">Шаг 2</div>
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Ваш статус:</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Мастер/специалист (1 чел.)</option>
+							<option value="">Мастер/специалист (2 чел.)</option>
+							<option value="">Мастер/специалист (3 чел.)</option>
+						</select>
+					</div>
+				</div>
+				<div class="registration-form-row registration-form-row-separator">
+					<div class="form-col-12">
+						<label for="" class="default-form-label">Название фирмы</label>
+					</div>
+					<div class="form-col-4">
+						<input type="text" class="default-form-input">
+					</div>
+					<div class="form-col-8">
+						<div class="attention-input-alert attention-input-alert-grey">Внимание Название организации и Статус нельзя изменить после регистрации</div>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<label for="" class="default-form-label">Гражданство</label>
+					</div>
+					<div class="form-col-4">
+						<input type="text" class="default-form-input">
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Разрешение на работу</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Есть</option>
+							<option value="">Нет</option>
+						</select>
+					</div>					
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Ваше местоположение</label>
+						<select name="" id="" class="default-form-select-searchfield">
+							<option value="">Сургут</option>
+							<option value="">Москва</option>
+							<option value="">Владимир</option>
+							<option value="">Краснодар</option>
+							<option value="">Сочи</option>
+							<option value="">Санкт-Петербург</option>
+							<option value="">Сочи</option>
+						</select>
+					</div>					
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Готовы работать в другом регионе?</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Да</option>
+							<option value="">Нет</option>
+						</select>
+					</div>					
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Образование</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Высшее</option>
+							<option value="">Среднее</option>
+						</select>
+					</div>					
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<label for="" class="default-form-label">Институт</label>
+					</div>
+					<div class="form-col-4">
+						<input type="text" class="default-form-input error">
+						<div class="form-error">Недопустимые символы</div>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<label for="" class="default-form-label">Семейное положение</label>
+					</div>
+					<div class="form-col-4">
+						<input type="text" class="default-form-input">
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Дети есть?</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Есть</option>
+							<option value="">Нет</option>
+						</select>
+					</div>					
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Права категории</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">BC</option>
+							<option value="">B</option>
+							<option value="">D</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Наличие необходимого инструмента</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Да</option>
+							<option value="">Нет</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Наличие транспорта</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Да</option>
+							<option value="">Нет</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Умение читать техническую документацию</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Да</option>
+							<option value="">Нет</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Опыт работы</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">1-3</option>
+							<option value="">4</option>
+							<option value="">5</option>
+							<option value="">10</option>
+							<option value="">15</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Оформление</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">По ТК</option>
+							<option value="">Нет</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<label for="" class="default-form-label">Зарплата, руб.</label>
+					</div>
+					<div class="form-col-4">
+						<input type="text" class="default-form-input thousand-input" placeholder="Зарплата">
+					</div>
+					<div class="form-col-6">
+						<div class="attention-input-alert attention-input-alert-grey">Внимание! Текст подсказки</div>
+					</div>
+				</div>
+				
+
+				<div class="registration-recovery-row">
+					<div class="registration-recovery-block">
+						<div class="registration-recovery-title">Информация, необходимая для создания и восстановления пароля</div>
+
+						<div class="registration-recovery-inner-row clearfix">
+							<div class="registration-recovery-label-col">
+								<label for="" class="registration-recovery-label">Ваш e-mail:</label>
+							</div>
+							<div class="registration-recovery-inputs-col">
+								<input type="text" class="default-form-input">
+							</div>
+						</div>
+
+						<div class="registration-recovery-inner-row clearfix">
+							<div class="registration-recovery-label-col">
+								<label for="" class="registration-recovery-label">Дата рождения:</label>
+							</div>
+							<div class="registration-recovery-inputs-col clearfix">
+								<div class="registration-recovery-select-col registration-recovery-select-col-date">
+									<select name="" id="" class="default-form-select">
+										<option value="">1</option>
+										<option value="">2</option>
+										<option value="">3</option>
+										<option value="">4</option>
+										<option value="">5</option>
+										<option value="">6</option>
+										<option value="">7</option>
+										<option value="">8</option>
+										<option value="">9</option>
+										<option value="">10</option>
+										<option value="">11</option>
+										<option value="">12</option>
+									</select>
+								</div>
+								<div class="registration-recovery-select-col registration-recovery-select-col-month">
+									<select name="" id="" class="default-form-select">
+										<option value="">Январь</option>
+										<option value="">Февраль</option>
+										<option value="">Март</option>
+										<option value="">Апрель</option>
+										<option value="">Май</option>
+										<option value="">Июнь</option>
+										<option value="">Июль</option>
+										<option value="">Август</option>
+										<option value="">Сентябрь</option>
+										<option value="">Октябрь</option>
+										<option value="">Ноябрь</option>
+										<option value="">Декабрь</option>
+									</select>
+								</div>
+								<div class="registration-recovery-select-col registration-recovery-select-col-year">
+									<select name="" id="" class="default-form-select">
+										<option value="">2000</option>
+										<option value="">1999</option>
+										<option value="">1998</option>
+										<option value="">1997</option>
+										<option value="">1996</option>
+										<option value="">1995</option>
+										<option value="">1994</option>
+										<option value="">1993</option>
+										<option value="">1992</option>
+										<option value="">1991</option>
+										<option value="">1990</option>
+										<option value="">1989</option>
+										<option value="">1988</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<input type="submit" class="default-btn default-btn-green default-btn-lg" value="Далее">
+					</div>
+				</div>
+			</form>
+	
+		</div>
+	</div>	
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-left-col clearfix">
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Работодателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Прайс-лист</a></li>
+							<li><a href="#" class="footer-menu-link">Добавить вакансию</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Соискателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Разместить резюме</a></li>
+							<li><a href="#" class="footer-menu-link">Карта вакансий</a></li>
+							<li><a href="#" class="footer-menu-link">Комании</a></li>							
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Информация</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Защита персональных данных</a></li>
+							<li><a href="#" class="footer-menu-link">Новости и статьи</a></li>
+							<li><a href="#" class="footer-menu-link">Правила сайта</a></li>
+							<li><a href="#" class="footer-menu-link">Мобильная версия сайта</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer-right-col">				
+				<div class="footer-copyright">© 2014–2015 Gerist.ru</div>
+				<nav class="footer-right-col-menu">
+					<ul>
+						<li><a href="#">Реклама на сайте</a></li>
+						<li><a href="#">Наши контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer-social">
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-tw"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-vk"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-fb"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<a href="#" class="totop-btn"><i></i></a>
+
+<div id="auth-modal" class="auth-modal modal">
+	<div class="modal-title">Вход на сайт</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Ваш E-mail:</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Пароль</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="confirm-pass-form-row">
+			<a href="#" class="forgot-pass-btn">Забыли пароль?</a>
+		</div>
+		<div class="default-form-row">
+			<input type="submit" class="default-btn default-btn-green auth-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+	<div class="auth-modal-footer">
+		<p>Впервые на сайте?</p>
+		<a href="#" class="auth-modal-reg-link">Регистрация</a>
+	</div>
+</div>
+
+<div id="callback-modal" class="callback-modal modal">
+	<div class="modal-title">Мы вам перезвоним!</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Контактное лицо</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="modal-form-tel" class="default-form-label">Номер телефона</label>
+			<input type="text" name="name" id="modal-form-tel" class="default-form-input default-form-input-tel">
+		</div>
+		<div class="modal-submit-form-row">
+			<input type="submit" class="default-btn default-btn-green callback-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+</div>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

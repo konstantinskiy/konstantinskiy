@@ -1,0 +1,607 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Gerist 18.candidates</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="layout">
+
+	<div class="header-adaptive-menu-wrap">
+		<a href="#" class="header-adaptive-menu-close"></a>
+		<nav class="header-adaptive-menu">
+			<ul>
+				<li><a href="#">Ищу работу</a></li>
+				<li><a href="#">Ищу мастеров</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Карта вакансий</a></li>
+				<li><a href="#">Кандидаты</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">На карте</a></li>
+				<li><a href="#">Компании</a></li>
+				<li><a href="#">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+			</ul>
+		</nav>
+	</div>
+	<header class="header">
+		<a href="#" class="header-menu-toggler visible-sm">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="header-top-row">
+			<div class="wrapper">
+				<div class="header-logo-col">
+					<a href="#"><img src="images/logo.png" alt="Все строительные вакансии и резюме - Gerist"></a>
+				</div>
+				<div class="header-location-col">
+					<div class="header-location-col-inner">
+						<div class="header-location-title">Ваш город</div>
+						<div class="header-location-select">
+							<a href="#" class="header-location-select-btn header-location-trigger"><span>Санкт-Петербург</span></a>
+							<div class="header-location-select-toggle">
+								<form action="/" class="header-location-search-form">
+									<div class="default-form-row">
+										<label for="" class="default-form-label">Начинайте вводить название:</label>
+										<div class="location-input-row">
+											<input type="text" name="city-location" class="default-form-input location-form-input">
+											<span class="header-location-clear-btn"></span>
+										</div>
+									</div>
+								</form>
+								<div class="header-location-result">
+									<ul>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Московская область</a></li>
+										<li><a href="#">Могилев</a></li>
+										<li><a href="#">Могилевская область</a></li>
+										<li><a href="#">Моготуй</a></li>
+										<li><a href="#">Можайск</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-cabinet-col">
+					<div class="header-cabinet-col-inner">
+						<div class="header-cabinet-title">Личный кабинет</div>
+						<div class="header-reg-auth-btns">
+							<a href="#auth-modal" class="header-auth-btn modal-trigger">Вход</a>
+							<a href="#" class="header-reg-btn">Регистрация</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-telephone-col">
+					<div class="header-telephone-title">
+						<a href="#callback-modal" class="header-callback-btn modal-trigger">Перезвонить?</a>
+					</div>
+					<div class="header-telephone-tel">
+						<a href="tel:88002000600">8 800 2000 600</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-row hidden-sm">
+			<div class="wrapper">
+				<a href="#" class="header-menu-toggler visible-md">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div class="header-bottom-menu-col">
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#">Ищу работу</a></li>
+							<li><a href="#">Ищу мастеров</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Карта вакансий</a></li>
+							<li><a href="#">Кандидаты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">На карте</a></li>
+							<li><a href="#">Компании</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-bottom-search-col">
+					<form action="index.php" class="header-search-form">
+						<input type="text" name="s" class="header-search-input" placeholder="Поиск">
+						<input type="submit" class="header-search-btn" value="">
+						<span class="header-search-trigger"></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="header-page-container profile-header-page-container">
+		<div class="wrapper">
+			<a href="#" class="profile-menu-toggler visible-md">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<nav class="profile-menu">
+				<a href="#" class="profile-adaptive-menu-close"></a>
+				<ul>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-vacancy-link active">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Мои вакансии</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-candidates-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Кандидаты</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-workers-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Каталог исполнителей</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-balance-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Баланс</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-settings-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Настройки</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-personaldata-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Личные данные</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="page-title">
+				<h1>Кандидаты на вакансию: <a href="#">Бригада монолитчиков для работы на бригада монолитчиков для работы на</a></h1>
+			</div>
+			<nav class="header-page-bottom-menu">
+				<ul>
+					<li class="header-page-bottom-menu-item">
+						<a href="#" class="header-page-bottom-menu-link header-page-bottom-menu-link-active">Все(15)</a>
+					</li>
+					<li class="header-page-bottom-menu-item">
+						<a href="#" class="header-page-bottom-menu-link">Новые(+3)</a>
+					</li>
+					<li class="header-page-bottom-menu-item">
+						<a href="#" class="header-page-bottom-menu-link">Просмотренные(10)</a>
+					</li>
+					<li class="header-page-bottom-menu-item">
+						<a href="#" class="header-page-bottom-menu-link">Приглашенные(1)</a>
+					</li>
+					<li class="header-page-bottom-menu-item">
+						<a href="#" class="header-page-bottom-menu-link">Отклоненные(1)</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="sort-container">
+		<div class="wrapper">
+			<div class="sort-list">
+				<div class="sort-col">
+					<div class="sort-col-name">Сортировать:</div>
+					<div class="sort-col-select">
+						<a href="#" class="sort-col-select-btn sort-select-trigger">
+							<span class="sort-col-select-btn-span">Бригады(13)</span>
+						</a>
+						<div class="sort-select-toggle-block">
+							<div class="sort-select-list">
+								<ul>
+									<li><a href="#">Сначала старые</a></li>
+									<li><a href="#">Элемент списка</a></li>
+									<li><a href="#">Элемент списка</a></li>
+									<li><a href="#">Элемент списка</a></li>
+									<li><a href="#">Элемент списка</a></li>
+									<li><a href="#">Элемент списка</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sort-col">
+					<div class="sort-col-name">Вакансий на страницу:</div>
+					<div class="sort-col-select">
+						<a href="#" class="sort-col-select-btn sort-select-trigger">
+							<span class="sort-col-select-btn-span">20</span>
+						</a>
+						<div class="sort-select-toggle-block sort-select-toggle-block-elements">
+							<div class="sort-select-list">
+								<ul>
+									<li><a href="#">30</a></li>
+									<li><a href="#">50</a></li>
+									<li><a href="#">100</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="profile-candidate-container">
+		<div class="wrapper">
+			
+			<div class="candidate-table">
+				<div class="candidate-table-title-row">
+					<div class="candidate-table-col candidate-table-checkbox-col">
+						<input type="checkbox" id="candidate-table-checkall" class="terms-checkbox table-checkall">
+						<label for="candidate-table-checkall" class="terms-label"></label>
+					</div>
+					<div class="candidate-table-col candidate-table-candidate-col">Кандидат</div>
+					<div class="candidate-table-col candidate-table-datetime-col">Получено</div>
+					<div class="candidate-table-col candidate-table-actions-col">Действия</div>
+				</div>
+
+				<div class="candidate-table-row">
+					<div class="candidate-table-col candidate-table-checkbox-col">
+						<input type="checkbox" id="candidate-table-check1" class="terms-checkbox">
+						<label for="candidate-table-check1" class="terms-label"></label>
+					</div>
+					<div class="candidate-table-col candidate-table-candidate-col">
+						<div class="candidate-table-item-content">
+							<div class="candidate-table-image-col">
+								<a href="#"><figure class="candidate-table-image candidate-table-image-blue">М</figure></a>
+							</div>
+							<div class="candidate-table-content-col">
+								<div class="candidate-table-title">
+									<a href="#" class="candidate-table-item-title__link">Требуются монолитчики в количестве Требуются монолитчики в количестве Требуются монолитчики в количестве</a>
+								</div>
+								<div class="candidate-table-item-description">
+									<p><strong>Статус:</strong> Бригада</p>
+									<p><strong>На вакансию:</strong> <a href="#">Бригада монолитчиков для работы на строительстве нового торгового центра площадью 3000 м2</a></p>
+									<p><strong>Количество человек:</strong> 12</p>
+									<p><strong>Гражданство:</strong> РФ, РБ</p>
+									<p><strong>Разрешение на работу:</strong> есть</p>
+								</div>
+							</div>
+						</div>	
+						<div class="candidate-table-mail">
+							<div class="candidate-table-mail-link">
+								<a href="#" class="candidate-table-mail-trigger"><span>Сопроводительное письмо</span></a>
+							</div>
+						</div>	
+						<div class="visible-sm">
+							<div class="candidate-table-mail-content">
+								<p>Наша бригада готова выполнить весь спекр необходимых монолитных работ на вашем объекте. В течении недели все 20 человек могут прибыть на объект и приступить к работе. Работаем с 30% предоплатой.</p>
+								<p>Все необходимое оборудование имеется.</p>
+							</div>				
+						</div>
+					</div>
+					<div class="candidate-table-col candidate-table-datetime-col">
+						<div class="candidate-date-text">19 августа 2015</div>
+						<div class="candidate-time-text">15:32</div>
+					</div>
+					<div class="candidate-table-col candidate-table-actions-col">
+						<div class="candidate-table-action-item">
+							<p>
+								<a href="#" class="candidate-table-action-item-link candidate-table-action-item-link-green">Пригласить</a>
+							</p>
+						</div>
+						<div class="candidate-table-action-item">
+							<p>
+								<a href="#" class="candidate-table-action-item-link">Написать ответ</a>
+							</p>
+							<p>
+								<a href="#" class="candidate-table-action-item-link">Мои ответы(1)</a>
+							</p>
+						</div>
+						<div class="candidate-table-action-item">
+							<p>
+								<a href="#" class="candidate-table-action-item-link candidate-table-action-item-link-red">Отказать</a>
+							</p>
+						</div>
+					</div>
+					<div class="hidden-sm">
+						<div class="candidate-table-mail-content">
+							<p>Наша бригада готова выполнить весь спекр необходимых монолитных работ на вашем объекте. В течении недели все 20 человек могут прибыть на объект и приступить к работе. Работаем с 30% предоплатой.</p>
+							<p>Все необходимое оборудование имеется.</p>
+						</div>
+					</div>
+				</div>
+				<div class="candidate-table-row">
+					<div class="candidate-table-col candidate-table-checkbox-col">
+						<input type="checkbox" id="candidate-table-check1" class="terms-checkbox">
+						<label for="candidate-table-check1" class="terms-label"></label>
+					</div>
+					<div class="candidate-table-col candidate-table-candidate-col">
+						<div class="candidate-table-item-content">
+							<div class="candidate-table-image-col">
+								<a href="#"><figure class="candidate-table-image candidate-table-image-red">К</figure></a>
+							</div>
+							<div class="candidate-table-content-col">
+								<div class="candidate-table-title">
+									<a href="#" class="candidate-table-item-title__link">Требуются монолитчики</a>
+								</div>
+								<div class="candidate-table-item-description">
+									<p><strong>Статус:</strong> Бригада</p>
+									<p><strong>На вакансию:</strong> <a href="#">Бригада монолитчиков для работы на строительстве нового торгового центра площадью 3000 м2</a></p>
+									<p><strong>Количество человек:</strong> 12</p>
+									<p><strong>Гражданство:</strong> РФ, РБ</p>
+									<p><strong>Разрешение на работу:</strong> есть</p>
+								</div>
+							</div>
+							<div class="candidate-table-mail">
+								<div class="candidate-table-mail-link">
+									<a href="#" class="candidate-table-mail-trigger"><span>Сопроводительное письмо</span></a>
+								</div>
+							</div>	
+							<div class="visible-sm">
+								<div class="candidate-table-mail-content">
+									<p>Наша бригада готова выполнить весь спекр необходимых монолитных работ на вашем объекте. В течении недели все 20 человек могут прибыть на объект и приступить к работе. Работаем с 30% предоплатой.</p>
+									<p>Все необходимое оборудование имеется.</p>
+								</div>				
+							</div>							
+						</div>						
+					</div>
+					<div class="candidate-table-col candidate-table-datetime-col">
+						<div class="candidate-date-text">19 августа 2015</div>
+						<div class="candidate-time-text">15:32</div>
+					</div>
+					<div class="candidate-table-col candidate-table-actions-col">
+						<div class="candidate-table-action-item">
+							<p>
+								<a href="#" class="candidate-table-action-item-link candidate-table-action-item-link-green">Пригласить</a>
+							</p>
+						</div>
+						<div class="candidate-table-action-item">
+							<p>
+								<a href="#" class="candidate-table-action-item-link">Написать ответ</a>
+							</p>
+							<p>
+								<a href="#" class="candidate-table-action-item-link">Мои ответы(1)</a>
+							</p>
+						</div>
+						<div class="candidate-table-action-item">
+							<p>
+								<a href="#" class="candidate-table-action-item-link candidate-table-action-item-link-red">Отказать</a>
+							</p>
+						</div>
+					</div>
+					<div class="hidden-sm">
+						<div class="candidate-table-mail-content">
+							<p>Наша бригада готова выполнить весь спекр необходимых монолитных работ на вашем объекте. В течении недели все 20 человек могут прибыть на объект и приступить к работе. Работаем с 30% предоплатой.</p>
+							<p>Все необходимое оборудование имеется.</p>
+						</div>
+					</div>
+				</div>
+				<div class="candidate-table-row">
+					<div class="candidate-table-col candidate-table-checkbox-col">
+						<input type="checkbox" id="candidate-table-check1" class="terms-checkbox">
+						<label for="candidate-table-check1" class="terms-label"></label>
+					</div>
+					<div class="candidate-table-col candidate-table-candidate-col">
+						<div class="candidate-table-item-content">
+							<div class="candidate-table-image-col">
+								<a href="#"><figure class="candidate-table-image candidate-table-image-green">А</figure></a>
+							</div>
+							<div class="candidate-table-content-col">
+								<div class="candidate-table-title">
+									<a href="#" class="candidate-table-item-title__link">Требуются монолитчики</a>
+								</div>
+								<div class="candidate-table-item-description">
+									<p><strong>Статус:</strong> Бригада</p>
+									<p><strong>На вакансию:</strong> <a href="#">Бригада монолитчиков для работы на строительстве нового торгового центра площадью 3000 м2</a></p>
+									<p><strong>Количество человек:</strong> 12</p>
+									<p><strong>Гражданство:</strong> РФ, РБ</p>
+									<p><strong>Разрешение на работу:</strong> есть</p>
+								</div>
+							</div>
+							<div class="candidate-table-mail">
+								<div class="candidate-table-mail-link">
+									<a href="#" class="candidate-table-mail-trigger"><span>Сопроводительное письмо</span></a>
+								</div>
+							</div>	
+							<div class="visible-sm">
+								<div class="candidate-table-mail-content">
+									<p>Наша бригада готова выполнить весь спекр необходимых монолитных работ на вашем объекте. В течении недели все 20 человек могут прибыть на объект и приступить к работе. Работаем с 30% предоплатой.</p>
+									<p>Все необходимое оборудование имеется.</p>
+								</div>
+							</div>
+						</div>						
+					</div>
+					<div class="candidate-table-col candidate-table-datetime-col">
+						<div class="candidate-date-text">19 августа 2015</div>
+						<div class="candidate-time-text">15:32</div>
+					</div>
+					<div class="candidate-table-col candidate-table-actions-col">
+						<div class="candidate-table-action-item">
+							<p>
+								<a href="#" class="candidate-table-action-item-link candidate-table-action-item-link-green">Пригласить</a>
+							</p>
+						</div>
+						<div class="candidate-table-action-item">
+							<p>
+								<a href="#" class="candidate-table-action-item-link">Написать ответ</a>
+							</p>
+							<p>
+								<a href="#" class="candidate-table-action-item-link">Мои ответы(1)</a>
+							</p>
+						</div>
+						<div class="candidate-table-action-item">
+							<p>
+								<a href="#" class="candidate-table-action-item-link candidate-table-action-item-link-red">Отказать</a>
+							</p>
+						</div>
+					</div>
+					<div class="hidden-sm">
+						<div class="candidate-table-mail-content">
+							<p>Наша бригада готова выполнить весь спекр необходимых монолитных работ на вашем объекте. В течении недели все 20 человек могут прибыть на объект и приступить к работе. Работаем с 30% предоплатой.</p>
+							<p>Все необходимое оборудование имеется.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="vacancy-action-buttons-row hidden-sm clearfix">
+				<div class="vacancy-action-button-col">
+					<a href="#" class="default-btn default-btn-green default-btn-sm">Пригласить</a>
+				</div>
+				<div class="vacancy-action-button-col">
+					<a href="#" class="default-btn default-btn-red default-btn-sm">Отказать</a>
+				</div>
+			</div>
+
+		</div>					
+	</div>
+
+	<div class="ajax-page-toggle-container">
+		<div class="wrapper">
+			<div class="ajax-show-more-row">
+				<a href="#" class="ajax-show-more-btn"><span>Показать еще</span></a>
+			</div>
+			<div class="pagination clearfix">
+				<a href="#" class="pagination-prev-page-link pagination-prev-page-link-disabled">Предыдущая</a>
+				<a href="#" class="pagination-next-page-link">Следующая</a>
+				<ul>
+					<li class="pagination-item"><a href="#" class="pagination-link">1</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">2</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">3</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">4</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">5</a></li>
+					<li class="pagination-item pagination-item-active"><a href="#" class="pagination-link">6</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">7</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">8</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">9</a></li>
+					<li class="pagination-item"><a href="#" class="pagination-link">25</a></li>
+				</ul>	
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-left-col clearfix">
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Работодателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Прайс-лист</a></li>
+							<li><a href="#" class="footer-menu-link">Добавить вакансию</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Соискателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Разместить резюме</a></li>
+							<li><a href="#" class="footer-menu-link">Карта вакансий</a></li>
+							<li><a href="#" class="footer-menu-link">Комании</a></li>							
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Информация</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Защита персональных данных</a></li>
+							<li><a href="#" class="footer-menu-link">Новости и статьи</a></li>
+							<li><a href="#" class="footer-menu-link">Правила сайта</a></li>
+							<li><a href="#" class="footer-menu-link">Мобильная версия сайта</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer-right-col">				
+				<div class="footer-copyright">© 2014–2015 Gerist.ru</div>
+				<nav class="footer-right-col-menu">
+					<ul>
+						<li><a href="#">Реклама на сайте</a></li>
+						<li><a href="#">Наши контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer-social">
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-tw"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-vk"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-fb"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<a href="#" class="totop-btn"><i></i></a>
+
+<div id="auth-modal" class="auth-modal modal">
+	<div class="modal-title">Вход на сайт</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Ваш E-mail:</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Пароль</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="confirm-pass-form-row">
+			<a href="#" class="forgot-pass-btn">Забыли пароль?</a>
+		</div>
+		<div class="default-form-row">
+			<input type="submit" class="default-btn default-btn-green auth-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+	<div class="auth-modal-footer">
+		<p>Впервые на сайте?</p>
+		<a href="#" class="auth-modal-reg-link">Регистрация</a>
+	</div>
+</div>
+
+<div id="callback-modal" class="callback-modal modal">
+	<div class="modal-title">Мы вам перезвоним!</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Контактное лицо</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="modal-form-tel" class="default-form-label">Номер телефона</label>
+			<input type="text" name="name" id="modal-form-tel" class="default-form-input default-form-input-tel">
+		</div>
+		<div class="modal-submit-form-row">
+			<input type="submit" class="default-btn default-btn-green callback-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+</div>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

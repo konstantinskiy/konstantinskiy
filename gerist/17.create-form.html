@@ -1,0 +1,849 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Gerist 17.create-form</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="layout">
+
+	<div class="header-adaptive-menu-wrap">
+		<a href="#" class="header-adaptive-menu-close"></a>
+		<nav class="header-adaptive-menu">
+			<ul>
+				<li><a href="#">Ищу работу</a></li>
+				<li><a href="#">Ищу мастеров</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Карта вакансий</a></li>
+				<li><a href="#">Кандидаты</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">На карте</a></li>
+				<li><a href="#">Компании</a></li>
+				<li><a href="#">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+			</ul>
+		</nav>
+	</div>
+	<header class="header">
+		<a href="#" class="header-menu-toggler visible-sm">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="header-top-row">
+			<div class="wrapper">
+				<div class="header-logo-col">
+					<a href="#"><img src="images/logo.png" alt="Все строительные вакансии и резюме - Gerist"></a>
+				</div>
+				<div class="header-location-col">
+					<div class="header-location-col-inner">
+						<div class="header-location-title">Ваш город</div>
+						<div class="header-location-select">
+							<a href="#" class="header-location-select-btn header-location-trigger"><span>Санкт-Петербург</span></a>
+							<div class="header-location-select-toggle">
+								<form action="/" class="header-location-search-form">
+									<div class="default-form-row">
+										<label for="" class="default-form-label">Начинайте вводить название:</label>
+										<div class="location-input-row">
+											<input type="text" name="city-location" class="default-form-input location-form-input">
+											<span class="header-location-clear-btn"></span>
+										</div>
+									</div>
+								</form>
+								<div class="header-location-result">
+									<ul>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Московская область</a></li>
+										<li><a href="#">Могилев</a></li>
+										<li><a href="#">Могилевская область</a></li>
+										<li><a href="#">Моготуй</a></li>
+										<li><a href="#">Можайск</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-cabinet-col">
+					<div class="header-cabinet-col-inner">
+						<div class="header-cabinet-title">Личный кабинет</div>
+						<div class="header-reg-auth-btns">
+							<a href="#auth-modal" class="header-auth-btn modal-trigger">Вход</a>
+							<a href="#" class="header-reg-btn">Регистрация</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-telephone-col">
+					<div class="header-telephone-title">
+						<a href="#callback-modal" class="header-callback-btn modal-trigger">Перезвонить?</a>
+					</div>
+					<div class="header-telephone-tel">
+						<a href="tel:88002000600">8 800 2000 600</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-row hidden-sm">
+			<div class="wrapper">
+				<a href="#" class="header-menu-toggler visible-md">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div class="header-bottom-menu-col">
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#">Ищу работу</a></li>
+							<li><a href="#">Ищу мастеров</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Карта вакансий</a></li>
+							<li><a href="#">Кандидаты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">На карте</a></li>
+							<li><a href="#">Компании</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-bottom-search-col">
+					<form action="index.php" class="header-search-form">
+						<input type="text" name="s" class="header-search-input" placeholder="Поиск">
+						<input type="submit" class="header-search-btn" value="">
+						<span class="header-search-trigger"></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="header-page-container profile-header-page-container profile-header-page-container__small-topbot">
+		<div class="wrapper">
+			<a href="#" class="profile-menu-toggler visible-md">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<nav class="profile-menu">
+				<a href="#" class="profile-adaptive-menu-close"></a>
+				<ul>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-vacancy-link active">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Мои вакансии</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-candidates-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Кандидаты</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-workers-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Каталог исполнителей</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-balance-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Баланс</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-settings-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Настройки</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-personaldata-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Личные данные</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="profile-header-page-container__small-inner">
+				<div class="page-title">
+					<h1>Создание новой вакансии</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="create-vacancy-page-container">
+		<div class="wrapper">		
+		
+			<form class="create-vacancy-form">
+				<div class="registration-form-errors-container">
+					<div class="registration-form-error-item">
+						Ошибка в поле Телефон
+					</div>
+				</div>		
+				
+				<div class="create-vacancy-first-row clearfix">
+					
+					<div class="create-vacancy-left-col">
+						<div class="profile-settings-group">
+							<div class="registration-form-row">
+								<div class="form-col-12">
+									<label for="" class="default-form-label">Название вакансии:</label>
+									<input class="default-form-input" type="text" placeholder="Требуется бригада монолитчиков">
+								</div>
+							</div>
+							<div class="registration-form-row">
+								<div class="form-col-12">
+									<label for="" class="default-form-label">Требуется</label>
+								</div>
+								<div class="form-col-4">
+									<div class="registration-terms-row">
+										<input type="checkbox" id="term-check" class="terms-checkbox" checked="checked">
+										<label for="term-check" class="terms-label">Бригада</label>
+									</div>
+								</div>
+								<div class="form-col-4">
+									<div class="registration-terms-row">
+										<input type="checkbox" id="term-check111" class="terms-checkbox">
+										<label for="term-check111" class="terms-label">Мастер. спец</label>
+									</div>
+								</div>
+								<div class="form-col-4">
+									<div class="registration-terms-row">
+										<input type="checkbox" id="term-check22" class="terms-checkbox">
+										<label for="term-check22" class="terms-label">Фирма</label>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="registration-form-row">
+							<div class="form-col-6">
+								<label for="" class="default-form-label">Выберите вид работ:</label>
+								<select name="" id="" class="default-form-select-searchfield">
+									<option value="">Монолитные работы</option>
+									<option value="">Вид работ 1</option>
+									<option value="">Вид работ 2</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="registration-form-row registration-form-row-separator">
+							<div class="form-col-12">
+								<label for="" class="default-form-label">Необходимое количество человек</label>
+							</div>
+							<div class="form-col-6">
+								<input type="text" class="default-form-input" placeholder="10">
+							</div>
+						</div>
+
+						<div class="registration-form-row">
+							<div class="form-col-12">
+								<label for="" class="default-form-label">Объем работ</label>
+							</div>
+							<div class="form-col-6 registration-form-item-margin">
+								<input type="text" class="default-form-input thousand-input" placeholder="2 000">
+							</div>
+							<div class="form-col-3">
+								<select name="" id="" class="default-form-select">
+									<option value="">пог.м</option>
+									<option value="">Вид работ 1</option>
+									<option value="">Вид работ 2</option>
+								</select>
+							</div>
+						</div>
+
+						<div class="registration-form-row">
+							<div class="form-col-12">
+								<label for="" class="default-form-label">Местоположение объекта</label>
+							</div>
+							<div class="form-col-6">
+								<input type="text" class="default-form-input" placeholder="Мурманск">
+							</div>
+						</div>
+
+						<div class="registration-form-row">
+							<div class="form-col-12">
+								<label for="" class="default-form-label">Ближайшее метро</label>
+							</div>
+							<div class="form-col-6">
+								<input type="text" class="default-form-input" placeholder="Нет">
+							</div>
+						</div>
+
+						<div class="registration-form-row">
+							<div class="form-col-12">
+								<label for="" class="default-form-label">Улица</label>
+							</div>
+							<div class="form-col-6">
+								<input type="text" class="default-form-input" placeholder="Молокова">
+							</div>
+						</div>
+
+					</div>
+
+					<div class="create-vacancy-sidebar hidden-sm">
+						<div class="create-vacancy-rules">
+							<div class="create-vacancy-rules__title">Правила публикации вакансий</div>
+							<div class="create-vacancy-rules__list">
+								<ul>
+									<li class="create-vacancy-rules-item">1. Не указывайте контактные данные в вакансии. Вы уже добавили хи при регистрации</li>
+									<li class="create-vacancy-rules-item">2. Подробно опишите работы, которые нужно выполнить. Тогда Вы получите максимальное количество откликов</li>
+									<li class="create-vacancy-rules-item">3. Указывайте разумную цену</li>
+								</ul>
+							</div>
+						</div>
+						<div class="create-vacancy-stats">
+							<div class="create-vacancy-stats__title">Примерное количество кандидатов на Вашу вакансию</div>
+							<div class="create-vacancy-stats__item">
+								<div class="create-vacancy-stats-numbers">
+									<div class="create-vacancy-stats-numbers-discharge">
+										<div class="create-vacancy-stats-numbers__item">5</div>
+									</div>
+									<div class="create-vacancy-stats-numbers__item">0</div>
+									<div class="create-vacancy-stats-numbers__item">0</div>
+									<div class="create-vacancy-stats-numbers__item">0</div>
+								</div>
+								<div class="create-vacancy-stats-text">бригад по Москве и области</div>
+							</div>
+							<div class="create-vacancy-stats__item">
+								<div class="create-vacancy-stats-numbers">
+									<div class="create-vacancy-stats-numbers-discharge">
+										<div class="create-vacancy-stats-numbers__item">3</div>
+										<div class="create-vacancy-stats-numbers__item">0</div>
+									</div>
+									<div class="create-vacancy-stats-numbers__item">0</div>
+									<div class="create-vacancy-stats-numbers__item">0</div>
+									<div class="create-vacancy-stats-numbers__item">0</div>
+								</div>
+								<div class="create-vacancy-stats-text">бригад по России</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<div class="create-vacancy-row-title">Требования</div>
+					</div>
+					<div class="form-col-12">
+						<label for="" class="default-form-label">Гражданство рабочих</label>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check" class="terms-checkbox" checked="checked">
+							<label for="term-check" class="terms-label">РФ</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check1" class="terms-checkbox">
+							<label for="term-check1" class="terms-label">Киргизия</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check2" class="terms-checkbox">
+							<label for="term-check2" class="terms-label">Азербайджан</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check3" class="terms-checkbox">
+							<label for="term-check3" class="terms-label">РБ</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check4" class="terms-checkbox">
+							<label for="term-check4" class="terms-label">Турция</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check5" class="terms-checkbox">
+							<label for="term-check5" class="terms-label">Белорусия</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check6" class="terms-checkbox">
+							<label for="term-check6" class="terms-label">Украина</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check7" class="terms-checkbox">
+							<label for="term-check7" class="terms-label">Казахстан</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check8" class="terms-checkbox">
+							<label for="term-check8" class="terms-label">Грузия</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check9" class="terms-checkbox">
+							<label for="term-check9" class="terms-label">Армения</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<div class="registration-terms-row">
+							<input type="checkbox" id="term-check10" class="terms-checkbox">
+							<label for="term-check10" class="terms-label">Китай</label>
+						</div>
+					</div>
+					<div class="form-col-3">
+						<input type="text" class="default-form-input" placeholder="Другое">
+					</div>
+				</div>
+
+				<div class="registration-form-row registration-form-row-separator">
+					<div class="form-col-12">
+						<label for="" class="default-form-label">Разрешение на работу</label>
+					</div>
+					<div class="form-col-6">
+						<select name="" id="" class="default-form-select">
+							<option value="">Требуется</option>
+							<option value="">Не требуется</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<div class="create-vacancy-row-title">Условия работы</div>
+					</div>
+					<div class="form-col-12">
+						<label for="" class="default-form-label">Зарплата</label>
+					</div>	
+					<div class="form-col-12">
+						<div class="form-pay-row clearfix">
+							<div class="form-pay-col form-pay-col-s">
+								<div class="form-pay-pretext">от</div>
+								<input type="text" class="default-form-input thousand-input" placeholder="800 000">
+							</div>
+							<div class="form-pay-col form-pay-col-s">
+								<div class="form-pay-pretext">до</div>
+								<input type="text" class="default-form-input thousand-input" placeholder="1 150 000">
+							</div>
+							<div class="form-pay-col form-pay-col-b">
+								<div class="form-pay-pretext">рублей в</div>
+								<select name="" id="" class="default-form-select">
+									<option value="">месяц</option>
+									<option value="">год</option>
+									<option value="">неделю</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Выплата зарплаты</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">2 раза в месяц</option>
+							<option value="">3 раза в месяц</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Оформление</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">по ТК</option>
+							<option value="">без ТК</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">Образование</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Высшее</option>
+							<option value="">Незаконченное высшее</option>
+							<option value="">Средне-специальное</option>
+							<option value="">Общее среднее</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4">
+						<label for="" class="default-form-label">График работы</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Полный рабочий день</option>
+							<option value="">Пол рабочего дня</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4 registration-form-item-margin">
+						<label for="" class="default-form-label">Проживание предоставляется?</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Да</option>
+							<option value="">Нет</option>
+						</select>
+					</div>
+					<div class="form-col-8">
+						<label for="" class="default-form-label">Комментарий</label>
+						<input type="text" class="default-form-input" placeholder="Пример: 150 руб за сутки в соседнем общежитии">
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4 registration-form-item-margin">
+						<label for="" class="default-form-label">Питание организовано?</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Да</option>
+							<option value="">Нет</option>
+						</select>
+					</div>
+					<div class="form-col-8">
+						<label for="" class="default-form-label">Комментарий</label>
+						<input type="text" class="default-form-input" placeholder="Пример: 150 руб за сутки в соседнем общежитии">
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4 registration-form-item-margin">
+						<label for="" class="default-form-label">Спецодежда предоставляется?</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Да</option>
+							<option value="">Нет</option>
+						</select>
+					</div>
+					<div class="form-col-8">
+						<label for="" class="default-form-label">Комментарий</label>
+						<input type="text" class="default-form-input" placeholder="Пример: 150 руб за сутки в соседнем общежитии">
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4 registration-form-item-margin">
+						<label for="" class="default-form-label">Инструменты предоставляются?</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Да</option>
+							<option value="">Нет</option>
+						</select>
+					</div>
+					<div class="form-col-8">
+						<label for="" class="default-form-label">Комментарий</label>
+						<input type="text" class="default-form-input" placeholder="Пример: 150 руб за сутки в соседнем общежитии">
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4 registration-form-item-margin">
+						<label for="" class="default-form-label">Расходные материалы предоставляются?</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Да</option>
+							<option value="">Нет</option>
+						</select>
+					</div>
+					<div class="form-col-8">
+						<label for="" class="default-form-label">Комментарий</label>
+						<input type="text" class="default-form-input" placeholder="Пример: 150 руб за сутки в соседнем общежитии">
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-4 registration-form-item-margin">
+						<label for="" class="default-form-label">Авансирование предусмотрено?</label>
+						<select name="" id="" class="default-form-select">
+							<option value="">Да</option>
+							<option value="">Нет</option>
+						</select>
+					</div>
+					<div class="form-col-8">
+						<label for="" class="default-form-label">Комментарий</label>
+						<input type="text" class="default-form-input" placeholder="Пример: 150 руб за сутки в соседнем общежитии">
+					</div>
+				</div>
+
+				<div class="registration-form-row registration-form-row-separator">
+					<div class="form-col-3 registration-form-item-margin">
+						<label for="" class="default-form-label">Дата начала работ</label>
+						<input type="text" class="default-form-input datepicker-input" placeholder="">
+					</div>
+					<div class="form-col-3">
+						<label for="" class="default-form-label">Дата завершения работ</label>
+						<input type="text" class="default-form-input datepicker-input" placeholder="">
+					</div>
+				</div>
+
+				<div class="registration-form-row registration-form-row-separator">
+					<div class="form-col-12">
+						<div class="create-vacancy-row-title">Описание вакансии</div>
+					</div>
+					<div class="form-col-12">
+						<label for="" class="default-form-label">Укажите более подробную информацию по вакансии:</label>
+						<textarea name="textarea" class="default-form-textarea"></textarea>
+					</div>					
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<div class="create-vacancy-row-title">Прикрепить файлы</div>
+					</div>
+					<div class="form-col-12">
+						<div class="attachment-area">
+							<input class="form-attachment-input" type="file">
+							<a href="#" class="choice-file-trigger">Выберите файлы</a>
+						</div>
+					</div>
+					<div class="form-col-6 registration-form-item-margin">
+						<input type="text" class="default-form-input" placeholder="Схема объекта.PNG" disabled="disabled">
+						<div class="attachments-filelist-notes">Поддерживаемые форматы: JPEG, PNG, TXT, DOC</div>
+					</div>
+					<div class="form-col-5">
+						<input type="submit" class="default-btn default-btn-blue default-form-attach-trigger" value="Прикрепить">
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<div class="create-vacancy-row-title">Прикрепленные файлы</div>
+					</div>
+					<div class="form-col-12">
+						<div class="form-attachments">
+							<div class="form-attachments-row">
+								<div class="form-attachment-col">
+									<div class="form-attachment-item">
+										<div class="form-attachmet-item__head">
+											<a href="#" class="form-attachment-delete-trigger"></a>	
+											<a href="#" class="form-attachment-filename">Первый этаж.PNG</a>
+										</div>
+										<div class="form-attachment-item__img">
+											<figure><a href="#"><img src="images/upload-img.jpg" alt="upload img"></a></figure>
+										</div>
+									</div>
+								</div>
+								<div class="form-attachment-col">
+									<div class="form-attachment-item">
+										<div class="form-attachmet-item__head">
+											<a href="#" class="form-attachment-delete-trigger"></a>	
+											<a href="#" class="form-attachment-filename">Первый этаж.PNG</a>
+										</div>
+										<div class="form-attachment-item__img">
+											<figure><a href="#"><img src="images/upload-img.jpg" alt="upload img"></a></figure>
+										</div>
+									</div>
+								</div>
+								<div class="form-attachment-col">
+									<div class="form-attachment-item">
+										<div class="form-attachmet-item__head">
+											<a href="#" class="form-attachment-delete-trigger"></a>	
+											<a href="#" class="form-attachment-filename">Первый этаж длинное название очень длинное название.PNG</a>
+										</div>
+										<div class="form-attachment-item__img">
+											<figure><a href="#"><img src="images/upload-img.jpg" alt="upload img"></a></figure>
+										</div>
+									</div>
+								</div>
+								<div class="form-attachment-col">
+									<div class="form-attachment-item">
+										<div class="form-attachmet-item__head">
+											<a href="#" class="form-attachment-delete-trigger"></a>	
+											<a href="#" class="form-attachment-filename">Первый этаж.PNG</a>
+										</div>
+										<div class="form-attachment-item__img">
+											<figure><a href="#"><img src="images/upload-img.jpg" alt="upload img"></a></figure>
+										</div>
+									</div>
+								</div>
+								<div class="form-attachment-col">
+									<div class="form-attachment-item">
+										<div class="form-attachmet-item__head">
+											<a href="#" class="form-attachment-delete-trigger"></a>	
+											<a href="#" class="form-attachment-filename">Первый этаж.PNG</a>
+										</div>
+										<div class="form-attachment-item__img">
+											<figure><a href="#"><img src="images/upload-img.jpg" alt="upload img"></a></figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>		
+				</div>
+				<div class="vacancy-action-buttons-row clearfix">
+					<div class="vacancy-action-button-col">
+						<a href="#" class="default-btn default-btn-blue default-btn-lg">Сохранить вакансию</a>
+					</div>
+					<div class="vacancy-action-button-col">
+						<a href="#" class="default-btn default-btn-green default-btn-lg">Опубликовать вакансию</a>
+					</div>
+				</div>
+			</form>
+
+			<div class="create-vacancy-sidebar visible-sm">
+				<div class="create-vacancy-rules">
+					<div class="create-vacancy-rules__title">Правила публикации вакансий</div>
+					<div class="create-vacancy-rules__list">
+						<ul>
+							<li class="create-vacancy-rules-item">1. Не указывайте контактные данные в вакансии. Вы уже добавили хи при регистрации</li>
+							<li class="create-vacancy-rules-item">2. Подробно опишите работы, которые нужно выполнить. Тогда Вы получите максимальное количество откликов</li>
+							<li class="create-vacancy-rules-item">3. Указывайте разумную цену</li>
+						</ul>
+					</div>
+				</div>
+				<div class="create-vacancy-stats">
+					<div class="create-vacancy-stats__title">Примерное количество кандидатов на Вашу вакансию</div>
+					<div class="create-vacancy-stats__item">
+						<div class="create-vacancy-stats-numbers">
+							<div class="create-vacancy-stats-numbers-discharge">
+								<div class="create-vacancy-stats-numbers__item">5</div>
+							</div>
+							<div class="create-vacancy-stats-numbers__item">0</div>
+							<div class="create-vacancy-stats-numbers__item">0</div>
+							<div class="create-vacancy-stats-numbers__item">0</div>
+						</div>
+						<div class="create-vacancy-stats-text">бригад по Москве и области</div>
+					</div>
+					<div class="create-vacancy-stats__item">
+						<div class="create-vacancy-stats-numbers">
+							<div class="create-vacancy-stats-numbers-discharge">
+								<div class="create-vacancy-stats-numbers__item">3</div>
+								<div class="create-vacancy-stats-numbers__item">0</div>
+							</div>
+							<div class="create-vacancy-stats-numbers__item">0</div>
+							<div class="create-vacancy-stats-numbers__item">0</div>
+							<div class="create-vacancy-stats-numbers__item">0</div>
+						</div>
+						<div class="create-vacancy-stats-text">бригад по России</div>
+					</div>
+				</div>
+			</div>
+	
+		</div>
+	</div>	
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-left-col clearfix">
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Работодателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Прайс-лист</a></li>
+							<li><a href="#" class="footer-menu-link">Добавить вакансию</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Соискателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Разместить резюме</a></li>
+							<li><a href="#" class="footer-menu-link">Карта вакансий</a></li>
+							<li><a href="#" class="footer-menu-link">Комании</a></li>							
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Информация</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Защита персональных данных</a></li>
+							<li><a href="#" class="footer-menu-link">Новости и статьи</a></li>
+							<li><a href="#" class="footer-menu-link">Правила сайта</a></li>
+							<li><a href="#" class="footer-menu-link">Мобильная версия сайта</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer-right-col">				
+				<div class="footer-copyright">© 2014–2015 Gerist.ru</div>
+				<nav class="footer-right-col-menu">
+					<ul>
+						<li><a href="#">Реклама на сайте</a></li>
+						<li><a href="#">Наши контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer-social">
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-tw"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-vk"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-fb"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<a href="#" class="totop-btn"><i></i></a>
+
+<div id="auth-modal" class="auth-modal modal">
+	<div class="modal-title">Вход на сайт</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Ваш E-mail:</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Пароль</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="confirm-pass-form-row">
+			<a href="#" class="forgot-pass-btn">Забыли пароль?</a>
+		</div>
+		<div class="default-form-row">
+			<input type="submit" class="default-btn default-btn-green auth-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+	<div class="auth-modal-footer">
+		<p>Впервые на сайте?</p>
+		<a href="#" class="auth-modal-reg-link">Регистрация</a>
+	</div>
+</div>
+
+<div id="callback-modal" class="callback-modal modal">
+	<div class="modal-title">Мы вам перезвоним!</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Контактное лицо</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="modal-form-tel" class="default-form-label">Номер телефона</label>
+			<input type="text" name="name" id="modal-form-tel" class="default-form-input default-form-input-tel">
+		</div>
+		<div class="modal-submit-form-row">
+			<input type="submit" class="default-btn default-btn-green callback-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+</div>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,491 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Gerist 21.settings-employer</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="layout">
+
+	<div class="header-adaptive-menu-wrap">
+		<a href="#" class="header-adaptive-menu-close"></a>
+		<nav class="header-adaptive-menu">
+			<ul>
+				<li><a href="#">Ищу работу</a></li>
+				<li><a href="#">Ищу мастеров</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Карта вакансий</a></li>
+				<li><a href="#">Кандидаты</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">На карте</a></li>
+				<li><a href="#">Компании</a></li>
+				<li><a href="#">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+			</ul>
+		</nav>
+	</div>
+	<header class="header">
+		<a href="#" class="header-menu-toggler visible-sm">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="header-top-row">
+			<div class="wrapper">
+				<div class="header-logo-col">
+					<a href="#"><img src="images/logo.png" alt="Все строительные вакансии и резюме - Gerist"></a>
+				</div>
+				<div class="header-location-col">
+					<div class="header-location-col-inner">
+						<div class="header-location-title">Ваш город</div>
+						<div class="header-location-select">
+							<a href="#" class="header-location-select-btn header-location-trigger"><span>Санкт-Петербург</span></a>
+							<div class="header-location-select-toggle">
+								<form action="/" class="header-location-search-form">
+									<div class="default-form-row">
+										<label for="" class="default-form-label">Начинайте вводить название:</label>
+										<div class="location-input-row">
+											<input type="text" name="city-location" class="default-form-input location-form-input">
+											<span class="header-location-clear-btn"></span>
+										</div>
+									</div>
+								</form>
+								<div class="header-location-result">
+									<ul>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Московская область</a></li>
+										<li><a href="#">Могилев</a></li>
+										<li><a href="#">Могилевская область</a></li>
+										<li><a href="#">Моготуй</a></li>
+										<li><a href="#">Можайск</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-cabinet-col">
+					<div class="header-cabinet-col-inner">
+						<div class="header-cabinet-title">Личный кабинет</div>
+						<div class="header-reg-auth-btns">
+							<a href="#auth-modal" class="header-auth-btn modal-trigger">Вход</a>
+							<a href="#" class="header-reg-btn">Регистрация</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-telephone-col">
+					<div class="header-telephone-title">
+						<a href="#callback-modal" class="header-callback-btn modal-trigger">Перезвонить?</a>
+					</div>
+					<div class="header-telephone-tel">
+						<a href="tel:88002000600">8 800 2000 600</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-row hidden-sm">
+			<div class="wrapper">
+				<a href="#" class="header-menu-toggler visible-md">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div class="header-bottom-menu-col">
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#">Ищу работу</a></li>
+							<li><a href="#">Ищу мастеров</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Карта вакансий</a></li>
+							<li><a href="#">Кандидаты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">На карте</a></li>
+							<li><a href="#">Компании</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-bottom-search-col">
+					<form action="index.php" class="header-search-form">
+						<input type="text" name="s" class="header-search-input" placeholder="Поиск">
+						<input type="submit" class="header-search-btn" value="">
+						<span class="header-search-trigger"></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="header-page-container profile-header-page-container">
+		<div class="wrapper">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Личный кабинет</a></li>
+					<li class="breadcrumb-last-item"><span>Вакансии</span></li>
+				</ul>
+			</div>	
+			<a href="#" class="profile-menu-toggler visible-md">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<nav class="profile-menu">
+				<a href="#" class="profile-adaptive-menu-close"></a>
+				<ul>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-vacancy-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Мои вакансии</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-candidates-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Кандидаты</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-workers-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Каталог исполнителей</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-balance-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Баланс</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-settings-link active">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Настройки</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-personaldata-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Личные данные</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-personaldata-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Сообщения</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="page-title">
+				<h1>Вакансии <span class="page-title__vacancy-counter">(526)</span></h1>
+			</div>			
+		</div>
+	</div>
+
+	<div class="profile-settings-page-container">
+		<div class="wrapper">
+
+			<form class="profile-settings-form">
+				
+				<div class="profile-form-errors-container">
+					<div class="profile-form-error-item">
+						Ошибка в поле Телефон
+					</div>
+				</div>
+				<div class="profile-settings-group">
+					<div class="profile-settings-group__title">Настройка логотипа</div>
+					<div class="registration-form-row">
+						<div class="form-col-12">					
+							<div class="registration-avatar-col">
+								<img class="registration-avatar-img" src="images/article-img-big.jpg">
+							</div>
+							<div class="registration-avatar-action-col">
+								<div class="registration-avatar-action-line">
+									<a href="#" class="registration-avatar-action-btn registration-avatar-action-btn_upload">Загрузить логотип</a>
+								</div>
+								<div class="registration-avatar-action-line">
+									<a href="#" class="registration-avatar-action-btn registration-avatar-action-btn_remove">Удалить логотип</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="registration-form-row registration-form-row-hidden">
+						<div class="form-col-12">
+							<a href="#" class="default-btn default-btn-green default-btn-md">Сохранить</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="profile-settings-group">
+					<div class="profile-settings-group__title">Информация о компании</div>
+					<div class="registration-form-row">
+						<div class="form-col-12">
+							<textarea name="textarea" class="default-form-textarea textarea-500symbols1 default-form-empty-area"></textarea>
+							<div class="form-symbols-counter-line">Осталось символов: <span class="form-symbols-counter-value1"></span></div>
+						</div>
+					</div>
+					<div class="registration-form-row registration-form-row-hidden">
+						<div class="form-col-12">
+							<a href="#" class="default-btn default-btn-green default-btn-md">Сохранить</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-settings-group">
+					<div class="profile-settings-group__title">Название компании: ООО "Стройтехнологии"</div>
+					<div class="registration-form-row">
+						<div class="form-col-4">
+							<label for="" class="default-form-label">Город</label>
+							<select name="" id="" class="default-form-select-searchfield">
+								<option value="">Москва</option>
+								<option value="">Киев</option>
+								<option value="">Харьков</option>
+							</select>
+						</div>
+					</div>
+					<div class="registration-form-row">
+						<div class="form-col-4">
+							<label for="" class="default-form-label">Контактное лицо</label>
+							<input class="default-form-input default-form-empty-area" type="text" placeholder="Имя">
+						</div>
+					</div>
+					<div class="registration-form-row">
+						<div class="form-col-4">
+							<input class="default-form-input default-form-empty-area" type="text" placeholder="Фамилия">
+						</div>
+					</div>
+					<div class="registration-form-row">
+						<div class="form-col-12">
+							<label for="" class="default-form-label">Почтовый адрес</label>
+							<input class="default-form-input default-form-empty-area" type="text" placeholder="ул. Ленинградская д. 3, оф. 253, г. Петропавловск-Камчатский, Хабаровский край, Россия, 123456">
+						</div>
+					</div>
+					<div class="registration-form-row">
+						<div class="form-col-4">
+							<label for="" class="default-form-label">Сайт</label>
+							<input class="default-form-input default-form-empty-area" type="text">
+						</div>
+					</div>
+					<div class="registration-form-row">
+						<div class="form-col-12">
+							<div class="profile-settings-status-text">Ваш статус: компания - прямой работодатель</div>		
+						</div>
+					</div>
+					<div class="registration-form-row registration-form-row-hidden">
+						<div class="form-col-12">
+							<a href="#" class="default-btn default-btn-green default-btn-md">Сохранить</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-settings-group">
+					<div class="profile-settings-group__title">Контакты</div>
+					<div class="registration-form-row">
+						<div class="form-col-12">
+							<label for="" class="default-form-label">Контактный телефон:</label>
+						</div>
+						<div class="form-col-4 registration-form-item-margin">
+							<input class="default-form-input default-form-input-tel" placeholder="+7 (___) ___-__-__" type="text">
+						</div>
+						<div class="form-col-4">
+							<a href="#" class="form-button-trigger">Изменить</a>
+							<input class="default-form-input default-form-input-hidden" placeholder="Введите код из СМС" type="text">
+						</div>
+					</div>
+					<div class="registration-form-row">
+						<div class="form-col-4">
+							<label for="" class="default-form-label">E-mail</label>
+							<input class="default-form-input default-form-empty-area" type="text">
+						</div>
+					</div>
+					<div class="registration-form-row registration-form-row-hidden">
+						<div class="form-col-12">
+							<a href="#" class="default-btn default-btn-green default-btn-md">Сохранить</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-settings-group">
+					<div class="profile-settings-group__title">Изменение пароля</div>
+					<div class="registration-form-row">
+						<div class="form-col-12">
+							<label for="" class="default-form-label">Старый пароль</label>
+						</div>
+						<div class="form-col-4">
+							<input class="default-form-input default-form-empty-area" type="password">
+						</div>
+						<div class="form-col-8">
+							<div class="attention-input-alert attention-input-alert-grey">Внимание! Caps Lock включен</div>
+						</div>
+					</div>
+					<div class="registration-form-row">
+						<div class="form-col-12">
+							<label for="" class="default-form-label">Новый пароль</label>
+						</div>
+						<div class="form-col-4">
+							<input class="default-form-input default-form-empty-area" type="password">
+						</div>
+					</div>
+					<div class="registration-form-row">
+						<div class="form-col-4">
+							<label for="" class="default-form-label">Повторите новый пароль</label>
+							<input class="default-form-input default-form-empty-area" type="password">
+						</div>
+					</div>
+					<div class="registration-form-row registration-form-row-hidden">
+						<div class="form-col-12">
+							<a href="#" class="default-btn default-btn-green default-btn-md">Изменить пароль</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="profile-settings-group">
+					<div class="profile-settings-group__title">Уведомления</div>
+					<div class="registration-form-row">
+						<div class="form-col-12">
+							<div class="registration-terms-row">
+								<input id="subscribe-to-notify-check" class="terms-checkbox" type="checkbox">
+								<label for="subscribe-to-notify-check" class="terms-label">Отправлять уведомления на почту</label>
+							</div>
+						</div>
+					</div>
+					<div class="registration-form-row">
+						<div class="form-col-12">
+							<div class="registration-terms-row">
+								<input id="subscribe-to-news-check" class="terms-checkbox" type="checkbox">
+								<label for="subscribe-to-news-check" class="terms-label">Отправлять новости сайта на почту</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<a href="#" class="profile-delete-page-link">Удалить страницу</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>	
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-left-col clearfix">
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Работодателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Прайс-лист</a></li>
+							<li><a href="#" class="footer-menu-link">Добавить вакансию</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Соискателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Разместить резюме</a></li>
+							<li><a href="#" class="footer-menu-link">Карта вакансий</a></li>
+							<li><a href="#" class="footer-menu-link">Комании</a></li>							
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Информация</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Защита персональных данных</a></li>
+							<li><a href="#" class="footer-menu-link">Новости и статьи</a></li>
+							<li><a href="#" class="footer-menu-link">Правила сайта</a></li>
+							<li><a href="#" class="footer-menu-link">Мобильная версия сайта</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer-right-col">				
+				<div class="footer-copyright">© 2014–2015 Gerist.ru</div>
+				<nav class="footer-right-col-menu">
+					<ul>
+						<li><a href="#">Реклама на сайте</a></li>
+						<li><a href="#">Наши контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer-social">
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-tw"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-vk"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-fb"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<a href="#" class="totop-btn"><i></i></a>
+
+<div id="auth-modal" class="auth-modal modal">
+	<div class="modal-title">Вход на сайт</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Ваш E-mail:</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Пароль</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="confirm-pass-form-row">
+			<a href="#" class="forgot-pass-btn">Забыли пароль?</a>
+		</div>
+		<div class="default-form-row">
+			<input type="submit" class="default-btn default-btn-green auth-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+	<div class="auth-modal-footer">
+		<p>Впервые на сайте?</p>
+		<a href="#" class="auth-modal-reg-link">Регистрация</a>
+	</div>
+</div>
+
+<div id="callback-modal" class="callback-modal modal">
+	<div class="modal-title">Мы вам перезвоним!</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Контактное лицо</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="modal-form-tel" class="default-form-label">Номер телефона</label>
+			<input type="text" name="name" id="modal-form-tel" class="default-form-input default-form-input-tel">
+		</div>
+		<div class="modal-submit-form-row">
+			<input type="submit" class="default-btn default-btn-green callback-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+</div>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

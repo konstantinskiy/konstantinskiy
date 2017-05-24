@@ -1,0 +1,759 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Gerist 23.balance</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="layout">
+
+	<div class="header-adaptive-menu-wrap">
+		<a href="#" class="header-adaptive-menu-close"></a>
+		<nav class="header-adaptive-menu">
+			<ul>
+				<li><a href="#">Ищу работу</a></li>
+				<li><a href="#">Ищу мастеров</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Карта вакансий</a></li>
+				<li><a href="#">Кандидаты</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">На карте</a></li>
+				<li><a href="#">Компании</a></li>
+				<li><a href="#">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+			</ul>
+		</nav>
+	</div>
+	<header class="header">
+		<a href="#" class="header-menu-toggler visible-sm">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="header-top-row">
+			<div class="wrapper">
+				<div class="header-logo-col">
+					<a href="#"><img src="images/logo.png" alt="Все строительные вакансии и резюме - Gerist"></a>
+				</div>
+				<div class="header-location-col">
+					<div class="header-location-col-inner">
+						<div class="header-location-title">Ваш город</div>
+						<div class="header-location-select">
+							<a href="#" class="header-location-select-btn header-location-trigger"><span>Санкт-Петербург</span></a>
+							<div class="header-location-select-toggle">
+								<form action="/" class="header-location-search-form">
+									<div class="default-form-row">
+										<label for="" class="default-form-label">Начинайте вводить название:</label>
+										<div class="location-input-row">
+											<input type="text" name="city-location" class="default-form-input location-form-input">
+											<span class="header-location-clear-btn"></span>
+										</div>
+									</div>
+								</form>
+								<div class="header-location-result">
+									<ul>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Московская область</a></li>
+										<li><a href="#">Могилев</a></li>
+										<li><a href="#">Могилевская область</a></li>
+										<li><a href="#">Моготуй</a></li>
+										<li><a href="#">Можайск</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-cabinet-col">
+					<div class="header-cabinet-col-inner">
+						<div class="header-cabinet-title">Личный кабинет</div>
+						<div class="header-reg-auth-btns">
+							<a href="#auth-modal" class="header-auth-btn modal-trigger">Вход</a>
+							<a href="#" class="header-reg-btn">Регистрация</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-telephone-col">
+					<div class="header-telephone-title">
+						<a href="#callback-modal" class="header-callback-btn modal-trigger">Перезвонить?</a>
+					</div>
+					<div class="header-telephone-tel">
+						<a href="tel:88002000600">8 800 2000 600</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-row hidden-sm">
+			<div class="wrapper">
+				<a href="#" class="header-menu-toggler visible-md">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div class="header-bottom-menu-col">
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#">Ищу работу</a></li>
+							<li><a href="#">Ищу мастеров</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Карта вакансий</a></li>
+							<li><a href="#">Кандидаты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">На карте</a></li>
+							<li><a href="#">Компании</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-bottom-search-col">
+					<form action="index.php" class="header-search-form">
+						<input type="text" name="s" class="header-search-input" placeholder="Поиск">
+						<input type="submit" class="header-search-btn" value="">
+						<span class="header-search-trigger"></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="header-page-container profile-header-page-container">
+		<div class="wrapper">
+			<a href="#" class="profile-menu-toggler visible-md">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<nav class="profile-menu">
+				<a href="#" class="profile-adaptive-menu-close"></a>
+				<ul>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-vacancy-link active">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Мои вакансии</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-candidates-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Кандидаты</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-workers-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Каталог исполнителей</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-balance-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Баланс</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-settings-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Настройки</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-personaldata-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Личные данные</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="page-title">
+				<h1>Баланс</h1>
+			</div>
+			<nav class="header-page-bottom-menu">
+				<ul>
+					<li class="header-page-bottom-menu-item">
+						<a href="#" class="header-page-bottom-menu-link header-page-bottom-menu-link-active">Пополнение счета</a>
+					</li>
+					<li class="header-page-bottom-menu-item">
+						<a href="#" class="header-page-bottom-menu-link">История платежей и списаний</a>
+					</li>
+					<li class="header-page-bottom-menu-item">
+						<a href="#" class="header-page-bottom-menu-link">Акты</a>
+					</li>
+					<li class="header-page-bottom-menu-item">
+						<a href="#" class="header-page-bottom-menu-link">Договор</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<div class="balance-page-container">
+		<div class="wrapper">
+			<div class="registration-form-error-item">
+				Ошибка в поле Сумма пополнения
+			</div>
+
+			<div class="balance-notification">
+				<p>Стоимость публикации вакансии рассчитывается, исходя из требуемого количества мастеров, вида работ и региона.</p>
+			</div>
+			
+			<div class="replenishment-balance-row clearfix">
+				<div class="replenishment-balance-cost-col">
+					<div class="replenishment-balance-title">Стоимость размещения вакансии</div>
+					<div class="registration-form-row">
+						<div class="form-col-9">
+							<label for="" class="default-form-label">Требуется человек</label>
+							<input class="default-form-input" type="text" placeholder="10">
+						</div>
+					</div>				
+					<div class="registration-form-row">
+						<div class="form-col-9">
+							<label for="" class="default-form-label">Регион</label>
+							<input class="default-form-input" type="text" placeholder="Определяется по IP">
+						</div>
+					</div>
+				</div>
+				<div class="replenishment-balance-result-col">
+					<div class="replenishment-balance-title">Результат расчета</div>
+					<div class="replenishment-balance-table">
+						<div class="replenishment-balance-table-head">
+							<div class="replenishment-balance-table-headcol">Количество человек</div>
+							<div class="replenishment-balance-table-headcol">Стоимость размещения вакансии</div>
+						</div>
+						<div class="replenishment-balance-table-body">
+							<div class="replenishment-balance-table-row">
+								<div class="replenishment-balance-table-bodycol replenishment-balance-table-bodycol-6">3-10</div>
+								<div class="replenishment-balance-table-bodycol replenishment-balance-table-bodycol-3">500 руб.</div>
+								<div class="replenishment-balance-table-bodycol replenishment-balance-table-bodycol-3"><a href="#">Пополнить</a></div>
+							</div>
+							<div class="replenishment-balance-table-row">
+								<div class="replenishment-balance-table-bodycol replenishment-balance-table-bodycol-6">3-10</div>
+								<div class="replenishment-balance-table-bodycol replenishment-balance-table-bodycol-3">500 руб.</div>
+								<div class="replenishment-balance-table-bodycol replenishment-balance-table-bodycol-3"><a href="#">Пополнить</a></div>
+							</div>
+							<div class="replenishment-balance-table-row">
+								<div class="replenishment-balance-table-bodycol replenishment-balance-table-bodycol-6">3-10</div>
+								<div class="replenishment-balance-table-bodycol replenishment-balance-table-bodycol-3">500 руб.</div>
+								<div class="replenishment-balance-table-bodycol replenishment-balance-table-bodycol-3"><a href="#">Пополнить</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="replenishment-balance-row clearfix">
+				<div class="replenishment-balance-worklist-col">
+					<label for="" class="default-form-label">Выберите виды работ:</label>
+					<div class="categories-accordeon-block">
+						<div class="categories-accordeon-row">
+							<div class="categories-accordeon-main-cat">
+								<span class="categories-accordeon-toggler"></span>
+								<span class="categories-accordeon-check"></span>
+								Кровельные работы уровень 1
+							</div>
+							<div class="categories-accordeon-subcats has-children">
+								<div class="categories-accordeon-main-cat">
+									<span class="categories-accordeon-toggler"></span>
+									<span class="categories-accordeon-check"></span>
+									Кровельные работы уровень 2
+								</div>
+								<div class="categories-accordeon-subcats has-children">
+									<div class="categories-accordeon-main-cat">
+										<span class="categories-accordeon-toggler"></span>
+										<span class="categories-accordeon-check"></span>
+										Кровельные работы
+									</div>
+									<div class="categories-accordeon-subcats">
+										<ul>
+											<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы уровень 3</li>
+											<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы уровень 3</li>
+											<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы уровень 3</li>
+											<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы уровень 3</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="categories-accordeon-row">
+							<div class="categories-accordeon-main-cat">
+								<span class="categories-accordeon-toggler"></span>
+								<span class="categories-accordeon-check"></span>
+								Монолитные работы
+							</div>
+							<div class="categories-accordeon-subcats">
+								<ul>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+								</ul>
+							</div>
+						</div>
+						<div class="categories-accordeon-row">
+							<div class="categories-accordeon-main-cat">
+								<span class="categories-accordeon-toggler"></span>
+								<span class="categories-accordeon-check"></span>
+								Монтажные работы
+							</div>
+							<div class="categories-accordeon-subcats">
+								<ul>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+								</ul>
+							</div>
+						</div>
+						<div class="categories-accordeon-row">
+							<div class="categories-accordeon-main-cat">
+								<span class="categories-accordeon-toggler"></span>
+								<span class="categories-accordeon-check"></span>
+								Кровельные работы
+							</div>
+							<div class="categories-accordeon-subcats">
+								<ul>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>		
+								</ul>				
+							</div>
+						</div>
+						<div class="categories-accordeon-row">
+							<div class="categories-accordeon-main-cat">
+								<span class="categories-accordeon-toggler"></span>
+								<span class="categories-accordeon-check"></span>
+								Кровельные работы
+							</div>
+							<div class="categories-accordeon-subcats">
+								<ul>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+								</ul>
+							</div>
+						</div>
+						<div class="categories-accordeon-row">
+							<div class="categories-accordeon-main-cat">
+								<span class="categories-accordeon-toggler"></span>
+								<span class="categories-accordeon-check"></span>
+								Монолитные работы
+							</div>
+							<div class="categories-accordeon-subcats">
+								<ul>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>						
+								</ul>
+							</div>
+						</div>
+						<div class="categories-accordeon-row">
+							<div class="categories-accordeon-main-cat">
+								<span class="categories-accordeon-toggler"></span>
+								<span class="categories-accordeon-check"></span>
+								Монтажные работы
+							</div>
+							<div class="categories-accordeon-subcats">
+								<ul>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+								</ul>
+							</div>
+						</div>
+						<div class="categories-accordeon-row">
+							<div class="categories-accordeon-main-cat">
+								<span class="categories-accordeon-toggler"></span>
+								<span class="categories-accordeon-check"></span>
+								Кровельные работы
+							</div>
+							<div class="categories-accordeon-subcats">
+								<ul>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+									<li class="categories-accordeon-subcats-item"><span class="categories-accordeon-check"></span>Кровельные работы подкатегория</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="worklist-action-buttons clearfix">
+						<div class="worklist-action-btn-col">
+							<a href="#" class="default-btn default-btn-green worklist-action-btn">Расчитать</a>
+						</div>
+						<div class="worklist-action-btn-col">
+							<a href="#" class="default-btn default-btn-blue worklist-action-btn">Сбросить расчет</a>
+						</div>
+					</div>
+				</div>
+				<div class="replenishment-balance-warranty-col">
+					<div class="replenishment-balance-warranty-block">
+						<div class="replenishment-balance-warranty-logo"><img src="images/logo.png" alt="logo"></div>
+						<div class="replenishment-balance-warranty-title">Гарантии</div>
+						<div class="replenishment-balance-warranty-text">Не поступило ни одного отклика на вакансию? Вернём деньги или продлим вакансию бесплатно на аналогичный срок.</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<div class="discount-container">
+		<div class="wrapper">
+			<div class="discount-form-block">
+				<div class="discount-form-block-title">Пополнение счета</div>
+				<div class="registration-form-row">
+					<div class="form-col-12">
+						<label for="" class="default-form-label">Сумма пополнения, руб.</label>
+					</div>
+					<div class="form-col-6">
+						<input class="default-form-input thousand-input error" type="text" placeholder="10 000">
+						<div class="form-error">Сумма не указана</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="pay-variant-container">
+		<div class="wrapper">
+			<div class="pay-variant-container-title">Способы оплаты</div>
+
+			<div class="pay-variant-block">
+				
+				<div class="pay-variant-row pay-variant-row-cards">
+					<div class="pay-variant-item pay-variant-item-trigger">
+						<div class="pay-variant-ico"></div>
+						<div class="pay-variant-img"><img src="images/i/visa-card-ico.jpg" alt="visa"></div>
+						<div class="pay-variant-text">
+							<div class="pay-variant-name">Банковская карта</div>
+							<div class="pay-variant-description">Visa или Mastercard</div>
+						</div>
+					</div>
+					<div class="pay-variant-item-content">
+						<input type="submit" class="default-btn default-btn-md default-btn-red" value="Оплатить">
+					</div>
+				</div>
+				<div class="pay-variant-row">
+					<div class="pay-variant-item pay-variant-item-trigger">
+						<div class="pay-variant-ico"></div>
+						<div class="pay-variant-img"><img src="images/i/qiwi-ico.jpg" alt="qiwi"></div>
+						<div class="pay-variant-text">
+							<div class="pay-variant-name">Qiwi-кошелек</div>
+							<div class="pay-variant-description">(<a href="#">инструкция по оплате</a>)</div>
+						</div>
+					</div>
+					<div class="pay-variant-item-content">
+						<div class="registration-form-row">
+							<div class="form-col-4">
+								<label for="" class="default-form-label">Введите номер телефона</label>
+								<input class="default-form-input default-form-input-tel" placeholder="+7 (___) _______" type="text">
+							</div>
+							<div class="form-col-4">
+								<input class="default-btn default-btn-md default-btn-red default-btn-pay" type="submit" value="Выставить счет">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pay-variant-row">
+					<div class="pay-variant-item pay-variant-item-trigger">
+						<div class="pay-variant-ico"></div>
+						<div class="pay-variant-img"><img src="images/i/pay-mobile-ico.jpg" alt="pay mobile"></div>
+						<div class="pay-variant-text">
+							<div class="pay-variant-name">Оплата с мобильного</div>
+							<div class="pay-variant-description">Перевод средств с вашего телефона</div>
+						</div>
+					</div>
+					<div class="pay-variant-item-content">
+						<div class="registration-form-row">
+							<div class="form-col-4 registration-form-item-margin">
+								<label for="" class="default-form-label">Выберите сотового оператора</label>
+								<select name="" id="" class="default-form-select">
+									<option value="">Билайн</option>
+									<option value="">МТС</option>
+									<option value="">Vodafone</option>
+								</select>
+							</div>
+							<div class="form-col-4">
+								<label for="" class="default-form-label">Введите номер телефона</label>
+								<input class="default-form-input default-form-input-tel" placeholder="+7 (___) _______" type="text">
+							</div>
+							<div class="form-col-4">
+								<input class="default-btn default-btn-md default-btn-red default-btn-pay" type="submit" value="Оплатить">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pay-variant-row">
+					<div class="pay-variant-item pay-variant-item-trigger">
+						<div class="pay-variant-ico"></div>
+						<div class="pay-variant-img"><img src="images/i/cart-bill-ico.jpg" alt="cart bill"></div>
+						<div class="pay-variant-text">
+							<div class="pay-variant-name">Перевод на расчетный счет</div>
+							<div class="pay-variant-description">Квитанция или выставление счета для юр. лица</div>
+						</div>
+					</div>
+					<div class="pay-variant-item-content">
+						<div class="pay-variant-item-content-p">
+							<p>Для <strong>физических лиц</strong> - <a href="#">скачайте квитанцию</a>. После оплаты в банке <strong>необходимо</strong> отправить квитанцию в отсканированном виде (или сфотографировать) на нашу почту admin@stroy-birzha.ru или через <a href="#">почтовую форму</a>.</p>
+						</div>
+						<div class="registration-form-row">
+							<div class="pay-variant-text-col">
+								<p>Для <strong>юридических лиц</strong> - введите наименование юр. лица и нажмите. Наши реквизиты: <a href="#">скачать</a>.</p>
+							</div>
+							<div class="pay-variant-input-col">
+								<input class="default-form-input" placeholder="" type="text">
+							</div>
+							<div class="pay-variant-smalltext-col">
+								<div class="pay-variant-text-before">и нажмите</div>
+							</div>
+							<div class="pay-variant-button-col">								
+								<input class="default-btn default-btn-red pay-variant-red-btn" type="submit" value="Скачать счет">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pay-variant-row">
+					<div class="pay-variant-item pay-variant-item-trigger">
+						<div class="pay-variant-ico"></div>
+						<div class="pay-variant-img"><img src="images/i/pay-wm-ico.jpg" alt="pay wm"></div>
+						<div class="pay-variant-text">
+							<div class="pay-variant-name">Электронные деньги</div>
+							<div class="pay-variant-description">ЯндексДеньги или Webmoney</div>
+						</div>
+					</div>
+					<div class="pay-variant-item-content">
+						<p>- Кошелёк Яндекс.деньги 4100180508167</p>
+						<p>- Кошелек WebMoney R716710050697.</p>
+						<p>При оплате Яндекс Деньгами или WMR в комментарии к платежу просьба указать Ваш логин или e-mail на сайте.</p>
+					</div>
+				</div>
+			</div>
+			<div class="pay-variant-term-text">Пополняя счет, Вы принимаете <a href="#">условия оказания услуг</a></div>
+		</div>
+	</div>
+
+	<div class="pay-notification-container">
+		<div class="wrapper">
+			<div class="pay-notification-container-title">Уведомление об оплате</div>
+			<div class="pay-notification-container-text">
+				<p>Для оперативного зачисления средств на счет при оплате по безналичному расчету или по квитанции, прикрепите и отправьте платежный документ в отсканированном виде. (Доступные форматы: jpg, png, doc, rtf, pdf, xls)</p>
+			</div>
+		</div>
+	</div>
+	
+	<div class="attachments-container">
+		<div class="wrapper">
+			<div class="registration-form-row">
+				<div class="form-col-12">
+					<div class="create-vacancy-row-title">Прикрепить файлы</div>
+				</div>
+				<div class="form-col-12">
+					<div class="attachment-area">
+						<input class="form-attachment-input" type="file">
+						<a href="#" class="choice-file-trigger">Выберите файлы</a>
+					</div>
+				</div>
+				<div class="form-col-6 registration-form-item-margin">
+					<input class="default-form-input" placeholder="Схема объекта.PNG" disabled="disabled" type="text">
+					<div class="attachments-filelist-notes-success">Файл успешно отправлен</div>
+				</div>
+				<div class="form-col-3 registration-form-item-margin">
+					<input class="default-btn default-btn-blue default-form-attach-trigger" value="Прикрепить" type="submit">
+				</div>
+				<div class="form-col-3">
+					<input class="default-btn default-btn-green default-form-attach-trigger" value="Отправить" type="submit">
+				</div>
+			</div>	
+			<div class="registration-form-row">
+				<div class="form-col-12">
+					<div class="create-vacancy-row-title">Прикрепленные файлы</div>
+				</div>
+				<div class="form-col-12">
+					<div class="form-attachments">
+						<div class="form-attachments-row">
+							<div class="form-attachment-col">
+								<div class="form-attachment-item">
+									<div class="form-attachmet-item__head">
+										<a href="#" class="form-attachment-delete-trigger"></a>	
+										<a href="#" class="form-attachment-filename">Первый этаж.PNG</a>
+									</div>
+									<div class="form-attachment-item__img">
+										<figure><a href="#"><img src="images/upload-img.jpg" alt="upload img"></a></figure>
+									</div>
+								</div>
+							</div>
+							<div class="form-attachment-col">
+								<div class="form-attachment-item">
+									<div class="form-attachmet-item__head">
+										<a href="#" class="form-attachment-delete-trigger"></a>	
+										<a href="#" class="form-attachment-filename">Первый этаж.PNG</a>
+									</div>
+									<div class="form-attachment-item__img">
+										<figure><a href="#"><img src="images/upload-img.jpg" alt="upload img"></a></figure>
+									</div>
+								</div>
+							</div>
+							<div class="form-attachment-col">
+								<div class="form-attachment-item">
+									<div class="form-attachmet-item__head">
+										<a href="#" class="form-attachment-delete-trigger"></a>	
+										<a href="#" class="form-attachment-filename">Первый этаж длинное название очень длинное название.PNG</a>
+									</div>
+									<div class="form-attachment-item__img">
+										<figure><a href="#"><img src="images/upload-img.jpg" alt="upload img"></a></figure>
+									</div>
+								</div>
+							</div>
+							<div class="form-attachment-col">
+								<div class="form-attachment-item">
+									<div class="form-attachmet-item__head">
+										<a href="#" class="form-attachment-delete-trigger"></a>	
+										<a href="#" class="form-attachment-filename">Первый этаж.PNG</a>
+									</div>
+									<div class="form-attachment-item__img">
+										<figure><a href="#"><img src="images/upload-img.jpg" alt="upload img"></a></figure>
+									</div>
+								</div>
+							</div>
+							<div class="form-attachment-col">
+								<div class="form-attachment-item">
+									<div class="form-attachmet-item__head">
+										<a href="#" class="form-attachment-delete-trigger"></a>	
+										<a href="#" class="form-attachment-filename">Первый этаж.PNG</a>
+									</div>
+									<div class="form-attachment-item__img">
+										<figure><a href="#"><img src="images/upload-img.jpg" alt="upload img"></a></figure>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-left-col clearfix">
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Работодателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Прайс-лист</a></li>
+							<li><a href="#" class="footer-menu-link">Добавить вакансию</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Соискателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Разместить резюме</a></li>
+							<li><a href="#" class="footer-menu-link">Карта вакансий</a></li>
+							<li><a href="#" class="footer-menu-link">Комании</a></li>							
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Информация</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Защита персональных данных</a></li>
+							<li><a href="#" class="footer-menu-link">Новости и статьи</a></li>
+							<li><a href="#" class="footer-menu-link">Правила сайта</a></li>
+							<li><a href="#" class="footer-menu-link">Мобильная версия сайта</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer-right-col">				
+				<div class="footer-copyright">© 2014–2015 Gerist.ru</div>
+				<nav class="footer-right-col-menu">
+					<ul>
+						<li><a href="#">Реклама на сайте</a></li>
+						<li><a href="#">Наши контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer-social">
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-tw"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-vk"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-fb"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<a href="#" class="totop-btn"><i></i></a>
+
+<div id="auth-modal" class="auth-modal modal">
+	<div class="modal-title">Вход на сайт</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Ваш E-mail:</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Пароль</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="confirm-pass-form-row">
+			<a href="#" class="forgot-pass-btn">Забыли пароль?</a>
+		</div>
+		<div class="default-form-row">
+			<input type="submit" class="default-btn default-btn-green auth-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+	<div class="auth-modal-footer">
+		<p>Впервые на сайте?</p>
+		<a href="#" class="auth-modal-reg-link">Регистрация</a>
+	</div>
+</div>
+
+<div id="callback-modal" class="callback-modal modal">
+	<div class="modal-title">Мы вам перезвоним!</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Контактное лицо</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="modal-form-tel" class="default-form-label">Номер телефона</label>
+			<input type="text" name="name" id="modal-form-tel" class="default-form-input default-form-input-tel">
+		</div>
+		<div class="modal-submit-form-row">
+			<input type="submit" class="default-btn default-btn-green callback-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+</div>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

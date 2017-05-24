@@ -1,0 +1,508 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Gerist 20.candidate</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="layout">
+
+	<div class="header-adaptive-menu-wrap">
+		<a href="#" class="header-adaptive-menu-close"></a>
+		<nav class="header-adaptive-menu">
+			<ul>
+				<li><a href="#">Ищу работу</a></li>
+				<li><a href="#">Ищу мастеров</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Карта вакансий</a></li>
+				<li><a href="#">Кандидаты</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">На карте</a></li>
+				<li><a href="#">Компании</a></li>
+				<li><a href="#">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+			</ul>
+		</nav>
+	</div>
+	<header class="header">
+		<a href="#" class="header-menu-toggler visible-sm">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="header-top-row">
+			<div class="wrapper">
+				<div class="header-logo-col">
+					<a href="#"><img src="images/logo.png" alt="Все строительные вакансии и резюме - Gerist"></a>
+				</div>
+				<div class="header-location-col">
+					<div class="header-location-col-inner">
+						<div class="header-location-title">Ваш город</div>
+						<div class="header-location-select">
+							<a href="#" class="header-location-select-btn header-location-trigger"><span>Санкт-Петербург</span></a>
+							<div class="header-location-select-toggle">
+								<form action="/" class="header-location-search-form">
+									<div class="default-form-row">
+										<label for="" class="default-form-label">Начинайте вводить название:</label>
+										<div class="location-input-row">
+											<input type="text" name="city-location" class="default-form-input location-form-input">
+											<span class="header-location-clear-btn"></span>
+										</div>
+									</div>
+								</form>
+								<div class="header-location-result">
+									<ul>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Московская область</a></li>
+										<li><a href="#">Могилев</a></li>
+										<li><a href="#">Могилевская область</a></li>
+										<li><a href="#">Моготуй</a></li>
+										<li><a href="#">Можайск</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-cabinet-col">
+					<div class="header-cabinet-col-inner">
+						<div class="header-cabinet-title">Личный кабинет</div>
+						<div class="header-reg-auth-btns">
+							<a href="#auth-modal" class="header-auth-btn modal-trigger">Вход</a>
+							<a href="#" class="header-reg-btn">Регистрация</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-telephone-col">
+					<div class="header-telephone-title">
+						<a href="#callback-modal" class="header-callback-btn modal-trigger">Перезвонить?</a>
+					</div>
+					<div class="header-telephone-tel">
+						<a href="tel:88002000600">8 800 2000 600</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-row hidden-sm">
+			<div class="wrapper">
+				<a href="#" class="header-menu-toggler visible-md">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div class="header-bottom-menu-col">
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#">Ищу работу</a></li>
+							<li><a href="#">Ищу мастеров</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Карта вакансий</a></li>
+							<li><a href="#">Кандидаты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">На карте</a></li>
+							<li><a href="#">Компании</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-bottom-search-col">
+					<form action="index.php" class="header-search-form">
+						<input type="text" name="s" class="header-search-input" placeholder="Поиск">
+						<input type="submit" class="header-search-btn" value="">
+						<span class="header-search-trigger"></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="header-page-container profile-header-page-container profile-header-page-container__small">
+		<div class="wrapper">
+			<a href="#" class="profile-menu-toggler visible-md">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<nav class="profile-menu">
+				<a href="#" class="profile-adaptive-menu-close"></a>
+				<ul>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-vacancy-link active">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Мои вакансии</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-candidates-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Кандидаты</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-workers-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Каталог исполнителей</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-balance-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Баланс</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-settings-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Настройки</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-personaldata-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Личные данные</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	
+	<div class="content-wrap">
+		<div class="wrapper">
+			
+			<div class="candidate-profile-content clearfix">
+				<div class="candidate-profile-avatar-col hidden-sm">
+					<div class="candidate-avatar-img-block">
+						<a href="#"><img src="images/candidate-img.png" class="candidate-avatar-img" alt="candidate-img"></a>
+					</div>
+					<div class="candidate-money-income">
+						<div class="candidate-money-income-title">Ожидаемый доход:</div>
+						<div class="candidate-money-income-value">75 000 - 90 000 руб/мес.</div>
+					</div>
+					<div class="candidate-time-site">На сайте: 1 год 2 мес</div>
+				</div>
+				<div class="candidate-profile-content-col candidate-content-status1">
+					<div class="candidate-profile-content-header clearfix">
+						<div class="candidate-profile-name-col">
+							<div class="candidate-profile-name-nolink">Иванов Иван Иванович</div>
+							<div class="candidate-profile-age">35 лет, Москва</div>
+						</div>
+						<div class="candidate-profile-contacts-col">
+							<div class="candidate-profile-contact-item">
+								<a href="tel:+7(499) 122-33-44" class="candidate-profile-contact-item-tel">+7 (499) 122-33-44 </a>
+							</div>
+							<div class="candidate-profile-contact-item">
+								<a href="tel:+7 (916) 808-88-88" class="candidate-profile-contact-item-tel">+7 (916) 808-88-88</a>
+							</div>
+							<div class="candidate-profile-contact-item">
+								<a href="mailto:stroitelstvodomov@.yandex.ru" class="candidate-profile-contact-item-email">stroitelstvodomov@.yandex.ru</a>
+							</div>
+						</div>	
+						<div class="visible-sm">
+							<div class="candidate-money-income">
+								<div class="candidate-money-income-title">Ожидаемый доход:</div>
+								<div class="candidate-money-income-value">75 000 - 90 000 руб/мес.</div>
+							</div>
+							<div class="candidate-time-site">На сайте: 1 год 2 мес</div>					
+						</div>
+					</div>
+					<div class="candidate-content-middle">
+						<div class="candidate-stats-list">
+							<div class="candidate-stats-row clearfix">
+								<div class="candidate-stats-col candidate-stats-name-col">Статус</div>
+								<div class="candidate-stats-col candidate-stats-value-col">Бригада 50 человек</div>
+							</div>
+							<div class="candidate-stats-row clearfix">
+								<div class="candidate-stats-col candidate-stats-name-col">Рабочие</div>
+								<div class="candidate-stats-col candidate-stats-value-col">граждане РФ, Украины, Белоруссии</div>
+							</div>
+							<div class="candidate-stats-row clearfix">
+								<div class="candidate-stats-col candidate-stats-name-col">Разрешение на работу</div>
+								<div class="candidate-stats-col candidate-stats-value-col">Есть</div>
+							</div>
+							<div class="candidate-stats-row clearfix">
+								<div class="candidate-stats-col candidate-stats-name-col">Регионы</div>
+								<div class="candidate-stats-col candidate-stats-value-col">Москва и Московская область</div>
+							</div>
+							<div class="candidate-stats-row clearfix">
+								<div class="candidate-stats-col candidate-stats-name-col">Образование</div>
+								<div class="candidate-stats-col candidate-stats-value-col">Высшее, среднее</div>
+							</div>
+							<div class="candidate-stats-row clearfix">
+								<div class="candidate-stats-col candidate-stats-name-col">Опыт работы</div>
+								<div class="candidate-stats-col candidate-stats-value-col">1-3</div>
+							</div>
+							<div class="candidate-stats-row clearfix">
+								<div class="candidate-stats-col candidate-stats-name-col">Наличие необходимого инструмента</div>
+								<div class="candidate-stats-col candidate-stats-value-col">Да</div>
+							</div>
+							<div class="candidate-stats-row clearfix">
+								<div class="candidate-stats-col candidate-stats-name-col">Наличие необходимого транспорта</div>
+								<div class="candidate-stats-col candidate-stats-value-col">Да</div>
+							</div>
+							<div class="candidate-stats-row clearfix">
+								<div class="candidate-stats-col candidate-stats-name-col">Умение читать техническую документацию</div>
+								<div class="candidate-stats-col candidate-stats-value-col">Да</div>
+							</div>
+							<div class="candidate-stats-row clearfix">
+								<div class="candidate-stats-col candidate-stats-name-col">Оформление</div>
+								<div class="candidate-stats-col candidate-stats-value-col">По договору</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="candidate-profile-side-col">
+					<div class="candidate-profile-btn-block">
+						<a href="#" class="default-btn default-btn-green candidate-proposal-vacancy-btn">Предложить вакансию</a>
+					</div>
+					<div class="candidate-profile-comment-block">
+						<div class="candidate-profile-comment-block-title">Ваш комментарий</div>
+						<div class="candidate-profile-comment-block-notes">(виден только вам)</div>
+						<a href="#" class="candidate-profile-comment-add">Добавить комментарий</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="candidate-description-content">
+				<div class="candidate-description-item">
+					<div class="candidate-description-item-title">Навыки и умения:</div>
+					<div class="candidate-description-item-text">
+						<p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности играет важную роль в формировании систем массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой</p>
+					</div>
+				</div>
+				<div class="candidate-description-item">
+					<div class="candidate-description-item-title">Какие работы выполи, на каких объектах работали:</div>
+					<div class="candidate-description-item-text">
+						<p>Товарищи! постоянное информационно-пропагандистское обеспечение нашей деятельности влечет за собой процесс внедрения и модернизации систем массового участия. Идейные соображения высшего порядка, а также начало повседневной работы по формированию позиции требуют от нас анализа направлений прогрессивного развития. Идейные соображения высшего порядка, а также дальнейшее развитие различных форм</p>
+					</div>
+				</div>
+				<div class="candidate-description-item">
+					<div class="candidate-description-item-title">Дополнительная информация:</div>
+					<div class="candidate-description-item-text">
+						<p>Не следует, однако забывать, что дальнейшее развитие различных форм деятельности играет важную роль в формировании систем массового участия. Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции представляет собой </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="response-vacancy-block">
+		<div class="wrapper">
+			<div class="response-candidates-block__title">Отклики на ваши вакансии</div>
+
+			<div class="response-candidates-list">
+				<div class="response-candidates-row response-candidates-title-row clearfix">
+					<div class="response-candidates-col response-candidates-col__date">Дата</div>
+					<div class="response-candidates-col response-candidates-col__vacancy-name">Название вакансии</div>
+					<div class="response-candidates-col response-candidates-col__status">Статус</div>
+					
+				</div>
+				<div class="response-candidates-row response-candidates-body-row clearfix">
+					<div class="response-candidates-col response-candidates-col__date">15.01.15</div>
+					<div class="response-candidates-col response-candidates-col__vacancy-name">
+						<a href="#">Требуются каменщики на строительство торгового центра</a>
+					</div>
+					<div class="response-candidates-col response-candidates-col__status">
+						<div class="response-candidate-action-list clearfix">
+							<div class="response-candidates-action-col">
+								<a href="#" class="default-btn default-btn-green default-btn-xs response-candidate-status-btn">Пригласить</a>
+							</div>
+							<div class="response-candidates-action-col">
+								<a href="#" class="default-btn default-btn-red default-btn-xs response-candidate-status-btn">Отказать</a>
+							</div>
+						</div>
+						<div class="response-candidate-action-notes">
+							Отказано, <a href="#">письмо</a>
+						</div>
+					</div>
+				</div>
+				<div class="response-candidates-row response-candidates-body-row clearfix">
+					<div class="response-candidates-col response-candidates-col__date">15.01.15</div>
+					<div class="response-candidates-col response-candidates-col__vacancy-name">
+						<a href="#">Требуются монолитчики</a>
+					</div>
+					<div class="response-candidates-col response-candidates-col__status">
+						<div class="response-candidate-action-list clearfix">
+							<div class="response-candidates-action-col">
+								<a href="#" class="default-btn default-btn-green default-btn-xs response-candidate-status-btn">Пригласить</a>
+							</div>
+							<div class="response-candidates-action-col">
+								<a href="#" class="default-btn default-btn-red default-btn-xs response-candidate-status-btn">Отказать</a>
+							</div>
+						</div>
+						<div class="response-candidate-action-notes">
+							Отказано, <a href="#">письмо</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="related-candidate-block">
+		<div class="wrapper">
+			<div class="related-candidate-block__title">Похожие кандидаты</div>
+			<div class="related-candidate-row clearfix">
+				<div class="related-candidate-col">
+					<div class="related-candidate-item">
+						<div class="related-candidate-item__name">
+							<a href="#" class="related-candidate-item__name-link">Миронов Владимир Иванович</a>
+						</div>
+						<div class="related-candidate-item__age">35 лет, Москва</div>
+						<div class="related-candidate-item__money-income">65 000 - 80 000 руб/мес.</div>
+						<div class="related-candidate-item__money-description">
+							<p>Выполнение всего спектра строительных работ, большой опыт работы. Умение работать на</p>
+						</div>
+					</div>
+				</div>
+				<div class="related-candidate-col">
+					<div class="related-candidate-item">
+						<div class="related-candidate-item__name">
+							<a href="#" class="related-candidate-item__name-link">Корсаков Павел Алексеевич</a>
+						</div>
+						<div class="related-candidate-item__age">35 лет, Москва</div>
+						<div class="related-candidate-item__money-income">65 000 - 80 000 руб/мес.</div>
+						<div class="related-candidate-item__money-description">
+							<p>Выполнение всего спектра строительных работ, большой опыт работы. Умение работать на</p>
+						</div>
+					</div>
+				</div>
+				<div class="related-candidate-col">
+					<div class="related-candidate-item">
+						<div class="related-candidate-item__name">
+							<a href="#" class="related-candidate-item__name-link">Константин Алексеевич Константинов</a>
+						</div>
+						<div class="related-candidate-item__age">35 лет, Москва</div>
+						<div class="related-candidate-item__money-income">65 000 - 80 000 руб/мес.</div>
+						<div class="related-candidate-item__money-description">
+							<p>Выполнение всего спектра строительных работ, большой опыт работы. Умение работать на</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="related-candidate-more-block">
+				<a href="#" class="default-btn default-btn-green related-candidate-vertical-btn default-btn-xs-full">Посмотреть всех кандидатов</a>
+			</div>
+		</div>
+	</div>
+	
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-left-col clearfix">
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Работодателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Прайс-лист</a></li>
+							<li><a href="#" class="footer-menu-link">Добавить вакансию</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Соискателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Разместить резюме</a></li>
+							<li><a href="#" class="footer-menu-link">Карта вакансий</a></li>
+							<li><a href="#" class="footer-menu-link">Комании</a></li>							
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Информация</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Защита персональных данных</a></li>
+							<li><a href="#" class="footer-menu-link">Новости и статьи</a></li>
+							<li><a href="#" class="footer-menu-link">Правила сайта</a></li>
+							<li><a href="#" class="footer-menu-link">Мобильная версия сайта</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer-right-col">				
+				<div class="footer-copyright">© 2014–2015 Gerist.ru</div>
+				<nav class="footer-right-col-menu">
+					<ul>
+						<li><a href="#">Реклама на сайте</a></li>
+						<li><a href="#">Наши контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer-social">
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-tw"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-vk"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-fb"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<a href="#" class="totop-btn"><i></i></a>
+
+<div id="auth-modal" class="auth-modal modal">
+	<div class="modal-title">Вход на сайт</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Ваш E-mail:</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Пароль</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="confirm-pass-form-row">
+			<a href="#" class="forgot-pass-btn">Забыли пароль?</a>
+		</div>
+		<div class="default-form-row">
+			<input type="submit" class="default-btn default-btn-green auth-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+	<div class="auth-modal-footer">
+		<p>Впервые на сайте?</p>
+		<a href="#" class="auth-modal-reg-link">Регистрация</a>
+	</div>
+</div>
+
+<div id="callback-modal" class="callback-modal modal">
+	<div class="modal-title">Мы вам перезвоним!</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Контактное лицо</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="modal-form-tel" class="default-form-label">Номер телефона</label>
+			<input type="text" name="name" id="modal-form-tel" class="default-form-input default-form-input-tel">
+		</div>
+		<div class="modal-submit-form-row">
+			<input type="submit" class="default-btn default-btn-green callback-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+</div>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

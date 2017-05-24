@@ -1,0 +1,396 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Gerist 7.one-news</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="layout">
+
+	<div class="header-adaptive-menu-wrap">
+		<a href="#" class="header-adaptive-menu-close"></a>
+		<nav class="header-adaptive-menu">
+			<ul>
+				<li><a href="#">Ищу работу</a></li>
+				<li><a href="#">Ищу мастеров</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Карта вакансий</a></li>
+				<li><a href="#">Кандидаты</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">На карте</a></li>
+				<li><a href="#">Компании</a></li>
+				<li><a href="#">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+			</ul>
+		</nav>
+	</div>
+	<header class="header">
+		<a href="#" class="header-menu-toggler visible-sm">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="header-top-row">
+			<div class="wrapper">
+				<div class="header-logo-col">
+					<a href="#"><img src="images/logo.png" alt="Все строительные вакансии и резюме - Gerist"></a>
+				</div>
+				<div class="header-location-col">
+					<div class="header-location-col-inner">
+						<div class="header-location-title">Ваш город</div>
+						<div class="header-location-select">
+							<a href="#" class="header-location-select-btn header-location-trigger"><span>Санкт-Петербург</span></a>
+							<div class="header-location-select-toggle">
+								<form action="/" class="header-location-search-form">
+									<div class="default-form-row">
+										<label for="" class="default-form-label">Начинайте вводить название:</label>
+										<div class="location-input-row">
+											<input type="text" name="city-location" class="default-form-input location-form-input">
+											<span class="header-location-clear-btn"></span>
+										</div>
+									</div>
+								</form>
+								<div class="header-location-result">
+									<ul>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Московская область</a></li>
+										<li><a href="#">Могилев</a></li>
+										<li><a href="#">Могилевская область</a></li>
+										<li><a href="#">Моготуй</a></li>
+										<li><a href="#">Можайск</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-cabinet-col">
+					<div class="header-cabinet-col-inner">
+						<div class="header-cabinet-title">Личный кабинет</div>
+						<div class="header-reg-auth-btns">
+							<a href="#auth-modal" class="header-auth-btn modal-trigger">Вход</a>
+							<a href="#" class="header-reg-btn">Регистрация</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-telephone-col">
+					<div class="header-telephone-title">
+						<a href="#callback-modal" class="header-callback-btn modal-trigger">Перезвонить?</a>
+					</div>
+					<div class="header-telephone-tel">
+						<a href="tel:88002000600">8 800 2000 600</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-row hidden-sm">
+			<div class="wrapper">
+				<a href="#" class="header-menu-toggler visible-md">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div class="header-bottom-menu-col">
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#">Ищу работу</a></li>
+							<li><a href="#">Ищу мастеров</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Карта вакансий</a></li>
+							<li><a href="#">Кандидаты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">На карте</a></li>
+							<li><a href="#">Компании</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-bottom-search-col">
+					<form action="index.php" class="header-search-form">
+						<input type="text" name="s" class="header-search-input" placeholder="Поиск">
+						<input type="submit" class="header-search-btn" value="">
+						<span class="header-search-trigger"></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="header-page-container">
+		<div class="wrapper">
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="#">Главная</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Соискателям</a></li>
+					<li class="breadcrumb-last-item"><span>Средние зарплаты строителей</span></li>
+				</ul>
+			</div>
+			<div class="page-title">
+				<h1>Средние зарплаты строителей</h1>
+			</div>		
+		</div>
+	</div>
+	
+	<div class="content-wrap">
+		<div class="wrapper">
+			<div class="content-col">
+				<article class="entry-content">
+					<div class="entry-content-img-block">
+						<img src="images/article-img-big.jpg" alt="article-img">
+					</div>
+					<p>Значимость этих проблем настолько очевидна, что дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Задача организации, в особенности же начало повседневной работы по формированию позиции позволяет выполнять важные задания по разработке модели развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности играет важную роль в формировании систем массового участия. Таким образом дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки систем массового участия.</p>
+					<p>Товарищи! новая модель организационной деятельности способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом влечет за собой процесс внедрения и модернизации дальнейших направлений развития. Товарищи! постоянный количественный рост и сфера нашей активности требуют от нас анализа системы обучения кадров, соответствует насущным потребностям. Значимость этих проблем настолько очевидна, что сложившаяся структура организации влечет за собой процесс внедрения и модернизации систем массового участия. С другой стороны постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании модели развития. Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки модели развития. Не следует, однако забывать, что начало повседневной</p>
+					<h2>Тенденции 2015 года</h2>
+					<p>Равным образом дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании форм развития. Разнообразный и богатый опыт новая модель организационной деятельности представляет собой интересный эксперимент проверки позиций, занимаемых участниками в отношении поставленных задач. Разнообразный и богатый опыт реализация намеченных плановых заданий влечет за собой процесс внедрения и модернизации систем массового участия. Таким образом дальнейшее развитие различных форм деятельности требуют определения и уточнения направлений прогрессивного развития.</p>
+					<p>Разнообразный и богатый опыт дальнейшее развитие различных форм деятельности представляет собой интересный эксперимент проверки модели развития. Не следует, однако забывать, что начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Равным образом рамки и место обучения кадров позволяет оценить значение</p>
+					<blockquote>С другой стороны укрепление и развитие структуры обеспечивает широкому кругу (специалистов) участие в формировании новых предложений.</blockquote>
+				</article>
+
+				<div class="entry-footer-meta clearfix">
+					<div class="entry-views-col">
+						<div class="entry-views-item">1150</div>
+					</div>
+					<div class="entry-soc-likes-col">
+						<div class="entry-soc-likes-item"><img src="images/fb-like-img.jpg"></div>
+						<div class="entry-soc-likes-item"><img src="images/vk-like-img.jpg"></div>
+					</div>
+				</div>
+
+				<div class="releated-block">
+					<div class="releated-block-title">Читайте также</div>
+					<div class="releated-post-row">
+						<div class="news-col news-col-6 news-horisontal-col">
+							<article class="news-post clearfix">
+								<figure class="news-post-thumb">
+									<a href="#"><img src="images/news-img1.jpg" alt="news"></a>
+								</figure>
+								<div class="news-post-text">
+									<h3><a href="#" class="news-post-link">Средние зарплаты строителей</a></h3>
+									<p>Если требуется бригада строителей для работы на Вашем объекте. У нас Вы можете найти бригаду.</p>
+								</div>
+							</article>
+						</div>
+						<div class="news-col news-col-6 news-horisontal-col">
+							<article class="news-post clearfix">
+								<figure class="news-post-thumb">
+									<a href="#"><img src="images/news-img1.jpg" alt="news"></a>
+								</figure>
+								<div class="news-post-text">
+									<h3><a href="#" class="news-post-link">Средние зарплаты строителей</a></h3>
+									<p>Если требуется бригада строителей для работы на Вашем объекте. У нас Вы можете найти бригаду.</p>
+								</div>
+							</article>
+						</div>
+						<div class="news-col news-col-6 news-horisontal-col">
+							<article class="news-post clearfix">
+								<figure class="news-post-thumb">
+									<a href="#"><img src="images/news-img1.jpg" alt="news"></a>
+								</figure>
+								<div class="news-post-text">
+									<h3><a href="#" class="news-post-link">Средние зарплаты строителей</a></h3>
+									<p>Если требуется бригада строителей для работы на Вашем объекте. У нас Вы можете найти бригаду.</p>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+				<!-- <div class="fixed-slide-block">
+					<div class="fixed-slider-block-title">Следующая статья</div>
+					<div class="news-horisontal-col">
+						<article class="news-post clearfix">
+							<figure class="news-post-thumb">
+								<a href="#"><img src="images/news-img1.jpg" alt="news"></a>
+							</figure>
+							<div class="news-post-text">
+								<h3><a href="#" class="news-post-link">Средние зарплаты строителей</a></h3>
+								<p>Если требуется бригада строителей для работы на Вашем объекте. У нас Вы можете найти бригаду.</p>
+							</div>
+						</article>
+					</div>
+				</div> -->
+			</div>
+			<aside class="sidebar-col">
+				<div class="sidebar-block">
+					<div class="sidebar-daily-vacancy-block">
+						<div class="sidebar-daily-vacancy-block-title">Вакансии дня</div>
+						<div class="sidebar-vacancy-list">
+							<div class="sidebar-vacancy-item">
+								<div class="sidebar-vacancy-item-title">
+									<a href="#" class="sidebar-daily-vacancy-link">Бригада монолитчиков</a>
+								</div>
+								<div class="sidebar-vacancy-item-price">50 000 - 60 000 руб/мес</div>
+								<div class="sidebar-vacancy-item-customer">
+									<a href="#" class="sidebar-vacancy-item-customer-link">ООО "СпецСтрой", г.Москва</a>
+								</div>
+							</div>
+							<div class="sidebar-vacancy-item">
+								<div class="sidebar-vacancy-item-title">
+									<a href="#" class="sidebar-daily-vacancy-link">Бригада монолитчиков</a>
+								</div>
+								<div class="sidebar-vacancy-item-price">50 000 - 60 000 руб/мес</div>
+								<div class="sidebar-vacancy-item-customer">
+									<a href="#" class="sidebar-vacancy-item-customer-link">ООО "СпецСтрой", г.Москва</a>
+								</div>
+							</div>
+							<div class="sidebar-vacancy-item">
+								<div class="sidebar-vacancy-item-title">
+									<a href="#" class="sidebar-daily-vacancy-link">Бригада монолитчиков</a>
+								</div>
+								<div class="sidebar-vacancy-item-price">50 000 - 60 000 руб/мес</div>
+								<div class="sidebar-vacancy-item-customer">
+									<a href="#" class="sidebar-vacancy-item-customer-link">ООО "СпецСтрой", г.Москва</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar-block">
+					<div class="sidebar-vertical-btn-block">
+						<div class="sidebar-vertical-btn-row">
+							<a href="#" class="default-btn default-btn-blue default-btn-sm default-btn-sm-full">Ищу работу</a>
+						</div>
+						<div class="sidebar-vertical-btn-row">
+							<a href="#" class="default-btn default-btn-green default-btn-sm default-btn-sm-full">Добавить вакансию</a>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar-block hidden-sm">
+					<div class="write-bid-block">
+						<div class="write-bid-question">Хотите быстро найти подрядчика?</div>
+						<div class="write-bid-title">Заполните заявку</div>
+						<div class="write-bid-btn-row">
+							<a href="#" class="default-btn default-btn-green default-btn-sm">Заполнить заявку</a>
+						</div>
+					</div>
+				</div>
+				<div class="sidebar-block">
+					<img src="images/vk-widget-img.png">
+				</div>
+				<div class="sidebar-block">
+					<img src="images/ok-widget-img.jpg">
+				</div>				
+			</aside>
+		</div>
+	</div>
+	
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-left-col clearfix">
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Работодателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Прайс-лист</a></li>
+							<li><a href="#" class="footer-menu-link">Добавить вакансию</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Соискателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Разместить резюме</a></li>
+							<li><a href="#" class="footer-menu-link">Карта вакансий</a></li>
+							<li><a href="#" class="footer-menu-link">Комании</a></li>							
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Информация</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Защита персональных данных</a></li>
+							<li><a href="#" class="footer-menu-link">Новости и статьи</a></li>
+							<li><a href="#" class="footer-menu-link">Правила сайта</a></li>
+							<li><a href="#" class="footer-menu-link">Мобильная версия сайта</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer-right-col">				
+				<div class="footer-copyright">© 2014–2015 Gerist.ru</div>
+				<nav class="footer-right-col-menu">
+					<ul>
+						<li><a href="#">Реклама на сайте</a></li>
+						<li><a href="#">Наши контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer-social">
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-tw"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-vk"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-fb"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<a href="#" class="totop-btn"><i></i></a>
+
+<div id="auth-modal" class="auth-modal modal">
+	<div class="modal-title">Вход на сайт</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Ваш E-mail:</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Пароль</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="confirm-pass-form-row">
+			<a href="#" class="forgot-pass-btn">Забыли пароль?</a>
+		</div>
+		<div class="default-form-row">
+			<input type="submit" class="default-btn default-btn-green auth-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+	<div class="auth-modal-footer">
+		<p>Впервые на сайте?</p>
+		<a href="#" class="auth-modal-reg-link">Регистрация</a>
+	</div>
+</div>
+
+<div id="callback-modal" class="callback-modal modal">
+	<div class="modal-title">Мы вам перезвоним!</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Контактное лицо</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="modal-form-tel" class="default-form-label">Номер телефона</label>
+			<input type="text" name="name" id="modal-form-tel" class="default-form-input default-form-input-tel">
+		</div>
+		<div class="modal-submit-form-row">
+			<input type="submit" class="default-btn default-btn-green callback-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+</div>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>

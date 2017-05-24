@@ -1,0 +1,435 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Gerist 16.Vacancy</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="layout">
+
+	<div class="header-adaptive-menu-wrap">
+		<a href="#" class="header-adaptive-menu-close"></a>
+		<nav class="header-adaptive-menu">
+			<ul>
+				<li><a href="#">Ищу работу</a></li>
+				<li><a href="#">Ищу мастеров</a></li>
+				<li><a href="#">Вакансии</a></li>
+				<li><a href="#">Карта вакансий</a></li>
+				<li><a href="#">Кандидаты</a></li>
+				<li><a href="#">Новости</a></li>
+				<li><a href="#">На карте</a></li>
+				<li><a href="#">Компании</a></li>
+				<li><a href="#">Вход</a></li>
+				<li><a href="#">Регистрация</a></li>
+			</ul>
+		</nav>
+	</div>
+	<header class="header">
+		<a href="#" class="header-menu-toggler visible-sm">
+			<span></span>
+			<span></span>
+			<span></span>
+		</a>
+		<div class="header-top-row">
+			<div class="wrapper">
+				<div class="header-logo-col">
+					<a href="#"><img src="images/logo.png" alt="Все строительные вакансии и резюме - Gerist"></a>
+				</div>
+				<div class="header-location-col">
+					<div class="header-location-col-inner">
+						<div class="header-location-title">Ваш город</div>
+						<div class="header-location-select">
+							<a href="#" class="header-location-select-btn header-location-trigger"><span>Санкт-Петербург</span></a>
+							<div class="header-location-select-toggle">
+								<form action="/" class="header-location-search-form">
+									<div class="default-form-row">
+										<label for="" class="default-form-label">Начинайте вводить название:</label>
+										<div class="location-input-row">
+											<input type="text" name="city-location" class="default-form-input location-form-input">
+											<span class="header-location-clear-btn"></span>
+										</div>
+									</div>
+								</form>
+								<div class="header-location-result">
+									<ul>
+										<li><a href="#">Москва</a></li>
+										<li><a href="#">Московская область</a></li>
+										<li><a href="#">Могилев</a></li>
+										<li><a href="#">Могилевская область</a></li>
+										<li><a href="#">Моготуй</a></li>
+										<li><a href="#">Можайск</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-cabinet-col">
+					<div class="header-cabinet-col-inner">
+						<div class="header-cabinet-title">Личный кабинет</div>
+						<div class="header-reg-auth-btns">
+							<a href="#auth-modal" class="header-auth-btn modal-trigger">Вход</a>
+							<a href="#" class="header-reg-btn">Регистрация</a>
+						</div>
+					</div>
+				</div>
+				<div class="header-telephone-col">
+					<div class="header-telephone-title">
+						<a href="#callback-modal" class="header-callback-btn modal-trigger">Перезвонить?</a>
+					</div>
+					<div class="header-telephone-tel">
+						<a href="tel:88002000600">8 800 2000 600</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom-row hidden-sm">
+			<div class="wrapper">
+				<a href="#" class="header-menu-toggler visible-md">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+				<div class="header-bottom-menu-col">
+					<nav class="header-menu">
+						<ul>
+							<li><a href="#">Ищу работу</a></li>
+							<li><a href="#">Ищу мастеров</a></li>
+							<li><a href="#">Вакансии</a></li>
+							<li><a href="#">Карта вакансий</a></li>
+							<li><a href="#">Кандидаты</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="#">На карте</a></li>
+							<li><a href="#">Компании</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header-bottom-search-col">
+					<form action="index.php" class="header-search-form">
+						<input type="text" name="s" class="header-search-input" placeholder="Поиск">
+						<input type="submit" class="header-search-btn" value="">
+						<span class="header-search-trigger"></span>
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<div class="header-page-container profile-header-page-container">
+		<div class="wrapper">
+			<a href="#" class="profile-menu-toggler visible-md">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<nav class="profile-menu">
+				<a href="#" class="profile-adaptive-menu-close"></a>
+				<ul>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-vacancy-link active">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Мои вакансии</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-candidates-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Кандидаты</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-workers-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Каталог исполнителей</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-balance-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Баланс</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-settings-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Настройки</span>
+						</a>
+					</li>
+					<li class="profile-menu-item">
+						<a href="#" class="profile-menu-link profile-menu-personaldata-link">
+							<span class="profile-menu-ico"></span>
+							<span class="profile-menu-text">Личные данные</span>
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="page-title">
+				<h1>Требуются монолитчики в количестве 5 чел. - <a href="#">1 кандидат</a></h1>
+			</div>		
+		</div>
+	</div>
+
+	<div class="vacancies-container">
+		<div class="profile-vacancy-single">
+			<div class="wrapper">
+				<div class="vacancy-action-links-row">
+					<ul>
+						<li class="vacancy-action-item"><a href="#" class="vacancy-action-link">Поднять</a></li>
+						<li class="vacancy-action-item"><a href="#" class="vacancy-action-link">Редактировать</a></li>
+						<li class="vacancy-action-item"><a href="#" class="vacancy-action-link">Разместить заново</a></li>
+						<li class="vacancy-action-item"><a href="#" class="vacancy-action-link">Закрыть и перенести в архив</a></li>
+					</ul>
+				</div>
+				<div class="profile-alert profile-vacancy-alert">Ваша вакансия на проверке и в скором времени будет опубликована/изменена</div>
+				<div class="vacancy-row clearfix">
+					<div class="vacancy-col vacancy-col-9">						
+						<div class="vacancy-requirements-list">
+							<div class="vacancy-requirements-list-inner">
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">Требуется</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">бригада</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">Требуемое количество человек</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">50</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">Гражданство</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">РФ, РБ</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">Разрешение на работу в РФ</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">требуется патент</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">Объем работ</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">20 000 м3</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">Выплата зарплаты</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">2 раза в месяц</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">Начало работ</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">23 марта 2016 года</div>
+								</div>
+							</div>
+						</div>
+						<div class="vacancy-requirements-list">
+							<div class="vacancy-requirements-title">Требования:</div>
+							<div class="vacancy-requirements-list-inner">
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">1. Гражданство</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">РФ, РБ, Украина</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">2. Разрешение на работу в РФ</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">Требуется патент</div>
+								</div>
+							</div>
+						</div>
+						<div class="vacancy-requirements-list">
+							<div class="vacancy-requirements-title">Условия работы:</div>
+							<div class="vacancy-requirements-list-inner">
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">1. Заработная плата</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">50 000 - 80 000 руб./мес</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">2. Выплата заработной платы</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">Два раза в месяц</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">3. Оформление</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">По договору</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">4. Образование</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">Строительное</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">5. График работы</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">Полный рабочий день</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">3. Проживание</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">Предоставляется</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">4. Питание</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">Организовано</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">5. Спецодежда</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">Предоставляется</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">6. Инструменты</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">Предоставляются</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">7. Расходные материалы</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">Предоставляются</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">9. Авансирование</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">Предусмотрено</div>
+								</div>
+								<div class="vacancy-requirement-row">
+									<div class="vacancy-requirement-col vacancy-requirement-col-title">10. Продолжительность работ</div>
+									<div class="vacancy-requirement-col vacancy-requirement-col-value">2 месяца</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="vacancy-col vacancy-date-col vacancy-col-3">
+						<div class="vacancy-datetime-row start-vacancy-datetime-row">
+							<div class="vacancy-datetime-title">Дата размещения</div>
+							<div class="vacancy-date">19 августа 2015</div>
+							<div class="vacancy-time">15:32</div>
+						</div>
+						<div class="vacancy-datetime-row end-vacancy-datetime-row">
+							<div class="vacancy-datetime-title">Срок размещения истекает:</div>
+							<div class="vacancy-date">19 августа 2015</div>
+							<div class="vacancy-time">15:32</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="vacancy-action-buttons-row clearfix">
+					<div class="vacancy-action-button-col">
+						<a href="#" class="default-btn default-btn-yellow default-btn-md up-vacancy-btn"><i class="button-up-ico"></i>Поднять</a>
+					</div>
+					<div class="vacancy-action-button-col">
+						<a href="#" class="default-btn default-btn-blue default-btn-md">Редактировать</a>
+					</div>
+					<div class="vacancy-action-button-col">
+						<a href="#" class="default-btn default-btn-red default-btn-md">Разместить заново</a>
+					</div>
+				</div>
+
+			</div>
+		</div>				
+	</div>
+	
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-left-col clearfix">
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Работодателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Прайс-лист</a></li>
+							<li><a href="#" class="footer-menu-link">Добавить вакансию</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Соискателям</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Разместить резюме</a></li>
+							<li><a href="#" class="footer-menu-link">Карта вакансий</a></li>
+							<li><a href="#" class="footer-menu-link">Комании</a></li>							
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-menu-col">
+					<div class="footer-menu-title">Информация</div>
+					<nav class="footer-menu">
+						<ul>
+							<li><a href="#" class="footer-menu-link">Защита персональных данных</a></li>
+							<li><a href="#" class="footer-menu-link">Новости и статьи</a></li>
+							<li><a href="#" class="footer-menu-link">Правила сайта</a></li>
+							<li><a href="#" class="footer-menu-link">Мобильная версия сайта</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="footer-right-col">				
+				<div class="footer-copyright">© 2014–2015 Gerist.ru</div>
+				<nav class="footer-right-col-menu">
+					<ul>
+						<li><a href="#">Реклама на сайте</a></li>
+						<li><a href="#">Наши контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer-social">
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-tw"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-vk"></a>
+					</div>
+					<div class="footer-social-col">
+						<a href="#" class="footer-social-link footer-social-link-fb"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<a href="#" class="totop-btn"><i></i></a>
+
+<div id="auth-modal" class="auth-modal modal">
+	<div class="modal-title">Вход на сайт</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Ваш E-mail:</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Пароль</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="confirm-pass-form-row">
+			<a href="#" class="forgot-pass-btn">Забыли пароль?</a>
+		</div>
+		<div class="default-form-row">
+			<input type="submit" class="default-btn default-btn-green auth-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+	<div class="auth-modal-footer">
+		<p>Впервые на сайте?</p>
+		<a href="#" class="auth-modal-reg-link">Регистрация</a>
+	</div>
+</div>
+
+<div id="callback-modal" class="callback-modal modal">
+	<div class="modal-title">Мы вам перезвоним!</div>
+	<form class="modal-form">
+		<div class="default-form-row">
+			<label for="" class="default-form-label">Контактное лицо</label>
+			<input type="text" name="name" class="default-form-input">
+		</div>
+		<div class="default-form-row">
+			<label for="modal-form-tel" class="default-form-label">Номер телефона</label>
+			<input type="text" name="name" id="modal-form-tel" class="default-form-input default-form-input-tel">
+		</div>
+		<div class="modal-submit-form-row">
+			<input type="submit" class="default-btn default-btn-green callback-modal-submit-btn" value="Отправить">
+		</div>
+	</form>
+</div>
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
