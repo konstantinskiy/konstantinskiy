@@ -25,9 +25,9 @@ $(document).ready(function(){
             0: {
                 nav: false,
             },
-            767: {
-                nav: false,
-            }
+            768: {
+                nav: true,
+            },
         }   
     });
 
