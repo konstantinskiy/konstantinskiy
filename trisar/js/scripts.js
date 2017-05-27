@@ -3,35 +3,77 @@ $(document).ready(function(){
 
     // Adaptive menu toggle
 
-    $('.header-menu-toggler').on('click', function(e){
+    $('.adaptive-menu-toggler').on('click', function(e){
         e.preventDefault();
-        $('.header-adaptive-menu-wrap').addClass('open');
+        $('.adaptive-menu-container').addClass('open');
     });
     
-    $('.header-adaptive-menu-close').on('click', function(e){
+    $('.adaptive-menu-close').on('click', function(e){
         e.preventDefault();
-        $('.header-adaptive-menu-wrap').removeClass('open');
+        $('.adaptive-menu-container').removeClass('open');
     });
 
 
-    // Owl carousel
+    // Owl carousels
+
+    $('.main-slider').owlCarousel({
+        loop: true,
+        items: 1,
+        nav: true, 
+        dots: true,   
+        responsive:{            
+            0: {
+                nav: false,
+            },
+            767: {
+                nav: false,
+            }
+        }   
+    });
 
     $('.popular-slider').owlCarousel({
         loop: true,
         items: 4,
-        nav: true,       
-        //navText: ["<i class='slider-arrow-left-ico'></i>", "<i class='slider-arrow-right-ico'></i>"],
+        nav: true,  
+        dots: false,     
+        responsive:{
+            0: {
+                items: 1,
+            },
+            767: {
+                items: 2,
+            },
+            1000: {
+                items: 3,
+            },
+            1200: {
+                items: 4,
+            }
+        }
     }); 
 
     $('.faq-slider').owlCarousel({
         loop: true,
         items: 1,
-        nav: true,       
-        //navText: ["<i class='slider-arrow-left-ico'></i>", "<i class='slider-arrow-right-ico'></i>"],
+        nav: true,
+        dots: false,        
     }); 
 
+    $('.best-proposal-slider').owlCarousel({
+        loop: true,
+        items: 1,
+    });
+
+
+    // Basket toggler
+
+    $('.header-basket-ico').on('click', function(e){
+        e.preventDefault();
+        $('.header-basket-content').toggleClass('active');
+    });
+
       
-    // Yandex maps: vacancy map
+    // Yandex map
 
     if($('#contacts-map').length > 0){
         var myMap;
