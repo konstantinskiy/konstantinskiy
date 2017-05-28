@@ -8,6 +8,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -41,15 +42,7 @@
 			</div>
 			<div class="adaptive-header-right-col">
 				<div class="adaptive-header-tel-block">
-					<div class="adaptive-header-tel-ico"></div>
-					<div class="adaptive-header-tel-content">
-						<div class="adaptive-header-tel">
-							<a href="tel:+7(495) 980-10-50" class="adaptive-header-tel__link">+7(495) 980-10-50</a>
-						</div>
-						<div class="adaptive-header-tel">
-							<a href="tel:+7(925) 544-79-11" class="adaptive-header-tel__link">+7(925) 544-79-11</a>
-						</div>
-					</div>
+					<a class="adaptive-header-tel-ico" href="tel:+7(495) 980-10-50"></a>
 				</div>
 				<div class="adaptive-header-basket-block">
 					<a href="#" class="adaptive-header-basket-ico">
@@ -82,7 +75,7 @@
 				</div>
 				<div class="header-contacts-col">
 					<div class="header-address-text">г. Москва, Береговой проезд <br /> дом 3, строение 3, офис 9</div>
-					<div class="header-email">e-mail: <a href="mailto:trisar@trisar2008.ru" class="header-email-link">trisar@trisar2008.ru</a></div>
+					<div class="header-email">e-mail: <a href="#callback-modal" class="header-email-link modal-trigger">trisar@trisar2008.ru</a></div>
 				</div>
 
 				<div class="header-basket-col">
@@ -132,7 +125,7 @@
 								<div class="main-slider-title">Футболки</div>
 								<div class="main-slider-description">по суперценам</div>
 								<div class="main-slider-btn-block">
-									<a href="#" class="main-slider-btn">Узнать подробности<i></i></a>
+									<a href="#" class="main-slider-btn">Узнать подробности</a>
 								</div>
 							</div>
 						</div>
@@ -148,7 +141,7 @@
 								<div class="main-slider-title">Толстовки</div>
 								<div class="main-slider-description">по суперценам</div>
 								<div class="main-slider-btn-block">
-									<a href="#" class="main-slider-btn">Узнать подробности<i></i></a>
+									<a href="#" class="main-slider-btn">Узнать подробности</a>
 								</div>
 							</div>
 						</div>
@@ -167,7 +160,7 @@
 					<div class="category-item">
 						<div class="category-item__image">
 							<div class="category-item__image-valign">
-								<img src="images/category-1.jpg" class="Футболки детские">
+								<img src="images/category-1.png" class="Футболки детские">
 							</div>
 						</div>
 						<div class="category-item__title">
@@ -179,7 +172,7 @@
 					<div class="category-item category-item--active">
 						<div class="category-item__image">
 							<div class="category-item__image-valign">
-								<img src="images/category-2.jpg" class="Футболки мужские">
+								<img src="images/category-2.png" class="Футболки мужские">
 							</div>
 						</div>
 						<div class="category-item__title">
@@ -191,7 +184,7 @@
 					<div class="category-item">
 						<div class="category-item__image">
 							<div class="category-item__image-valign">
-								<img src="images/category-3.jpg" class="Футболки мужские">
+								<img src="images/category-3.png" class="Футболки мужские">
 							</div>
 						</div>
 						<div class="category-item__title">
@@ -203,7 +196,7 @@
 					<div class="category-item">
 						<div class="category-item__image">
 							<div class="category-item__image-valign">
-								<img src="images/category-4.jpg" class="Толстовки">
+								<img src="images/category-4.png" class="Толстовки">
 							</div>
 						</div>
 						<div class="category-item__title">
@@ -215,7 +208,7 @@
 					<div class="category-item">
 						<div class="category-item__image">
 							<div class="category-item__image-valign">
-								<img src="images/category-5.jpg" class="Мужские поло">
+								<img src="images/category-5.png" class="Мужские поло">
 							</div>
 						</div>
 						<div class="category-item__title">
@@ -227,7 +220,7 @@
 					<div class="category-item">
 						<div class="category-item__image">
 							<div class="category-item__image-valign">
-								<img src="images/category-6.jpg" class="Женское поло">
+								<img src="images/category-6.png" class="Женское поло">
 							</div>
 						</div>
 						<div class="category-item__title">
@@ -239,7 +232,7 @@
 					<div class="category-item">
 						<div class="category-item__image">
 							<div class="category-item__image-valign">
-								<img src="images/category-7.jpg" class="Бейсболки">
+								<img src="images/category-7.png" class="Бейсболки">
 							</div>
 						</div>
 						<div class="category-item__title">
@@ -647,8 +640,32 @@
 		
 </div>
 
+
+<div id="callback-modal" class="modal">
+	<div class="modal-title">Обратный звонок</div>
+	<form action="" class="modal-form">
+		<div class="form-row">
+			<input type="text" name="name" class="form-input" placeholder="Введите ваше имя">
+		</div>
+		<div class="form-row">
+			<input type="text" name="name" class="form-input" placeholder="Введите имя">
+		</div>
+		<div class="form-row">
+			<input type="text" name="email" class="form-input form-input-error" placeholder="Введите email">
+		</div>
+		<div class="form-row">
+			<input type="text" name="tel" class="form-input form-input-tel" placeholder="Введите телефон">
+		</div>
+		<div class="form-row">
+			<input type="submit" class="form-submit" value="Отправить">
+		</div>
+	</form>
+</div>
+
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/scripts.js"></script>
 
