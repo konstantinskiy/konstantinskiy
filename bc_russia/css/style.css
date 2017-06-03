@@ -528,27 +528,6 @@ Arenda container
 .arenda-slider-block.active{
 	display: block;
 }
-.arenda-sliders-container{
-	position: relative;
-}
-.arenda-preloader{
-	background: #fff;
-	width: 100%;
-	height: 100%;
-	display: none;
-	position: absolute;	
-	z-index: 99999;
-}
-.arenda-preloader:before{
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	content: "";
-	width: 100px;
-	height: 100px;
-	background: #00b1e4;
-	margin: -50px 0 0 -50px;
-}
 .arenda-slider{
 	padding: 0 180px;
 }
@@ -1486,7 +1465,7 @@ Adaptive styles
 
 
 	.advantage-heading{
-		padding: 0 15px 25px 15px;
+		padding: 25px 15px;
 	}
 	.advantage-col-4,
 	.advantage-col-8{
@@ -1570,9 +1549,20 @@ Adaptive styles
 	
 
 	.main-slider-item{
-		height: 600px;
+		height: 500px;
+	}
+	
+
+	.page-title h1{
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0;
 	}
 
+
+	.contacts-page-content p{
+		line-height: 21px;
+	}
 
 
 
@@ -1584,6 +1574,15 @@ Adaptive styles
 	}
 	.arenda-filter-btn{
 		width: 100%;
+	}
+	.arenda-block-title,
+	.advantage-heading__title,
+	.arendator-block-title,
+	.advert-block-title,
+	.question-block-title{
+		font-size: 18px;
+		line-height: 24px;
+		letter-spacing: 0;
 	}
 
 
@@ -1631,8 +1630,12 @@ Adaptive styles
 
 
 
-	.about-page-container{
+	.about-page-container,
+	.advert-page-container{
 		padding: 50px 0;
+	}
+	.contacts-page-container{
+		padding: 30px 0 0 0;
 	}
 	.about-page-title{
 		margin: 0 0 30px 0;
@@ -1658,8 +1661,8 @@ Adaptive styles
 	.main-slider-item__title{
 		margin: 0 0 20px 0;
 		padding: 0 0 25px 0;
-		font-size: 24px;
-		line-height: 30px;
+		font-size: 20px;
+		line-height: 26px;
 	}
 	.main-slider-item__description{
 		margin: 0 0 30px 0;
@@ -1721,9 +1724,18 @@ Adaptive styles
 	}
 
 
+	
 
 	.arendator-col{
 		width: 100%;
+	}
+	.arenda-btn-block{
+		margin: 50px 15px;
+	}
+	.arenda-btn{
+		width: 100%;
+		padding: 10px;
+		font-size: 14px;
 	}
 
 }
