@@ -1748,6 +1748,14 @@ Adaptive styles
 	}
 	
 	
+
+	.advert-menu__item{
+		margin: 0 0 10px 0;
+		width: 100%;
+	}
+	.advert-menu__item:last-child{
+		margin: 0;
+	}
 	.advert-content{
 		padding: 30px 0 0 0;
 	}
@@ -1758,9 +1766,14 @@ Adaptive styles
 		display: none;
 	}
 	.advert-table-body-row{
-		margin: 0 0 10px 0;
-		padding: 0 0 10px 0;
+		margin: 0 0 15px 0;
+		padding: 0 0 15px 0;
 		border-bottom: 2px solid #b2e7f7;
+	}
+	.advert-table-body-row:last-child{
+		margin: 0;
+		padding: 0;
+		border: none;
 	}
 	.advert-table-col{
 		display: block;
@@ -1768,12 +1781,14 @@ Adaptive styles
 	.advert-table-col-type,
 	.advert-table-col-place{
 		width: 100%;
+		margin: 0 0 3px 0;
 		padding: 0;
 	}
 	.advert-table-col-price{
 		width: 100%;
 		text-align: left;
 	}
+
 
 
 
