@@ -1150,12 +1150,113 @@ Advert page container
 	font-size: 12px;
 	line-height: 21px;
 }
-
-
-
-
-
-
+.advert-sort-menu-block{
+	padding: 35px 0;
+	background: #dff6fd;
+}
+.advert-menu{
+	text-align: center;
+	font-size: 0;
+}
+.advert-menu__item{
+	display: inline-block;
+	margin: 0 12px;
+}
+.advert-menu__item-link{
+	display: block;
+	padding: 15px 25px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	font-family: 'avenirnextcyr_bold', sans-serif;
+	color: #83b9c9;
+	font-size: 17px;
+	line-height: 19px;
+	text-transform: uppercase;
+}
+.advert-menu__item-link--active,
+.advert-menu__item-link:hover{
+	background: #4290a9;
+	color: #fff;	
+}
+.advert-content{
+	padding: 65px 0 0 0;
+}
+.advert-content__item{
+	display: none;
+}
+.advert-content__item--active{
+	display: block;
+}
+.advert-content__item p{
+	color: #474747;
+	font-size: 12px;
+	line-height: 18px;
+}
+.advert-content-table{
+	margin: 65px 0 0 0;
+}
+.advert-table-title-row,
+.advert-table-body-row{
+	font-size: 0;
+}
+.advert-table-title-row{
+	margin: 0 0 30px 0;
+	padding: 0 0 25px 0;
+	border-bottom: 3px solid #b2e7f7;
+}
+.advert-table-body-row{
+	margin: 0 0 10px 0;
+}
+.advert-table-body-row:last-child{
+	margin: 0;
+}
+.advert-table-title-col{
+	display: inline-block;
+	vertical-align: middle;
+	font-family: 'avenirnextcyr_bold', sans-serif;
+	color: #4290a9;
+	font-size: 15px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.advert-table-col{
+	display: inline-block;
+	vertical-align: bottom;
+}
+.advert-table-title-col-type,
+.advert-table-col-type{
+	width: 40%;
+	padding: 0 10px 0 0;
+}
+.advert-table-title-col-place,
+.advert-table-col-place{
+	width: 40%;
+	padding: 0 10px 0 0;
+}
+.advert-table-title-col-price,
+.advert-table-col-price{
+	width: 20%;
+	text-align: right;
+}
+.advert-table-col-type{
+	color: #474747;
+	font-size: 14px;
+	line-height: 18px;
+}
+.advert-table-col-place{
+	color: #474747;
+	font-size: 11px;
+	line-height: 18px;
+}
+.advert-table-col-price{
+	font-family: 'avenirnextcyr_bold', sans-serif;
+	color: #474747;
+	font-size: 16px;
+	line-height: 18px;
+}
 
 /*----------------------------------------------------------------
 Footer
@@ -1645,7 +1746,34 @@ Adaptive styles
 		line-height: 26px;
 		letter-spacing: 0;
 	}
-
+	
+	
+	.advert-content{
+		padding: 30px 0 0 0;
+	}
+	.advert-content-table{
+		margin: 30px 0 0 0;
+	}
+	.advert-table-title-row{
+		display: none;
+	}
+	.advert-table-body-row{
+		margin: 0 0 10px 0;
+		padding: 0 0 10px 0;
+		border-bottom: 2px solid #b2e7f7;
+	}
+	.advert-table-col{
+		display: block;
+	}
+	.advert-table-col-type,
+	.advert-table-col-place{
+		width: 100%;
+		padding: 0;
+	}
+	.advert-table-col-price{
+		width: 100%;
+		text-align: left;
+	}
 
 
 
@@ -1725,8 +1853,12 @@ Adaptive styles
 
 
 	
+	
 
 	.arendator-col{
+		width: 100%;
+	}
+	.arenda-filter-col{
 		width: 100%;
 	}
 	.arenda-btn-block{

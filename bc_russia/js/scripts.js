@@ -63,6 +63,8 @@ $(document).ready(function(){
     }); 
 
 
+    // Arenda proposal tab 
+
     $('.arenda-filter-btn').on('click', function(e){
         e.preventDefault();
 
@@ -73,6 +75,21 @@ $(document).ready(function(){
         $(blockId).addClass('active');      
         
     });
+
+
+    // Arenda proposal tab
+    $('.advert-menu__item-link').on('click', function(e){
+        e.preventDefault();
+
+        $('.advert-menu__item-link.advert-menu__item-link--active').removeClass('advert-menu__item-link--active');
+        $(this).addClass('advert-menu__item-link--active');
+        var blockId = $(this).attr('href');
+        $('.advert-content__item.advert-content__item--active').removeClass('advert-content__item--active');
+        $(blockId).addClass('advert-content__item--active');      
+        
+    });
+
+    
 
 
     // Google map
