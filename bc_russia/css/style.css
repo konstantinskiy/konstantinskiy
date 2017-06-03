@@ -1056,19 +1056,15 @@ Question container
 }
 
 /*----------------------------------------------------------------
-About page container
+Page title
 ----------------------------------------------------------------*/
 
-.about-page-container{
-	padding: 150px 0 115px 0;
-	background: #dff6fd;
-}
-.about-page-title{
+.page-title{
 	position: relative;
-	margin: 0 0 60px 0;
-	padding: 0 0 25px 0;
+	margin: 0 0 40px 0;
+	padding: 0 0 30px 0;
 }
-.about-page-title:after{
+.page-title:after{
 	position: absolute;
 	left: 50%;
 	bottom: 0;
@@ -1078,7 +1074,7 @@ About page container
 	height: 3px;
 	margin: 0 0 0 -81px;
 }
-.about-page-title h1{
+.page-title h1{
 	font-family: 'avenirnextcyr_bold', sans-serif;
 	color: #4290a9;
 	font-size: 24px;
@@ -1087,11 +1083,95 @@ About page container
 	letter-spacing: 4px;
 	text-transform: uppercase;
 }
+
+/*----------------------------------------------------------------
+About page container
+----------------------------------------------------------------*/
+
+.about-page-container{
+	padding: 150px 0 115px 0;
+	background: #dff6fd;
+}
 .about-page-content p{
 	color: #737373;
 	font-size: 12px;
 	line-height: 21px;
 }
+
+/*----------------------------------------------------------------
+Contacts page container
+----------------------------------------------------------------*/
+
+.contacts-page-container{
+	padding: 85px 0 0 0;
+}
+.contacts-page-title{
+	position: relative;
+	margin: 0 0 30px 0;
+	padding: 0 0 25px 0;
+}
+.contacts-page-title:after{
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	content: "";
+	background: rgba(0, 177, 228, 0.3);
+	width: 162px;
+	height: 3px;
+	margin: 0 0 0 -81px;
+}
+.contacts-page-title h1{
+	font-family: 'avenirnextcyr_bold', sans-serif;
+	color: #4290a9;
+	font-size: 24px;
+	line-height: 30px;
+	text-align: center;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+}
+.contacts-page-content p{
+	color: #4290a9;
+	font-size: 12px;
+	line-height: 30px;
+}
+.contacts-page__contacts-list{
+	margin: 70px 0 0 0;
+	text-align: center;
+}
+.contacts-page-address{
+	color: #404040;
+	font-size: 21px;
+	line-height: 30px;
+}
+.contacts-page-tel-link{
+	font-family: 'avenirnextcyr_bold', sans-serif;
+	color: #646464;
+	font-size: 21px;
+	line-height: 30px;
+}
+.contacts-page-email-link{
+	color: #0064ab;
+	font-size: 21px;
+	line-height: 30px;
+	text-decoration: underline;
+}
+.contacts-page-email-link:hover{
+	text-decoration: none;
+}
+
+/*----------------------------------------------------------------
+Advert page container
+----------------------------------------------------------------*/
+
+.advert-page-container{
+	padding: 120px 0 90px 0;
+}
+.advert-page-content p{
+	color: #737373;
+	font-size: 12px;
+	line-height: 21px;
+}
+
 
 
 
@@ -1562,6 +1642,8 @@ Adaptive styles
 		line-height: 26px;
 		letter-spacing: 0;
 	}
+
+
 
 
 
