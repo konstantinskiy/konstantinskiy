@@ -739,7 +739,9 @@ Advantage container
 	left: 0;
 	top: 0;
 	content: "";
-	width: 100%;
+    width: 100%;
+    height: 18px;
+    background: url(../images/i/diagonal-line.png) repeat-x;
 }
 .advantage-item--transport{
 	background: #80ffb3;
