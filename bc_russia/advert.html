@@ -39,7 +39,7 @@
 			<a href="#"><img src="images/logo.png" alt="Бизнес центр Россия"></a>
 		</div>
 		<div class="adaptive-header-right-col">
-			<a href="#callback-modal" class="header-callback-btn modal-trigger"></a>
+			<a href="#callback-modal" class="header-callback-btn order-rend-modal-trigger"></a>
 		</div>				
 	</div>
 
@@ -74,7 +74,7 @@
 				</div>
 			</div>
 			<div class="header-callback-col">
-				<a href="#callback-modal" class="header-callback-btn modal-trigger">Оставить завявку на аренду</a>
+				<a href="#callback-modal" class="header-callback-btn order-rend-modal-trigger">Оставить завявку на аренду</a>
 			</div>
 		</div>
 	</header>
@@ -350,19 +350,31 @@
 				<input type="text" name="tel" class="modal-form-input form-input-tel" placeholder="Телефон">
 			</div>
 			<div class="modal-form-col-6">
-				<input type="text" name="email" class="modal-form-input" placeholder="E-mail">
+				<input type="text" name="email" class="modal-form-input modal-form-input-error" placeholder="E-mail">
 			</div>
 		</div>
-		<div class="modal-form-row">
-			<div class="modal-form-col-12">
+		<div class="modal-form-row clearfix">
+			<div class="modal-form-col-6">
 				<input type="text" name="square" class="modal-form-input" placeholder="Интересующая площадь">
 			</div>
 		</div>
-		<div class="modal-form-row">
-			<input type="text" name="square" class="modal-form-input" placeholder="Назначение">
+		<div class="modal-form-row clearfix">
+			<div class="modal-form-col-6">
+				<input type="text" name="destination" class="modal-form-input" placeholder="Назначение">
+			</div>
 		</div>
-		<div class="modal-form-row">
-			<input type="submit" class="modal-form-submit" value="Отправить заявку">
+		<div class="modal-form-row clearfix">
+			<div class="modal-form-col-12">
+				<textarea name="text" class="modal-form-textarea" placeholder="отправить заявку"></textarea>
+			</div>
+		</div>
+		<div class="modal-form-submit-row">
+			<div class="modal-form-submit-col-6">
+				<input type="submit" class="modal-form-submit" value="Отправить заявку">
+			</div>
+			<div class="modal-form-submit-col-6 modal-form-submit-ico">
+				<img src="images/logo.png" alt="Бизнес-центр Россия">
+			</div>
 		</div>
 	</form>
 </div>

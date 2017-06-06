@@ -16,7 +16,10 @@ $(document).ready(function(){
 
     // Modal
 
-    $('.modal-trigger').fancybox();
+    $('.order-rend-modal-trigger').fancybox({
+        padding: 0,
+        wrapCSS : 'order-rend-wrap',
+    });
 
 
     // Gallery modal 
@@ -38,7 +41,7 @@ $(document).ready(function(){
         dots: true 
     });
 
-    $('.arenda-slider').owlCarousel({
+    $('.rent-slider').owlCarousel({
         loop: true,
         items: 4,
         nav: true,  
@@ -63,21 +66,31 @@ $(document).ready(function(){
     }); 
 
 
-    // Arenda proposal tab 
+    // Rent proposal tab 
 
-    $('.arenda-filter-btn').on('click', function(e){
+    $('.rent-filter-btn').on('click', function(e){
         e.preventDefault();
 
-        $('.arenda-filter-btn.arenda-filter-btn--active').removeClass('arenda-filter-btn--active');
-        $(this).addClass('arenda-filter-btn--active');
+        $('.rent-filter-btn.rent-filter-btn--active').removeClass('rent-filter-btn--active');
+        $(this).addClass('rent-filter-btn--active');
         var blockId = $(this).attr('href');
-        $('.arenda-slider-block.active').removeClass('active');
+        $('.rent-slider-block.active').removeClass('active');
         $(blockId).addClass('active');      
         
     });
 
 
+    // Rent check filter 
+
+    $('.rent-show-value-link').on('click', function(e){
+        e.preventDefault();
+        $('.rent-show-value-link.rent-show-value-link--active').removeClass('rent-show-value-link--active');
+        $(this).addClass('rent-show-value-link--active');
+    });
+
+
     // Arenda proposal tab
+
     $('.advert-menu__item-link').on('click', function(e){
         e.preventDefault();
 
@@ -89,9 +102,7 @@ $(document).ready(function(){
         
     });
 
-    
-
-
+  
     // Google map
 
     if($('#footer-map').length){
