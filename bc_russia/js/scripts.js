@@ -109,7 +109,7 @@ $(document).ready(function(){
         function initMap(){
             var myLatlng = new google.maps.LatLng(55.7257597, 37.6813138);
             var mapOptions = {
-                zoom: 16,
+                zoom: 17,
                 center: myLatlng,
                 scrollwheel: false,
                 styles:
@@ -349,8 +349,10 @@ $(document).ready(function(){
             }
             var map = new google.maps.Map(document.getElementById('footer-map'), mapOptions);
             var marker = new google.maps.Marker({
-                position: myLatlng,
-                map: map
+                //position: myLatlng,
+                position: {lat: 55.7257597, lng: 37.6813137},
+                map: map,
+                icon: 'images/i/map-marker-ico.png'
             });
         }
         google.maps.event.addDomListener(window, 'load', initMap);    
