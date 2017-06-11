@@ -76,7 +76,6 @@ $(document).ready(function(){
         var blockId = $(this).attr('href');
         $('.rent-slider-block.active').removeClass('active');
         $(blockId).addClass('active');      
-        
     });
 
 
@@ -99,11 +98,37 @@ $(document).ready(function(){
         var blockId = $(this).attr('href');
         $('.advert-content__item.advert-content__item--active').removeClass('advert-content__item--active');
         $(blockId).addClass('advert-content__item--active');      
-        
     });
 
+
+    /*--------------------------------------------------------------
+    Animate blocks
+    --------------------------------------------------------------*/
+
+    function animateItems(itemIdent, animation, timer, interval) {
+        var imagePos = itemIdent.offset().top,
+            windowHeight = $(window).height() * 0.85,
+            topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow + windowHeight) {
+            itemIdent.each(function () {
+                var anim_item = $(this);
+                setTimeout(function () {
+                    anim_item.addClass(animation);
+                }, timer);
+                timer = timer + interval;
+            })
+        }
+    }
+
+    if($(window).width() > 1000){
+        $(window).scroll(function () {
+            animateItems($('.infrastructure-metro-img-animate'), 'visible animated fadeInLeft', 150, 250);
+            animateItems($('.infrastructure-metro-text-animate'), 'visible animated fadeInRight', 150, 250);
+        });
+    }
+
   
-    // Google map
+    // Footer google map
 
     if($('#footer-map').length){
         function initMap(){
@@ -349,14 +374,12 @@ $(document).ready(function(){
             }
             var map = new google.maps.Map(document.getElementById('footer-map'), mapOptions);
             var marker = new google.maps.Marker({
-                //position: myLatlng,
-                position: {lat: 55.7257597, lng: 37.6813137},
+                position: myLatlng,
                 map: map,
                 icon: 'images/i/map-marker-ico.png'
             });
         }
         google.maps.event.addDomListener(window, 'load', initMap);    
     }   
-    
-    
+     
 });
