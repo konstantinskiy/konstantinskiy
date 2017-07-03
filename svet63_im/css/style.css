@@ -458,6 +458,7 @@ Header
 }
 .header-btn{
 	display: inline-block;
+	vertical-align: middle;
 	height: 30px;
 	padding: 0 16px;
 	-webkit-border-radius: 5px;
@@ -1308,7 +1309,7 @@ Products container
 	margin: -20px; 
 }
 .product-item{
-	margin: 20px;
+	margin: 20px 15px;
 	background: #fff;
 	padding: 25px 15px;
 	-webkit-border-radius: 5px;
@@ -1398,6 +1399,7 @@ Products container
 .product-item-fastbuy__btn,
 .product-item-fastsee__btn{
 	display: inline-block;
+	vertical-align: middle;
 	padding: 0 21px;
 	height: 30px;
 	width: 100%;
