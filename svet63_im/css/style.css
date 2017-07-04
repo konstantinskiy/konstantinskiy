@@ -2112,14 +2112,6 @@ Product container
 	line-height: 1;
 	font-weight: 400;
 }
-.product-row{
-	margin: 0 -15px;
-}
-.product-col{
-	float: left;
-	width: 50%;
-	padding: 0 15px;
-}
 .product-slider-thumbs{
 	float: left;
 	width: 25%;
