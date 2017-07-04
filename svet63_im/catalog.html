@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
     <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -256,11 +257,374 @@
 					<aside class="sidebar-left">
 						<div class="sidebar-filter">
 							<div class="sidebar-filter__title">Фильтр товаров</div>
+
+							<div class="sidebar-filter-item">	
+								<div class="sidebar-filter-content">
+									<div class="sidebar-filter-item__title">Стоимость</div>
+									<div class="sidebar-filter-item-body">
+										<div id="price-range-slider" class="price-range-slider"></div>
+										<div class="price-range-inputs-row clearfix">
+
+											<div class="price-input-col">
+												<div class="price-range-text-col">от</div>
+												<div class="price-input-inner">
+													<input type="text" id="min-price-input" class="price-input" value="">
+												</div>
+											</div>
+											<div class="price-input-col">
+												<div class="price-range-text-col">до</div>
+												<div class="price-input-inner">
+													<input type="text" id="max-price-input" class="price-input" value="">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sidebar-filter-item">	
+								<div class="sidebar-filter-content">
+									<div class="sidebar-filter-item__title">Стиль</div>
+									<div class="sidebar-filter-item-body">
+										<div class="scrolling-block">
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check1" type="checkbox" name="style" checked />
+	        									<label for="style-check1">арт-деко</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check2" type="checkbox" name="style"/>
+	        									<label for="style-check2">восточный</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check3" type="checkbox" name="style"/>
+	        									<label for="style-check3">замковый</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check4" type="checkbox" name="style"/>
+	        									<label for="style-check4">кантри</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check5" type="checkbox" name="style"/>
+	        									<label for="style-check5">классический</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check6" type="checkbox" name="style"/>
+	        									<label for="style-check6">лофт</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check7" type="checkbox" name="style"/>
+	        									<label for="style-check7">прованс</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check8" type="checkbox" name="style"/>
+	        									<label for="style-check8">арт-деко</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check9" type="checkbox" name="style"/>
+	        									<label for="style-check9">восточный</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check10" type="checkbox" name="style"/>
+	        									<label for="style-check10">замковый</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check11" type="checkbox" name="style"/>
+	        									<label for="style-check11">кантри</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check12" type="checkbox" name="style"/>
+	        									<label for="style-check12">классический</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check13" type="checkbox" name="style"/>
+	        									<label for="style-check13">лофт</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="style-check14" type="checkbox" name="style"/>
+	        									<label for="style-check14">прованс</label>		
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sidebar-filter-item">	
+								<div class="sidebar-filter-content">
+									<div class="sidebar-filter-item__title">Цвет</div>
+									<div class="sidebar-filter-item-body">
+										<div class="checkbox-row filter-checkbox">
+											<input id="color-check1" type="checkbox" name="color" checked />
+        									<label for="color-check1">арт-деко</label>		
+										</div>
+										<div class="checkbox-row filter-checkbox">
+											<input id="color-check2" type="checkbox" name="color"/>
+        									<label for="color-check2">восточный</label>		
+										</div>
+										<div class="checkbox-row filter-checkbox">
+											<input id="color-check3" type="checkbox" name="color"/>
+        									<label for="color-check3">замковый</label>		
+										</div>
+										<div class="checkbox-row filter-checkbox">
+											<input id="color-check4" type="checkbox" name="color"/>
+        									<label for="color-check4">бронзовый</label>		
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sidebar-filter-item">	
+								<div class="sidebar-filter-content">
+									<div class="sidebar-filter-item__title">Страна происхождения</div>
+									<div class="sidebar-filter-item-body">
+										<div class="checkbox-row filter-checkbox">
+											<input id="country-check1" type="checkbox" name="country" checked />
+        									<label for="country-check1">Россия</label>		
+										</div>
+										<div class="checkbox-row filter-checkbox">
+											<input id="country-check2" type="checkbox" name="country"/>
+        									<label for="country-check2">Украина</label>		
+										</div>
+										<div class="checkbox-row filter-checkbox">
+											<input id="country-check3" type="checkbox" name="country"/>
+        									<label for="country-check3">Польша</label>		
+										</div>
+										<div class="checkbox-row filter-checkbox">
+											<input id="country-check4" type="checkbox" name="country"/>
+        									<label for="country-check4">Чехия</label>		
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sidebar-filter-item">	
+								<div class="sidebar-filter-content">
+									<div class="sidebar-filter-item__title">Бренд</div>
+									<div class="sidebar-filter-item-body">
+										<div class="checkbox-row filter-checkbox">
+											<input id="brand-check1" type="checkbox" name="brand" checked />
+        									<label for="brand-check1">Бренд 1</label>		
+										</div>
+										<div class="checkbox-row filter-checkbox">
+											<input id="brand-check2" type="checkbox" name="brand" />
+        									<label for="brand-check2">Бренд 2</label>		
+										</div>
+										<div class="checkbox-row filter-checkbox">
+											<input id="brand-check3" type="checkbox" name="brand" />
+        									<label for="brand-check3">Бренд 2</label>		
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="sidebar-filter-item">
+								<div class="filter-btn-item">
+									<a href="#" class="filter-apply-btn">Показать результаты</a>
+								</div>
+								<div class="filter-btn-item">
+									<a href="#" class="filter-clear-btn">Очистить фильтр</a>
+								</div>
+							</div>
 						</div>
 					</aside>
 
 					<div class="content-container">
-						<h1 class="page-title">Корзина товаров</h1>	
+						<h1 class="page-title">Люстры</h1>	
+
+						<div class="catalog-description">
+							<p>Люстры подходят для всех типов потолков (обычных, натяжных, навесных)</p>
+						</div>
+
+						<div class="catalog-sort-container clearfix">
+							<div class="sort-left-col">
+								<div class="sort-title">Сортировать:</div>
+								<div class="soft-content-col">
+									<div class="sort-block">
+										
+									</div>
+								</div>
+							</div>
+							<div class="sort-right-col">
+								<div class="sort-title">Показать на странице:</div>
+							</div>
+						</div>
+
+						<div class="product-row clearfix">
+							<div class="product-col">
+								<div class="product-item">
+									<div class="product-item__name">
+										<a href="#" class="product-item__name-link">Подвесная люстра Arte Lamp Fisherman A5518LM-2-3AB</a>
+									</div>
+									<div class="product-item__country">Ideal Lux (Италия)</div>
+									<div class="product-item__image">
+										<div class="product-item-hover">
+											<div class="table-helper">
+												<div class="table-helper-vamiddle">
+													<div class="product-item-delivery">Бесплатная доставка</div>
+													<div class="product-item-fastbuy">
+														<a href="#" class="product-item-fastbuy__btn"><i></i>Купить в один клик</a>
+													</div>
+													<div class="product-item-fastsee">
+														<a href="#" class="product-item-fastsee__btn"><i></i>Быстрый просмотр</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="popular-item__image-valign">
+											<a href="#"><img src="images/products/product-img-1.jpg" alt="Подвесная люстра Arte Lamp Fisherman A5518LM-2-3AB"></a>
+										</div>
+									</div>				
+									<div class="product-item__footer">
+										<div class="product-item-stats-col">
+											<div class="product-instock">В наличии: 33 шт.</div>
+											<div class="product-price">20 310 <span class="product-price__currency">руб.</span></div>
+										</div>
+										<div class="product-item-basket-col">
+											<a href="#" class="product-basket-btn"><i></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-col">
+								<div class="product-item">
+									<div class="product-item__name">
+										<a href="#" class="product-item__name-link">Подвесная люстра Arte Lamp Fisherman A5518LM-2-3AB</a>
+									</div>
+									<div class="product-item__country">Ideal Lux (Италия)</div>
+									<div class="product-item__image">
+										<div class="product-item-hover">
+											<div class="table-helper">
+												<div class="table-helper-vamiddle">
+													<div class="product-item-delivery">Бесплатная доставка</div>
+													<div class="product-item-fastbuy">
+														<a href="#" class="product-item-fastbuy__btn"><i></i>Купить в один клик</a>
+													</div>
+													<div class="product-item-fastsee">
+														<a href="#" class="product-item-fastsee__btn"><i></i>Быстрый просмотр</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="popular-item__image-valign">
+											<a href="#"><img src="images/products/product-img-1.jpg" alt="Подвесная люстра Arte Lamp Fisherman A5518LM-2-3AB"></a>
+										</div>
+									</div>				
+									<div class="product-item__footer">
+										<div class="product-item-stats-col">
+											<div class="product-instock">В наличии: 33 шт.</div>
+											<div class="product-price">20 310 <span class="product-price__currency">руб.</span></div>
+										</div>
+										<div class="product-item-basket-col">
+											<a href="#" class="product-basket-btn"><i></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-col">
+								<div class="product-item">
+									<div class="product-item__name">
+										<a href="#" class="product-item__name-link">Подвесная люстра Arte Lamp Fisherman A5518LM-2-3AB</a>
+									</div>
+									<div class="product-item__country">Ideal Lux (Италия)</div>
+									<div class="product-item__image">
+										<div class="product-item-hover">
+											<div class="table-helper">
+												<div class="table-helper-vamiddle">
+													<div class="product-item-delivery">Бесплатная доставка</div>
+													<div class="product-item-fastbuy">
+														<a href="#" class="product-item-fastbuy__btn"><i></i>Купить в один клик</a>
+													</div>
+													<div class="product-item-fastsee">
+														<a href="#" class="product-item-fastsee__btn"><i></i>Быстрый просмотр</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="popular-item__image-valign">
+											<a href="#"><img src="images/products/product-img-1.jpg" alt="Подвесная люстра Arte Lamp Fisherman A5518LM-2-3AB"></a>
+										</div>
+									</div>				
+									<div class="product-item__footer">
+										<div class="product-item-stats-col">
+											<div class="product-instock">В наличии: 33 шт.</div>
+											<div class="product-price">20 310 <span class="product-price__currency">руб.</span></div>
+										</div>
+										<div class="product-item-basket-col">
+											<a href="#" class="product-basket-btn"><i></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-col">
+								<div class="product-item">
+									<div class="product-item__name">
+										<a href="#" class="product-item__name-link">Подвесная люстра Arte Lamp Fisherman A5518LM-2-3AB</a>
+									</div>
+									<div class="product-item__country">Ideal Lux (Италия)</div>
+									<div class="product-item__image">
+										<div class="product-item-hover">
+											<div class="table-helper">
+												<div class="table-helper-vamiddle">
+													<div class="product-item-delivery">Бесплатная доставка</div>
+													<div class="product-item-fastbuy">
+														<a href="#" class="product-item-fastbuy__btn"><i></i>Купить в один клик</a>
+													</div>
+													<div class="product-item-fastsee">
+														<a href="#" class="product-item-fastsee__btn"><i></i>Быстрый просмотр</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="popular-item__image-valign">
+											<a href="#"><img src="images/products/product-img-1.jpg" alt="Подвесная люстра Arte Lamp Fisherman A5518LM-2-3AB"></a>
+										</div>
+									</div>				
+									<div class="product-item__footer">
+										<div class="product-item-stats-col">
+											<div class="product-instock">В наличии: 33 шт.</div>
+											<div class="product-price">20 310 <span class="product-price__currency">руб.</span></div>
+										</div>
+										<div class="product-item-basket-col">
+											<a href="#" class="product-basket-btn"><i></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="product-col">
+								<div class="product-item">
+									<div class="product-item__name">
+										<a href="#" class="product-item__name-link">Подвесная люстра Arte Lamp Fisherman A5518LM-2-3AB</a>
+									</div>
+									<div class="product-item__country">Ideal Lux (Италия)</div>
+									<div class="product-item__image">
+										<div class="product-item-hover">
+											<div class="table-helper">
+												<div class="table-helper-vamiddle">
+													<div class="product-item-delivery">Бесплатная доставка</div>
+													<div class="product-item-fastbuy">
+														<a href="#" class="product-item-fastbuy__btn"><i></i>Купить в один клик</a>
+													</div>
+													<div class="product-item-fastsee">
+														<a href="#" class="product-item-fastsee__btn"><i></i>Быстрый просмотр</a>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="popular-item__image-valign">
+											<a href="#"><img src="images/products/product-img-1.jpg" alt="Подвесная люстра Arte Lamp Fisherman A5518LM-2-3AB"></a>
+										</div>
+									</div>				
+									<div class="product-item__footer">
+										<div class="product-item-stats-col">
+											<div class="product-instock">В наличии: 33 шт.</div>
+											<div class="product-price">20 310 <span class="product-price__currency">руб.</span></div>
+										</div>
+										<div class="product-item-basket-col">
+											<a href="#" class="product-basket-btn"><i></i>В корзину</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -422,6 +786,9 @@
 <script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/jquery.mb-comingsoon.min.js"></script>
 <script src="js/datepicker.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/wNumb.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/scripts.js"></script>
 

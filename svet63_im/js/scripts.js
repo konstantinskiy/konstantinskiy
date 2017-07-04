@@ -221,5 +221,137 @@ $(document).ready(function(){
         e.preventDefault();
         $(this).parents('.cart-table-row').remove();
     });   
+
+
+    // Add active class to filter first and second element if resolution > 767px
+
+    if($(window).width() > 767){
+        $('.sidebar-filter-content').eq(0).addClass('sidebar-filter-content--active');
+        $('.sidebar-filter-content').eq(1).addClass('sidebar-filter-content--active');
+        $('.sidebar-filter-content').eq(0).find('.sidebar-filter-item-body').css('display', 'block');    
+        $('.sidebar-filter-content').eq(1).find('.sidebar-filter-item-body').css('display', 'block');    
+    }
+
+
+    // Init scrolling block
+
+    if($('.scrolling-block').length > 0){
+        $('.scrolling-block').niceScroll({
+            cursorcolor: '#fd3f03',
+            background: '#ffded4',
+            cursorwidth: "4px",
+            cursorborder: "0", 
+        });
+    }    
+
+    
+    // Filter accordeon 
+
+    $('.sidebar-filter-item__title').on('click', function(e){
+        e.preventDefault();
+        if($(this).parent().hasClass('sidebar-filter-content--active')){
+            $(this).next().slideUp(function(){
+                if($(this).find('.scrolling-block')){
+                    $('.scrolling-block').getNiceScroll().resize();
+                }                
+            });
+            $(this).parent().removeClass('sidebar-filter-content--active');
+        }
+        else{
+            $(this).next().slideDown(function(){
+                $(".scrolling-block").getNiceScroll().resize();
+            });
+            $(this).parent().addClass('sidebar-filter-content--active');            
+        }
+    });
+
+
+    
+    
+
+
+    // Price range slider
+
+    var priceRangeSlider = document.getElementById('price-range-slider'),
+        minPrice = document.getElementById('min-price-input'),
+        maxPrice = document.getElementById('max-price-input'),
+        inputs = [minPrice, maxPrice]
+
+    noUiSlider.create(priceRangeSlider, {
+        start: [0, 10000],
+        connect: true,
+        tooltips: false,
+        step: 1,
+        format: wNumb({
+            decimals: 0
+        }),
+        range: {
+            'min': 0,
+            'max': 10000
+        }
+    });
+    priceRangeSlider.noUiSlider.on('update', function( values, handle ) {
+        inputs[handle].value = values[handle];
+    });
+
+    function setSliderHandle(i, value) {
+        var r = [null,null];
+        r[i] = value;
+        priceRangeSlider.noUiSlider.set(r);
+    }
+
+    inputs.forEach(function(input, handle) {
+
+        input.addEventListener('change', function(){
+            setSliderHandle(handle, this.value);
+        });
+
+        input.addEventListener('keydown', function( e ) {
+            var values = priceRangeSlider.noUiSlider.get();
+            var value = Number(values[handle]);
+
+            // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+            var steps = priceRangeSlider.noUiSlider.steps();
+
+            // [down, up]
+            var step = steps[handle];
+            var position;
+
+            // 13 is enter,
+            // 38 is key up,
+            // 40 is key down.
+            switch ( e.which ) {
+
+                case 13:
+                    setSliderHandle(handle, this.value);
+                    break;
+
+                case 38:
+                    // Get step to go increase slider value (up)
+                    position = step[1];
+                    // false = no step is set
+                    if ( position === false ) {
+                        position = 1;
+                    }
+                    // null = edge of slider
+                    if ( position !== null ) {
+                        setSliderHandle(handle, value + position);
+                    }
+                    break;
+
+                case 40:
+                    position = step[0];
+                    if ( position === false ) {
+                        position = 1;
+                    }
+                    if ( position !== null ) {
+                        setSliderHandle(handle, value - position);
+                    }
+                    break;
+            }
+        });
+    });
+
+
     
 });
