@@ -266,92 +266,143 @@ $(document).ready(function(){
     });
 
 
+    $('.sidebar-filter__title').on('click', function(e){
+        e.preventDefault();
+        $(this).next().slideToggle();
+    });
+
+
+    // Sort toggle 
+
+    $('.sort-toggle-btn').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('sort-toggle-btn--active');
+        $(this).next().toggleClass('sort-dropdown--active');
+    });
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).is('.sort-block *')) {
+            $('.sort-toggle-btn').removeClass('sort-toggle-btn--active');
+            $('.sort-dropdown').removeClass('sort-dropdown--active');
+        };
+    }); 
+
     
-    
+    // Product tabs
+
+    $('.product-tab-link').on('click', function(e){
+        e.preventDefault();
+        if(!$(this).hasClass('product-tab-link--active')){
+
+            var dataTab = $(this).data('tab');
+            $('.product-tab-content').removeClass('product-tab-content--active');
+            $('#' + dataTab).addClass('product-tab-content--active');
+            
+            $('.product-tab-link').removeClass('product-tab-link--active');
+            $(this).addClass('product-tab-link--active');
+        }
+    });
+
+
+    // Adaptive tel toggle 
+
+    $('.adaptive-header-tel__trigger').on('click', function(e){
+        e.preventDefault();
+        $(this).toggleClass('adaptive-header-tel__trigger--active');
+        $(this).next().toggleClass('adaptive-header-tel-dropdown--active');
+    });
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).is('.adaptive-header-tel-block *')) {
+            $('.adaptive-header-tel__trigger').removeClass('adaptive-header-tel__trigger--active');
+            $('.adaptive-header-tel-dropdown').removeClass('adaptive-header-tel-dropdown--active');
+        };
+    }); 
 
 
     // Price range slider
 
-    var priceRangeSlider = document.getElementById('price-range-slider'),
-        minPrice = document.getElementById('min-price-input'),
-        maxPrice = document.getElementById('max-price-input'),
-        inputs = [minPrice, maxPrice]
+    if($('#price-range-slider').length > 0){
+        var priceRangeSlider = document.getElementById('price-range-slider'),
+            minPrice = document.getElementById('min-price-input'),
+            maxPrice = document.getElementById('max-price-input'),
+            inputs = [minPrice, maxPrice]
 
-    noUiSlider.create(priceRangeSlider, {
-        start: [0, 10000],
-        connect: true,
-        tooltips: false,
-        step: 1,
-        format: wNumb({
-            decimals: 0
-        }),
-        range: {
-            'min': 0,
-            'max': 10000
-        }
-    });
-    priceRangeSlider.noUiSlider.on('update', function( values, handle ) {
-        inputs[handle].value = values[handle];
-    });
-
-    function setSliderHandle(i, value) {
-        var r = [null,null];
-        r[i] = value;
-        priceRangeSlider.noUiSlider.set(r);
-    }
-
-    inputs.forEach(function(input, handle) {
-
-        input.addEventListener('change', function(){
-            setSliderHandle(handle, this.value);
-        });
-
-        input.addEventListener('keydown', function( e ) {
-            var values = priceRangeSlider.noUiSlider.get();
-            var value = Number(values[handle]);
-
-            // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
-            var steps = priceRangeSlider.noUiSlider.steps();
-
-            // [down, up]
-            var step = steps[handle];
-            var position;
-
-            // 13 is enter,
-            // 38 is key up,
-            // 40 is key down.
-            switch ( e.which ) {
-
-                case 13:
-                    setSliderHandle(handle, this.value);
-                    break;
-
-                case 38:
-                    // Get step to go increase slider value (up)
-                    position = step[1];
-                    // false = no step is set
-                    if ( position === false ) {
-                        position = 1;
-                    }
-                    // null = edge of slider
-                    if ( position !== null ) {
-                        setSliderHandle(handle, value + position);
-                    }
-                    break;
-
-                case 40:
-                    position = step[0];
-                    if ( position === false ) {
-                        position = 1;
-                    }
-                    if ( position !== null ) {
-                        setSliderHandle(handle, value - position);
-                    }
-                    break;
+        noUiSlider.create(priceRangeSlider, {
+            start: [0, 10000],
+            connect: true,
+            tooltips: false,
+            step: 1,
+            format: wNumb({
+                decimals: 0
+            }),
+            range: {
+                'min': 0,
+                'max': 10000
             }
         });
-    });
+        priceRangeSlider.noUiSlider.on('update', function( values, handle ) {
+            inputs[handle].value = values[handle];
+        });
 
+        function setSliderHandle(i, value) {
+            var r = [null,null];
+            r[i] = value;
+            priceRangeSlider.noUiSlider.set(r);
+        }
+
+        inputs.forEach(function(input, handle) {
+
+            input.addEventListener('change', function(){
+                setSliderHandle(handle, this.value);
+            });
+
+            input.addEventListener('keydown', function( e ) {
+                var values = priceRangeSlider.noUiSlider.get();
+                var value = Number(values[handle]);
+
+                // [[handle0_down, handle0_up], [handle1_down, handle1_up]]
+                var steps = priceRangeSlider.noUiSlider.steps();
+
+                // [down, up]
+                var step = steps[handle];
+                var position;
+
+                // 13 is enter,
+                // 38 is key up,
+                // 40 is key down.
+                switch ( e.which ) {
+
+                    case 13:
+                        setSliderHandle(handle, this.value);
+                        break;
+
+                    case 38:
+                        // Get step to go increase slider value (up)
+                        position = step[1];
+                        // false = no step is set
+                        if ( position === false ) {
+                            position = 1;
+                        }
+                        // null = edge of slider
+                        if ( position !== null ) {
+                            setSliderHandle(handle, value + position);
+                        }
+                        break;
+
+                    case 40:
+                        position = step[0];
+                        if ( position === false ) {
+                            position = 1;
+                        }
+                        if ( position !== null ) {
+                            setSliderHandle(handle, value - position);
+                        }
+                        break;
+                }
+            });
+        });
+    }
 
     
 });

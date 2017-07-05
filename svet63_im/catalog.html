@@ -40,6 +40,20 @@
 				<a href="#"><img src="images/logo.png" alt="Trisar"></a>
 			</div>
 			<div class="adaptive-header-right-col">
+				<div class="adaptive-header-tel-block">
+					<a href="#" class="adaptive-header-tel__trigger"></a>
+					<div class="adaptive-header-tel-dropdown">
+						<div class="adaptive-header-tel-item">
+							<a href="tel:8 (800) 550 20 41" class="adaptive-header-tel-link">8 (800) 550 20 41</a>
+						</div>
+						<div class="adaptive-header-tel-item">
+							<a href="tel:8 (800) 550 20 41" class="adaptive-header-tel-link">8 (800) 550 20 41</a>
+						</div>
+						<div class="adaptive-header-tel-item">
+							<a href="tel:8 (800) 550 20 41" class="adaptive-header-tel-link">8 (800) 550 20 41</a>
+						</div>
+					</div>
+				</div>
 				<div class="adaptive-header-search-block">
 					<a href="#" class="adaptive-header-search-block__trigger"></a>
 				</div>
@@ -257,171 +271,175 @@
 					<aside class="sidebar-left">
 						<div class="sidebar-filter">
 							<div class="sidebar-filter__title">Фильтр товаров</div>
+							
+							<div class="sidebar-filter-body">
+								<div class="sidebar-filter-item">	
+									<div class="sidebar-filter-content">
+										<div class="sidebar-filter-item__title">Стоимость</div>
+										<div class="sidebar-filter-item-body">
+											<div class="range-slider-container">
+												<div id="price-range-slider" class="price-range-slider"></div>
+											</div>
+											<div class="price-range-inputs-row clearfix">
 
-							<div class="sidebar-filter-item">	
-								<div class="sidebar-filter-content">
-									<div class="sidebar-filter-item__title">Стоимость</div>
-									<div class="sidebar-filter-item-body">
-										<div id="price-range-slider" class="price-range-slider"></div>
-										<div class="price-range-inputs-row clearfix">
-
-											<div class="price-input-col">
-												<div class="price-range-text-col">от</div>
-												<div class="price-input-inner">
-													<input type="text" id="min-price-input" class="price-input" value="">
+												<div class="price-input-col">
+													<div class="price-range-text-col">от</div>
+													<div class="price-input-inner">
+														<input type="text" id="min-price-input" class="price-input" value="">
+													</div>
+												</div>
+												<div class="price-input-col">
+													<div class="price-range-text-col">до</div>
+													<div class="price-input-inner">
+														<input type="text" id="max-price-input" class="price-input" value="">
+													</div>
 												</div>
 											</div>
-											<div class="price-input-col">
-												<div class="price-range-text-col">до</div>
-												<div class="price-input-inner">
-													<input type="text" id="max-price-input" class="price-input" value="">
+										</div>
+									</div>
+								</div>
+
+								<div class="sidebar-filter-item">	
+									<div class="sidebar-filter-content">
+										<div class="sidebar-filter-item__title">Стиль</div>
+										<div class="sidebar-filter-item-body sidebar-filter-item-body-scrolling">
+											<div class="scrolling-block">
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check1" type="checkbox" name="style" checked />
+		        									<label for="style-check1">арт-деко</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check2" type="checkbox" name="style"/>
+		        									<label for="style-check2">восточный</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check3" type="checkbox" name="style"/>
+		        									<label for="style-check3">замковый</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check4" type="checkbox" name="style"/>
+		        									<label for="style-check4">кантри</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check5" type="checkbox" name="style"/>
+		        									<label for="style-check5">классический</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check6" type="checkbox" name="style"/>
+		        									<label for="style-check6">лофт</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check7" type="checkbox" name="style"/>
+		        									<label for="style-check7">прованс</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check8" type="checkbox" name="style"/>
+		        									<label for="style-check8">арт-деко</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check9" type="checkbox" name="style"/>
+		        									<label for="style-check9">восточный</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check10" type="checkbox" name="style"/>
+		        									<label for="style-check10">замковый</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check11" type="checkbox" name="style"/>
+		        									<label for="style-check11">кантри</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check12" type="checkbox" name="style"/>
+		        									<label for="style-check12">классический</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check13" type="checkbox" name="style"/>
+		        									<label for="style-check13">лофт</label>		
+												</div>
+												<div class="checkbox-row filter-checkbox">
+													<input id="style-check14" type="checkbox" name="style"/>
+		        									<label for="style-check14">прованс</label>		
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="sidebar-filter-item">	
-								<div class="sidebar-filter-content">
-									<div class="sidebar-filter-item__title">Стиль</div>
-									<div class="sidebar-filter-item-body">
-										<div class="scrolling-block">
+								<div class="sidebar-filter-item">	
+									<div class="sidebar-filter-content">
+										<div class="sidebar-filter-item__title">Цвет</div>
+										<div class="sidebar-filter-item-body">
 											<div class="checkbox-row filter-checkbox">
-												<input id="style-check1" type="checkbox" name="style" checked />
-	        									<label for="style-check1">арт-деко</label>		
+												<input id="color-check1" type="checkbox" name="color" checked />
+	        									<label for="color-check1">арт-деко</label>		
 											</div>
 											<div class="checkbox-row filter-checkbox">
-												<input id="style-check2" type="checkbox" name="style"/>
-	        									<label for="style-check2">восточный</label>		
+												<input id="color-check2" type="checkbox" name="color"/>
+	        									<label for="color-check2">восточный</label>		
 											</div>
 											<div class="checkbox-row filter-checkbox">
-												<input id="style-check3" type="checkbox" name="style"/>
-	        									<label for="style-check3">замковый</label>		
+												<input id="color-check3" type="checkbox" name="color"/>
+	        									<label for="color-check3">замковый</label>		
 											</div>
 											<div class="checkbox-row filter-checkbox">
-												<input id="style-check4" type="checkbox" name="style"/>
-	        									<label for="style-check4">кантри</label>		
-											</div>
-											<div class="checkbox-row filter-checkbox">
-												<input id="style-check5" type="checkbox" name="style"/>
-	        									<label for="style-check5">классический</label>		
-											</div>
-											<div class="checkbox-row filter-checkbox">
-												<input id="style-check6" type="checkbox" name="style"/>
-	        									<label for="style-check6">лофт</label>		
-											</div>
-											<div class="checkbox-row filter-checkbox">
-												<input id="style-check7" type="checkbox" name="style"/>
-	        									<label for="style-check7">прованс</label>		
-											</div>
-											<div class="checkbox-row filter-checkbox">
-												<input id="style-check8" type="checkbox" name="style"/>
-	        									<label for="style-check8">арт-деко</label>		
-											</div>
-											<div class="checkbox-row filter-checkbox">
-												<input id="style-check9" type="checkbox" name="style"/>
-	        									<label for="style-check9">восточный</label>		
-											</div>
-											<div class="checkbox-row filter-checkbox">
-												<input id="style-check10" type="checkbox" name="style"/>
-	        									<label for="style-check10">замковый</label>		
-											</div>
-											<div class="checkbox-row filter-checkbox">
-												<input id="style-check11" type="checkbox" name="style"/>
-	        									<label for="style-check11">кантри</label>		
-											</div>
-											<div class="checkbox-row filter-checkbox">
-												<input id="style-check12" type="checkbox" name="style"/>
-	        									<label for="style-check12">классический</label>		
-											</div>
-											<div class="checkbox-row filter-checkbox">
-												<input id="style-check13" type="checkbox" name="style"/>
-	        									<label for="style-check13">лофт</label>		
-											</div>
-											<div class="checkbox-row filter-checkbox">
-												<input id="style-check14" type="checkbox" name="style"/>
-	        									<label for="style-check14">прованс</label>		
+												<input id="color-check4" type="checkbox" name="color"/>
+	        									<label for="color-check4">бронзовый</label>		
 											</div>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="sidebar-filter-item">	
-								<div class="sidebar-filter-content">
-									<div class="sidebar-filter-item__title">Цвет</div>
-									<div class="sidebar-filter-item-body">
-										<div class="checkbox-row filter-checkbox">
-											<input id="color-check1" type="checkbox" name="color" checked />
-        									<label for="color-check1">арт-деко</label>		
-										</div>
-										<div class="checkbox-row filter-checkbox">
-											<input id="color-check2" type="checkbox" name="color"/>
-        									<label for="color-check2">восточный</label>		
-										</div>
-										<div class="checkbox-row filter-checkbox">
-											<input id="color-check3" type="checkbox" name="color"/>
-        									<label for="color-check3">замковый</label>		
-										</div>
-										<div class="checkbox-row filter-checkbox">
-											<input id="color-check4" type="checkbox" name="color"/>
-        									<label for="color-check4">бронзовый</label>		
+								<div class="sidebar-filter-item">	
+									<div class="sidebar-filter-content">
+										<div class="sidebar-filter-item__title">Страна происхождения</div>
+										<div class="sidebar-filter-item-body">
+											<div class="checkbox-row filter-checkbox">
+												<input id="country-check1" type="checkbox" name="country" checked />
+	        									<label for="country-check1">Россия</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="country-check2" type="checkbox" name="country"/>
+	        									<label for="country-check2">Украина</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="country-check3" type="checkbox" name="country"/>
+	        									<label for="country-check3">Польша</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="country-check4" type="checkbox" name="country"/>
+	        									<label for="country-check4">Чехия</label>		
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="sidebar-filter-item">	
-								<div class="sidebar-filter-content">
-									<div class="sidebar-filter-item__title">Страна происхождения</div>
-									<div class="sidebar-filter-item-body">
-										<div class="checkbox-row filter-checkbox">
-											<input id="country-check1" type="checkbox" name="country" checked />
-        									<label for="country-check1">Россия</label>		
-										</div>
-										<div class="checkbox-row filter-checkbox">
-											<input id="country-check2" type="checkbox" name="country"/>
-        									<label for="country-check2">Украина</label>		
-										</div>
-										<div class="checkbox-row filter-checkbox">
-											<input id="country-check3" type="checkbox" name="country"/>
-        									<label for="country-check3">Польша</label>		
-										</div>
-										<div class="checkbox-row filter-checkbox">
-											<input id="country-check4" type="checkbox" name="country"/>
-        									<label for="country-check4">Чехия</label>		
+								<div class="sidebar-filter-item">	
+									<div class="sidebar-filter-content">
+										<div class="sidebar-filter-item__title">Бренд</div>
+										<div class="sidebar-filter-item-body">
+											<div class="checkbox-row filter-checkbox">
+												<input id="brand-check1" type="checkbox" name="brand" checked />
+	        									<label for="brand-check1">Бренд 1</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="brand-check2" type="checkbox" name="brand" />
+	        									<label for="brand-check2">Бренд 2</label>		
+											</div>
+											<div class="checkbox-row filter-checkbox">
+												<input id="brand-check3" type="checkbox" name="brand" />
+	        									<label for="brand-check3">Бренд 2</label>		
+											</div>
 										</div>
 									</div>
 								</div>
-							</div>
 
-							<div class="sidebar-filter-item">	
-								<div class="sidebar-filter-content">
-									<div class="sidebar-filter-item__title">Бренд</div>
-									<div class="sidebar-filter-item-body">
-										<div class="checkbox-row filter-checkbox">
-											<input id="brand-check1" type="checkbox" name="brand" checked />
-        									<label for="brand-check1">Бренд 1</label>		
-										</div>
-										<div class="checkbox-row filter-checkbox">
-											<input id="brand-check2" type="checkbox" name="brand" />
-        									<label for="brand-check2">Бренд 2</label>		
-										</div>
-										<div class="checkbox-row filter-checkbox">
-											<input id="brand-check3" type="checkbox" name="brand" />
-        									<label for="brand-check3">Бренд 2</label>		
-										</div>
+								<div class="sidebar-filter-item">
+									<div class="filter-btn-item">
+										<a href="#" class="filter-apply-btn">Показать результаты</a>
 									</div>
-								</div>
-							</div>
-
-							<div class="sidebar-filter-item">
-								<div class="filter-btn-item">
-									<a href="#" class="filter-apply-btn">Показать результаты</a>
-								</div>
-								<div class="filter-btn-item">
-									<a href="#" class="filter-clear-btn">Очистить фильтр</a>
+									<div class="filter-btn-item">
+										<a href="#" class="filter-clear-btn">Очистить фильтр</a>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -434,17 +452,47 @@
 							<p>Люстры подходят для всех типов потолков (обычных, натяжных, навесных)</p>
 						</div>
 
-						<div class="catalog-sort-container clearfix">
+						<div class="catalog-sort-container">
 							<div class="sort-left-col">
 								<div class="sort-title">Сортировать:</div>
 								<div class="soft-content-col">
 									<div class="sort-block">
-										
+										<a href="#" class="sort-toggle-btn">По популярности <i></i></a>
+										<div class="sort-dropdown">
+											<div class="sort-option-list">
+												<ul>
+													<li class="sort-option-item">
+														<a href="#" class="sort-option-item__link">По возрастанию</a>
+													</li>
+													<li class="sort-option-item">
+														<a href="#" class="sort-option-item__link">По убыванию</a>
+													</li>
+													<li class="sort-option-item">
+														<a href="#" class="sort-option-item__link">По цене</a>
+													</li>
+												</ul>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 							<div class="sort-right-col">
-								<div class="sort-title">Показать на странице:</div>
+								<div class="sort-showing">
+									<div class="sort-title">Показать на странице:</div>
+									<div class="sort-showing-list">
+										<ul>
+											<li class="sort-showing-item">
+												<a href="#" class="sort-showing-item__link sort-showing-item__link--active">40</a>
+											</li>
+											<li class="sort-showing-item">
+												<a href="#" class="sort-showing-item__link">80</a>
+											</li>
+											<li class="sort-showing-item">
+												<a href="#" class="sort-showing-item__link">120</a>
+											</li>
+										</ul>
+									</div>
+								</div>
 							</div>
 						</div>
 
@@ -625,6 +673,60 @@
 								</div>
 							</div>
 						</div>
+
+						<div class="pagination-container clearfix">
+							<div class="pagination-stats-col">Показано товаров 1 - 39  из 9869 товаров</div>
+							<div class="pagination-menu-col">
+								<nav class="pagination-menu">
+									<ul>
+										<li class="pagination-menu__item pagination-menu__item--arrow">
+											<a href="#" class="pagination-menu__item-link--arrow"></a>
+										</li>
+										<li class="pagination-menu__item">
+											<a href="#" class="pagination-menu__item-link">1</a>
+										</li>
+										<li class="pagination-menu__item">
+											<a href="#" class="pagination-menu__item-link pagination-menu__item-link--active">2</a>
+										</li>
+										<li class="pagination-menu__item">
+											<a href="#" class="pagination-menu__item-link">3</a>
+										</li>
+										<li class="pagination-menu__item">
+											<a href="#" class="pagination-menu__item-link">4</a>
+										</li>
+										<li class="pagination-menu__item">
+											<a href="#" class="pagination-menu__item-link">5</a>
+										</li>
+										<li class="pagination-menu__item">...</li>
+										<li class="pagination-menu__item">
+											<a href="#" class="pagination-menu__item-link">27</a>
+										</li>
+										<li class="pagination-menu__item pagination-menu__item--arrow">
+											<a href="#" class="pagination-menu__item-link--arrow"></a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="pagination-showing-col">
+								<div class="sort-showing">
+									<div class="sort-title">Показать на странице:</div>
+									<div class="sort-showing-list">
+										<ul>
+											<li class="sort-showing-item">
+												<a href="#" class="sort-showing-item__link sort-showing-item__link--active">40</a>
+											</li>
+											<li class="sort-showing-item">
+												<a href="#" class="sort-showing-item__link">80</a>
+											</li>
+											<li class="sort-showing-item">
+												<a href="#" class="sort-showing-item__link">120</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
 					</div>
 				</div>
 
