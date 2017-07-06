@@ -15,10 +15,12 @@ $(document).ready(function(){
         };
     }); 
 
+
     // Adaptive menu toggle
 
     $('.adaptive-menu-toggler').on('click', function(e){
         e.preventDefault();
+        $(this).toggleClass('adaptive-menu-toggler--active');
         $('.adaptive-menu-container').slideToggle();
     });
     
@@ -59,8 +61,8 @@ $(document).ready(function(){
 
     // Callback modal
 
-    $('.callback-modal-trigger').fancybox({
-        wrapCSS: 'callback-modal-container',
+    $('.modal-trigger').fancybox({
+        wrapCSS: 'modal-container',
         helpers : { 
             overlay: {
                 css : {
@@ -69,6 +71,11 @@ $(document).ready(function(){
             }
         }
     });
+
+
+    // Photo fancybox
+
+    $('.product-zoom-btn').fancybox();
 
 
     // Datepicker 
@@ -99,6 +106,29 @@ $(document).ready(function(){
             },
         }   
     });
+
+    // Single product owl slider
+
+    $('.single-product-slider').owlCarousel({
+        loop: true,
+        items: 1,
+        nav: true, 
+        dots: false,   
+        thumbs: true,
+        thumbsPrerendered: true
+    });
+
+    // Fastsee product owl slider
+
+    $('.fastsee-product-slider').owlCarousel({
+        loop: true,
+        items: 1,
+        nav: false, 
+        dots: false,   
+        thumbs: true,
+        thumbsPrerendered: true
+    });
+
 
     // Product owl slider 
 
@@ -266,9 +296,13 @@ $(document).ready(function(){
     });
 
 
+    // Sidebar toggle title
+    
     $('.sidebar-filter__title').on('click', function(e){
         e.preventDefault();
-        $(this).next().slideToggle();
+        if($(window).width() < 768){
+            $(this).next().slideToggle();
+        }
     });
 
 
@@ -304,6 +338,14 @@ $(document).ready(function(){
     });
 
 
+    // Characteristics toggle
+
+    $('.product-characteristics-show-more-btn').on('click', function(e){
+        e.preventDefault();
+        $('.product-characteristics-hidden').slideToggle();
+    });
+
+    
     // Adaptive tel toggle 
 
     $('.adaptive-header-tel__trigger').on('click', function(e){
@@ -322,7 +364,7 @@ $(document).ready(function(){
 
     // Price range slider
 
-    if($('#price-range-slider').length > 0){
+    if($('#price-range-slider').length > 0 && $(window).width() > 767){
         var priceRangeSlider = document.getElementById('price-range-slider'),
             minPrice = document.getElementById('min-price-input'),
             maxPrice = document.getElementById('max-price-input'),
@@ -403,6 +445,5 @@ $(document).ready(function(){
             });
         });
     }
-
     
 });
