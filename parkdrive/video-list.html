@@ -1,0 +1,535 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>ParkDrive - Video list</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+    <link rel="stylesheet" href="css/tooltipster.bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="layout">
+	
+	<div class="adaptive-menu-container">
+		<a href="#" class="adaptive-menu-close">&times;</a>
+		<nav class="adaptive-menu">
+			<ul>
+				<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__item-link">Новости</a></li>
+				<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__item-link">Статьи</a></li>
+				<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__item-link">Видео</a></li>
+				<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__item-link">Связаться с нами</a></li>
+				<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__item-link">О компании</a></li>
+				<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__item-link">Оценка автомобиля</a></li>
+				<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__item-link">Заказать</a></li>
+				<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__item-link">Новые авто</a></li>
+				<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__item-link">Автомагазин</a></li>
+				<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__item-link">Услуги</a></li>
+			</ul>
+		</nav>
+	</div>
+
+
+	<header class="header">
+		<div class="wrapper">
+			<a href="#" class="adaptive-menu-toggler">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<div class="header-logo-col">
+				<a href="#"><img src="images/logo.png" alt="Park Drive"></a>
+			</div>
+			<div class="header-content-col">
+				<div class="header-content-top-row clearfix">
+					<div class="header-small-menu-col">
+						<nav class="header-small-menu">
+							<ul>
+								<li class="header-small-menu__item"><a href="#" class="header-small-menu__item-link">Новости</a></li>
+								<li class="header-small-menu__item"><a href="#" class="header-small-menu__item-link">Статьи</a></li>
+								<li class="header-small-menu__item"><a href="#" class="header-small-menu__item-link">Видео</a></li>
+								<li class="header-small-menu__item"><a href="#" class="header-small-menu__item-link">Связаться с нами</a></li>
+								<li class="header-small-menu__item"><a href="#" class="header-small-menu__item-link">О компании</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="header-profile-menu-col">
+						<nav class="header-profile-menu">
+							<ul>
+								<li class="header-profile-item">
+									<a href="#" class="header-profile-item__link header-profile-item__link--favourite">15</a>
+								</li>
+								<li class="header-profile-item">
+									<a href="#" class="header-profile-item__link header-profile-item__link--notice">15</a>
+								</li>
+								<li class="header-profile-item">
+									<a href="#" class="header-profile-item__link header-profile-item__link--profile">Вход</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<div class="header-content-bottom-row clearfix">
+					<div class="header-add-col">
+						<a href="#" class="btn btn-bordered btn-bordered--black btn-sm">+ Добавить автомобиль</a>
+					</div>
+					<div class="header-main-menu-col">
+						<nav class="main-menu">
+							<ul>
+								<li class="main-menu__item"><a href="#" class="main-menu__link">Оценка автомобиля</a></li>
+								<li class="main-menu__item"><a href="#" class="main-menu__link">Заказать</a></li>
+								<li class="main-menu__item"><a href="#" class="main-menu__link">Новые авто</a></li>
+								<li class="main-menu__item"><a href="#" class="main-menu__link">Автомагазин</a></li>
+								<li class="main-menu__item"><a href="#" class="main-menu__link">Услуги</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</header>
+
+
+	<div class="search-container">
+		<div class="wrapper">
+			<form action="/" class="search-form clearfix">
+				<div class="search-left-col">
+					<div class="search-row">
+						<div class="search-col search-col-3">
+							<div class="search-radio-block">
+								<input type="radio" id="search-by-radio" class="search-radio" name="radio" checked="checked">
+								<label for="search-by-radio" class="search-radio-label">Б/У авто</label>
+							</div>
+						</div>		
+						<div class="search-col search-col-3">
+							<div class="search-radio-block">
+								<input type="radio" id="search-new-radio" class="search-radio" name="radio">
+								<label for="search-new-radio" class="search-radio-label">Новые авто</label>
+							</div>	
+						</div>				
+					</div>
+					<div class="search-row">
+						<div class="search-col search-col-4">
+							<select name="" id="" class="form-select">
+								<option value="">Транспорт</option>
+								<option value="">Транспорт 1</option>
+								<option value="">Транспорт 2</option>
+								<option value="">Транспорт 3</option>
+							</select>
+						</div>		
+						<div class="search-col search-col-4">
+							<select name="" id="" class="form-select" multiple="multiple">
+								<option value="">Модель</option>
+								<option value="">Модель 1</option>
+								<option value="">Модель 2</option>
+								<option value="">Модель 3</option>
+							</select>
+						</div>	
+						<div class="search-col search-col-4">
+							<select name="" id="" class="form-select">
+								<option value="">Марка</option>
+								<option value="">Марка 1</option>
+								<option value="">Марка 2</option>
+								<option value="">Марка 3</option>
+							</select>
+						</div>			
+					</div>
+					<div class="search-row">
+						<div class="search-col search-col-4">
+							<div class="checkbox-block search-checkbox-block">
+								<input type="checkbox" id="search-change1" class="search-checkbox" checked>
+								<label for="search-change1" class="search-checkbox-label">Новые авто</label>
+							</div>	
+							<div class="checkbox-block search-checkbox-block">
+								<input type="checkbox" id="search-change2" class="search-checkbox">
+								<label for="search-change2" class="search-checkbox-label">Новые авто</label>
+							</div>	
+						</div>
+						<div class="search-col search-col-4 clearfix">
+							<label class="form-label">Год выпуска автомобиля</label>
+							<div class="search-mini-col">
+								<select name="" id="" class="form-select">
+									<option value="">2000</option>
+									<option value="">2001</option>
+									<option value="">2002</option>
+									<option value="">2003</option>
+								</select>
+							</div>
+							<div class="search-delimiter-col search-delimiter-col--big"></div>
+							<div class="search-mini-col">
+								<select name="" id="" class="form-select">
+									<option value="">2000</option>
+									<option value="">2001</option>
+									<option value="">2002</option>
+									<option value="">2003</option>
+									<option value="">2004</option>
+									<option value="">2005</option>
+									<option value="">2006</option>
+									<option value="">2007</option>
+								</select>
+							</div>
+						</div>
+						<div class="search-col search-col-4 clearfix">
+							<label class="form-label">Цена, $</label>
+							<div class="search-mini-col">
+								<input type="text" name="" class="form-input" placeholder="220000">
+							</div>
+							<div class="search-delimiter-col search-delimiter-col--big"></div>
+							<div class="search-mini-col">
+								<input type="text" name="" class="form-input" placeholder="2200000">
+							</div>
+						</div>
+					</div>
+
+					<div class="extend-search-container">
+						<div class="search-row">
+							<div class="search-col search-col-4">
+								<label class="form-label">Коробка передач</label>
+								<select name="" id="" class="form-select">
+									<option value="">Коробка передач</option>
+									<option value="">Коробка передач 1</option>
+									<option value="">Коробка передач 2</option>
+									<option value="">Коробка передач 3</option>
+								</select>
+							</div>		
+							<div class="search-col search-col-4">
+								<label class="form-label">Мощность двигателя, л.с.</label>
+								<div class="search-mini-col">
+									<input type="text" name="" class="form-input" placeholder="27">
+								</div>
+								<div class="search-delimiter-col search-delimiter-col--big"></div>
+								<div class="search-mini-col">
+									<input type="text" name="" class="form-input" placeholder="800">
+								</div>
+							</div>	
+							<div class="search-col search-col-4">
+								<label class="form-label">Цвет</label>
+								<select name="" id="" class="form-select">
+									<option value="">Красный</option>
+									<option value="">Зеленый</option>
+									<option value="">Синий</option>
+								</select>
+							</div>			
+						</div>
+						<div class="search-row">
+							<div class="search-col search-col-4">
+								<label class="form-label">Тип топлива</label>
+								<select name="" id="" class="form-select">
+									<option value="">Тип топлива 1</option>
+									<option value="">Тип топлива 2</option>
+									<option value="">Тип топлива 3</option>
+								</select>
+							</div>		
+							<div class="search-col search-col-4">
+								<label class="form-label">Объем двигателя, л.</label>
+								<div class="search-mini-col">
+									<input type="text" name="" class="form-input" placeholder="27">
+								</div>
+								<div class="search-delimiter-col search-delimiter-col--big"></div>
+								<div class="search-mini-col">
+									<input type="text" name="" class="form-input" placeholder="800">
+								</div>
+							</div>	
+							<div class="search-col search-col-4">
+								<label class="form-label">Город</label>							
+								<input type="text" name="" class="form-input" placeholder="Киев">
+							</div>			
+						</div>
+						<div class="search-row">
+							<div class="search-col search-col-4">
+								<label class="form-label">Привод</label>
+								<select name="" id="" class="form-select">
+									<option value="">Передний</option>
+									<option value="">Задний</option>
+								</select>
+							</div>		
+							<div class="search-col search-col-4">
+								<label class="form-label">Пробег автомобиля, км.</label>
+								<div class="search-mini-col">
+									<input type="text" name="" class="form-input" placeholder="15 000">
+								</div>
+								<div class="search-delimiter-col search-delimiter-col--big"></div>
+								<div class="search-mini-col">
+									<input type="text" name="" class="form-input" placeholder="800 000">
+								</div>
+							</div>			
+						</div>
+					</div>
+				</div>
+
+				<div class="search-submit">
+					<a href="#" class="seach-submit-btn"><i></i>Найти авто</a>
+				</div>	
+
+				<div class="search-submit-adaptive">
+					<a href="#" class="seach-submit-btn"><i></i>Найти авто</a>
+				</div>				
+			</form>
+			<div class="extend-search">
+				<a href="#" class="extend-search-trigger"><span>Расширенный поиск</span></a>
+			</div>
+		</div>
+	</div>
+	
+
+	<section class="posts-container">
+		<div class="wrapper">
+			<div class="posts-container__title">
+				<h1>Видеообзор</h1>
+			</div>
+
+			<article class="post">
+				<div class="post-img-col">
+					<figure><a href="#" class="post__video-link"><img src="images/post-img-1.jpg" alt="Онлайн-журнал: Электрический Renault ZOE"></a></figure>
+				</div>
+				<div class="post-text-col">
+					<div class="post-category">
+						<div class="post-category__item">
+							<a href="#" class="post-category__link">Тест-драйв</a>
+						</div>
+					</div>
+					<div class="post__title">
+						<a href="#" class="post__title-link">Онлайн-журнал: Электрический Renault ZOE, тест-драйв Citroen SpaceTourer,</a>
+					</div>
+					<div class="post__date">Вчера</div>
+					<div class="post__excerpt">
+						<p>Нет, в глубине души я могу понять голландских пилотов: им тоже хочется получать зарплату повыше, ездить на “Мерседесах” и отдыхать в теплых странах, добираясь туда какими-то...</p>
+					</div>
+				</div>
+			</article>
+
+			<article class="post">
+				<div class="post-img-col">
+					<figure><a href="#" class="post__video-link"><img src="images/post-img-2.jpg" alt="Онлайн-журнал: Электрический Renault ZOE"></a></figure>
+				</div>
+				<div class="post-text-col">
+					<div class="post__title">
+						<a href="#" class="post__title-link">Jaguar вывел на тесты новый 500-сильный седан</a>
+					</div>
+					<div class="post__date">27 февраля</div>
+					<div class="post__excerpt">
+						<p>В целом дизайн напоминает концепт Pininfarina Gran Lusso, представленный два года назад. Прототип, над которым работали сразу несколько ателье, был построен на базе флагманского седана 7-Series...</p>
+					</div>
+				</div>
+			</article>
+
+			<article class="post">
+				<div class="post-img-col">
+					<figure><a href="#" class="post__video-link"><img src="images/post-img-3.jpg" alt="Онлайн-журнал: Электрический Renault ZOE"></a></figure>
+				</div>
+				<div class="post-text-col">
+					<div class="post__title">
+						<a href="#" class="post__title-link">Онлайн-журнал: Электрический Renault ZOE, тест-драйв Citroen SpaceTourer,</a>
+					</div>
+					<div class="post__date">Вчера</div>
+					<div class="post__excerpt">
+						<p>Презентация нового купе BMW 8-Series должна состоятся только завтра, 26 мая на конкурсе элегантности Concorso d’Eleganza Villa d’Este в Италии. Однако уже сейчас первый снимок машины попал в Сеть...</p>
+					</div>
+				</div>
+			</article>	
+
+			<div class="post-more">
+				<a href="#" class="post-more__link">Еще видео ...</a>
+			</div>		
+
+		</div>
+	</section>	
+
+
+	<section class="accessories-container">
+		<div class="wrapper">
+			<h2 class="accessories-container__title">Магазин автозапчастей и аксессуаров</h2>
+			<div class="accessories-goto">
+				<a href="#" class="accessories-goto__link">Перейти в каталог автозапчастей</a>
+			</div>
+
+			<div class="accessories-slider default-slider owl-carousel">
+				<div class="accessories-item">
+					<div class="accessories-item__image table-helper">
+						<figure class="table-helper-vamiddle">
+							<a href="#"><img src="images/accesorries/accessory-img-1.jpg" alt="Аксессуар"></a>
+						</figure>
+					</div>
+					<div class="accessories-item__name">
+						<a href="#" class="accessories-item__name-link">EMC-Elegant Classic EUR</a>
+					</div>
+					<div class="accessories-item__price">
+						<span class="accessories-item__price-value">561 000</span>
+						<span class="accessories-item__price-currency">грн.</span>
+					</div>
+				</div>
+				<div class="accessories-item">
+					<div class="accessories-item__image table-helper">
+						<figure class="table-helper-vamiddle">
+							<a href="#"><img src="images/accesorries/accessory-img-2.jpg" alt="Аксессуар"></a>
+						</figure>
+					</div>
+					<div class="accessories-item__name">
+						<a href="#" class="accessories-item__name-link">Защита двигателя Титан сталь</a>
+					</div>
+					<div class="accessories-item__price">
+						<span class="accessories-item__price-value">1 300</span>
+						<span class="accessories-item__price-currency">грн.</span>
+					</div>
+				</div>
+				<div class="accessories-item">
+					<div class="accessories-item__image table-helper">
+						<figure class="table-helper-vamiddle">
+							<a href="#"><img src="images/accesorries/accessory-img-3.jpg" alt="Аксессуар"></a>
+						</figure>
+					</div>
+					<div class="accessories-item__name">
+						<a href="#" class="accessories-item__name-link">EMC-Elegant Classic EUR</a>
+					</div>
+					<div class="accessories-item__price">
+						<span class="accessories-item__price-value">700</span>
+						<span class="accessories-item__price-currency">грн.</span>
+					</div>
+				</div>
+				<div class="accessories-item">
+					<div class="accessories-item__image table-helper">
+						<figure class="table-helper-vamiddle">
+							<a href="#"><img src="images/accesorries/accessory-img-4.jpg" alt="Аксессуар"></a>
+						</figure>
+					</div>
+					<div class="accessories-item__name">
+						<a href="#" class="accessories-item__name-link">RS DVR-213WF</a>
+					</div>
+					<div class="accessories-item__price">
+						<span class="accessories-item__price-value">651</span>
+						<span class="accessories-item__price-currency">грн.</span>
+					</div>
+				</div>
+				<div class="accessories-item">
+					<div class="accessories-item__image table-helper">
+						<figure class="table-helper-vamiddle">
+							<a href="#"><img src="images/accesorries/accessory-img-2.jpg" alt="Аксессуар"></a>
+						</figure>
+					</div>
+					<div class="accessories-item__name">
+						<a href="#" class="accessories-item__name-link">Защита двигателя Титан сталь</a>
+					</div>
+					<div class="accessories-item__price">
+						<span class="accessories-item__price-value">1 300</span>
+						<span class="accessories-item__price-currency">грн.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-seo-container">				
+				<p>ParkDrive — наиболее крупный авто базар Украины среди всех отечественных сайтов подобного рода. В намерении помочь как покупателям транспортных средств, так и желающим их продать, мы разработали удобный и масштабный ресурс, представленный в виде доски онлайн-объявлений.</p>
+			</div>
+			<div class="footer-bottom-container clearfix">
+				<div class="footer-logo-col">
+					<div class="footer-logo-block">
+						<a href="#"><img src="images/logo.png" alt="Park Drive"></a>
+					</div>
+					<div class="footer-copyright">
+						<p>© 2009-2017 parkdrive.ua</p>
+						<p>Все права защищены</p>
+					</div>
+				</div>
+				<div class="footer-menu-col clearfix">
+					<div class="footer-menu-left">
+						<nav class="footer-menu">
+							<ul>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link">Компания</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link">Вакансии</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link">Реклама сайта</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link">Карта сайта</a></li>
+							</ul>
+						</nav>
+					</div>
+					<div class="footer-menu-right">
+						<nav class="footer-menu">
+							<ul>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link">Политика конфиденциальности</a></li>
+								<li class="footer-menu__item"><a href="#" class="footer-menu__link">Партенрская программа</a></li>
+							</ul>
+						</nav>
+					</div>					
+				</div>					
+				<div class="footer-soc-col">
+					<div class="footer-soc-title">Партнерам:</div>
+					<div class="footer-soc-list">
+						<ul>
+							<li class="footer-soc-item"><a href="#" class="footer-soc-item__link footer-soc-item__link--vk"></a></li>
+							<li class="footer-soc-item"><a href="#" class="footer-soc-item__link footer-soc-item__link--fb"></a></li>
+							<li class="footer-soc-item"><a href="#" class="footer-soc-item__link footer-soc-item__link--gp"></a></li>
+							<li class="footer-soc-item"><a href="#" class="footer-soc-item__link footer-soc-item__link--youtube"></a></li>
+							<li class="footer-soc-item"><a href="#" class="footer-soc-item__link footer-soc-item__link--tw"></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<div id="callback-modal" class="modal">
+	<form action="" class="modal-form">
+		<div class="modal-form-row clearfix">
+			<div class="modal-form-col-6">
+				<input type="text" name="name" class="modal-form-input" placeholder="Как к вам обращаться?">
+			</div>
+		</div>
+		<div class="modal-form-row clearfix">
+			<div class="modal-form-col-6">
+				<input type="text" name="tel" class="modal-form-input form-input-tel" placeholder="Телефон">
+			</div>
+			<div class="modal-form-col-6">
+				<input type="text" name="email" class="modal-form-input modal-form-input-error" placeholder="E-mail">
+			</div>
+		</div>
+		<div class="modal-form-row clearfix">
+			<div class="modal-form-col-6">
+				<input type="text" name="square" class="modal-form-input" placeholder="Интересующая площадь">
+			</div>
+		</div>
+		<div class="modal-form-row clearfix">
+			<div class="modal-form-col-6">
+				<input type="text" name="destination" class="modal-form-input" placeholder="Назначение">
+			</div>
+		</div>
+		<div class="modal-form-row clearfix">
+			<div class="modal-form-col-12">
+				<textarea name="text" class="modal-form-textarea" placeholder="отправить заявку"></textarea>
+			</div>
+		</div>
+		<div class="modal-form-submit-row">
+			<div class="modal-form-submit-col-6">
+				<input type="submit" class="modal-form-submit" value="Отправить заявку">
+			</div>
+			<div class="modal-form-submit-col-6 modal-form-submit-ico">
+				<img src="images/logo.png" alt="Бизнес-центр Россия">
+			</div>
+		</div>
+	</form>
+</div>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.pack.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/tooltipster.bundle.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyCB7mMnPjIUS1Vfg4nB9W7EiB32ehaBSjg"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
