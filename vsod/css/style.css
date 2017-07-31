@@ -275,7 +275,7 @@ Adaptive header
 	top: 45px;
 	left: -100%;
 	background: #201f1f;
-	padding: 35px 0;
+	padding: 30px 0;
 	-webkit-transition: all 0.4s linear 0s;
 	-o-transition: all 0.4s linear 0s;
 	transition: all 0.4s linear 0s;
@@ -300,7 +300,6 @@ Adaptive header
 .adaptive-menu__link--active{
 	background: #b42a35;
 }
-
 
 /*------------------------------------------------------------
 Header
@@ -338,9 +337,6 @@ Header
 }
 .adaptive-header{
 	display: none;
-}
-.adaptive-menu-toggler:hover span{
-	background: #fabe28;
 }
 .header__adaptive-logo{
 	padding: 9px 180px 0 50px;
@@ -549,8 +545,8 @@ Service
 }
 .service-list__col:after{
 	position: absolute;
-	left: 15px;
-	right: 15px;
+	left: 10px;
+	right: 10px;
 	bottom: 0;
 	content: "";
 	background: #f09227;
@@ -563,6 +559,7 @@ Service
 	display: block;
 	padding: 6px 10px 6px 35px;
 	position: relative;
+	background: #fff;
 	color: #000000;
 	font-size: 14px;
 	line-height: 18px;
@@ -594,7 +591,7 @@ Service
 	color: #fff;
 	text-decoration: none;
 }
-.service-list__item:nth-child(odd) .service-list__link:hover{
+.service-list__item:nth-child(odd):hover .service-list__link{
 	background: #b42a35;
 }
 .service-list__link:hover:before{
@@ -1135,6 +1132,15 @@ Adaptive styles
 	.hero-form{
 		width: 35%;
 	}
+	.service{
+		padding: 25px 0 16px 0;
+	}
+	.howwork{
+		padding: 25px 0 40px 0;
+	}
+	.howwork__description{
+		margin: 0 0 40px 0;
+	}
 
 }
 
@@ -1167,12 +1173,21 @@ Adaptive styles
 	.hero-text__title span{
 		font-size: 36px;
 	}
+	.service{
+		display: none;
+	}
 	.service-list__col{
-		margin: 0 0 40px 0;
 		width: 50%;
 	}
 	.service-list__col:last-child{
-		margin: 0;
+		display: none;
+	}
+	.preorder{
+		background: #f1f1f1;
+		padding: 0 0 35px 0;
+	}
+	.howwork{
+		padding: 25px 0 0 0;
 	}
 	.howwork-list__item{
 		margin: 0 0 35px 0;
@@ -1311,11 +1326,25 @@ Adaptive styles
 	}
 
 
+	.law-support{
+		padding: 40px 0;
+	}
+	.law-support__title{
+		margin: 0 0 10px 0;
+	}
+
+
 	.accordeon{
 		margin: 0 0 40px 0;
 	}
+	.accordeon-item__title:after{
+		right: 12px;
+	}
 	.priceup-container__text{
 		margin: 40px 0 0 0;
+	}
+	.priceup-container__title{
+		display: none;
 	}
 	.priceup-list__col{
 		margin: 0 0 20px 0;
