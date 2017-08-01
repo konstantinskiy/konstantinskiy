@@ -129,6 +129,13 @@ select{
 	-webkit-border-radius: 0;
 }
 
+input,
+textarea,
+select{
+	font-family: 'Conv_MuseoSansCyrl-300', sans-serif;
+	color: #000;
+}
+
 /*------------------------------------------------------------
 Fonts
 ------------------------------------------------------------*/
@@ -248,8 +255,7 @@ Section title
 	-moz-box-shadow:    0px 5px 24px 0px rgba(50, 50, 50, 0.52);
 	box-shadow:         0px 5px 24px 0px rgba(50, 50, 50, 0.52);
 }
-.section-title h1,
-.section-title h2{
+.section-title h1{
 	margin: 0;
 	font-size: 25px;
 	line-height: 30px;
@@ -637,8 +643,12 @@ Howwork
 	margin: 0 0 55px 0;
 	line-height: 25px;
 }
+.howwork p{
+	font-size: 16px;
+	line-height: 25px;
+}
 .howwork__title{
-	margin: 0 0 50px 0;
+	margin: 50px 0;
 	font-family: 'VollkornBold';
 	font-size: 22px;
 }
@@ -726,6 +736,9 @@ Howwork
 }
 .preorder{
 	padding: 30px 0;
+}
+.preorder p{
+	font-size: 16px;
 	line-height: 25px;
 }
 
@@ -786,10 +799,8 @@ Law support
 .law-support{
 	padding: 65px 0 50px 0;
 }
-.law-support__title{
+.law-support h2{
 	margin: 0 0 22px 0;
-	font-family: 'VollkornBold';
-	font-size: 22px;
 }
 .accordeon{
 	margin: 0 0 70px 0;
@@ -878,7 +889,8 @@ Law support
 	border-radius: 3px;
 	background: #df2e3c url(../images/i/icon-check-white.png) center center no-repeat;
 }
-.law-support__text{
+.law-support__text p{
+	font-size: 16px;
 	line-height: 25px;
 }
 
@@ -894,11 +906,12 @@ Price up
 	font-family: 'VollkornBold', sans-serif;
 	font-size: 20px;
 }
-.priceup-container__text{
+.priceup-container__text p{
+	font-size: 16px;
 	line-height: 25px;
 }
 .priceup-list{
-	margin: 0 -35px;
+	margin: 0 -35px 50px;
 	letter-spacing: -10px;
 	color: #fff;
 }
@@ -924,9 +937,6 @@ Price up
 	padding: 15px 24px;
 	font-family: 'Conv_MuseoSansCyrl-700';
 	font-size: 20px;
-}
-.priceup-container__text{
-	margin: 50px 0 0 0;
 }
 
 /*----------------------------------------------------------------
@@ -985,55 +995,6 @@ Breadcrumbs
 }
 
 /*----------------------------------------------------------------
-Content widget
-----------------------------------------------------------------*/
-
-.content-widget{
-	margin: 0 0 35px 0;
-}
-.content-widget__img{
-	float: left;
-	width: 24%;
-	padding: 0 30px 0 0;
-}
-.content-widget__text{
-	float: left;
-	width: 76%;
-}
-.content-widget__text p{
-	margin: 0 0 20px 0;
-	line-height: 28px;
-}
-.content-widget__text p:last-child{
-	margin: 0;
-}
-.content-widget__text-question{
-	font-family: 'Conv_MuseoSansCyrl-700';
-	font-size: 18px;
-}
-.content-widget__tel{
-	margin: 0 0 0 12px;
-	padding: 0 0 0 20px;
-	display: inline-block;
-	position: relative;
-	font-family: 'Conv_MuseoSansCyrl-700';
-	color: #000;
-}
-.content-widget__tel:before{
-	position: absolute;
-	left: 0;
-	top: 50%;
-	content: "";
-	background: url(../images/i/icon-tel-red-small.png) no-repeat;
-	width: 14px;
-	height: 14px;
-	margin: -7px 0 0 0;
-}
-.content-widget__tel:hover{
-	color: #b42a35;
-}
-
-/*----------------------------------------------------------------
 Entry content
 ----------------------------------------------------------------*/
 
@@ -1065,8 +1026,7 @@ p,
 	line-height: 18px;
 }
 strong,
-.entry-content strong,
-.content-widget__text strong{
+.entry-content strong{
 	font-family: 'Conv_MuseoSansCyrl-700';
 }
 .entry-content ul,
@@ -1153,21 +1113,16 @@ strong,
 	font-style: italic;
 	text-align: left;	
 }
-.content-widget p{
-	margin: 0 0 15px 0;
-	font-size: 14px;
-	line-height: 28px;
-}
-.content-widget p:last-child{
-	margin: 0;
-}
 .align-left{
 	float: left;
-	margin: 0 25px 10px 0;
+	margin: 0 25px 25px 0;
 }
 .align-right{
 	float: right;
-	margin: 0 0 10px 25px;
+	margin: 0 0 25px 25px;
+}
+.align-center{
+	margin: 0 auto 25px;
 }
 .table-td-ico{
 	padding: 0 0 0 30px;
@@ -1750,9 +1705,6 @@ Adaptive styles
 	.entry-content p{
 		margin: 14px 0;
 	}
-	.content-widget p{
-		line-height: 18px;
-	}
 	.entry-content table{
 		overflow-x: auto;
 		display: block;	
@@ -1760,14 +1712,18 @@ Adaptive styles
 	
 
 
-	.content-widget__img{
-		width: 30%;
-	}
-	.content-widget__text{
-		width: 70%;
-	}
+	
 	.footer{
 		margin: 22px 0 0 0;
+	}
+
+	button,
+	html [type="button"],
+	[type="reset"],
+	[type="submit"] {
+		-webkit-appearance: button;
+		border-radius: 0;
+		-webkit-border-radius: 0;
 	}
 
 }
