@@ -125,9 +125,6 @@ textarea,
 select{
 	font-family: 'Conv_MuseoSansCyrl-300', sans-serif;
 	color: #000;
-/*	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;  */
 	border-radius: 0;
 	-webkit-border-radius: 0;
 }
