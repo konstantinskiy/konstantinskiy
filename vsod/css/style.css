@@ -124,9 +124,10 @@ input,
 textarea,
 select{
 	font-family: 'Conv_MuseoSansCyrl-300', sans-serif;
-	-webkit-appearance: none;
+	color: #000;
+/*	-webkit-appearance: none;
 	-moz-appearance: none;
-	appearance: none;  
+	appearance: none;  */
 	border-radius: 0;
 	-webkit-border-radius: 0;
 }
@@ -475,8 +476,6 @@ Header
 }
 .header-menu__item{
 	display: inline-block;
-	zoom: 1;
-        *display: inline;
 	border-right: 1px solid #952f3a;
 	border-left: 1px solid #5f181f;
 }
