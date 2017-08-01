@@ -68,4 +68,12 @@ $(document).ready(function(){
         }
     });
 
+
+    // Collapse sidebar block
+
+    $('.sidebar-block-toggle__btn').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('sidebar-block-toggle__btn--active').parent().next().slideToggle();
+    });
+
 });

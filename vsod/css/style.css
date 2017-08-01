@@ -1222,6 +1222,16 @@ Sidebar
 .sidebar-block__red-description{
 	margin: 0 0 30px 0;
 }
+.sidebar-block-toggle__btn{
+	display: none;
+	color: #0c1219;
+	font-size: 13px;
+	text-decoration: underline;
+}
+.sidebar-block-toggle__btn:hover{
+	color: #b42a35;
+	text-decoration: none;
+}
 .sidebar-block__red-description p{
 	margin: 0 0 15px 0;
 	color: #dc1f2e;
@@ -1591,6 +1601,16 @@ Adaptive styles
 		width: 100%;
 		float: none;
 	}
+	.sidebar-block-toggle__btn{
+		display: inline-block;
+	}
+	.sidebar-block{
+		margin: 0 0 30px 0;
+	}
+	.sidebar-block__text{
+		padding: 20px 0 0 0;
+		display: none;
+	}
 
 	
 
@@ -1737,6 +1757,11 @@ Adaptive styles
 	.content-widget p{
 		line-height: 18px;
 	}
+	.entry-content table{
+		overflow-x: auto;
+		display: block;	
+	}
+	
 
 
 	.content-widget__img{
