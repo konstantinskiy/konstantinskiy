@@ -250,6 +250,12 @@ Section title
 	-moz-box-shadow:    0px 5px 24px 0px rgba(50, 50, 50, 0.52);
 	box-shadow:         0px 5px 24px 0px rgba(50, 50, 50, 0.52);
 }
+.section-title h1,
+.section-title h2{
+	margin: 0;
+	font-size: 25px;
+	line-height: 30px;
+}
 
 /*------------------------------------------------------------
 Text align helpers
@@ -323,17 +329,38 @@ Header
 	width: 100%;
 	height: 100%;
 	padding: 12px 9px 0 9px;
+	position: relative;
 	display: inline-block;
+}
+.adaptive-menu-toggler:hover{
+	background: #f09227;
+}
+.adaptive-menu-toggler.adaptive-menu-toggler--active{
+	background: #f09227 url(../images/i/icon-cross-white.png) center center no-repeat;
+	-webkit-transition: 0s;
+	-o-transition: 0s;
+	transition: 0s;
+}
+.adaptive-menu-toggler.adaptive-menu-toggler--active span{
+	opacity: 0;
 }
 .adaptive-menu-toggler span{
     background: #fff;
     display: block;
-    margin: 0 0 5px 0;
     height: 3px;
-    width: 100%;
+    position: absolute;
+    left: 9px;
+    right: 9px;
+    opacity: 1;
 }
-.adaptive-menu-toggler span:last-child{
-	margin: 0;
+.adaptive-menu-toggler span:nth-child(1){
+	top: 12px;
+}
+.adaptive-menu-toggler span:nth-child(2){
+	top: 20px;
+}
+.adaptive-menu-toggler span:nth-child(3){
+	top: 28px;
 }
 .adaptive-header{
 	display: none;
@@ -358,6 +385,9 @@ Header
 	-ms-border-radius: 0;
 	-o-border-radius: 0;
 	border-radius: 0;
+}
+.header--single{
+	border-bottom: 1px solid #7b212a;
 }
 .header__top{
 	padding: 35px 0 38px 0;
@@ -458,7 +488,7 @@ Header
 }
 .header-menu__link{
 	display: block;
-	padding: 18px 31px;
+	padding: 18px 30px;
 	font-family: 'Conv_MuseoSansCyrl-700';
 	color: #fff;
 	font-size: 18px;
@@ -530,7 +560,7 @@ Service
 ------------------------------------------------------------*/
 
 .service{
-	padding: 50px 0;
+	padding: 50px 0 0 0;
 }
 .service-list{
 	margin: 0 -10px;
@@ -603,6 +633,7 @@ Howwork
 ----------------------------------------------------------------*/
 
 .howwork{
+	margin: 50px 0 0 0;
 	padding: 35px 0 50px;
 	background: #f1f1f1;
 }
@@ -881,6 +912,9 @@ Price up
 	padding: 0 35px;
 	letter-spacing: 0;
 }
+.priceup-list__col:last-child{
+	margin: 0;
+}
 .priceup-list__item-head{
 	background: #7b212a;
 	border-bottom: 1px solid #a2525a;
@@ -897,6 +931,313 @@ Price up
 }
 .priceup-container__text{
 	margin: 50px 0 0 0;
+}
+
+/*----------------------------------------------------------------
+Main container
+----------------------------------------------------------------*/
+
+.main-container{
+	margin: 55px 0 0 0;
+}
+.content-col{
+	float: left;
+	width: 75%;
+	padding: 0 25px 0 0;
+}
+
+/*----------------------------------------------------------------
+Breadcrumbs
+----------------------------------------------------------------*/
+
+.breadcrumbs{
+	margin: 0 0 32px 0;
+	letter-spacing: -10px;
+}
+.breadcrumbs li{
+	display: inline-block;
+	padding: 0 44px 0 0;
+	position: relative;
+	letter-spacing: 0;
+	color: #b42a35;
+	font-size: 11px;
+}
+.breadcrumbs li:last-child{
+	padding: 0;
+}
+.breadcrumbs li:after{
+	position: absolute;
+	right: 15px;
+	top: 50%;
+	content: "";
+	background: url(../images/i/icon-breadcrumbs-red.png) no-repeat;
+	width: 15px;
+	height: 5px;
+	margin: -3px 0 0 0;
+}
+.breadcrumbs li:last-child:after{
+	background: none;
+	right: 0;
+}
+.breadcrumbs a{
+	font-family: 'Conv_MuseoSansCyrl-700';
+	color: #2f2f2f;
+	font-size: 11px;
+}
+.breadcrumbs a:hover{
+	color: #b42a35;
+}
+
+/*----------------------------------------------------------------
+Content widget
+----------------------------------------------------------------*/
+
+.content-widget{
+	margin: 0 0 35px 0;
+}
+.content-widget__img{
+	float: left;
+	width: 24%;
+	padding: 0 30px 0 0;
+}
+.content-widget__text{
+	float: left;
+	width: 76%;
+}
+.content-widget__text p{
+	margin: 0 0 20px 0;
+	line-height: 28px;
+}
+.content-widget__text p:last-child{
+	margin: 0;
+}
+.content-widget__text-question{
+	font-family: 'Conv_MuseoSansCyrl-700';
+	font-size: 18px;
+}
+.content-widget__tel{
+	margin: 0 0 0 12px;
+	padding: 0 0 0 20px;
+	display: inline-block;
+	position: relative;
+	font-family: 'Conv_MuseoSansCyrl-700';
+	color: #000;
+}
+.content-widget__tel:before{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	content: "";
+	background: url(../images/i/icon-tel-red-small.png) no-repeat;
+	width: 14px;
+	height: 14px;
+	margin: -7px 0 0 0;
+}
+.content-widget__tel:hover{
+	color: #b42a35;
+}
+
+/*----------------------------------------------------------------
+Entry content
+----------------------------------------------------------------*/
+
+h1,
+.entry-content h1{
+	margin: 0 0 30px 0;
+	font-family: 'VollkornBold';
+	font-size: 30px;
+	line-height: 35px;
+}
+h2,
+.entry-content h2{
+	margin: 60px 0 30px 0;
+	font-family: 'VollkornBold';
+	font-size: 25px;
+	line-height: 30px;
+}
+h3,
+.entry-content h3{
+	margin: 30px 0;
+	font-family: 'Conv_MuseoSansCyrl-700';
+	font-size: 18px;
+	line-height: 22px;
+}	
+p,
+.entry-content p{
+	margin: 16px 0;
+	font-size: 14px;
+	line-height: 18px;
+}
+strong,
+.entry-content strong,
+.content-widget__text strong{
+	font-family: 'Conv_MuseoSansCyrl-700';
+}
+.entry-content ul,
+.entry-content ol{
+	margin: 30px 0;
+}
+.entry-content ol{
+	counter-reset: numcounter;
+}
+.entry-content ul li,
+.entry-content ol li{
+	margin: 0 0 15px 0;
+	position: relative;
+	font-size: 14px;
+	line-height: 18px;
+}
+.entry-content ul li{
+	padding: 0 0 0 20px;
+}
+.entry-content ol li{
+	padding: 0 0 0 34px;
+	counter-increment: numcounter;
+}
+.entry-content ul li:last-child,
+.entry-content ol li:last-child{
+	margin: 0;
+}
+.entry-content ul li:before,
+.entry-content ol li:before{
+	position: absolute;
+	left: 0;
+	top: 50%;
+}
+.entry-content ul li:before{
+	content: "";
+	background: #b42a35;
+	width: 6px;
+	height: 6px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
+	margin: -3px 0 0 0;
+}
+.entry-content ol li:before{
+	margin: -9px 0 0 0;
+	content: counter(numcounter);
+	font-family: 'Conv_MuseoSansCyrl-900';
+	color: #b42a35;
+	font-size: 22px;
+}
+.entry-content table{
+	width: 100%;
+	vertical-align: middle;
+	text-align: left;
+}
+.entry-content table th{
+	background: #646464;
+	padding: 15px 22px;
+	font-family: 'Conv_MuseoSansCyrl-500';
+	color: #fff;
+	font-size: 17px;
+	vertical-align: middle;
+}
+.entry-content table th:last-child{
+	background: #717171;
+	text-align: center;
+}
+.entry-content table td{
+	margin: 5px 0 0;
+	border: 1px solid #e5e5e5;
+	padding: 10px 22px;
+	font-size: 14px;
+	line-height: 18px;
+	vertical-align: middle;
+}
+.entry-content table caption{
+	margin: 20px 0 0 0;
+	caption-side: bottom;
+	font-family: 'Conv_MuseoSansCyrl-700';
+	font-size: 13px;
+	line-height: 16px;
+	font-style: italic;
+	text-align: left;	
+}
+.content-widget p{
+	margin: 0 0 15px 0;
+	font-size: 14px;
+	line-height: 28px;
+}
+.content-widget p:last-child{
+	margin: 0;
+}
+.align-left{
+	float: left;
+	margin: 0 25px 10px 0;
+}
+.align-right{
+	float: right;
+	margin: 0 0 10px 25px;
+}
+.table-td-ico{
+	padding: 0 0 0 30px;
+	position: relative;
+}
+.table-td-ico:before{
+	position: absolute;
+	left: 0;
+	top: 50%;
+	content: "";
+	background: url(../images/i/icon-check-red.png) no-repeat;
+	width: 13px;
+	height: 10px;
+	margin: -5px 0 0 0;
+}
+
+/*----------------------------------------------------------------
+Sidebar
+----------------------------------------------------------------*/
+
+.sidebar{
+	float: left;
+	width: 25%;
+}
+.sidebar-content{
+	border: 1px solid #ff5d5d;
+	padding: 30px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.sidebar-block{
+	margin: 0 0 50px 0;
+}
+.sidebar-block:last-child{
+	margin: 0;
+}
+.sidebar-block__title{
+	margin: 0 0 18px 0;
+	padding: 0 0 10px 0;
+	font-family: 'VollkornBold';
+	font-size: 19px;
+	line-height: 23px;
+	border-bottom: 1px solid #282828;
+}
+.sidebar-block__red-description{
+	margin: 0 0 30px 0;
+}
+.sidebar-block__red-description p{
+	margin: 0 0 15px 0;
+	color: #dc1f2e;
+	font-size: 14px;
+	line-height: 18px;
+}
+.sidebar-block__list{
+	margin: 18px 0 30px 0;
+}
+.sidebar-block__list li{
+	margin: 0 0 17px 0;
+	color: #282828;
+	font-size: 14px;
+}
+.sidebar-block__list li:last-child{
+	margin: 0;
 }
 
 /*----------------------------------------------------------------
@@ -991,6 +1332,7 @@ Footer
 	display: inline-block;
 	position: relative;
 	padding: 0 0 0 46px;
+	font-family: 'Conv_MuseoSansCyrl-700';
 	color: #fff;
 	text-decoration: underline;
 }
@@ -1133,9 +1475,10 @@ Adaptive styles
 		width: 35%;
 	}
 	.service{
-		padding: 25px 0 16px 0;
+		padding: 25px 0 0 0;
 	}
 	.howwork{
+		margin: 16px 0 0 0;
 		padding: 25px 0 40px 0;
 	}
 	.howwork__description{
@@ -1172,9 +1515,6 @@ Adaptive styles
 	}
 	.hero-text__title span{
 		font-size: 36px;
-	}
-	.service{
-		display: none;
 	}
 	.service-list__col{
 		width: 50%;
@@ -1238,6 +1578,20 @@ Adaptive styles
 		padding: 15px 10px;
 	}
 
+
+
+	.content-col{
+		width: 100%;
+		float: none;
+		padding: 0;
+	}
+
+
+	.sidebar{
+		width: 100%;
+		float: none;
+	}
+
 	
 
 	.footer-row{
@@ -1273,12 +1627,10 @@ Adaptive styles
 		float: none;
 	}
 
-	
 }
 
 
 @media only screen and (max-width: 767px){
-	
 
 	.header__top-logo,
 	.header__top-description{
@@ -1332,7 +1684,10 @@ Adaptive styles
 	.law-support__title{
 		margin: 0 0 10px 0;
 	}
-
+	
+	.service{
+		display: none;
+	}
 
 	.accordeon{
 		margin: 0 0 40px 0;
@@ -1341,10 +1696,10 @@ Adaptive styles
 		right: 12px;
 	}
 	.priceup-container__text{
-		margin: 40px 0 0 0;
+		margin: 22px 0 0 0;
 	}
 	.priceup-container__title{
-		display: none;
+		margin: 0 0 20px 0;
 	}
 	.priceup-list__col{
 		margin: 0 0 20px 0;
@@ -1352,24 +1707,55 @@ Adaptive styles
 	}
 
 
-	.footer{
+	.main-container{
 		margin: 40px 0 0 0;
+	}
+	.breadcrumbs{
+		margin: 0 0 20px 0;
+	}
+
+	h1,
+	.entry-content h1{
+		margin: 0 0 25px 0;
+		font-size: 25px;
+		line-height: 30px;
+	}
+	.entry-content ul,
+	.entry-content ol{
+		margin: 20px 0;
+	}
+	h2,
+	.entry-content h2,
+	h3,
+	.entry-content h3{
+		margin: 35px 0 25px 0;
+	}
+	p,
+	.entry-content p{
+		margin: 14px 0;
+	}
+	.content-widget p{
+		line-height: 18px;
+	}
+
+
+	.content-widget__img{
+		width: 30%;
+	}
+	.content-widget__text{
+		width: 70%;
+	}
+	.footer{
+		margin: 22px 0 0 0;
 	}
 
 }
 
 @media only screen and (max-width: 640px){
 
-
-
 	.service-list__col{
 		width: 100%;
 	}
-
-
-
-
-	
 	.footer-row{
 		display: block;
 		position: relative;
@@ -1387,8 +1773,6 @@ Adaptive styles
 		display: block;
 		width: 100%;
 	}
-
-
 
 }
 
@@ -1450,6 +1834,4 @@ Adaptive styles
 		padding: 30px 15px;
 	}
 	
-	
-
 }

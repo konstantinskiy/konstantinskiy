@@ -8,11 +8,27 @@ $(document).ready(function(){
         $(this).toggleClass('adaptive-menu-toggler--active');
         $('.adaptive-menu-container').toggleClass('open');
     });
+
+
+    // Toggle menu after Esc click
+
+    $(document).keydown(function(e) {
+        if(e.keyCode === 27) {
+            $('.adaptive-menu-toggler').removeClass('adaptive-menu-toggler--active');
+            $('.adaptive-menu-container').removeClass('open');
+            return false;
+        }
+    });
     
 
     // Modal
 
     $('.modal-trigger').fancybox();
+
+
+    // Tel mask
+
+    $('.form-input--tel').mask("+3(999) 999-99-99");
 
   
     // Tabs
@@ -51,11 +67,5 @@ $(document).ready(function(){
             $(this).addClass('accordeon-item__title--active');            
         }
     });
-    
-
-    // Tel mask
-
-    $('.form-input--tel').mask("+3(999) 999-99-99");
-
 
 });
