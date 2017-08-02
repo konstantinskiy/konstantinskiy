@@ -1494,7 +1494,11 @@ Adaptive styles
 		margin: 0 0 35px 0;
 		width: 25%;
 	}
-	.howwork-list__item:nth-child(4n):after{
+	.howwork-list__item:after{
+		background: none;
+		right: 0;
+	}
+	/*.howwork-list__item:nth-child(4n):after{
 		top: auto;
 		bottom: -40px;
 		right: 50%;
@@ -1504,14 +1508,26 @@ Adaptive styles
 		-o-transform: rotate(90deg);
 		transform: rotate(90deg);
 	}
-	.howwork-list__item:nth-child(5n):after,
+*/	/*.howwork-list__item:nth-child(5n):after,
 	.howwork-list__item:nth-child(6n):after,
 	.howwork-list__item:nth-child(7n):after{
 		-webkit-transform: rotate(-180deg);
 		-ms-transform: rotate(-180deg);
 		-o-transform: rotate(-180deg);
 		transform: rotate(-180deg);
+	}*/
+	/*.howwork-list__item--8:before{
+		background: url(../images/i/icon-howwork-black-5.png) no-repeat;
+		width: 35px;
+		height: 35px;
+		margin: 0 0 0 -18px;
 	}
+	.howwork-list__item--7:before{
+		background: url(../images/i/icon-howwork-black-6.png) no-repeat;
+		width: 30px;
+		height: 36px;
+		margin: 0 0 0 -15px;
+	}*/
 
 
 	.order-container__text{
