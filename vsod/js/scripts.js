@@ -1,6 +1,5 @@
 $(document).ready(function(){
 
-
     // Adaptive menu toggle
 
     $('.adaptive-menu-toggler').on('click', function(e) {
@@ -19,11 +18,6 @@ $(document).ready(function(){
             return false;
         }
     });
-    
-
-    // Modal
-
-    $('.modal-trigger').fancybox();
 
 
     // Tel mask
