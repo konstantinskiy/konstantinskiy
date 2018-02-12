@@ -1,0 +1,972 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>04 - Гарантийный ремонт</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="layout">
+	
+	<div class="adaptive-menu-container-before">
+		<div class="adaptive-menu-container">
+			<nav class="adaptive-menu">
+				<ul>
+					<li class="adaptive-menu__item">
+						<a href="#" class="adaptive-menu__link adaptive-menu__link-hassub">Модели</a>
+						<div class="adaptive-submenu">
+							<div class="adaptive-submenu-model-row">
+								<div class="adaptive-submenu-model-row-inner">
+									<div class="adaptive-submenu-model-col">								
+										<div class="adaptive-submenu-model__name">
+											<a href="#" class="header-submenu-model__link">Ravon R2</a>
+										</div>
+										<div class="adaptive-submenu-model__price">от 189 000 грн</div>
+									</div>
+									<div class="adaptive-submenu-model-col">
+										<a href="#"><img src="images/adaptive-model-img-1.png" alt="Модель"></a>
+									</div>
+								</div>
+							</div>
+							<div class="adaptive-submenu-model-row">
+								<div class="adaptive-submenu-model-row-inner">
+									<div class="adaptive-submenu-model-col">								
+										<div class="adaptive-submenu-model__name">
+											<a href="#" class="header-submenu-model__link">Ravon R4</a>
+										</div>
+										<div class="adaptive-submenu-model__price">от 242 250 грн</div>
+									</div>
+									<div class="adaptive-submenu-model-col">
+										<a href="#"><img src="images/adaptive-model-img-2.png" alt="Модель"></a>
+									</div>
+								</div>
+							</div>
+							<div class="adaptive-submenu-model-row">
+								<div class="adaptive-submenu-model-row-inner">
+									<div class="adaptive-submenu-model-col">								
+										<div class="adaptive-submenu-model__name">
+											<a href="#" class="header-submenu-model__link">Ravon GENTRA</a>
+										</div>
+										<div class="adaptive-submenu-model__price">от 266 800 грн</div>
+									</div>
+									<div class="adaptive-submenu-model-col">
+										<a href="#"><img src="images/adaptive-model-img-3.png" alt="Модель"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="adaptive-menu__item">
+						<a href="#" class="adaptive-menu__link adaptive-menu__link-hassub">Сервис</a>
+						<ul class="adaptive-submenu adaptive-submenu--categories">
+							<li class="adaptive-submenu__item"><a href="#" class="adaptive-submenu__link">Кредит</a></li>
+							<li class="adaptive-submenu__item"><a href="#" class="adaptive-submenu__link">Страхование</a></li>
+							<li class="adaptive-submenu__item"><a href="#" class="adaptive-submenu__link">Лизинг</a></li>
+							<li class="adaptive-submenu__item"><a href="#" class="adaptive-submenu__link">Корпоративным клиентам</a></li>
+							<li class="adaptive-submenu__item"><a href="#" class="adaptive-submenu__link">Trade-in</a></li>
+						</ul>
+					</li>
+					<li class="adaptive-menu__item">
+						<a href="#" class="adaptive-menu__link adaptive-menu__link-hassub">Услуги</a>
+						<ul class="adaptive-submenu adaptive-submenu--categories">
+							<li class="adaptive-submenu__item"><a href="#" class="adaptive-submenu__link">Кредит</a></li>
+							<li class="adaptive-submenu__item"><a href="#" class="adaptive-submenu__link">Страхование</a></li>
+							<li class="adaptive-submenu__item"><a href="#" class="adaptive-submenu__link">Лизинг</a></li>
+							<li class="adaptive-submenu__item"><a href="#" class="adaptive-submenu__link">Корпоративным клиентам</a></li>
+							<li class="adaptive-submenu__item"><a href="#" class="adaptive-submenu__link">Trade-in</a></li>
+						</ul>
+					</li>
+					<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__link">Новости</a></li>
+					<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__link">О компании</a></li>
+					<li class="adaptive-menu__item"><a href="#" class="adaptive-menu__link">Контакты</a></li>
+				</ul>
+			</nav>
+			<div class="adaptive-action-container">
+				<div class="adaptive-action-row">
+					<div class="adaptive-order-inner">
+						<div class="adaptive-order__item">
+							<a href="#service-modal" data-fancybox-modal class="header-order__link header-order__link--service">Запись на сервис</a>
+						</div>
+						<div class="adaptive-order__item">
+							<a href="#testdrive-modal" data-fancybox-modal class="header-order__link header-order__link--testdrive">Запись на тест-драйв</a>
+						</div>
+					</div>
+				</div>
+				<div class="adaptive-contacts">
+					<div class="adaptive-header-tel"><a href="tel:(057)716-57-77" class="adaptive-header-tel__link">(057) 716-57-77</a></div>
+					<div class="adaptive-header-callback"><a href="#callback-modal" data-fancybox-modal class="adaptive-header-callback__link">Заказать звонок</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="header">
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header-top-row">
+					<div class="header-logo">
+						<div class="header-logo__ico">
+							<div class="header-logo--desktop"><a href="#"><img src="images/logo-desktop.png" alt="Ravon"></a></div>
+							<div class="header-logo--mobile"><a href="#"><img src="images/logo-mobile.png" alt="Ravon"></a></div>
+						</div>
+						<div class="header-logo__description header-logo__description--desktop">
+							<p><strong>Солли Плюс</strong></p>
+							<p>Международный автомобильный холдинг</p>
+						</div>
+						<div class="header-logo__description header-logo__description--mobile">
+							<p>Автомобильный дом</p>
+							<p><strong>«Солли-Плюс»</strong></p>
+						</div>
+					</div>
+					<div class="header-order">
+						<div class="header-order-right">
+							<div class="header-order-inner">
+								<div class="header-order__item">
+									<a href="#service-modal" data-fancybox-modal class="header-order__link header-order__link--service">Запись на сервис</a>
+								</div>
+								<div class="header-order__item">
+									<a href="#testdrive-modal" data-fancybox-modal class="header-order__link header-order__link--testdrive">Запись на тест-драйв</a>
+								</div>
+							</div>
+							<div class="header-contacts">
+								<div class="header-tel"><a href="tel:(057)716-57-77" class="header-tel__link">(057) 716-57-77</a></div>
+								<div class="header-callback"><a href="#callback-modal" data-fancybox-modal class="header-callback__link">Заказать звонок</a></div>
+							</div>
+						</div>
+					</div>
+					<a href="#adaptive-menu" class="adaptive-menu-toggle">
+						<span class="menu-toggle-inner">
+							<span class="menu-toggle-line menu-toggle-line--1"></span>
+							<span class="menu-toggle-line menu-toggle-line--2"></span>
+							<span class="menu-toggle-line menu-toggle-line--3"></span>
+							<span class="menu-toggle-line menu-toggle-line--4"></span>
+							<span class="menu-toggle-line menu-toggle-line--5"></span>
+						</span>
+					</a>				
+				</div>
+			</div>
+		</div>
+			
+		<div class="header-bottom header-bottom--inner">
+			<div class="wrapper">
+				<nav class="header-menu">
+					<ul>
+						<li class="header-menu__item header-menu__item">
+							<a href="#" class="header-menu__link header-menu__link--has-sub">Модели</a>
+							<div class="header-submenu header-submenu--b clearfix">
+								<div class="header-submenu-model">
+									<div class="header-submenu-model__name">
+										<a href="#" class="header-submenu-model__link">Ravon R2</a>
+									</div>
+									<div class="header-submenu-model__price">от 189 000 грн</div>
+									<div class="header-submenu-model__img">
+										<a href="#"><img src="images/adaptive-model-img-1.png" alt="Модель"></a>
+									</div>
+								</div>
+								<div class="header-submenu-model">
+									<div class="header-submenu-model__name">
+										<a href="#" class="header-submenu-model__link">Ravon R4</a>
+									</div>
+									<div class="header-submenu-model__price">от 242 250 грн</div>
+									<div class="header-submenu-model__img">
+										<a href="#"><img src="images/adaptive-model-img-2.png" alt="Модель"></a>
+									</div>
+								</div>
+								<div class="header-submenu-model">
+									<div class="header-submenu-model__name">
+										<a href="#" class="header-submenu-model__link">Ravon GENTRA</a>
+									</div>
+									<div class="header-submenu-model__price">от 266 800 грн</div>
+									<div class="header-submenu-model__img">
+										<a href="#"><img src="images/adaptive-model-img-3.png" alt="Модель"></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="header-menu__item">
+							<a href="#" class="header-menu__link header-menu__link--has-sub">Сервис</a>
+							<div class="header-submenu header-submenu--s clearfix">
+								<div class="header-submenu-links">
+									<ul>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Тех.обслуживание</a>
+										</li>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Гарантийный ремонт</a>
+										</li>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Запасные части</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="header-menu__item">
+							<a href="#" class="header-menu__link header-menu__link--has-sub">Услуги</a>
+							<div class="header-submenu header-submenu--s clearfix">
+								<div class="header-submenu-links">
+									<ul>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Тех.обслуживание</a>
+										</li>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Гарантийный ремонт</a>
+										</li>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Запасные части</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="header-menu__item"><a href="#" class="header-menu__link">Новости</a></li>
+						<li class="header-menu__item"><a href="#" class="header-menu__link">О компании</a></li>
+						<li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+		<div class="header-bottom--scroll">
+			<div class="wrapper">
+				<nav class="header-menu">
+					<ul>
+						<li class="header-menu__item">
+							<a href="#" class="header-menu__link header-menu__link--has-sub">Модели</a>
+							<div class="header-submenu header-submenu--b clearfix">
+								<div class="header-submenu-model">
+									<div class="header-submenu-model__name">
+										<a href="#" class="header-submenu-model__link">Ravon R2</a>
+									</div>
+									<div class="header-submenu-model__price">от 189 000 грн</div>
+									<div class="header-submenu-model__img">
+										<a href="#"><img src="images/adaptive-model-img-1.png" alt="Модель"></a>
+									</div>
+								</div>
+								<div class="header-submenu-model">
+									<div class="header-submenu-model__name">
+										<a href="#" class="header-submenu-model__link">Ravon R4</a>
+									</div>
+									<div class="header-submenu-model__price">от 242 250 грн</div>
+									<div class="header-submenu-model__img">
+										<a href="#"><img src="images/adaptive-model-img-2.png" alt="Модель"></a>
+									</div>
+								</div>
+								<div class="header-submenu-model">
+									<div class="header-submenu-model__name">
+										<a href="#" class="header-submenu-model__link">Ravon GENTRA</a>
+									</div>
+									<div class="header-submenu-model__price">от 266 800 грн</div>
+									<div class="header-submenu-model__img">
+										<a href="#"><img src="images/adaptive-model-img-3.png" alt="Модель"></a>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="header-menu__item">
+							<a href="#" class="header-menu__link header-menu__link--has-sub">Сервис</a>
+							<div class="header-submenu header-submenu--s clearfix">
+								<div class="header-submenu-links">
+									<ul>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Тех.обслуживание</a>
+										</li>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Гарантийный ремонт</a>
+										</li>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Запасные части</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="header-menu__item">
+							<a href="#" class="header-menu__link header-menu__link--has-sub">Услуги</a>
+							<div class="header-submenu header-submenu--s clearfix">
+								<div class="header-submenu-links">
+									<ul>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Тех.обслуживание</a>
+										</li>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Гарантийный ремонт</a>
+										</li>
+										<li class="header-submenu-links__item">
+											<a href="#" class="header-submenu-links__link">Запасные части</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li class="header-menu__item"><a href="#" class="header-menu__link">Новости</a></li>
+						<li class="header-menu__item"><a href="#" class="header-menu__link">О компании</a></li>
+						<li class="header-menu__item"><a href="#" class="header-menu__link">Контакты</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</header>
+
+	
+	<main class="page-container page-container--warranty">
+		<div class="wrapper">
+			<div class="page-title">
+				<h1>Гарантийный ремонт</h1>
+			</div>
+			<div class="page-warranty-content">
+				<h3 class="page-subtitle page-subtitle--warranty">Гарантия на автомобили Ravon составляет 3 года (тридцать шесть месяцев) при пробеге не более 100 000 (ста тысяч) километров, в зависимости от того, что наступит ранее.</h3>
+				<div class="page-warranty-description">
+					<p>Гарантийный срок отсчитывается со дня передачи автомобиля дилером первому владельцу. При переходе автомобиля к другому собственнику период для предъявления требований, связанных с недостатками качества, сохраняется в пределах срока и пробега, установленных при передаче автомобиля первому владельцу. Более детальную информацию по гарантии и сервисному обслуживанию можно получить в автосалоне официального дилера Ravon от «Солли-Плюс».</p>
+				</div>
+				<h4 class="page-warranty-list-title">Гарантийные обязательства Производителя (Продавца) на автомобили торговой марки RAVON</h4>
+				<div class="page-warranty-list">
+					<ol>
+						<li>Производитель (Продавец) несет обязательства по гарантийному обслуживанию автомобилей на протяжении обозначенного для него гарантийного срока, в течение которого он обязуется бесплатно устранить выявленные производственные дефекты и неисправности.</li>
+						<li>На Автомобили торговой марки RAVON Производителем (Продавцом) устанавливается гарантийный срок три года и/или 100 000 км пробега в зависимости от того, какое из перечисленных событий наступит ранее. Гарантийный срок исчисляется от даты передачи автомобиля Покупателю, которая указывается в Акте приема-передачи Автомобиля и вносится на первой странице Сервисной книжки.</li>
+						<li>На специфические составные части, агрегаты, детали и элементы Автомобиля Продавцом устанавливается гарантийный срок меньшей продолжительности, о чем указано в Сервисной книжке на Автомобиль.
+							<div class="page-warranty-level">
+								<ol>
+									<li>Гарантийный срок в пределах 24 месяцев или 50 000 км пробега в зависимости от того, какое из перечисленных событий наступит ранее, устанавливается на такие элементы автомобиля:
+										<div class="page-warranty-sublist">
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">шаровые шарниры деталей подвески и рулевой наконечник;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">сайлент-блоки;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">привод полуосевой в сборе;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">опоры силового агрегата, трансмиссии, подушки подвески двигателя;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">карданные шарниры, крестовины;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">коробка передач – механическая, автоматическая;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">блок цилиндров, вал коленчатый, поршень, шатун, головка блока цилиндров, вал распределительный;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">шкивы;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">ось задняя.</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">сайлент-блоки;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">привод полуосевой в сборе;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">карданные шарниры, крестовины;</div>
+											<a href="#" class="warranty-trigger-btn">Развернуть</a>
+										</div>
+									</li>
+									<li>Гарантийный срок в пределах 12 месяцев или 20 000 км пробега в зависимости от того, какое из перечисленных событий наступит ранее, устанавливается на такие элементы автомобиля:
+										<div class="page-warranty-sublist">
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">сайлент-блоки;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">привод полуосевой в сборе;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">карданные шарниры, крестовины;</div>
+											<a href="#" class="warranty-trigger-btn">Развернуть</a>
+										</div>
+									</li>
+									<li>На специфические составные части (узлы и агрегаты) транспортного средства, подверженные влиянию износа естественного характера, устанавливается гарантийный срок не более 6 месяцев со дня передачи автомобиля первому покупателю или 10 000 км пробега (что наступит ранее):
+										<div class="page-warranty-sublist">
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">сайлент-блоки;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">привод полуосевой в сборе;</div>
+											<div class="page-warranty-sublist__item page-warranty-sublist--hidden-item">карданные шарниры, крестовины;</div>
+											<a href="#" class="warranty-trigger-btn">Развернуть</a>
+										</div>
+									</li>
+								</ol>
+							</div>
+							<div class="page-warranty-level-more">
+								<a href="#" class="page-warranty-level__btn">Развернуть</a>
+							</div>
+						</li>
+						<li>Гарантийные обязательства Продавца (Производителя) теряют силу в следующих случаях:
+							<div class="page-warranty-level">
+								<ol>
+									<li>самовольной разборки и вскрытия Покупателем узлов и агрегатов автомобиля; обслуживания и/ или ремонта автомобиля не в официальных центрах сервисной сети RAVON;</li>
+									<li>установки на автомобиль деталей (узлов или агрегатов), либо внесения изменения в его конструкцию или оборудование, не санкционированных Продавцом, в том числе, замена штатных колесных дисков на не оригинальные — не предусмотренные каталогом запасных частей RAVON; установка и подключение к штатным электрическим цепям сигнализаций, автомагнитол, системы центрального замка, электрических стеклоподъемников или других электронных либо электрических систем, не имеющих разрешения Продавцом для применения на данном автомобиле;</li>
+									<li>повреждения в результате аварии деталей и агрегатов автотранспортного средства;</li>
+									<li>если причиной неисправности автомобиля явились: эксплуатация с чрезмерными нагрузками, в частности использование автомобиля под такси; проведение изменений тюнингового характера без разрешения Продавца (в том числе, доработка кузовных элементов, силового агрегата, трансмиссии, подвески, электроники двигателя и т.п.); несоблюдение или нарушение правил эксплуатации, ухода и обслуживания автомобиля;</li>
+									<li>если причиной неисправности автомобиля явился «естественный износ», особенно при интенсивной эксплуатации автомобиля, что не может считаться производственным дефектом.</li>
+									<li>Гарантийные обязательства Продавца (Производителя) не распространяются на детали и узлы автомобиля, подверженные влиянию нормального физического износа, а именно: фильтры, тормозные колодки, приводные ремни, свечи зажигания, реле поворотов, диски сцепления, стекла, щетки стеклоочистеля, контакты зажигания, конденсаторы, автолампы, сальники, пыльники и резинотехнические изделия.</li>
+								</ol>
+							</div>
+							<div class="page-warranty-level-more">
+								<a href="#" class="page-warranty-level__btn">Развернуть</a>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="page-pdf">
+				<a href="#" class="page-pdf__link">Скачать гарантийные обязательства Производителя (Продавца) на автомобили торговой марки RAVON</a>
+			</div>
+		</div>
+	</main>
+
+	
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="wrapper">	
+				<div class="footer-nav-row">
+					<div class="footer-nav-col">
+						<nav class="footer-nav">
+							<ul>
+								<li class="footer-nav__item footer-nav__item--title">Модели</li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Ravon R2</a></li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Ravon R4</a></li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Ravon Gentra</a></li>
+							</ul>	
+						</nav>
+					</div>
+					<div class="footer-nav-col">
+						<nav class="footer-nav">
+							<ul>
+								<li class="footer-nav__item footer-nav__item--title">Сервис</li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Гарантийный ремонт</a></li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Тех. обслуживание</a></li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Запасные части</a></li>
+							</ul>	
+						</nav>
+					</div>
+					<div class="footer-nav-col">
+						<nav class="footer-nav">
+							<ul>
+								<li class="footer-nav__item footer-nav__item--title">Услуги</li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Кредит</a></li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Страхование</a></li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Лизинг</a></li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Trade-in</a></li>
+							</ul>	
+						</nav>
+					</div>
+					<div class="footer-nav-col">
+						<nav class="footer-nav footer-nav--hide-items">
+							<ul>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">О компании</a></li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Сотрудники</a></li>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Вакансии</a></li>
+							</ul>	
+						</nav>
+					</div>
+					<div class="footer-nav-col">
+						<nav class="footer-nav">
+							<ul>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Новости</a></li>
+							</ul>	
+						</nav>
+					</div>
+					<div class="footer-nav-col">
+						<nav class="footer-nav">
+							<ul>
+								<li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+							</ul>	
+						</nav>
+					</div>
+					<div class="footer-contacts">
+						<div class="footer-tel footer-tel--mobile">
+							<a href="tel:(057)000-00-00" class="footer-tel__link">(057) 000-00-00</a>
+						</div>
+						<div class="footer-address">
+							<p>г. Харьков, ул. Квитучая, 107</p>
+							<p><a href="#map-modal" class="modal-map-trigger">Посмотреть на карте</a></p>
+						</div>
+						<div class="footer-soc-block">
+							<div class="footer-soc-title">Мы в соц. сетях:</div>
+							<div class="footer-soc-list">
+								<ul>
+									<li class="footer-soc-list__item">
+										<a href="#" class="footer-soc-list__link footer-soc-list__link--fb"></a>
+									</li>
+									<li class="footer-soc-list__item">
+										<a href="#" class="footer-soc-list__link footer-soc-list__link--youtube"></a>
+									</li>
+									<li class="footer-soc-list__item">
+										<a href="#" class="footer-soc-list__link footer-soc-list__link--instagram"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper">		
+				<div class="footer-copyright">
+					<div class="footer-copyright__ico">
+						<a href="#"><img src="images/i/i-copyright.png" alt="Копирайт Солли"></a>
+					</div>
+					<div class="footer-copyright__text">© 2017, ООО «Автомобильный дом "Солли Плюс"»</div>
+				</div>
+				<div class="footer-powered-col">
+					<div class="footer-powered">
+						<p>Создание сайта</p>
+						<p><a href="http://fulltime.com.ua" target="_blank">Фултайм</a></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<div id="callback-modal" class="modal modal--default">
+	<div class="modal__title">Обратная связь</div>
+	<form action="#" class="callback-form">
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="name" class="form-input" placeholder="Как вас зовут?">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="tel" class="form-input form-input-tel" placeholder="Телефон">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<img src="images/captcha.jpg" alt="captcha">
+		</div>
+		<div class="form-row">
+			<input type="submit" class="btn btn--yellow btn--modal-submit" value="Оставить заявку">			
+		</div>
+	</form>
+</div>
+
+
+<div id="service-modal" class="modal modal--default">
+	<div class="modal__title">Запись на сервис</div>
+	<form action="#" class="modal-form service-form">
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="auto" class="form-input" placeholder="Ваш автомобиль">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-inline-row clearfix">
+				<div class="form-inline-col form-inline-col--6">
+					<div class="form-input-block">
+						<input type="text" name="mileage" class="form-input" placeholder="Пробег">
+						<span class="form-input-border"></span>
+						<span class="form-hint">Обязательное поле</span>
+					</div>
+				</div>
+				<div class="form-inline-col form-inline-col--6">
+					<div class="form-input-block">
+						<input type="text" name="car_number" class="form-input" placeholder="Гос. номер">
+						<span class="form-input-border"></span>
+						<span class="form-hint">Обязательное поле</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-inline-row clearfix">
+				<div class="form-inline-col form-inline-col--6">
+					<div class="form-input-block"> 
+						<input type="text" name="date" class="form-input form-input-date" placeholder="Желаемая дата">
+						<span class="form-input-border"></span>
+						<span class="form-hint">Обязательное поле</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="name" class="form-input" placeholder="Как вас зовут?">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="tel" class="form-input form-input-tel" placeholder="Телефон">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<img src="images/captcha.jpg" alt="captcha">
+		</div>
+		<div class="form-row">
+			<input type="submit" class="btn btn--yellow btn--modal-submit" value="Оставить заявку">			
+		</div>
+	</form>
+</div>
+
+
+<div id="testdrive-modal" class="modal modal--testdrive">
+	<div class="testdrive-modal-body">
+		<div class="testdrive-modal-img-block">
+			<div class="testdrive-modal-img testdrive-modal-img--default testdrive-modal-img--active"></div>
+			<div class="testdrive-modal-img testdrive-modal-img--ravon-r2"></div>
+			<div class="testdrive-modal-img testdrive-modal-img--ravon-r4"></div>
+			<div class="testdrive-modal-img testdrive-modal-img--ravon-gentra"></div>
+		</div>
+		<div class="testdrive-modal-content">
+			<div class="modal__title">Запись на тест-драйв</div>
+			<form action="#" class="testdrive-modal-form">
+				<div class="form-row">
+					<div class="form-input-block">
+						<div class="custom-form-select">
+							<a href="#" class="custom-form-select__btn">Выберите автомобиль</a>
+							<div class="custom-form-select__dropdown">
+								<div class="custom-form-select-option">
+									<a href="#" class="custom-form-select-option__btn" data-select-option="Ravon R2" data-select-img="ravon-r2">Ravon R2</a>
+								</div>
+								<div class="custom-form-select-option">
+									<a href="#" class="custom-form-select-option__btn" data-select-option="Ravon R4" data-select-img="ravon-r4">Ravon R4</a>
+								</div>
+								<div class="custom-form-select-option">
+									<a href="#" class="custom-form-select-option__btn" data-select-option="Ravon Gentra" data-select-img="ravon-gentra">Ravon Gentra</a>
+								</div>
+							</div>
+						</div>
+						<span class="form-hint">Обязательное поле</span>
+					</div>					
+				</div>
+				<div class="form-row">
+					<div class="form-inline-row clearfix">
+						<div class="form-inline-col form-inline-col--6">
+							<div class="form-input-block"> 
+								<input type="text" name="date" class="form-input form-input-date" placeholder="Желаемая дата">
+								<span class="form-input-border"></span>
+								<span class="form-hint">Обязательное поле</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="form-row">
+					<div class="form-input-block">
+						<input type="text" name="name" class="form-input" placeholder="Как вас зовут?">
+						<span class="form-input-border"></span>
+						<span class="form-hint">Обязательное поле</span>
+					</div>					
+				</div>
+				<div class="form-row">
+					<div class="form-input-block">
+						<input type="text" name="tel" class="form-input form-input-tel" placeholder="Телефон">
+						<span class="form-input-border"></span>
+						<span class="form-hint">Обязательное поле</span>
+					</div>
+				</div>
+				<div class="form-row">
+					<img src="images/captcha.jpg" alt="captcha">
+				</div>
+				<div class="form-row">
+					<input type="submit" class="btn btn--yellow btn--modal-submit" value="Записаться на тест-драйв">			
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+
+<div id="newsletter-modal" class="modal modal--default">
+	<div class="modal__title modal__title--newsletter">Рассылка новостей</div>
+	<div class="modal__description">Оставьте свой e-mail и получите первыми информацию о Ravon, мероприятиях, скидках и акциях нашего салона</div>
+	<form action="#" class="newsletter-modal-form">
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="name" class="form-input" placeholder="Как вас зовут?">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="email" class="form-input" placeholder="Ваш e-mail">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<img src="images/captcha.jpg" alt="captcha">
+		</div>
+		<div class="form-row">
+			<input type="submit" class="btn btn--yellow btn--modal-submit" value="Оставить заявку">			
+		</div>
+	</form>
+</div>
+
+
+<div id="leasing-modal" class="modal modal--default">
+	<div class="modal__title">Рассчитать лизинг</div>
+
+	<form action="#" class="leasing-modal-form">
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="name" class="form-input" placeholder="Как вас зовут?">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="tel" class="form-input form-input-tel" placeholder="Телефон">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="email" class="form-input" placeholder="Ваш e-mail">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<div class="custom-form-select">
+					<a href="#" class="custom-form-select__btn">Выберите автомобиль</a>
+					<div class="custom-form-select__dropdown">
+						<div class="custom-form-select-option">
+							<a href="#" class="custom-form-select-option__btn" data-select-option="Ravon R2">Ravon R2</a>
+						</div>
+						<div class="custom-form-select-option">
+							<a href="#" class="custom-form-select-option__btn" data-select-option="Ravon R4">Ravon R4</a>
+						</div>
+						<div class="custom-form-select-option">
+							<a href="#" class="custom-form-select-option__btn" data-select-option="Ravon Gentra">Ravon Gentra</a>
+						</div>
+					</div>
+				</div>
+				<span class="form-hint">Обязательное поле</span>
+			</div>					
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="total_cost" class="form-input" placeholder="Стоимость">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="prepayment" class="form-input" placeholder="Сумма аванса">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block"> 
+				<input type="text" name="leasing_term" class="form-input" placeholder="Срок лизинга">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<img src="images/captcha.jpg" alt="captcha">
+		</div>
+		<div class="form-row">
+			<input type="submit" class="btn btn--yellow btn--modal-submit" value="Оставить заявку">			
+		</div>
+	</form>
+</div>
+
+
+<div id="credit-modal" class="modal modal--default">
+	<div class="modal__title">Рассчитать кредит</div>
+
+	<form action="#" class="credit-modal-form">
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="name" class="form-input" placeholder="Как вас зовут?">
+				<span class="form-input-border"></span>
+			</div>
+			<span class="form-hint">Обязательное поле</span>
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="tel" class="form-input form-input-tel" placeholder="Телефон">
+				<span class="form-input-border"></span>
+			</div>
+			<span class="form-hint">Обязательное поле</span>
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="email" class="form-input" placeholder="Ваш e-mail">
+				<span class="form-input-border"></span>
+			</div>
+			<span class="form-hint">Обязательное поле</span>
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<div class="custom-form-select">
+					<a href="#" class="custom-form-select__btn">Выберите автомобиль</a>
+					<div class="custom-form-select__dropdown">
+						<div class="custom-form-select-option">
+							<a href="#" class="custom-form-select-option__btn" data-select-option="Ravon R2">Ravon R2</a>
+						</div>
+						<div class="custom-form-select-option">
+							<a href="#" class="custom-form-select-option__btn" data-select-option="Ravon R4">Ravon R4</a>
+						</div>
+						<div class="custom-form-select-option">
+							<a href="#" class="custom-form-select-option__btn" data-select-option="Ravon Gentra">Ravon Gentra</a>
+						</div>
+					</div>
+				</div>
+				<span class="form-hint">Обязательное поле</span>
+			</div>					
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="total_cost" class="form-input" placeholder="Стоимость">
+				<span class="form-input-border"></span>
+			</div>
+			<span class="form-hint">Обязательное поле</span>
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="prepayment" class="form-input" placeholder="Сумма аванса">
+				<span class="form-input-border"></span>
+			</div>
+			<span class="form-hint">Обязательное поле</span>
+		</div>
+		<div class="form-row">
+			<div class="form-input-block"> 
+				<input type="text" name="credit_term" class="form-input" placeholder="Срок кредитования">
+				<span class="form-input-border"></span>
+			</div>
+			<span class="form-hint">Обязательное поле</span>
+		</div>
+		<div class="form-row">
+			<img src="images/captcha.jpg" alt="captcha">
+		</div>
+		<div class="form-row">
+			<input type="submit" class="btn btn--yellow btn--modal-submit" value="Оставить заявку">			
+		</div>
+	</form>
+</div>
+
+
+<div id="insurance-modal" class="modal modal--default">
+	<div class="modal__title">Рассчитать страхование</div>
+
+	<form action="#" class="insurance-modal-form">
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="auto" class="form-input" placeholder="Ваш автомобиль">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="total_cost" class="form-input" placeholder="Стоимость">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="name" class="form-input" placeholder="Как вас зовут?">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="tel" class="form-input form-input-tel" placeholder="Телефон">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="email" class="form-input" placeholder="Ваш e-mail">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<input type="submit" class="btn btn--yellow btn--modal-submit" value="Оставить заявку">			
+		</div>
+	</form>
+</div>
+
+
+<div id="tradein-modal" class="modal modal--default">
+	<div class="modal__title">Запись на трейд-ин</div>
+	<form action="#" class="tradein-modal-form">
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="auto" class="form-input" placeholder="Модель">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="auto_mark" class="form-input" placeholder="Марка">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="year" class="form-input" placeholder="Год выпуска">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="name" class="form-input" placeholder="Как вас зовут?">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<div class="form-input-block">
+				<input type="text" name="tel" class="form-input form-input-tel" placeholder="Телефон">
+				<span class="form-input-border"></span>
+				<span class="form-hint">Обязательное поле</span>
+			</div>			
+		</div>
+		<div class="form-row">
+			<input type="submit" class="btn btn--yellow btn--modal-submit" value="Оставить заявку">			
+		</div>
+	</form>
+</div>
+
+
+<div id="success-message-modal" class="modal modal--success">
+	<div class="success-modal__title success-modal__title--order">Ваша заявка принята!</div>	
+	<div class="success-modal__text">В ближайшее время наш менеджер свяжется с вами для уточнения деталей</div>
+</div>
+
+
+<div id="success-message-modal" class="modal modal--success">
+	<div class="success-modal__title success-modal__title--order">Ваша заявка принята!</div>	
+	<div class="success-modal__text">В ближайшее время мы вам перезвоним</div>
+</div>
+
+
+<div id="success-message-modal" class="modal modal--success">
+	<div class="success-modal__title success-modal__title--sub">Спасибо за подписку!</div>	
+	<div class="success-modal__text">Мы отправили на вашу почту проверочное письмо для активации подписки</div>
+</div>
+
+
+<div id="map-modal" class="modal modal--map">
+	<div id="modal-map"></div>
+</div>
+
+
+<script src="js/jquery-2.2.3.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script src="js/datepicker.ru-RU.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="https://maps.google.com/maps/api/js?key=AIzaSyCB7mMnPjIUS1Vfg4nB9W7EiB32ehaBSjg"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
