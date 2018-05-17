@@ -1,0 +1,762 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Rainbow service single</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="layout">
+
+	<div class="adaptive-menu-shadow"></div>
+	<div class="adaptive-menu-container">
+		<a href="#" class="adaptive-menu-container__close"><i class="fas fa-times"></i></a>
+		<nav class="adaptive-menu">
+			<ul>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Все услуги</a>
+				</li>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Цены</a>
+				</li>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Акции</a>
+				</li>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Отзывы</a>
+				</li>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Фотогалерея</a>
+				</li>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>				
+	</div>
+
+	<header class="header">
+		
+		<div class="header__top">
+			<div class="wrapper wrapper--sm">
+				<nav class="header-top-menu">
+					<ul>
+						<li class="header-top-menu__item">
+							<a href="#" class="header-top-menu__link">Алые Паруса - выпускной</a>
+						</li>
+						<li class="header-top-menu__item">
+							<i class="header-top-menu__i"></i>
+						</li>
+						<li class="header-top-menu__item">
+							<a href="#" class="header-top-menu__link">Первое сентября - снова в школу</a>
+						</li>
+						<li class="header-top-menu__item">
+							<i class="header-top-menu__i"></i>
+						</li>
+						<li class="header-top-menu__item">
+							<a href="#" class="header-top-menu__link">Хеллоуин - праздник</a>
+						</li>
+						<li class="header-top-menu__item">
+							<i class="header-top-menu__i"></i>
+						</li>
+						<li class="header-top-menu__item">
+							<a href="#" class="header-top-menu__link">С Новым Годом</a>
+						</li>
+						<li class="header-top-menu__item">
+							<i class="header-top-menu__i"></i>
+						</li>
+						<li class="header-top-menu__item">
+							<a href="#" class="header-top-menu__link">С Новым Годом</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>	
+
+		<div class="header__middle">
+			<div class="wrapper wrapper--sm">
+				<div class="header__middle-inner">
+					<div class="header__middle-col">
+						<div class="header-logo">
+							<a href="#"><img src="images/logo.png" alt="logo"></a>
+						</div>
+						<div class="header-soc">
+							<ul>
+								<li class="header-soc__item">
+									<a href="#" class="header-soc__link"><i class="fab fa-vk"></i></a>
+								</li>
+								<li class="header-soc__item">
+									<a href="#" class="header-soc__link"><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="header-soc__item">
+									<a href="#" class="header-soc__link"><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__middle-col header-worktime">
+						<div class="header-worktime__title"><i class="far fa-clock"></i>Режим работы</div>
+						<div class="header-worktime__hours">Пн-Пт c 10:00 до 19:00</div>
+					</div>
+					<div class="header__middle-col header-contacts">
+						<div class="header-contacts__col header-tel">
+							<a href="tel:+79167620818" class="header-tel__link"><span>+7 (916)</span> 762 08 18</a>
+						</div>
+						<div class="header-contacts__col header-callback">
+							<a href="#callback-modal" class="header-callback__btn" data-fancybox-modal>Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="header__bottom">
+			<div class="wrapper wrapper--sm">
+				<div class="header__bottom-inner">
+					<nav class="header-bottom-menu">
+						<ul>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="adaptive-menu-toggle">
+									<span class="menu-toggle-inner">
+										<span class="menu-toggle-line menu-toggle-line--1"></span>
+										<span class="menu-toggle-line menu-toggle-line--2"></span>
+										<span class="menu-toggle-line menu-toggle-line--3"></span>
+										<span class="menu-toggle-line menu-toggle-line--4"></span>
+										<span class="menu-toggle-line menu-toggle-line--5"></span>
+									</span>
+								</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Все услуги</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Цены</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Акции</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Отзывы</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Фотогалерея</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-bottom-search">
+						<form action="#" class="header-search-form">
+							<input type="text" name="search" class="header-search-form__input" placeholder="поиск...">
+							<input type="submit" class="header-search-form__submit" value="">
+						</form>
+					</div>
+				</div>
+
+				<div class="header-bottom-adaptive clearfix">
+					<div class="header-adaptive-toggle-col">
+						<a href="#" class="adaptive-menu-toggle">
+							<span class="menu-toggle-inner">
+								<span class="menu-toggle-line menu-toggle-line--1"></span>
+								<span class="menu-toggle-line menu-toggle-line--2"></span>
+								<span class="menu-toggle-line menu-toggle-line--3"></span>
+								<span class="menu-toggle-line menu-toggle-line--4"></span>
+								<span class="menu-toggle-line menu-toggle-line--5"></span>
+							</span>
+						</a>
+					</div>
+					<div class="header-adaptive-soc-col">
+						<div class="header-adaptive-soc clearfix">
+							<ul>
+								<li class="header-adaptive-soc__item">
+									<a href="#" class="header-adaptive-soc__link"><i class="fab fa-vk"></i></a>
+								</li>
+								<li class="header-adaptive-soc__item">
+									<a href="#" class="header-adaptive-soc__link"><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="header-adaptive-soc__item">
+									<a href="#" class="header-adaptive-soc__link"><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-adaptive-search-col">
+						<a href="#" class="header-search__ico"><i class="fas fa-search"></i></a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="search-adaptive-block">
+				<form action="#" class="header-search-form">
+					<input type="text" name="search" class="header-search-form__input" placeholder="поиск...">
+					<input type="submit" class="header-search-form__submit" value="">
+				</form>
+			</div>
+
+		</div>		
+
+	</header>
+	
+
+	<div class="service-hero-container">
+		
+		<div class="breadcrumbs-container">
+			<div class="wrapper wrapper--sm">
+				<div class="breadcrumbs clearfix">
+					<ul>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Услуги</a>
+						</li>
+						<li class="breadcrumbs__item">трансформеры</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div class="service-content">
+			<div class="wrapper wrapper--sm">
+				<div class="service-content__col">
+					<div class="service-content__entry">
+						<h1>Аниматоры Трансформеры</h1>
+						<div class="service-content__stats">
+							<div class="service-content__stat service-content__stat--red">Количество детей: до 20</div>
+							<div class="service-content__stat service-content__stat--violet">Возраст: 5-8 лет</div>
+							<div class="service-content__stat service-content__stat--blue">Длительность: 1 час</div>
+						</div>
+						<p><strong>Праздник с аниматорами трансформерами</strong> – это инопланетные конкурсы и эстафеты, звездные соревнования и бои за спасение Земли. Заказать аниматоров Трансформеров на детский праздник в Москве и Московской области.</p>
+						<p>Популярными героями детских праздников стали аниматоры <strong>трансформеры Автоботы!</strong> Увлеченные знаменитым сериалом, ребята, будут рады встретиться со своими героями «в живую», поиграть с ними и научится отважно сражаться!</p>
+					</div>
+				</div>
+				<div class="service-content__col">
+					<div class="service-hero-slider slider-red-style">
+						<div class="service-hero-slider__item">
+							<a href="#"><img src="images/content/heroes/hero-img-5.jpg" alt="hero"></a>
+						</div>
+						<div class="service-hero-slider__item">
+							<a href="#"><img src="images/content/heroes/hero-img-5.jpg" alt="hero"></a>
+						</div>
+						<div class="service-hero-slider__item">
+							<a href="#"><img src="images/content/heroes/hero-img-5.jpg" alt="hero"></a>
+						</div>
+						<div class="service-hero-slider__item">
+							<a href="#"><img src="images/content/heroes/hero-img-5.jpg" alt="hero"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="service-calc service-calc--rose">
+			<div class="wrapper wrapper--sm">
+				<div class="service-calc-content">
+					
+					<div class="service-calc-content__row">
+						<div class="service-calc-content__col">
+							<select name="animators_quantity" class="service-styler-select">
+								<option value="1">1 аниматор</option>
+								<option value="2">2 аниматора</option>
+								<option value="3">3 аниматора</option>
+								<option value="4">4 аниматора</option>
+								<option value="5">5 аниматора</option>
+							</select>
+
+							<select name="animators_time" class="service-styler-select">
+								<option value="1 час">1 час</option>
+								<option value="2 часа">2 часа</option>
+								<option value="3 часа">3 часа</option>
+								<option value="4 часа">4 часа</option>
+								<option value="5 часов">5 часов</option>
+							</select>
+						</div>
+						<div class="service-calc-content__col service-calc-content__col--centered">
+							<div class="custom-radio__row clearfix">
+								<div class="custom-radio__col">
+									<a href="#" class="custom-radio__link custom-radio__link--sm custom-radio__link--white js-custom-radio" data-checkbox-value="2">
+										<i class="fas fa-check"></i><span>Фуршет</span>
+									</a>
+								</div>
+								<div class="custom-radio__col">
+									<a href="#" class="custom-radio__link custom-radio__link--sm custom-radio__link--white js-custom-radio" data-checkbox-value="2">
+										<i class="fas fa-check"></i><span>Фуршет</span>
+									</a>
+								</div>
+								<div class="custom-radio__col">
+									<a href="#" class="custom-radio__link custom-radio__link--sm custom-radio__link--white js-custom-radio" data-checkbox-value="2">
+										<i class="fas fa-check"></i><span>Фуршет</span>
+									</a>
+								</div>
+								<div class="custom-radio__col">
+									<a href="#" class="custom-radio__link custom-radio__link--sm custom-radio__link--white js-custom-radio" data-checkbox-value="2">
+										<i class="fas fa-check"></i><span>Фуршет</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="service-calc-content__col service-calc-content__col--last">
+							<div class="service-calc-content__inner">
+								<div class="service-calc-total">
+									<span class="service-calc-total__value">10450</span> <span class="service-calc-total__currency">р /час</span>
+								</div>
+								<div class="service-calc-btn">
+									<a href="#order-modal" class="btn btn-yellow btn--service-calc" data-fancybox-modal>Заказать скорее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>			
+
+	</div>
+	
+	
+	<div class="service-photogallery-container">
+		<div class="wrapper wrapper--big">
+			<div class="block-title block-title--photogallery">Наши фото с трансформером</div>
+
+			<div class="gallery-slider">
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	
+	<div class="service-videogallery-container service-videogallery-container--violet">
+		<div class="wrapper wrapper--big">
+			<div class="block-title block-title--videogallery">Наши видео с трансформером</div>
+
+			<div class="videogallery-slider">
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+	<div class="advantage-container advantage-container--freeorder">
+		<div class="advantage-container--flagsbg"></div>
+		<div class="wrapper wrapper--big">
+			<div class="block-title block-title--advantage">Что бесплатно входит в заказ?</div>
+
+			<div class="advantage">
+				<div class="advantage__row">
+					<div class="advantage__item advantage-item advantage-item--3">
+						<div class="advantage-item__ico"><img src="images/content/advantage/advantage-img-1.png" alt="Большой выбор собственных костюмов"></div>
+						<div class="advantage-item__name">Легкий аквагрим</div>
+					</div>
+					<div class="advantage__item advantage-item advantage-item--3">
+						<div class="advantage-item__ico"><img src="images/content/advantage/advantage-img-2.png" alt="Уникальный реквизит"></div>
+						<div class="advantage-item__name">Музыкальное<br>сопровождение</div>
+					</div>
+					<div class="advantage__item advantage-item advantage-item--3">
+						<div class="advantage-item__ico"><img src="images/content/advantage/advantage-img-3.png" alt="Профессиональная команда"></div>
+						<div class="advantage-item__name">Вынос торта</div>
+					</div>
+					<div class="advantage__item advantage-item advantage-item--3">
+						<div class="advantage-item__ico"><img src="images/content/advantage/advantage-img-4.png" alt="Праздник под ключ"></div>
+						<div class="advantage-item__name">Фотосессия<br>с любимыми героями</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="bonus-container">
+		<div class="wrapper wrapper--big">
+			<div class="bonus-content">
+
+				<div class="bonus-content-group">
+					<div class="bonus-content-group__title">Аниматор Оптимус Прайм</div>
+					<p><span>Оптимус Прайм</span> - самый знаменитый главный персонаж мультсериала. Несмотря на свой грозный вид, он защищает слабых, его главные качества доброта и сострадание. А вот аниматор <span>Бамблби</span> — один из изобретательных трансформеров. Он не такой мощный как Оптимус, он меньше. Бамблби хитрый и ловкий воин.</p>
+				</div>
+
+				<div class="bonus-content-group">
+					<div class="bonus-content-group__title">Костюм трансформера</div>
+					<p><span>Костюмы аниматоров трансформеров</span> яркие по цвету, оснащены множеством деталей, точно таких, как у персонажей из мультсириала. Они сделаны из не травматичных материалов, там нет острых углов, жесткой пластмассы и металла, они мягкие. С нашими аниматорами трансформерами можно даже <span>обниматься и фотографироваться</span>, сидя у них на коленях.</p>
+				</div>
+
+				<div class="bonus-content-group">
+					<div class="bonus-content-group__title">Девиз нашего праздника «Добро побеждает зло»</div>
+					<p>Над планетой нависла угроза. Кто же может предотвратить космическую катастрофу? Только подготовленные и ловкие воины. Подготовка в компании с автоботами аниматорами Оптимусом Праймом и Бамблби пройдет успешно, если дети дружно пройдут все испытания, <span>научатся решать стратегические задачки</span> и быстро отгадывать сложнейшие ребусы. </p>
+					<p>Эстафета с аниматорами трансформерами – <span>это для настоящих парней!</span> Этот праздник мужества воспитывает в детях лидерские качества, командный дух и стремление к победе. Кульминацией праздника станет финальный <span>поединок победителя конкурсов</span> или именинника с Отимусом Праймом на лазерных мечах. А так же, всенепременно: вручение подарков, танец роботов и вынос космического торта.</p>
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+
+
+	<div class="order-city-container">
+		<div class="wrapper wrapper--ordercity">
+			<div class="order-city-container__title">Заказать детский праздник в Москве!</div>
+
+			<form action="#" class="order-form">
+				<div class="order-city-form__row">
+					<div class="order-city-form__col">
+						<input type="text" name="name" class="order-form__input" placeholder="Как вас зовут?">
+					</div>
+					<div class="order-city-form__col">
+						<input type="text" name="tel" class="order-form__input input-tel" placeholder="+7">
+					</div>
+					<div class="order-city-form__col">
+						<input type="submit" class="order-form__submit order-city-form__submit" value="Заказать скорее">
+						<input type="hidden" name="form_title" value="Заказать детский праздник в Москве">
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+	<div class="related-services-container related-services-container--white">
+		<div class="wrapper wrapper--big">
+			<div class="block-title block-title--related">Также вам может понравиться</div>
+
+			<div class="related-slider slider-red-style">
+				<div class="related-item related-item--violet">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">
+							<span class="related-item__name">Фото и видеосъемка</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">Заказать</a>
+					</div>
+				</div>
+				<div class="related-item related-item--blue">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Шар сюрприз">
+							<span class="related-item__name">Шар сюрприз</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal data-releated-service-name="Шар сюрприз">Заказать</a>
+					</div>
+				</div>
+				<div class="related-item related-item--violet">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">
+							<span class="related-item__name">Пинъята</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal>Заказать</a>
+					</div>
+				</div>
+				<div class="related-item related-item--blue">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">
+							<span class="related-item__name">Диджей</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal>Заказать</a>
+					</div>
+				</div>
+				<div class="related-item related-item--violet">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">
+							<span class="related-item__name">Фото и видеосъемка</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal>Заказать</a>
+					</div>
+				</div>
+				<div class="related-item related-item--blue">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">
+							<span class="related-item__name">Пинъята</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal>Заказать</a>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+
+
+	<div class="gallery-container gallery-container--blue js-gallery-container-parallax parallaxBox">
+		<div class="gallery-container__ballon"></div>
+		<div class="gallery-container__clouds"></div>
+		<div class="gallery-container__stars gallery-container__stars--blue"></div>
+		<div class="wrapper wrapper--big">
+			<div class="block-title block-title--gallery">Довольные дети и родители</div>
+
+			<div class="gallery-slider">
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="footer">		
+		<div class="wrapper wrapper--big">
+			<div class="footer-logo-col">
+				<div class="footer-logo__row clearfix">	
+					<div class="footer-logo">
+						<a href="#" class="footer-logo__link">Радуга</a>
+					</div>
+					<div class="footer-soc clearfix">
+						<ul>
+							<li class="footer-soc__item">
+								<a href="#" class="footer-soc__link"><i class="fab fa-vk"></i></a>
+							</li>
+							<li class="footer-soc__item">
+								<a href="#" class="footer-soc__link"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li class="footer-soc__item">
+								<a href="#" class="footer-soc__link"><i class="fab fa-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-description-text">Зажигательная организация детских праздников</div>
+				<div class="footer-copyright">© 2014-2018</div>
+			</div>
+			<div class="footer-menu-col">
+				<nav class="footer-menu clearfix">
+					<ul>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Все услуги</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Отзывы</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Цены</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Фотогалерея</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Акции</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer-contacts-col">
+				<div class="footer-tel">
+					<a href="tel:+7(916)7620818" class="footer-tel__link"><span>+7 (916)</span> 762 08 18</a>
+				</div>
+				<div class="footer-callback">
+					<a href="#callback-modal" class="footer-callback__link" data-fancybox-modal>Заказать звонок</a>
+				</div>
+				<div class="footer-soc footer-soc--mobile clearfix">
+					<ul>
+						<li class="footer-soc__item">
+							<a href="#" class="footer-soc__link"><i class="fab fa-vk"></i></a>
+						</li>
+						<li class="footer-soc__item">
+							<a href="#" class="footer-soc__link"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li class="footer-soc__item">
+							<a href="#" class="footer-soc__link"><i class="fab fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<div id="callback-modal" class="modal modal--default">
+	<div class="modal__title">Заказать звонок</div>
+	
+	<form action="#" class="order-modal-form">
+		<div class="modal-form__row">			
+			<input type="text" name="name" class="order-form__input" placeholder="Как вас зовут?">
+		</div>
+		<div class="modal-form__row">
+			<input type="text" name="tel" class="order-form__input input-tel" placeholder="+7">
+		</div>
+		<div class="modal-form__row">
+			<input type="submit" class="order-form__submit form__submit" value="Заказать звонок">
+			<input type="hidden" name="form_title" value="Заказать звонок">
+		</div>
+	</form>
+</div>
+
+
+<div id="order-modal" class="modal modal--default">
+	<div class="modal__title">Заказать услугу</div>
+	
+	<form action="#" class="order-modal-form">
+		<div class="modal-form__row">			
+			<input type="text" name="name" class="order-form__input" placeholder="Как вас зовут?">
+		</div>
+		<div class="modal-form__row">
+			<input type="text" name="tel" class="order-form__input input-tel" placeholder="+7">
+		</div>
+		<div class="modal-form__row">
+			<input type="submit" class="order-form__submit form__submit" value="Заказать услугу">
+			<input type="hidden" name="form_title" value="Заказать услугу">
+			<input type="hidden" name="form_service_list" class="form-services-list-hidden" value="">
+			<input type="hidden" name="form_service_percent" class="form-services-percent-hidden" value="">
+		</div>
+	</form>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
