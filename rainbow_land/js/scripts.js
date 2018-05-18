@@ -139,6 +139,38 @@ $(document).ready(function(){
 
 
 
+    // Price slider init
+    // ===============================================
+
+    if($('.price-slider').length) {
+        $('.price-slider').slick({
+            slidesToShow: 4,
+            responsive: [
+                {
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 3,
+                        arrows: true,
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                }
+            ]
+        });
+    }
+
+
+
     // Service hero slider init
     // ===============================================
 
@@ -270,6 +302,14 @@ $(document).ready(function(){
         });
     }
 
+
+
+
+    $('.service-description-more__btn').on('click', function(e) {
+        e.preventDefault();
+        $('.services-content__description-body').css('height', 'auto');
+        $(this).hide();
+    });
 
 
     $('.js-order-related').on('click', function(e) {
