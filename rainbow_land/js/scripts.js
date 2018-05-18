@@ -160,7 +160,7 @@ $(document).ready(function(){
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 768,
                     settings: {
                         slidesToShow: 1,
                     }
@@ -304,12 +304,12 @@ $(document).ready(function(){
 
 
 
-
     $('.service-description-more__btn').on('click', function(e) {
         e.preventDefault();
         $('.services-content__description-body').css('height', 'auto');
         $(this).hide();
     });
+
 
 
     $('.js-order-related').on('click', function(e) {
