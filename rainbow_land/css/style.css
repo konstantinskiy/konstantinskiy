@@ -502,6 +502,9 @@ Header
 .header-bottom-menu__item:last-child {
 	margin: 0;
 }
+.header-bottom-menu__item .adaptive-menu-toggle {
+	opacity: 0.7;
+}
 .header-bottom-menu__link {
 	display: block;
 	color: #fff;
@@ -4526,13 +4529,21 @@ Adaptive styles
 	}
 
 
-
-	.program-item__img,
+	
+	.programs-slider {
+		padding: 0;
+	}
 	.programs-container__konfetti {
 		display: none;
 	}
 	.programs-container {
 		padding: 50px 0;
+	}
+	.program-item__description {
+		display: none;
+	}
+	.programs-slider .slick-slide .program-item__img-inner img {
+		display: none;
 	}
 
 
@@ -4698,8 +4709,15 @@ Adaptive styles
 	}
 
 	.service-col {
-		width: 100%;
+		height: 150px;
 	}
+	.service-item {
+		border-width: 4px;
+	}
+	.service-item__name {
+		padding: 0 15px;
+	}
+
 	
 	.program-item__img-inner:after,
 	.program-item__img-inner:before {
@@ -4709,6 +4727,18 @@ Adaptive styles
 
 	.programs-slider {
 		padding: 0;
+	}
+	.program-item__stat {
+		margin: 0 5px;
+		width: 76px;
+		height: 74px;
+		background-size: 76px 74px;
+	}
+	.program-item__stat-value {
+		font-size: 24px;
+	}
+	.program-item__stat-name {
+
 	}
 
 
