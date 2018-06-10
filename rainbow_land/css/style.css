@@ -5060,6 +5060,15 @@ Adaptive styles
 
 
 	
+	.showprogram-text-hero-title {
+		margin: 0;
+	}
+	.service-content__stats {
+		margin: 20px 0;
+	}
+	.service-content__stat {
+		margin: 0 0 10px 0;
+	}
 
 	
 	
