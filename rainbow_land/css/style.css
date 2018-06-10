@@ -5717,7 +5717,7 @@ Adaptive styles
 	.reviews-container {
 		padding: 40px 0;
 	}
-	.reviews-container:before {
+	.reviews-container:after {
 		content: none;
 	}
 	.block-title.block-title--reviews {
