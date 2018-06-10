@@ -2692,7 +2692,7 @@ Reviews container
 	background: linear-gradient(to right, #98d5ff 0%,#e3f2ff 40%,#e3f2ff 60%,#98d5ff 100%);
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#98d5ff', endColorstr='#98d5ff',GradientType=1 );
 }
-.reviews-container:before {
+.reviews-container:after {
 	position: absolute;
 	left: 0;
 	top: 0;
