@@ -273,6 +273,36 @@ $(document).ready(function(){
 
 
 
+    // Videogallery slider init
+    // ===============================================
+
+    if($('.videoprograms-slider').length) {
+        $('.videoprograms-slider').slick({
+            slidesToShow: 3,
+            dots: true,
+            centerMode: true,
+            centerPadding: 0,
+            responsive: [
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 2,
+                        centerMode: false,
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        arrows: false,
+                    }
+                }
+            ]
+        });
+    }
+
+
+
     // Related slider init
     // ===============================================
 

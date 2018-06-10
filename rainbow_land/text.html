@@ -1,0 +1,814 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Rainbow Text</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.css">
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+
+<div class="layout">
+
+	<div class="adaptive-menu-shadow"></div>
+	<div class="adaptive-menu-container">
+		<a href="#" class="adaptive-menu-container__close"><i class="fas fa-times"></i></a>
+		<nav class="adaptive-menu">
+			<ul>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Все услуги</a>
+				</li>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Цены</a>
+				</li>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Акции</a>
+				</li>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Отзывы</a>
+				</li>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Фотогалерея</a>
+				</li>
+				<li class="adaptive-menu__item">
+					<a href="#" class="adaptive-menu__link">Контакты</a>
+				</li>
+			</ul>
+		</nav>				
+	</div>
+
+	<header class="header">
+		
+		<div class="header__top">
+			<div class="wrapper wrapper--sm">
+				<nav class="header-top-menu">
+					<ul>
+						<li class="header-top-menu__item">
+							<a href="#" class="header-top-menu__link">Алые Паруса - выпускной</a>
+						</li>
+						<li class="header-top-menu__item">
+							<i class="header-top-menu__i"></i>
+						</li>
+						<li class="header-top-menu__item">
+							<a href="#" class="header-top-menu__link">Первое сентября - снова в школу</a>
+						</li>
+						<li class="header-top-menu__item">
+							<i class="header-top-menu__i"></i>
+						</li>
+						<li class="header-top-menu__item">
+							<a href="#" class="header-top-menu__link">Хеллоуин - праздник</a>
+						</li>
+						<li class="header-top-menu__item">
+							<i class="header-top-menu__i"></i>
+						</li>
+						<li class="header-top-menu__item">
+							<a href="#" class="header-top-menu__link">С Новым Годом</a>
+						</li>
+						<li class="header-top-menu__item">
+							<i class="header-top-menu__i"></i>
+						</li>
+						<li class="header-top-menu__item">
+							<a href="#" class="header-top-menu__link">С Новым Годом</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>	
+
+		<div class="header__middle">
+			<div class="wrapper wrapper--sm">
+				<div class="header__middle-inner">
+					<div class="header__middle-col">
+						<div class="header-logo">
+							<a href="#"><img src="images/logo.png" alt="logo"></a>
+						</div>
+						<div class="header-soc">
+							<ul>
+								<li class="header-soc__item">
+									<a href="#" class="header-soc__link"><i class="fab fa-vk"></i></a>
+								</li>
+								<li class="header-soc__item">
+									<a href="#" class="header-soc__link"><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="header-soc__item">
+									<a href="#" class="header-soc__link"><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header__middle-col header-worktime">
+						<div class="header-worktime__title"><i class="far fa-clock"></i>Режим работы</div>
+						<div class="header-worktime__hours">Пн-Пт c 10:00 до 19:00</div>
+					</div>
+					<div class="header__middle-col header-contacts">
+						<div class="header-contacts__col header-tel">
+							<a href="tel:+79167620818" class="header-tel__link"><span>+7 (916)</span> 762 08 18</a>
+						</div>
+						<div class="header-contacts__col header-callback">
+							<a href="#callback-modal" class="header-callback__btn" data-fancybox-modal>Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="header__bottom">
+			<div class="wrapper wrapper--sm">
+				<div class="header__bottom-inner">
+					<nav class="header-bottom-menu">
+						<ul>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="adaptive-menu-toggle">
+									<span class="menu-toggle-inner">
+										<span class="menu-toggle-line menu-toggle-line--1"></span>
+										<span class="menu-toggle-line menu-toggle-line--2"></span>
+										<span class="menu-toggle-line menu-toggle-line--3"></span>
+										<span class="menu-toggle-line menu-toggle-line--4"></span>
+										<span class="menu-toggle-line menu-toggle-line--5"></span>
+									</span>
+								</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Все услуги</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Цены</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Акции</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Отзывы</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Фотогалерея</a>
+							</li>
+							<li class="header-bottom-menu__item">
+								<a href="#" class="header-bottom-menu__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-bottom-search">
+						<form action="#" class="header-search-form">
+							<input type="text" name="search" class="header-search-form__input" placeholder="поиск...">
+							<input type="submit" class="header-search-form__submit" value="">
+						</form>
+					</div>
+				</div>
+
+				<div class="header-bottom-adaptive clearfix">
+					<div class="header-adaptive-toggle-col">
+						<a href="#" class="adaptive-menu-toggle">
+							<span class="menu-toggle-inner">
+								<span class="menu-toggle-line menu-toggle-line--1"></span>
+								<span class="menu-toggle-line menu-toggle-line--2"></span>
+								<span class="menu-toggle-line menu-toggle-line--3"></span>
+								<span class="menu-toggle-line menu-toggle-line--4"></span>
+								<span class="menu-toggle-line menu-toggle-line--5"></span>
+							</span>
+						</a>
+					</div>
+					<div class="header-adaptive-soc-col">
+						<div class="header-adaptive-soc clearfix">
+							<ul>
+								<li class="header-adaptive-soc__item">
+									<a href="#" class="header-adaptive-soc__link"><i class="fab fa-vk"></i></a>
+								</li>
+								<li class="header-adaptive-soc__item">
+									<a href="#" class="header-adaptive-soc__link"><i class="fab fa-facebook-f"></i></a>
+								</li>
+								<li class="header-adaptive-soc__item">
+									<a href="#" class="header-adaptive-soc__link"><i class="fab fa-instagram"></i></a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="header-adaptive-search-col">
+						<a href="#" class="header-search__ico"><i class="fas fa-search"></i></a>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="search-adaptive-block">
+				<form action="#" class="header-search-form">
+					<input type="text" name="search" class="header-search-form__input" placeholder="поиск...">
+					<input type="submit" class="header-search-form__submit" value="">
+				</form>
+			</div>
+
+		</div>		
+
+	</header>
+	
+
+	<div class="showprogram-text-hero-container">
+		
+		<div class="breadcrumbs-container">
+			<div class="wrapper wrapper--sm">
+				<div class="breadcrumbs clearfix">
+					<ul>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Главная</a>
+						</li>
+						<li class="breadcrumbs__item">
+							<a href="#" class="breadcrumbs__link">Шоу-программы</a>
+						</li>
+						<li class="breadcrumbs__item">Шоу мыльных пузырей</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="showprogram-hero-content">
+			<div class="wrapper wrapper--big">
+				<div class="showprogram-text-hero-title">
+					<h1>Шоу мыльных пузырей</h1>
+				</div>
+
+				<div class="program-item">
+					<div class="program-item__row">
+						<div class="program-item__content">
+							<div class="program-item__content-inner">
+								<div class="service-content__stats">
+									<div class="service-content__stat service-content__stat--red">Количество детей: до 20</div>
+									<div class="service-content__stat service-content__stat--violet">Возраст: 5-8 лет</div>
+									<div class="service-content__stat service-content__stat--blue">Длительность: 1 час</div>
+								</div>
+								<div class="program-item__description"><strong>Шоу мыльных пузырей</strong> – это инопланетные конкурсы и эстафеты, звездные соревнования и бои за спасение Земли. Заказать аниматоров Трансформеров на детский праздник в Москве и Московской области. Увлеченные знаменитым сериалом, ребята, будут рады встретиться со своими героями «в живую», поиграть с ними и научится отважно сражаться!</div>
+							</div>
+						</div>
+						<div class="program-item__img">
+							<img src="images/showtext-hero-img.png" alt="Шоу-программа">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="service-calc service-calc--rose">
+			<div class="wrapper wrapper--sm">
+				<div class="service-calc-content service-calc-content--show">
+					
+					<div class="service-calc-content__row">
+						<div class="service-calc-content__col service-calc-content__col--5">
+							<select name="animators_quantity" class="service-styler-select">
+								<option value="1">Шоу мыльных пузырей (30 минут)</option>
+								<option value="2">Шоу мыльных пузырей (60 минут)</option>
+							</select>
+							<div class="custom-radio__row clearfix">
+								<div class="custom-radio__col">
+									<a href="#" class="custom-radio__link custom-radio__link--sm custom-radio__link--white js-custom-radio" data-checkbox-value="2">
+										<i class="fas fa-check"></i><span>Фотосьемка</span>
+									</a>
+								</div>
+								<div class="custom-radio__col">
+									<a href="#" class="custom-radio__link custom-radio__link--sm custom-radio__link--white js-custom-radio" data-checkbox-value="2">
+										<i class="fas fa-check"></i><span>Видеосьемка</span>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="service-calc-content__col service-calc-content__col--last service-calc-content__col--7">
+							<div class="service-calc-content__inner">
+								<div class="service-calc-total">
+									<span class="service-calc-total__value">10450</span> <span class="service-calc-total__currency">р /час</span>
+								</div>
+								<div class="service-calc-btn">
+									<a href="#order-modal" class="btn btn-yellow btn--service-calc" data-fancybox-modal>Заказать скорее</a>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="seo-container">
+			<div class="advantage-container--flagsbg"></div>
+			<div class="seo-container__wrapper">
+				<div class="seo-content">
+					<h2>SEO текст SEO текст</h2>
+					<p><a href="#">Шоу мыльных пузырей</a> - самый знаменитый главный персонаж мультсериала. Несмотря на свой грозный вид, он защищает слабых, его главные качества доброта и сострадание. А вот аниматор <a href="#">Бамблби</a> — один из изобретательных трансформеров. Он не такой мощный как Оптимус, он меньше. Бамблби хитрый и ловкий воин.</p>
+					<p><a href="#">Шоу мыльных пузырей</a> - самый знаменитый главный персонаж мультсериала. Несмотря на свой грозный вид, он защищает слабых, его главные качества доброта и сострадание. А вот аниматор Бамблби — один из изобретательных трансформеров. Он не такой мощный как Оптимус, он меньше. Бамблби хитрый и ловкий воин.</p>
+					<h2>SEO текст</h2>
+					<p><a href="#">Шоу мыльных пузырей</a> - самый знаменитый главный персонаж мультсериала. Несмотря на свой грозный вид, он защищает слабых, его главные качества доброта и сострадание. А вот аниматор Бамблби — один из изобретательных трансформеров. Он не такой мощный как Оптимус, он меньше. Бамблби хитрый и ловкий воин.</p>
+					<p>Шоу мыльных пузырей - самый знаменитый главный персонаж мультсериала. Несмотря на свой грозный вид, он защищает слабых, его главные качества доброта и сострадание. А вот аниматор Бамблби — один из изобретательных трансформеров. Он не такой мощный как Оптимус, он меньше. Бамблби хитрый и ловкий воин.</p>
+				</div>
+			</div>
+		</div>	
+
+	</div>
+
+
+	<div class="show-photogallery-container">
+		<div class="wrapper wrapper--big">
+			<div class="block-title block-title--show-photogallery">Наши видео с трансформером</div>
+
+			<div class="videogallery-slider">
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+	<div class="videoprograms-container">
+		<div class="wrapper wrapper--big">
+			<div class="videoprograms-container__heading">
+				<div class="block-title block-title--videoprograms">Видеосюжеты прошедших программ!</div>
+				<div class="videoprograms-container__subtitle">Снимаем сами, честно-честно</div>
+			</div>
+
+			<div class="videoprograms-slider">
+				<div class="videoprograms-slider__col">
+					<div class="videoprograms-slider__item videoprograms-slider-item">
+						<div class="videoprograms-slider-item__img" style="background-image: url(images/content/videoprograms/videoprogram-img-1.jpg);">
+							<a href="https://www.youtube.com/watch?v=pA9eew6vFGY" class="videoprograms-slider-item__play" data-fancybox-modal><i></i></a>
+						</div>
+						<div class="videoprograms-slider-item__name">Бумажное шоу</div>
+					</div>
+				</div>
+				<div class="videoprograms-slider__col">
+					<div class="videoprograms-slider__item videoprograms-slider-item">
+						<div class="videoprograms-slider-item__img" style="background-image: url(images/content/videoprograms/videoprogram-img-2.jpg);">
+							<a href="https://www.youtube.com/watch?v=pA9eew6vFGY" class="videoprograms-slider-item__play" data-fancybox-modal><i></i></a>
+						</div>
+						<div class="videoprograms-slider-item__name">Шар-сюрприз</div>
+					</div>
+				</div>
+				<div class="videoprograms-slider__col">
+					<div class="videoprograms-slider__item videoprograms-slider-item">
+						<div class="videoprograms-slider-item__img" style="background-image: url(images/content/videoprograms/videoprogram-img-1.jpg);">
+							<a href="https://www.youtube.com/watch?v=pA9eew6vFGY" class="videoprograms-slider-item__play" data-fancybox-modal><i></i></a>
+						</div>
+						<div class="videoprograms-slider-item__name">Шоу мыльных пузырей</div>
+					</div>
+				</div>
+				<div class="videoprograms-slider__col">
+					<div class="videoprograms-slider__item videoprograms-slider-item">
+						<div class="videoprograms-slider-item__img" style="background-image: url(images/content/videoprograms/videoprogram-img-2.jpg);">
+							<a href="https://www.youtube.com/watch?v=pA9eew6vFGY" class="videoprograms-slider-item__play" data-fancybox-modal><i></i></a>
+						</div>
+						<div class="videoprograms-slider-item__name">Бумажное шоу</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	
+	<div class="advantage-container advantage-container--freeorder">
+		<div class="advantage-container--flagsbg"></div>
+		<div class="wrapper wrapper--big">
+			<div class="block-title block-title--advantage">Что бесплатно входит в заказ?</div>
+
+			<div class="advantage">
+				<div class="advantage__row">
+					<div class="advantage__item advantage-item advantage-item--3">
+						<div class="advantage-item__ico"><img src="images/content/advantage/show-category/show-category-ico-1.png" alt="Легкий аквагрим"></div>
+						<div class="advantage-item__name">Легкий аквагрим</div>
+					</div>
+					<div class="advantage__item advantage-item advantage-item--3">
+						<div class="advantage-item__ico"><img src="images/content/advantage/show-category/show-category-ico-2.png" alt="Музыкальное сопровождение"></div>
+						<div class="advantage-item__name">Музыкальное<br>сопровождение</div>
+					</div>
+					<div class="advantage__item advantage-item advantage-item--3">
+						<div class="advantage-item__ico"><img src="images/content/advantage/show-category/show-category-ico-3.png" alt="Вынос торта"></div>
+						<div class="advantage-item__name">Вынос торта</div>
+					</div>
+					<div class="advantage__item advantage-item advantage-item--3">
+						<div class="advantage-item__ico"><img src="images/content/advantage/show-category/show-category-ico-6.png" alt="Фотосессия с любимыми героями"></div>
+						<div class="advantage-item__name">Фотосессия<br>с любимыми героями</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="bonus-container">
+		<div class="wrapper wrapper--big">
+			<div class="bonus-content">
+				
+				<div class="bonus-content-group">
+					<div class="bonus-content-group__title">Как формируется стоимость?</div>
+					
+					<table class="bonus-content-table">
+						<thead>
+							<tr>
+								<th>Программа</th>
+								<th>Цена</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Шоу до <strong>15 детей</strong></td>
+								<td><strong>10000 р</strong></td>
+							</tr>
+							<tr>
+								<td>Шоу до <strong>30 детей</strong></td>
+								<td><strong>15000 р</strong></td>
+							</tr>
+							<tr>
+								<td>Шоу до <strong>100 детей</strong></td>
+								<td><strong>30000р</strong></td>
+							</tr>
+							<tr>
+								<td>+ оформление помещения</td>
+								<td><strong>от 3000 р</strong></td>
+							</tr>
+							<tr>
+								<td>+ торт</td>
+								<td><strong>от 1000 р</strong></td>
+							</tr>
+							<tr>
+								<td>+ дрессированные животные</td>
+								<td><strong>от 3000 р</strong></td>
+							</tr>
+							<tr>
+								<td>Фото и видео сопровождение</td>
+								<td><strong>от 3000 р</strong></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+			</div>
+			
+		</div>
+	</div>
+
+
+	<div class="reviews-container">
+		<div class="wrapper wrapper--reviews">
+			<div class="block-title block-title--reviews">Отзывы о шоу мыльных пузырей</div>
+
+			<div class="reviews-list">
+				<div class="review-item">
+					<div class="review-item__name">Анастасия Николаева</div>
+					<div class="review-item__content">
+						<div class="review-item__avatar"><img src="images/content/team/team-img-1.png" alt="Анастасия Николаева"></div>
+						<div class="review-item__content-title">День рождения дочки!</div>
+						<div class="review-item__content-text">Спасибо за прекрасно проведенный день рождения моей дочери с участием фокусника Даниила. 15 пар детских глаз сияли от восторга! Умение общаться и заинтересовывать детей, а также профессионализм заставил верить в чудо и создать праздничную феерическую атмосферу.</div>
+					</div>
+				</div>
+				<div class="review-item">
+					<div class="review-item__name">Ольга Иванова</div>
+					<div class="review-item__content">
+						<div class="review-item__avatar"><img src="images/content/team/team-img-2.png" alt="Ольга Иванова"></div>
+						<div class="review-item__content-title">День рождения дочки!</div>
+						<div class="review-item__content-text">Хочу поблагодарить за интересную динамичную программу «Фрик шоу». Отмечали День Рождения сына, 11 лет. Детям такого возраста программы для малышей не будут интересны. Мы выбрали «Фрик шоу», и не пожалели. Дети одели яркие парики и огромные очки, танцевали «Гангнам стайл».</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="related-services-container related-services-container--violet related-services-container--bottomwave">
+		<div class="wrapper wrapper--big">
+			<div class="block-title block-title--related">Также вам может понравиться</div>
+
+			<div class="gallery-slider slider-red-style">
+				<div class="related-item related-item--violet">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">
+							<span class="related-item__name">Фото и видеосъемка</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">Заказать</a>
+					</div>
+				</div>
+				<div class="related-item related-item--blue">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Шар сюрприз">
+							<span class="related-item__name">Шар сюрприз</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal data-releated-service-name="Шар сюрприз">Заказать</a>
+					</div>
+				</div>
+				<div class="related-item related-item--violet">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">
+							<span class="related-item__name">Пинъята</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal>Заказать</a>
+					</div>
+				</div>
+				<div class="related-item related-item--blue">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">
+							<span class="related-item__name">Диджей</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal>Заказать</a>
+					</div>
+				</div>
+				<div class="related-item related-item--violet">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">
+							<span class="related-item__name">Фото и видеосъемка</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal>Заказать</a>
+					</div>
+				</div>
+				<div class="related-item related-item--blue">
+					<div class="related-item__content">
+						<a href="#order-modal" class="related-item__img js-order-related" style="background-image: url(images/content/gallery/gallery-img-1.jpg);" data-fancybox-modal data-releated-service-name="Фото и видеосъемка">
+							<span class="related-item__name">Пинъята</span>
+						</a>
+					</div>
+					<div class="related-item__btn">
+						<a href="#order-modal" class="btn-yellow btn-yellow--related js-order-related" data-fancybox-modal>Заказать</a>
+					</div>
+				</div>		
+			</div>
+		</div>
+	</div>
+	
+
+	<div class="heroes-container">
+		<div class="wrapper wrapper--big">
+			<div class="block-title block-title--heroes">Наши герои</div>
+
+			<div class="heroes-slider slider-red-style">
+				<div class="heroes-item">
+					<div class="heroes-item__img"><a href="#"><img src="images/content/heroes/hero-img-1.jpg" alt="Моана и Мауи"></a></div>
+					<div class="heroes-item__name">
+						<a href="#" class="heroes-item__link">Моана и Мауи</a>
+					</div>
+				</div>
+				<div class="heroes-item">
+					<div class="heroes-item__img"><a href="#"><img src="images/content/heroes/hero-img-2.jpg" alt="Миньоны"></a></div>
+					<div class="heroes-item__name">
+						<a href="#" class="heroes-item__link">Миньоны</a>
+					</div>
+				</div>
+				<div class="heroes-item">
+					<div class="heroes-item__img"><a href="#"><img src="images/content/heroes/hero-img-3.jpg" alt="Щенячий патруль"></a></div>
+					<div class="heroes-item__name">
+						<a href="#" class="heroes-item__link">Щенячий патруль</a>
+					</div>
+				</div>
+				<div class="heroes-item">
+					<div class="heroes-item__img"><a href="#"><img src="images/content/heroes/hero-img-4.jpg" alt="Супермен"></a></div>
+					<div class="heroes-item__name">
+						<a href="#" class="heroes-item__link">Супермен</a>
+					</div>
+				</div>
+				<div class="heroes-item">
+					<div class="heroes-item__img"><a href="#"><img src="images/content/heroes/hero-img-2.jpg" alt="Щенячий патруль"></a></div>
+					<div class="heroes-item__name">
+						<a href="#" class="heroes-item__link">Щенячий патруль</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="heroes-more">
+				<a href="#" class="btn-yellow btn-yellow--big">Смотреть Всех</a>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="gallery-container gallery-container--blue js-gallery-container-parallax parallaxBox">
+		<div class="gallery-container__ballon"></div>
+		<div class="gallery-container__clouds"></div>
+		<div class="gallery-container__stars gallery-container__stars--blue"></div>
+		<div class="wrapper wrapper--big">
+			<div class="block-title block-title--gallery">Довольные дети и родители</div>
+
+			<div class="gallery-slider">
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-1.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-1.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<div class="gallery-item__img">
+						<a href="images/content/gallery/gallery-img-2.jpg" data-fancybox="gallery">
+							<img src="images/content/gallery/gallery-img-2.jpg" alt="галерея">
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="footer">		
+		<div class="wrapper wrapper--big">
+			<div class="footer-logo-col">
+				<div class="footer-logo__row clearfix">	
+					<div class="footer-logo">
+						<a href="#" class="footer-logo__link">Радуга</a>
+					</div>
+					<div class="footer-soc clearfix">
+						<ul>
+							<li class="footer-soc__item">
+								<a href="#" class="footer-soc__link"><i class="fab fa-vk"></i></a>
+							</li>
+							<li class="footer-soc__item">
+								<a href="#" class="footer-soc__link"><i class="fab fa-facebook-f"></i></a>
+							</li>
+							<li class="footer-soc__item">
+								<a href="#" class="footer-soc__link"><i class="fab fa-instagram"></i></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="footer-description-text">Зажигательная организация детских праздников</div>
+				<div class="footer-copyright">© 2014-2018</div>
+			</div>
+			<div class="footer-menu-col">
+				<nav class="footer-menu clearfix">
+					<ul>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Все услуги</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Отзывы</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Цены</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Фотогалерея</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Акции</a>
+						</li>
+						<li class="footer-menu__item">
+							<a href="#" class="footer-menu__link">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer-contacts-col">
+				<div class="footer-tel">
+					<a href="tel:+7(916)7620818" class="footer-tel__link"><span>+7 (916)</span> 762 08 18</a>
+				</div>
+				<div class="footer-callback">
+					<a href="#callback-modal" class="footer-callback__link" data-fancybox-modal>Заказать звонок</a>
+				</div>
+				<div class="footer-soc footer-soc--mobile clearfix">
+					<ul>
+						<li class="footer-soc__item">
+							<a href="#" class="footer-soc__link"><i class="fab fa-vk"></i></a>
+						</li>
+						<li class="footer-soc__item">
+							<a href="#" class="footer-soc__link"><i class="fab fa-facebook-f"></i></a>
+						</li>
+						<li class="footer-soc__item">
+							<a href="#" class="footer-soc__link"><i class="fab fa-instagram"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<div id="callback-modal" class="modal modal--default">
+	<div class="modal__title">Заказать звонок</div>
+	
+	<form action="#" class="order-modal-form">
+		<div class="modal-form__row">			
+			<input type="text" name="name" class="order-form__input" placeholder="Как вас зовут?">
+		</div>
+		<div class="modal-form__row">
+			<input type="text" name="tel" class="order-form__input input-tel" placeholder="+7">
+		</div>
+		<div class="modal-form__row">
+			<input type="submit" class="order-form__submit form__submit" value="Заказать звонок">
+			<input type="hidden" name="form_title" value="Заказать звонок">
+		</div>
+	</form>
+</div>
+
+
+<div id="order-modal" class="modal modal--default">
+	<div class="modal__title">Заказать услугу</div>
+	
+	<form action="#" class="order-modal-form">
+		<div class="modal-form__row">			
+			<input type="text" name="name" class="order-form__input" placeholder="Как вас зовут?">
+		</div>
+		<div class="modal-form__row">
+			<input type="text" name="tel" class="order-form__input input-tel" placeholder="+7">
+		</div>
+		<div class="modal-form__row">
+			<input type="submit" class="order-form__submit form__submit" value="Заказать услугу">
+			<input type="hidden" name="form_title" value="Заказать услугу">
+			<input type="hidden" name="form_service_list" class="form-services-list-hidden" value="">
+			<input type="hidden" name="form_service_percent" class="form-services-percent-hidden" value="">
+		</div>
+	</form>
+</div>
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
+<script src="js/jquery.formstyler.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
