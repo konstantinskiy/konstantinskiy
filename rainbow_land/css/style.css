@@ -4234,10 +4234,15 @@ Mclass advantage container
 }
 .mclass-advantage-item {
 	position: relative;
-	width: 280px;
-	height: 300px;
 }
-.mclass-advantage-item__name {
+.mclass-advantage-item__name {	
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	font-family: 'BIP', sans-serif;
 	font-size: 24px;
 	line-height: 28px;
@@ -4249,18 +4254,12 @@ Mclass advantage container
 }
 .mclass-advantage-item--2 .mclass-advantage-item__name {
 	margin: 10px 5px 0 0;
-}
-.mclass-advantage-item--4 .mclass-advantage-item__name {
-	margin: -10px 0 0 0;
-}
-.mclass-advantage-item--5 .mclass-advantage-item__name {
-	margin: 10px 0 0 0;
 } 
 .mclass-advantage-item--6 .mclass-advantage-item__name {
 	margin: -15px 15px 0 0;
 }
 .mclass-advantage-item--7 .mclass-advantage-item__name {
-	margin: 30px 15px 0 0;
+	margin: 15px 15px 0 0;
 }
 .mclass-advantage-item--rose .mclass-advantage-item__name {
 	color: #e13c89;
@@ -4273,43 +4272,6 @@ Mclass advantage container
 }
 .mclass-advantage-item--red .mclass-advantage-item__name {
 	color: #e5435a;
-}
-.mclass-advantage-item__bg {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	-o-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
-}
-.mclass-advantage-item__bg--1 {
-	width: 282px;
-	height: 296px;
-}
-.mclass-advantage-item__bg--2 {
-	width: 276px;
-	height: 300px;
-}
-.mclass-advantage-item__bg--3 {
-	width: 258px;
-	height: 329px;
-}
-.mclass-advantage-item__bg--4 {
-	width: 285px;
-	height: 286px;
-}
-.mclass-advantage-item__bg--5 {
-	width: 261px;
-	height: 279px;
-}
-.mclass-advantage-item__bg--6 {
-	width: 279px;
-	height: 274px;
-}
-.mclass-advantage-item__bg--7 {
-	width: 285px;
-	height: 296px;
 }
 
 /*----------------------------------------------------------------
@@ -5709,6 +5671,31 @@ Adaptive styles
 	.mclass-hero-slider .slick-dots {
 		margin: 20px 0 0 0;
 	}
+
+	
+	.mclass-advantage__row {
+		letter-spacing: -10px;
+		margin: 0 -5px;
+	}
+	.mclass-advantage__col {
+		width: 50%;
+		padding: 0 5px;
+		display: inline-block;
+		vertical-align: middle;
+		margin: 0 0 45px 0;
+		letter-spacing: 0;
+	}
+	.mclass-advantage-item__name {
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.mclass-advantage-item--6 .mclass-advantage-item__name {
+		margin: 0;
+	}
+	.mclass-advantage-item--7 .mclass-advantage-item__name {
+		margin: 10px 0 0 0;
+	}
+
 	
 	.mclass-videoprograms-container {
     	padding: 40px 0;
@@ -6347,7 +6334,11 @@ Adaptive styles
 
 
 	.mclass-advantage__col {
-		margin: 0 15px 30px 15px;
+		margin: 0 0 20px 0;
+	}
+	.mclass-advantage-item__name {
+		font-size: 13px;
+		line-height: 15px;
 	}
 
 
