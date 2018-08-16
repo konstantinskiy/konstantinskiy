@@ -333,10 +333,29 @@ $(document).ready(function(){
     }
 
 
+    // Mclass hero slider init
+    // ===============================================
+
+    if($('.mclass-hero-slider').length) {
+        $('.mclass-hero-slider').slick({
+            slidesToShow: 1,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 767,
+                    settings: {
+                        arrows: false,
+                    }
+                }
+            ]
+        });
+    }
+
+
 
     $('.service-description-more__btn').on('click', function(e) {
         e.preventDefault();
-        $('.services-content__description-body').css('height', 'auto');
+        $(this).parents().prev().css('height', 'auto');
         $(this).hide();
     });
 
@@ -526,22 +545,24 @@ $(document).ready(function(){
     // Ballon animate
     
     function balloonAnimate() {
-        var gallery_container_offset_top = $('.gallery-container').offset().top,
-            gallery_container_top_point = gallery_container_offset_top - ($(window).height())/2.2;
+        if($('.gallery-container').length && $('.gallery-container__ballon').length) {
+            var gallery_container_offset_top = $('.gallery-container').offset().top,
+                gallery_container_top_point = gallery_container_offset_top - ($(window).height())/2.2;
 
-        $(window).on('scroll', function() {
-            var scroll_value = $(this).scrollTop();
+            $(window).on('scroll', function() {
+                var scroll_value = $(this).scrollTop();
 
-            if(scroll_value > gallery_container_top_point) {
-                $('.gallery-container__ballon').css({
-                    'transform': 'translateY(70px)'
-                });
-            } else {
-                $('.gallery-container__ballon').css({
-                    'transform': 'translateY(-70px)'
-                });
-            }
-        });    
+                if(scroll_value > gallery_container_top_point) {
+                    $('.gallery-container__ballon').css({
+                        'transform': 'translateY(70px)'
+                    });
+                } else {
+                    $('.gallery-container__ballon').css({
+                        'transform': 'translateY(-70px)'
+                    });
+                }
+            });    
+        }
     }
     
     balloonAnimate();
@@ -590,6 +611,11 @@ $(document).ready(function(){
 
     $('.js-gallery-container-parallax').mousemove(function(e) {
         parallaxIt(e, '.gallery-container__stars', 35, -15);
+    });
+
+    $('.js-mclass-container-parallax').mousemove(function(e) {
+        parallaxIt(e, '.mclass-container__serpantine--left', -120, 5);
+        parallaxIt(e, '.mclass-container__serpantine--right', 50, 10);
     });
     
 
