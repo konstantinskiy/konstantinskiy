@@ -223,16 +223,16 @@ $(document).ready(function() {
         }
     }
     
-    if($(window).width() > 1000) {
-        elementParallaxScrollAnimate('.round-box--elite');
-        elementParallaxScrollAnimate('.elite-sm-img', 100);
+    // if($(window).width() > 1000) {
+    //     elementParallaxScrollAnimate('.round-box--elite');
+    //     elementParallaxScrollAnimate('.elite-sm-img', 100);
 
-        elementParallaxScrollAnimate('.round-box--invest');
-        elementParallaxScrollAnimate('.invest-sm-img', 100);
+    //     elementParallaxScrollAnimate('.round-box--invest');
+    //     elementParallaxScrollAnimate('.invest-sm-img', 100);
 
-        elementParallaxScrollAnimate('.round-box--sale');
-        elementParallaxScrollAnimate('.sale-sm-img', 100);
-    }
+    //     elementParallaxScrollAnimate('.round-box--sale');
+    //     elementParallaxScrollAnimate('.sale-sm-img', 100);
+    // }
 
 
 
