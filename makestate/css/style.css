@@ -532,14 +532,10 @@ Round box
 	color: #f5a3b7;
 }
 .round-box--black .round-box__title {
-	color: #ffcc00;
+	color: #fff;
 }
 .round-box--black .round-box__description {
 	color: #999;
-}
-.round-box__description--big {
-	font-size: 34px;
-	line-height: 38px;
 }
 
 /*------------------------------------------------------------
@@ -1510,7 +1506,7 @@ News section
 ------------------------------------------------------------*/
 
 .s-news {
-	padding: 0 0 160px;
+	padding: 50px 0 160px;
 }
 .s-news-head {
 	margin: 0 0 75px;
