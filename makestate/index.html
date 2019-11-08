@@ -1,0 +1,673 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>MakeEstate</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body>
+
+
+<div class="preloader">
+	<div class="preloader__title">
+		<div class="preloader__title-text">MAKE ESTATE</div>
+	</div>
+	<div class="preloader-round preloader-round--darkgrey"></div>
+	<div class="preloader-round preloader-round--red"></div>
+	<div class="preloader-round preloader-round--lightgrey"></div>
+</div>
+
+
+<div class="s-adaptive-slide">
+	<a href="#" class="s-adaptive-close js-adaptive-slide-close"></a>
+	<nav class="adaptive-menu">
+		<ul>
+			<li class="adaptive-menu__item">
+				<a href="#" class="adaptive-menu__link adaptive-menu__link--active js-scrollto" data-scroll-target="s-elite">Элитная недвижимость</a>
+			</li>
+			<li class="adaptive-menu__item">
+				<a href="#" class="adaptive-menu__link js-scrollto" data-scroll-target="s-invest">Инвестиционная недвижимость</a>
+			</li>
+			<li class="adaptive-menu__item">
+				<a href="#" class="adaptive-menu__link js-scrollto" data-scroll-target="s-sale">Вторичная недвижимость</a>
+			</li>
+			<li class="adaptive-menu__item">
+				<a href="#" class="adaptive-menu__link js-scrollto" data-scroll-target="s-foreign">Зарубежная недвижимость</a>
+			</li>
+			<li class="adaptive-menu__item">
+				<a href="#" class="adaptive-menu__link js-scrollto" data-scroll-target="s-mission">Принцип работы</a>
+			</li>
+			<li class="adaptive-menu__item">
+				<a href="#" class="adaptive-menu__link js-scrollto" data-scroll-target="s-about">О компании</a>
+			</li>
+			<li class="adaptive-menu__item">
+				<a href="#" class="adaptive-menu__link js-scrollto" data-scroll-target="s-contacts">Контакты</a>
+			</li>
+		</ul>
+	</nav>
+	<div class="adaptive-contacts">
+		<div class="adaptive-contacts-item">
+			<a href="tel:+79478489574" class="adaptive-contacts-item__link adaptive-contacts-item__link--tel">+7 947 848 95 74</a>
+		</div>
+		<div class="adaptive-contacts-item">
+			<a href="mailto:support@makeestate.com" class="adaptive-contacts-item__link adaptive-contacts-item__link--email">support@makeestate.com</a>
+		</div>
+	</div>
+	<div class="s-adaptive-slide__soc">
+		<nav class="soc-nav">
+			<ul>
+				<li class="soc-nav__item">
+					<a href="#" class="soc-nav__link soc-nav__link--vk"></a>
+				</li>
+				<li class="soc-nav__item">
+					<a href="#" class="soc-nav__link soc-nav__link--fb"></a>
+				</li>
+				<li class="soc-nav__item">
+					<a href="#" class="soc-nav__link soc-nav__link--youtube"></a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+
+<div class="layout">
+	
+	<header class="header">
+		
+		<aside class="header-sidebar">
+			<a href="#" class="header-toggler js-adaptive-slide-open">
+				<span class="header-toggler__center">
+					<span class="header-toggler__line"></span>
+					<span class="header-toggler__line"></span>
+					<span class="header-toggler__line"></span>
+				</span>
+			</a>
+			<nav class="header-sidebar-nav">
+				<ul>
+					<li class="header-sidebar-nav__item">
+						<a href="#" class="header-sidebar-nav__link js-scrollto" data-scroll-target="s-elite">Элитная недвижимость</a>
+					</li>
+					<li class="header-sidebar-nav__item">
+						<a href="#" class="header-sidebar-nav__link js-scrollto" data-scroll-target="s-invest">Инвестиционная недвижимость</a>
+					</li>
+					<li class="header-sidebar-nav__item">
+						<a href="#" class="header-sidebar-nav__link js-scrollto" data-scroll-target="s-sale">Вторичная недвижимость</a>
+					</li>
+					<li class="header-sidebar-nav__item">
+						<a href="#" class="header-sidebar-nav__link js-scrollto" data-scroll-target="s-foreign">Зарубежная недвижимость</a>
+					</li>
+				</ul>
+			</nav>
+		</aside>
+		<div class="header-container">
+			<div class="header-container__wrapper">
+				<div class="header-container__inner">
+					<div class="header-container__content">
+						<nav class="header-menu">
+							<ul>
+								<li class="header-menu__item">
+									<a href="#" class="header-menu__link header-menu__link--active">Принцип работы</a>
+								</li>
+								<li class="header-menu__item">
+									<a href="#" class="header-menu__link">О компании</a>
+								</li>
+								<li class="header-menu__item">
+									<a href="#" class="header-menu__link">Контакты</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="header__logo">
+							<div class="header__logo-round"></div>
+							<a href="#"><img src="images/header-logo.png" alt="MakeEstate"></a>
+						</div>
+						<div class="header__title">Ваш личный <br> помощник</div>
+						<div class="header__description">на рынке недвижимости</div>
+						<a href="#callback-modal" class="btn btn--white" data-fancybox-modal><span>Смотреть предложения</span></a>
+					</div>
+					<div class="header-container__side">
+						<div class="round-box round-box--grey round-box--header header-round">
+							<div class="round-box__inner">
+								<div class="header-round__title">100%</div>
+								<div class="header-round__description">Мы сделаем <br> каждую покупку <br> инвестицией!</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__img"><img src="images/header-img.jpg" alt="img"></div>
+	</header>
+	
+
+	<div class="s-mission">
+		<div class="wrapper wrapper--md">
+			<div class="s-mission__inner">
+				<div class="s-mission__col s-mission__left">
+					<div class="s-mission__smimg"><img src="images/mission-sm-img.png" alt="img"></div>
+					<div class="s-mission__round animate-hidden">
+						<div class="round-box round-box--rose mission-round">
+							<div class="round-box__inner">
+								<div class="mission-round__title">№1</div>
+								<div class="mission-round__description">среди компаний <br> на рынке <br> недвижимости</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="s-mission__col s-mission__right">
+					<div class="s-mission__right-inner">
+						<div class="def-block-title">Наша миссия</div>
+						<div class="def-block-list">
+							<ul>
+								<li class="def-block-list__item def-block-list__item--marker">Работаем <span>без комиссии и скрытых затрат</span></li>
+								<li class="def-block-list__item def-block-list__item--marker"><span>Работаем точно по вашему запросу –</span> даже если вы сами еще не знаете, что хотите</li>
+								<li class="def-block-list__item def-block-list__item--marker"><span>Отлично знаем рынок и его людей –</span> нам открыты любые двери</li>
+								<li class="def-block-list__item def-block-list__item--marker"><span>Не названиваем, не  дергаем вас –</span> мы знаем, что у вас есть и другие дела</li>
+								<li class="def-block-list__item def-block-list__item--marker"><span>Работаем по партнерским программам –</span> для нас отдельные скидки и доступ к закрытым продажам</li>
+								<li class="def-block-list__item def-block-list__item--marker"><span>Не раскрываем личную информацию –</span> кто бы ни спросил, мы ничего не расскажем про вас</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="s-mission__img"><img src="images/mission-big-img.jpg" alt="img"></div>
+	</div>
+
+
+	<div class="s-easy">
+		<div class="wrapper wrapper--md">
+			<div class="s-easy__inner">
+				<div class="s-easy__left">
+					<div class="s-easy__title">Все просто</div>
+					<div class="easy-list">
+						<div class="easy-list__col easy-list__col--1 animate-hidden">
+							<div class="easy-list-item">
+								<div class="easy-list-item__num">01</div>
+								<div class="easy-list-item__title">Определяем запрос</div>
+								<div class="easy-list-item__description">Make Estate – ваш личный помощник в подборе недвижимости</div>
+							</div>
+						</div>
+						<div class="easy-list__col easy-list__col--1 animate-hidden">
+							<div class="easy-list-item">
+								<div class="easy-list-item__num">02</div>
+								<div class="easy-list-item__title">Ищем для вас лучшие объекты</div>
+								<div class="easy-list-item__description">Мы видим картину шире, чем поиск в интернете</div>
+							</div>
+						</div>
+						<div class="easy-list__col easy-list__col--1 animate-hidden">
+							<div class="easy-list-item">
+								<div class="easy-list-item__num">03</div>
+								<div class="easy-list-item__title">Обсуждение вариантов</div>
+								<div class="easy-list-item__description">Личный брокер приезжает к вам с персональным предложением</div>
+							</div>
+						</div>
+						<div class="easy-list__col easy-list__col--2 animate-hidden">
+							<div class="easy-list-item">
+								<div class="easy-list-item__num">04</div>
+								<div class="easy-list-item__title">Индивидуальный тур по выбранным объектам</div>
+								<div class="easy-list-item__description">Готовим оптимальный маршрут согласно вашему расписанию</div>
+							</div>
+						</div>
+						<div class="easy-list__col easy-list__col--2 animate-hidden">
+							<div class="easy-list-item">
+								<div class="easy-list-item__num">05</div>
+								<div class="easy-list-item__title">Глубокий разбор и анализ каждого варианта</div>
+								<div class="easy-list-item__description">У нас всегда есть альтернативы и идеи</div>
+							</div>
+						</div>
+						<div class="easy-list__col easy-list__col--2 animate-hidden">
+							<div class="easy-list-item">
+								<div class="easy-list-item__num">06</div>
+								<div class="easy-list-item__title">Принятие решения</div>
+								<div class="easy-list-item__description">Мы не давим на ваш выбор и не ограничиваем во времени</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="s-easy__right">
+					<div class="round-box round-box--grey round-box--easy animate-hidden">
+						<img src="images/easy-round-ico.jpg" alt="MakeEstate">
+					</div>
+				</div>
+			</div>
+
+			<div class="easy-interest">
+				<div class="easy-interest__box">Нам интересно работать с вами</div>
+			</div>
+		</div>
+		<div class="s-easy__img"><img src="images/easy-img.jpg" alt="easy"></div>
+	</div>
+
+
+	<div class="s-elite">
+		<div class="wrapper wrapper--md">
+			<div class="s-elite__inner">
+				<div class="s-elite__col s-elite__left">
+					<div class="s-elite__left-inner">
+						<div class="round-box round-box--elite round-box--yellow">
+							<div class="round-box__inner">
+								<div class="round-box__title">Элитная</div>
+								<div class="round-box__description">Жилая элитная недвижимость в Москве</div>
+							</div>
+						</div>
+						<div class="elite-sm-img"><img src="images/elite-img-sm.jpg" alt="img"></div>
+					</div>
+				</div>
+				<div class="s-elite__col s-elite__right">
+					<div class="s-elite__right-inner">
+						<div class="def-block-title">Покупайте с любовью, живите со вкусом!</div>
+						<div class="def-block-list">
+							<ul>
+								<li class="def-block-list__item">Пентхаусы</li>
+								<li class="def-block-list__item">Терассы</li>
+								<li class="def-block-list__item">Камины</li>
+								<li class="def-block-list__item">Высокие потолки</li>
+								<li class="def-block-list__item">Клубные дома</li>
+								<li class="def-block-list__item">Лучшие виды Москвы</li>
+								<li class="def-block-list__item">Отделка под ключ</li>
+								<li class="def-block-list__item">Дорогой бизнес класс</li>
+								<li class="def-block-list__item">Особняки</li>
+							</ul>
+						</div>
+						<div class="def-block-more">
+							<a href="#callback-modal" class="btn btn--grey" data-fancybox-modal><span>Узнать подробнее</span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="s-elite__img"><img src="images/elite-img-big.jpg" alt="elite"></div>
+	</div>
+
+
+	<div class="s-invest">
+		<div class="wrapper wrapper--md">
+			<div class="s-invest__inner">
+				<div class="s-invest__col">
+					<div class="def-block-title">Простой способ быть инвестором</div>
+					<div class="def-block-list">
+						<ul>
+							<li class="def-block-list__item">Готовый арендный бизнес</li>
+							<li class="def-block-list__item">Квартиры, апартаменты и лофты на этапе строительства</li>
+							<li class="def-block-list__item">Апартаменты с гостиничным сервисом</li>
+							<li class="def-block-list__item">Офисные и торговые помещения на этапе строительства</li>
+							<li class="def-block-list__item">Street Retail</li>
+							<li class="def-block-list__item">Закрытые продажи жилой и коммерческой недвижимости</li>
+						</ul>
+					</div>
+					<div class="def-block-more">
+						<a href="#callback-modal" class="btn btn--grey" data-fancybox-modal><span>Узнать подробнее</span></a>
+					</div>
+				</div>
+				<div class="s-invest__col s-invest__right">
+					<div class="s-invest__right-inner">
+						<div class="round-box round-box--rose round-box--invest">
+							<div class="round-box__inner">
+								<div class="round-box__title">Инвестиции</div>
+								<div class="round-box__description">в недвижимость</div>
+							</div>
+						</div>
+						<div class="invest-sm-img"><img src="images/invest-img-sm.jpg" alt="img"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="s-invest__img"><img src="images/invest-img-big.jpg" alt="img"></div>
+	</div>
+
+
+	<div class="s-sale">
+		<div class="wrapper wrapper--md">
+			<div class="s-sale__inner">
+				<div class="s-sale__col s-sale__left">
+					<div class="s-sale__left-inner">
+						<div class="round-box round-box--black round-box--sale">
+							<div class="round-box__inner">
+								<div class="round-box__title">Продажа</div>
+								<div class="round-box__description">вторичного <br> жилья</div>
+							</div>
+						</div>
+						<div class="sale-sm-img"><img src="images/sale-img-sm.jpg" alt="img"></div>
+					</div>
+				</div>
+				<div class="s-sale__col">
+					<div class="def-block-title">Находим лучшего покупателя</div>
+					<div class="def-block-list">
+						<ul>
+							<li class="def-block-list__item">знаем, как продать вашу недвижимость</li>
+							<li class="def-block-list__item">быстро</li>
+							<li class="def-block-list__item">выгодно</li>
+							<li class="def-block-list__item">легко</li>
+							<li class="def-block-list__item">чувствуем, где потолок</li>
+							<li class="def-block-list__item">видим тонкости каждой стены</li>
+						</ul>
+					</div>
+					<div class="def-block-more">
+						<a href="#callback-modal" class="btn btn--grey" data-fancybox-modal><span>Узнать подробнее</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="s-sale__img"><img src="images/sale-img-big.jpg" alt="img"></div>
+	</div>
+
+	
+	<div class="s-foreign">
+		<div class="wrapper wrapper--md">
+			<div class="s-foreign__inner">
+				<div class="s-foreign__col">
+					<div class="s-foreign__description">Мы не просто продаем недвижимость!</div>
+					<div class="s-foreign__title">Мы раздвигаем горизонты</div>
+					<div class="s-foreign__smimg"><img src="images/foreign-img-sm.jpg" alt="img"></div>
+					<div class="s-foreign__more">
+						<a href="#callback-modal" class="btn btn--grey" data-fancybox-modal><span>Узнать подробнее</span></a>
+					</div>
+				</div>
+				<div class="s-foreign__col s-invest__right">
+					<div class="s-foreign__right-inner">
+						<div class="round-box round-box--yellow round-box--foreign animate-hidden">
+							<div class="round-box__inner">
+								<div class="round-box__title">Зарубежная</div>
+								<div class="round-box__description">недвижимость</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="s-foreign__img"><img src="images/foreign-img-big.jpg" alt="img"></div>
+	</div>
+
+
+	<div class="s-quiz">
+		<div class="wrapper wrapper--md">
+			<div class="s-quiz__inner">
+				<div class="s-quiz__col s-quiz__left">
+					<div class="s-quiz__left-inner">
+						<div class="qiuz-know">
+							<div class="qiuz-know__head">
+								<div class="qiuz-know__title">Я уже</div>
+								<div class="qiuz-know__text">Все знаю</div>
+							</div>
+						</div>
+						<div class="qiuz-know-box">
+							<div class="qiuz-know-list">
+								<div class="qiuz-know-list__item">
+									<div class="qiuz-know-list__title">Я знаю,</div>
+									<div class="qiuz-know-list__text">что я ищу</div>
+								</div>
+								<div class="qiuz-know-list__item">
+									<div class="qiuz-know-list__title">Я знаю,</div>
+									<div class="qiuz-know-list__text">что я ищу</div>
+								</div>
+								<div class="qiuz-know-list__item">
+									<div class="qiuz-know-list__title">Я знаю,</div>
+									<div class="qiuz-know-list__text">что я ищу</div>
+								</div>
+							</div>
+							<a href="#" class="qiuz-know-box__btn">Поиск</a>
+						</div>
+					</div>
+				</div>
+				<div class="s-quiz__col s-quiz__right">
+					<div class="s-quiz__right-inner">
+						<div class="s-quiz__title">Иногда вы и <span>сами точно не знаете</span>, что вы ищите.</div>
+						<div class="s-quiz__subtitle">Мы разработали опросник, чтобы вы уточнили свои пожелания</div>
+						<div class="s-quiz__description">Хотите жить → повыше → пониже → пентхаус? в тихом дворике? в шумном центре? в тихом дворике центра? стиль в дизайне? минимализм? ар- нуво? барокко? эклектика? где вы мечтали жить в детстве? во дворце, в замке, в особняке, у моря?</div>
+						<div class="s-quiz__actions">
+							<div class="s-quiz__write">
+								<a href="#" class="s-quiz__btn">Заполнить опросник</a>
+							</div>
+							<div class="s-quiz__time">Занимает 9 <br> минут</div>							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="s-quiz__img"><img src="images/quiz-home.png" alt="img"></div>
+	</div>
+	
+
+	<div class="s-news">
+		<div class="s-news-head">
+			<div class="wrapper wrapper--md">
+				<div class="s-news-head__inner">
+					<div class="s-news__title"><img src="images/news-title-bg.png" alt="news"></div>
+					<div class="s-news__arrows">
+						<div class="s-news__arrows-col">
+							<a href="#" class="s-news__arrow s-news__arrow--left"></a>
+						</div>
+						<div class="s-news__arrows-col">
+							<a href="#" class="s-news__arrow s-news__arrow--right"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="news-slider">
+			<div class="news-slider__item">
+				<div class="news-slider__title"><a href="#" class="news-slider__link">Заголовок новости на две или три строки супер текста</a></div>
+				<div class="news-slider__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+				<div class="news-slider__readmore">
+					<a href="#" class="btn btn--grey btn--sm"><span>Читать полностью</span></a>
+				</div>
+				<div class="news-slider__thumb"><img src="images/estate-img-big.jpg" alt="news"></div>
+			</div>
+			<div class="news-slider__item">
+				<div class="news-slider__title"><a href="#" class="news-slider__link">Заголовок новости на две или три строки супер текста</a></div>
+				<div class="news-slider__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+				<div class="news-slider__readmore">
+					<a href="#" class="btn btn--grey btn--sm"><span>Читать полностью</span></a>
+				</div>
+				<div class="news-slider__thumb"><img src="images/estate-img-big.jpg" alt="news"></div>
+			</div>
+			<div class="news-slider__item">
+				<div class="news-slider__title"><a href="#" class="news-slider__link">Заголовок новости на две или три строки супер текста</a></div>
+				<div class="news-slider__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+				<div class="news-slider__readmore">
+					<a href="#" class="btn btn--grey btn--sm"><span>Читать полностью</span></a>
+				</div>
+				<div class="news-slider__thumb"><img src="images/estate-img-big.jpg" alt="news"></div>
+			</div>
+			<div class="news-slider__item">
+				<div class="news-slider__title"><a href="#" class="news-slider__link">Заголовок новости на две или три строки супер текста</a></div>
+				<div class="news-slider__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+				<div class="news-slider__readmore">
+					<a href="#" class="btn btn--grey btn--sm"><span>Читать полностью</span></a>
+				</div>
+				<div class="news-slider__thumb"><img src="images/estate-img-big.jpg" alt="news"></div>
+			</div>
+			<div class="news-slider__item">
+				<div class="news-slider__title"><a href="#" class="news-slider__link">Заголовок новости на две или три строки супер текста</a></div>
+				<div class="news-slider__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+				<div class="news-slider__readmore">
+					<a href="#" class="btn btn--grey btn--sm"><span>Читать полностью</span></a>
+				</div>
+				<div class="news-slider__thumb"><img src="images/estate-img-big.jpg" alt="news"></div>
+			</div>
+			<div class="news-slider__item">
+				<div class="news-slider__title"><a href="#" class="news-slider__link">Заголовок новости на две или три строки супер текста</a></div>
+				<div class="news-slider__description">Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях.</div>
+				<div class="news-slider__readmore">
+					<a href="#" class="btn btn--grey btn--sm"><span>Читать полностью</span></a>
+				</div>
+				<div class="news-slider__thumb"><img src="images/estate-img-big.jpg" alt="news"></div>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="s-about">
+		<div class="wrapper wrapper--md">
+			<div class="s-about__inner">
+				<div class="s-about__col s-quiz__left">
+					<div class="s-about__left-inner">
+						<div class="s-about__make">Make</div>
+						<div class="s-about__horiztext"><img src="images/estate-img-horiztext.png" alt="img"></div>
+						<div class="s-about__bigimg"><img src="images/estate-img-big.jpg" alt="img"></div>
+						<div class="s-about__smimg"><img src="images/about-img-sm.jpg" alt="img"></div>
+						<div class="s-about__redround"></div>
+						<div class="round-box round-box--grey round-box--about round-box--about animate-hidden"><img src="images/easy-round-ico.jpg" alt="makeestate"></div>
+					</div>
+				</div>
+				<div class="s-about__col s-quiz__right">
+					<div class="s-about__right-inner">
+						<div class="s-about__title">О нашей компании</div>
+						<div class="s-about__people">Компания – это люди, а не просто бренды</div>
+						<div class="s-about__description">
+							<p>Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в домашних условиях. При создании генератора мы использовали небезизвестный универсальный код речей.</p>
+							<p>Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце, что позволяет сделать текст более привлекательным и живым для визуально-слухового восприятия.</p>
+							<p>По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некоторых людей недоумение при попытках прочитать рыбу текст.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="s-contacts">
+		<div class="s-contacts__col s-contacts__col--content">
+			<div class="b-contact-box">
+				<div class="b-contact-box__title">Будем рады видеть вас в нашем офисе:</div>
+				<div class="b-contact">
+					<div class="b-contact__item b-contact__item--address">
+						<div class="b-contact__address">г. Санкт-Петербург, <br> ул. Адресных Текстов, 54</div>
+					</div>
+					<div class="b-contact__item b-contact__item--tel">
+						<a href="tel:+79478489574" class="b-contact__tel">+7 947 848 95 74</a>
+					</div>
+					<div class="b-contact__item b-contact__item--email">
+						<a href="mailto:support@makeestate.com" class="b-contact__email">support@makeestate.com</a>
+					</div>
+					<div class="b-contanct__item">
+						<a href="#callback-modal" class="btn btn--grey btn--sm" data-fancybox-modal><span>Заказать консультацию</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="s-contacts__col s-contacts__col--map">
+			<div class="b-map"><iframe src="https://yandex.ua/map-widget/v1/?um=constructor%3A1f798c56bedd2c01ffcae42bdb397472c42ba1ffc9e06f338f7921b9fff14f32&amp;source=constructor"></iframe>
+			</div>
+		</div>
+	</div>
+
+	
+	<footer class="footer">
+		<div class="footer-top">
+			<div class="wrapper wrapper--md">
+				<div class="footer-top__inner">
+					<div class="footer-top__col">
+						<div class="footer-top__logo"><a href="#"><img src="images/footer-logo.png" alt="MakeEstate"></a></div>
+					</div>
+					<div class="footer-top__col footer-top__col--services">
+						<div class="footer-service">
+							<div class="footer-service__title">Наши услуги</div>
+							<nav class="footer-nav">
+								<ul>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Элитная недвижимость</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Вторичная недвижимость</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Инвестиционная недвижимость</a>
+									</li>
+									<li class="footer-nav__item">
+										<a href="#" class="footer-nav__link">Зарубежная недвижимость</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="footer-top__col footer-top__col--soc">
+						<div class="footer-soc">
+							<div class="footer-soc__title">Мы в социальных сетях:</div>
+							<nav class="soc-nav">
+								<ul>
+									<li class="soc-nav__item">
+										<a href="#" class="soc-nav__link soc-nav__link--vk"></a>
+									</li>
+									<li class="soc-nav__item">
+										<a href="#" class="soc-nav__link soc-nav__link--fb"></a>
+									</li>
+									<li class="soc-nav__item">
+										<a href="#" class="soc-nav__link soc-nav__link--youtube"></a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+					<div class="footer-top__col footer-top__col--subscribe">
+						<div class="footer-sub">
+							<div class="footer-sub__title">Подписаться на рассылку</div>
+							<form action="#" class="subscribe-form default-form">
+								<div class="default-form__group">
+									<input type="text" name="subscribe" class="default-form__input" placeholder="Введите ваш E-mail">
+								</div>
+								<div class="default-form__group">
+									<input type="submit" class="default-form__submit" value="Подписаться">
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<div class="wrapper wrapper--md">
+				<div class="footer-bottom__inner">
+					<div class="footer-bottom__copyright">Make Estate 2019 © Все права защищены</div>
+					<div class="footer-bottom__powered">Разработка сайта - <a href="#" class="footer-bottom__powered-link">адрес студии</a></div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</div>
+
+
+<div id="callback-modal" class="modal modal-default">
+	<div class="modal-default__title">Заказать обратный звонок</div>
+
+	<form class="callback-form default-form">
+		<div class="default-form__group">
+			<input type="text" name="name" class="default-form__input" placeholder="Введите ваше имя">
+		</div>
+		<div class="default-form__group">
+			<input type="text" name="tel" class="default-form__input" placeholder="+7 ___ - ___ -__ - __">
+		</div>
+		<div class="default-form__group">
+			<button type="submit" class="default-form__submit default-form__submit--full">Отправить</button>
+		</div>
+	</form>
+
+	<div class="modal__personaldata">Согласен(а) на обработку <a href="#">персональных данных</a></div>
+	
+</div>
+
+
+<!-- <script>
+	var htmlEl = document.getElementsByTagName('html')[0];
+	console.log(htmlEl);
+	htmlEl.classList.add('scroll-disable');
+</script> -->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
