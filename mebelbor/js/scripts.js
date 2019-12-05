@@ -16,6 +16,15 @@ $(document).ready(function() {
 
 
 
+    // Adaptive submenu slideToggle
+
+    $('.sidebar-cat__toggle').on('click', function(e) {
+        e.preventDefault();
+        $(this).parent().toggleClass('sidebar-cat__link--active').next().slideToggle();
+    });
+
+
+
     // Hero slider init
 
     if($('.hero-slider').length > 0) {
