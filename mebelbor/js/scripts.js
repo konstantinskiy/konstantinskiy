@@ -25,6 +25,15 @@ $(document).ready(function() {
 
 
 
+    // Subcats toggle 
+
+    $('.sidebar-subcats-head__btn').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('sidebar-subcats-head__btn--active').parents('.sidebar-subcats-head').next().slideToggle();
+    });
+
+
+
     // Hero slider init
 
     if($('.hero-slider').length > 0) {
@@ -73,6 +82,7 @@ $(document).ready(function() {
                     breakpoint: 640,
                     settings: {
                         slidesToShow: 1,
+                        dots: true
                     }
                 }
             ]
@@ -104,6 +114,45 @@ $(document).ready(function() {
             $('html').removeClass('scroll-disable');
         }
     });
+
+
+
+    // NoUI sidebar filter range sliders
+
+    if($('.sidebar-filter-range').length > 0) {
+        $('.sidebar-filter-range').each(function() {
+            var $this = $(this);
+            var slider = $this.find('.sidebar-filter-range__slider')[0];
+            var inputLeft = $this.find('.sidebar-filter-range__input--left')[0];
+            var inputRight = $this.find('.sidebar-filter-range__input--right')[0];
+            var inputs = [inputLeft, inputRight];
+
+            var minValue = ($(slider).data('min-value')) ? $(slider).data('min-value') : 0;
+            var maxValue = $(slider).data('max-value');
+
+            noUiSlider.create(slider, {
+                start: [minValue, maxValue],
+                connect: true,
+                step: 1,
+                range: {
+                    'min': [minValue],
+                    'max': [maxValue]
+                },
+                format: wNumb({
+                    decimals: 0
+                })
+            });
+
+            slider.noUiSlider.on('update', function(values, handle) {
+                inputs[handle].value = values[handle];
+            });
+
+            slider.noUiSlider.on('change', function(values, handle) {
+                inputs[handle].value = values[handle];
+            });
+
+        });
+    }
 
 
 });

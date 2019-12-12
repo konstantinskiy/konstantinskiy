@@ -1,0 +1,988 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Subcategory</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,600,800&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+</head>
+<body>
+
+
+<header class="header">
+	<div class="wrapper">
+		<div class="header__inner">
+			<div class="header__left">
+				<div class="header__hamburger">
+					<a href="#" class="adaptive-menu-toggle js-adaptive-slide">
+						<span class="menu-toggle-inner">
+							<span class="menu-toggle-line menu-toggle-line--1"></span>
+							<span class="menu-toggle-line menu-toggle-line--2"></span>
+							<span class="menu-toggle-line menu-toggle-line--3"></span>
+							<span class="menu-toggle-line menu-toggle-line--4"></span>
+							<span class="menu-toggle-line menu-toggle-line--5"></span>
+						</span>
+					</a>
+				</div>
+				<div class="header__logo">
+					<a href="#"><img src="images/logo.png" alt="MebelBor"></a>
+				</div>
+			</div>
+			<div class="header__description">Официальный поставщик <br> Боровичи Мебель</div>
+			<div class="header__address header-address">
+				<div class="header-address__street">
+					<a href="#" class="header-address__streetlink">Адреса Магазинов<span>7</span></a>
+				</div>
+				<div class="header-address__city">
+					<a href="#city-modal" class="header-address__citylink" data-fancybox-modal>Санкт-Петербург</a>
+				</div>
+			</div>
+			<div class="header-tels">
+				<div class="header-tels__tel">
+					<a href="tel:8(812)425-42-92" class="header-tels__number"><span>8(812)</span> 425-42-92</a>
+				</div>
+				<div class="header-tels__callback">
+					<a href="#callback-modal" class="header-tels__callbackbtn" data-fancybox-modal>обратный звонок</a>
+				</div>
+			</div>
+			<div class="header-actions">
+				<div class="header-actions__col header-actions__col--mobile">
+					<a href="#city-modal" class="header-mobile-address" data-fancybox-modal></a>
+				</div>
+				<div class="header-actions__col header-actions__col--mobile">
+					<a href="tel:8(812)425-42-92" class="header-mobile-tel"></a>
+				</div>
+				<div class="header-actions__col">
+					<a href="#" class="header-search"></a>
+				</div>
+				<div class="header-actions__col">
+					<a href="#" class="header-login"></a>
+				</div>
+				<div class="header-actions__col">
+					<div class="header-cart">
+						<a href="#" class="header-cart__link">
+							<span class="header-cart__icocol">
+								<span class="header-cart__ico">
+									<span class="header-cart__count">3</span>
+								</span>
+							</span>
+							<span class="header-cart__cost">9850<span class="header-cart__rur">a</span></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+
+
+<div class="s-main">
+	<div class="wrapper">
+		<div class="s-main__inner">
+			<aside class="s-main__side">
+				<div class="sidebar-subcats">
+					<div class="sidebar-subcats-head">
+						<a href="#" class="sidebar-subcats-head__btn sidebar-subcats-head__btn--active">
+							<span class="sidebar-subcats-head__text">Категории</span>
+							<span class="sidebar-subcats-head__lines">
+								<span></span>
+							</span>
+						</a>
+					</div>
+					<nav class="sidebar-subcats-nav">
+						<ul>
+							<li class="sidebar-subcats-nav__item sidebar-subcats-nav__item--active">Все диваны <span class="sidebar-subcats-nav__count">576</span></li>
+							<li class="sidebar-subcats-nav__item">
+								<a href="#" class="sidebar-subcats-nav__link">Прямые диваны <span class="sidebar-subcats-nav__count">356</span></a>
+							</li>
+							<li class="sidebar-subcats-nav__item">
+								<a href="#" class="sidebar-subcats-nav__link">Угловые диваны <span class="sidebar-subcats-nav__count">134</span></a>
+							</li>
+							<li class="sidebar-subcats-nav__item">
+								<a href="#" class="sidebar-subcats-nav__link">Диваны-кровати <span class="sidebar-subcats-nav__count">420</span></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="sidebar-filters">
+					<div class="sidebar-filters__title">Фильтр</div>
+					<form class="sidebar-filter-form">
+						<div class="sidebar-filter">
+							<label class="sidebar-filter__label">Цена, р</label>
+							<div class="sidebar-filter-range">
+								<div class="sidebar-filter-range__row">
+									<div class="sidebar-filter-range__col">
+										<input type="text" class="sidebar-filter-range__input sidebar-filter-range__input--left" disabled>
+									</div>
+									<div class="sidebar-filter-range__col">
+										<input type="text" class="sidebar-filter-range__input sidebar-filter-range__input--right" disabled>
+									</div>
+								</div>
+								<div class="sidebar-filter-range__slider" data-max-value="2500"></div>
+							</div>
+						</div>
+						<div class="sidebar-filter">
+							<label class="sidebar-filter__label">Цвет</label>
+							<select name="color" class="sidebar-filter__select">
+								<option>Любой</option>
+								<option>Красный</option>
+								<option>Белый</option>
+								<option>Черный</option>
+							</select>
+						</div>
+						<div class="sidebar-filter">
+							<label class="sidebar-filter__label">Вес, кг</label>
+							<div class="sidebar-filter-range">
+								<div class="sidebar-filter-range__row">
+									<div class="sidebar-filter-range__col">
+										<input type="text" class="sidebar-filter-range__input sidebar-filter-range__input--left" disabled>
+									</div>
+									<div class="sidebar-filter-range__col">
+										<input type="text" class="sidebar-filter-range__input sidebar-filter-range__input--right" disabled>
+									</div>
+								</div>
+								<div class="sidebar-filter-range__slider" data-min-value="20" data-max-value="84"></div>
+							</div>
+						</div>
+						<div class="sidebar-filter">
+							<label class="sidebar-filter__label">Тип</label>
+							<select name="color" class="sidebar-filter__select">
+								<option>Любой</option>
+								<option>Красный</option>
+								<option>Белый</option>
+								<option>Черный</option>
+							</select>
+						</div>
+						<div class="sidebar-filter">
+							<label class="sidebar-filter__label">Материал</label>
+							<select name="color" class="sidebar-filter__select">
+								<option>Любой</option>
+								<option>Красный</option>
+								<option>Белый</option>
+								<option>Черный</option>
+							</select>
+						</div>
+						<div class="sidebar-filter">
+							<div class="sidebar-filter-radio">
+								<label class="sidebar-filter-radio__label">
+									<input type="radio" name="radio" class="sidebar-filter-radio__input" checked>
+									<span class="sidebar-filter-radio__name">в наличии</span>
+									<span class="sidebar-filter-radio__check"></span>
+								</label>
+							</div>
+							<div class="sidebar-filter-radio">
+								<label class="sidebar-filter-radio__label">
+									<input type="radio" name="radio" class="sidebar-filter-radio__input">
+									<span class="sidebar-filter-radio__name">под заказ</span>
+									<span class="sidebar-filter-radio__check"></span>
+								</label>
+							</div>
+							<div class="sidebar-filter-radio">
+								<label class="sidebar-filter-radio__label">
+									<input type="radio" name="radio" class="sidebar-filter-radio__input">
+									<span class="sidebar-filter-radio__name">все</span>
+									<span class="sidebar-filter-radio__check"></span>
+								</label>
+							</div>
+						</div>
+						<div class="sidebar-filter">
+							<input type="submit" class="sidebar-filter__submit" value="Применить">
+							<a href="#" class="sidebar-filter__reset">Сбросить</a>
+						</div>
+					</form>
+				</div>
+			</aside>
+
+			<div class="s-main__center">
+				<div class="page-head">
+					<div class="page-head__breadcrumbs">
+						<nav class="breadcrumbs">
+							<ul>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Главная</a>
+								</li>
+								<li class="breadcrumbs__item">
+									<a href="#" class="breadcrumbs__link">Мягкая мебель</a>
+								</li>
+								<li class="breadcrumbs__item">Диваны</li>
+							</ul>
+						</nav>
+					</div>
+					<h1 class="page-head__title">Диваны</h1>
+				</div>
+
+				<div class="s-sort">
+					<div class="s-sort__left">
+						<div class="sort-items">
+							<div class="sort-item">
+								<div class="sort-item__title">Сортировать по:</div>
+								<select name="sorting" class="sort-item__select">
+									<option value="">популярности</option>
+									<option value="">цене</option>
+									<option value="">рейтингу</option>
+								</select>
+							</div>
+							<div class="sort-item">
+								<div class="sort-item__title">Товаров на странице:</div>
+								<select name="sorting" class="sort-item__select sort-item__select--items">
+									<option value="">10</option>
+									<option value="">25</option>
+									<option value="">50</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="s-sort__right">
+						<div class="product-views">
+							<a href="#" class="product-view product-view--grid"></a>
+							<a href="#" class="product-view product-view--list product-view--active"></a>
+						</div>
+					</div>
+				</div>
+
+				<div class="products-grid">
+					<div class="products-grid__row">
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__instock"><i></i>В наличии</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--discount"></div>
+											<div class="product-item__label product-item__label--hit">Хит</div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price product-item__price--old">
+												<div class="product-item__oldprice">14 540</div>
+												<div class="product-item__pricesale">-2 200</div>
+											</div>
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__instock"><i></i>В наличии</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--discount"></div>
+											<div class="product-item__label product-item__label--hit">Хит</div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price product-item__price--old">
+												<div class="product-item__oldprice">14 540</div>
+												<div class="product-item__pricesale">-2 200</div>
+											</div>
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__underorder">Под заказ</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--discount"></div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__underorder">Под заказ</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--discount"></div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__instock"><i></i>В наличии</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__instock"><i></i>В наличии</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--discount"></div>
+											<div class="product-item__label product-item__label--hit">Хит</div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price product-item__price--old">
+												<div class="product-item__oldprice">14 540</div>
+												<div class="product-item__pricesale">-2 200</div>
+											</div>
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__underorder">Под заказ</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--discount"></div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__underorder">Под заказ</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--discount"></div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__instock"><i></i>В наличии</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__instock"><i></i>В наличии</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--discount"></div>
+											<div class="product-item__label product-item__label--hit">Хит</div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price product-item__price--old">
+												<div class="product-item__oldprice">14 540</div>
+												<div class="product-item__pricesale">-2 200</div>
+											</div>
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__underorder">Под заказ</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--discount"></div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="products-grid__col products-grid__col--3">
+							<div class="product-item">
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__underorder">Под заказ</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--discount"></div>
+										</div>
+									</div>
+									<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+								</div>
+								<div class="product-item__title__body">
+									<div class="product-item__title">
+										<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+									</div>
+									<div class="product-item__footer product-item-footer">
+										<div class="product-item-footer__prices">
+											<div class="product-item__price">
+												<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+											</div>
+										</div>
+										<div class="product-item-footer__right">
+											<div class="product-item-footer__compare">
+												<a href="#" class="product-item-footer__comparebtn"></a>
+											</div>
+											<div class="product-item__cart">
+												<a href="#" class="product-item__cartbtn"></a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<nav class="pagination-nav">
+					<ul>
+						<li class="pagination-nav__item">
+							<a href="#" class="pagination-nav__prevlink"></a>
+						</li>
+						<li class="pagination-nav__item">
+							<a href="#" class="pagination-nav__link">1</a>
+						</li>
+						<li class="pagination-nav__item">
+							<a href="#" class="pagination-nav__link">2</a>
+						</li>
+						<li class="pagination-nav__item">
+							<a href="#" class="pagination-nav__link">3</a>
+						</li>
+						<li class="pagination-nav__item">
+							<a href="#" class="pagination-nav__link">4</a>
+						</li>
+						<li class="pagination-nav__item">
+							<a href="#" class="pagination-nav__link">5</a>
+						</li>
+						<li class="pagination-nav__item">...</li>
+						<li class="pagination-nav__item">
+							<a href="#" class="pagination-nav__link">32</a>
+						</li>
+						<li class="pagination-nav__item">
+							<a href="#" class="pagination-nav__nextlink"></a>
+						</li>
+					</ul>
+				</nav>
+
+				<div class="seo-content">
+					<h2>Мягкая мебель</h2>
+					<h3>Интернет-магазин мебели</h3>
+					<p>Бешеный темп жизни современного человека заставляет его ценить каждую минуту, поэтому многие предпочитают делать покупки и заказывать услуги онлайн. Фабрика «Мебель Боровичи» ценит время своих клиентов и предлагает им купить мебель в СПб, через свой интернет-магазин mebelbor.ru. Таким образом, им не придется ездить по мебельным шоу румам, а потом пытаться объяснить членам семьи, как выглядел то или иной шкаф или диван, показывая впопыхах сделанные фото, на своем смартфоне.</p>
+					<h3>Боровичи  – уникальные дизайнерские решения для Вашего дома.</h3>
+					<p>На сегодняшний день, многие магазины предлагают купить готовую продукцию. Несмотря на то, что выбор достаточно широк, шаблонные решения не всегда удовлетворяют пожелания потребителей, которые решили воплотить индивидуальный дизайн.</p>
+					<p>Именно поэтому все большую популярность получает проектирование мебели на заказ. Прибегнув к услугам дизайнера, вы можете подобрать подходящий цвет, форму и материал мебели для любого помещения. При этом будут учтены особенности Вашего жилища и другие пожелания.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="s-subscribe">
+	<div class="wrapper">
+		<div class="s-subscribe__inner">
+			<div class="s-subscribe-action">
+				<div class="s-subscribe-action__title">Подпишитесь</div>
+				<div class="s-subscribe-action__description">на рассылку интересных предложений</div>
+			</div>
+			<div class="s-subscribe-action s-subscribe-action--extend">
+				<div class="s-subscribe-action__title">Получите скидку</div>
+				<div class="s-subscribe-action__description">на первую покупку!</div>
+				<div class="s-subscribe-action__percent">5<span>%</span></div>
+			</div>
+			<div class="s-subscribe__form">
+				<form class="subscribe-form">
+					<div class="subscribe-form__inpcol">
+						<input type="text" name="sub" class="subscribe-form__input" placeholder="введите ваш email">
+					</div>
+					<div class="subscribe-form__submitcol">
+						<input type="submit" class="subscribe-form__submit" value="Подписаться">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<footer class="footer">
+	<div class="footer-top">
+		<div class="wrapper">
+			<div class="footer__inner">
+				<div class="footer-info">
+					<div class="footer-info__logo"><a href="#"><img src="images/logo.png" alt="MebelBor"></a></div>
+					<div class="footer-info__description">Официальный поставщик <br> Боровичи Мебель</div>
+					<div class="footer-info__tel">
+						<a href="tel:8(812)425-42-92" class="footer-info__telnum"><span>8 (812) </span>425-42-92</a>
+					</div>
+					<div class="footer-info__city">Санкт-Петербург</div>
+				</div>
+				<div class="footer-col">
+					<div class="footer-col__title">Информация</div>
+					<nav class="footer-nav">
+						<ul>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">О нас</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Услуги</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Блог</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Оферта</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-col">
+					<div class="footer-col__title">Покупателям</div>
+					<nav class="footer-nav">
+						<ul>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">3d планировщик</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Как заказать</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Доставка и оплата</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Кредит</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Сборка</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Гарантия и возврат</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-col">
+					<div class="footer-col__title">Сотрудничество</div>
+					<nav class="footer-nav">
+						<ul>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Оптовикам</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Арендодателям</a>
+							</li>
+							<li class="footer-nav__item">
+								<a href="#" class="footer-nav__link">Вакансии</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="footer-payments">
+						<div class="footer-col__title">Оплата</div>
+						<div class="footer-payments-list">
+							<div class="footer-payments-list__item"><img src="images/content/payments/i-cash-grey.png" alt="ico"></div>
+							<div class="footer-payments-list__item"><img src="images/content/payments/i-visa-grey.svg" alt="ico"></div>
+							<div class="footer-payments-list__item"><img src="images/content/payments/i-mastercard-grey.svg" alt="ico"></div>
+						</div>
+					</div>
+				</div>
+				<div class="footer-col">
+					<div class="footer-col__title">Социальные сети</div>
+					<nav class="soc-nav">
+						<ul>
+							<li class="soc-nav__item">
+								<a href="#" class="soc-nav__link soc-nav__link--vk"></a>
+							</li>
+							<li class="soc-nav__item">
+								<a href="#" class="soc-nav__link soc-nav__link--fb"></a>
+							</li>
+							<li class="soc-nav__item">
+								<a href="#" class="soc-nav__link soc-nav__link--instagram"></a>
+							</li>
+							<li class="soc-nav__item">
+								<a href="#" class="soc-nav__link soc-nav__link--ok"></a>
+							</li>
+							<li class="soc-nav__item">
+								<a href="#" class="soc-nav__link soc-nav__link--youtube"></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom">
+		<div class="wrapper">
+			<div class="footer-copyright">© 2010-2019 Интернет магазин MEBELBOR.ru Официальный поставщик Боровичи мебель. Информация на данном интернет-сайте носит исключительно ознакомительный характер и ни при каких условиях не является публичной офертой, определяемой положениями Статьи 437 Гражданского кодекса РФ.</div>
+		</div>
+	</div>
+</footer>
+
+
+<div id="callback-modal" class="modal modal-default">
+	<div class="modal-default__title">Заказать обратный звонок</div>
+	<form class="callback-form default-form">
+		<div class="default-form__group">
+			<input type="text" name="name" class="default-form__input" placeholder="Введите ваше имя">
+		</div>
+		<div class="default-form__group">
+			<input type="text" name="tel" class="default-form__input" placeholder="+7 ___ - ___ -__ - __">
+		</div>
+		<div class="default-form__group">
+			<input type="hidden" name="form_subject" value="Модальная форма - заказать обратный звонок">
+			<button type="submit" class="default-form__submit default-form__submit--full">Отправить</button>
+		</div>
+	</form>
+</div>
+
+
+<div id="city-modal" class="modal city-modal">
+	<div class="modal-default__title">Выбрать город</div>
+	
+	<nav class="city-modal-nav">
+		<ul>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Москва</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Санкт-Петербург</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Владимир</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Казань</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Калининград</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Владивосток</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Самара</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Саратов</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Нижний Новгород</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Челябинск</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Москва</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Санкт-Петербург</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Владимир</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Казань</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Калининград</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Владивосток</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Самара</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Саратов</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Нижний Новгород</a>
+			</li>
+			<li class="city-modal-nav__item">
+				<a href="#" class="city-modal-nav__link">Челябинск</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/wNumb.min.js"></script>
+<script src="js/nouislider.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
