@@ -2507,6 +2507,7 @@ Single product choice
 }
 .sglproduct-choice__col {
 	width: 110px;
+	margin: 0 0 10px;
 	padding: 0 5px;
 	text-align: center;
 }
@@ -3471,6 +3472,12 @@ Adaptive styles
 	.sglproduct-head__title {
 		font-size: 24px;
 	}
+	.sglproduct-head__titles {
+		display: block;
+	}
+	.sglproduct-head__labels {
+		margin: 10px 0 0;
+	}
 
 
 
@@ -3556,7 +3563,7 @@ Adaptive styles
 		display: inline-block;
 		margin: 0 5px 0 0;
 		letter-spacing: 0;
-		width: 100px;
+		width: 70px;
 	}
 	.sglproduct-imgsm__item:last-child {
 		margin: 0;
