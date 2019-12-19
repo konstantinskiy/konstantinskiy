@@ -117,6 +117,20 @@ $(document).ready(function() {
 
 
 
+    // Product gallery init
+
+    $('[data-fancybox="productGallery"]').fancybox({
+        beforeShow: function() {
+            $('html').addClass('scroll-disable');
+        },
+        afterClose: function() {
+            $('html').removeClass('scroll-disable');
+        },
+        loop: true
+    });
+
+
+
     // NoUI sidebar filter range sliders
 
     if($('.sidebar-filter-range').length > 0) {
@@ -154,5 +168,66 @@ $(document).ready(function() {
         });
     }
 
+
+
+    // Single product active img
+
+    $('.sglproduct-imgsm__link').on('click', function(e) {
+        e.preventDefault();
+        var imgImgId = $(this).data('img-id');
+        if($(this).hasClass('sglproduct-imgsm__link--active')) return;
+
+        $('.sglproduct-imgsm__link').removeClass('sglproduct-imgsm__link--active');
+        $(this).addClass('sglproduct-imgsm__link--active');
+
+        $('.sglproduct-imgb').removeClass('sglproduct-imgb--active');
+        $('.sglproduct-imgb--' + imgImgId).addClass('sglproduct-imgb--active');
+    });
+
+
+    // Single product tabs
+
+    $('.js-product-tab').on('click', function(e) {
+        e.preventDefault();
+        var tabId = $(this).data('tab-id');
+        if($(this).hasClass('sglproduct-tab-nav__link--active')) return;
+
+        $('.sglproduct-tab-nav__link').removeClass('sglproduct-tab-nav__link--active');
+        $(this).addClass('sglproduct-tab-nav__link--active');
+
+        $('.sglproduct-tab-content__item')
+            .removeClass('sglproduct-tab-content__item--active')
+            .eq(tabId)
+            .addClass('sglproduct-tab-content__item--active');
+    });
+
+
+
+    // Single product more show
+    
+    $('.sglproduct-charact-more__link').on('click', function(e) {
+        e.preventDefault();
+        $(this).parents('.sglproduct-characts').find('.sglproduct-charact-group--hide').removeClass('sglproduct-charact-group--hide');
+        $(this).hide();
+    });
+
+
+
+    // Product accordion
+
+    $('.sglproduct-choice-accordion__title').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('sglproduct-choice-accordion__title--active').next().slideToggle();
+    });
+
+
+
+    // Product choice item add/remove class active
+
+    $('.sglproduct-choice-item').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('sglproduct-choice-item--active');
+    });
+    
 
 });
