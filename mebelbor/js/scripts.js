@@ -101,6 +101,73 @@ $(document).ready(function() {
 
 
 
+    // Portfolio sync slider
+
+    if($('.portfolio-big-slider').length > 0) {
+
+        $('.portfolio-big-slider').slick({
+            asNavFor: '.portfolio-sm-slider',
+            arrows: false
+        });
+
+        $('.portfolio-sm-slider').slick({
+            slidesToShow: 9,
+            asNavFor: '.portfolio-big-slider',
+            arrows: false,
+            focusOnSelect: true,
+            responsive: [{
+                    breakpoint: 1400,
+                    settings: {
+                        slidesToShow: 7,
+                    }
+                },
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 6,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }
+            ]
+        });
+
+        $('.js-arrow-left').click(function(e) {
+            e.preventDefault();
+            $(this).parents('.portfolio-item').find('.portfolio-sm-slider').slick('slickPrev');
+        });
+
+        $('.js-arrow-right').click(function(e) {
+            e.preventDefault();
+            $(this).parents('.portfolio-item').find('.portfolio-sm-slider').slick('slickNext');
+        });
+
+    }
+
+
+
     // Modal init
 
     $('[data-fancybox-modal]').fancybox({
