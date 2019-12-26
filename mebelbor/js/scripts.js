@@ -131,6 +131,20 @@ $(document).ready(function() {
 
 
 
+    // Textile categories textile gallery
+
+    $('[data-fancybox*="textileGallery"]').fancybox({
+        beforeShow: function() {
+            $('html').addClass('scroll-disable');
+        },
+        afterClose: function() {
+            $('html').removeClass('scroll-disable');
+        },
+        loop: true
+    });
+
+
+
     // NoUI sidebar filter range sliders
 
     if($('.sidebar-filter-range').length > 0) {
