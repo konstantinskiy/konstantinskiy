@@ -49,7 +49,15 @@
 					<a href="tel:8(812)425-42-92" class="header-mobile-tel"></a>
 				</div>
 				<div class="header-actions__col">
-					<a href="#" class="header-search"></a>
+					<div class="header-search">
+						<a href="#" class="header-search__toggler"></a>
+						<div class="header-search__dropdown">
+							<form class="header-searchform">
+								<input type="text" class="header-searchform__input" placeholder="Поиск">
+								<input type="submit" class="header-searchform__submit" value="">
+							</form>
+						</div>
+					</div>
 				</div>
 				<div class="header-actions__col">
 					<a href="#" class="header-login"></a>
@@ -190,71 +198,93 @@
 
 							<div class="sglproduct-characts">
 								<div class="sglproduct-characts__title">Характеристики</div>
-								<div class="sglproduct-charact-group">
-									<div class="sglproduct-charact-group__title">Размер дивана</div>
-									<div class="sglproduct-charact-row">
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Длина</div>
-											<div class="sglproduct-charact-row__value">219 см</div>
-										</div>
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Ширина</div>
-											<div class="sglproduct-charact-row__value">108 см</div>
-										</div>
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Высота</div>
-											<div class="sglproduct-charact-row__value">90 см</div>
-										</div>
-									</div>
-								</div>
-								<div class="sglproduct-charact-group">
-									<div class="sglproduct-charact-group__title">Спальное место</div>
-									<div class="sglproduct-charact-row">
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Длина</div>
-											<div class="sglproduct-charact-row__value">200 см</div>
-										</div>
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Ширина</div>
-											<div class="sglproduct-charact-row__value">150 см</div>
-										</div>
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Высота</div>
-											<div class="sglproduct-charact-row__value">43 см</div>
+
+								<div class="sglproduct-characts-box">
+									<div class="sglproduct-charact-group">
+										<div class="sglproduct-charact-group__title">Размер дивана</div>
+										<div class="sglproduct-charact-row">
+											<div class="sglproduct-charact-row__col">
+												<div class="sglproduct-charact-row__name">Длина</div>
+												<div class="sglproduct-charact-row__value">219 см</div>
+											</div>
+											<div class="sglproduct-charact-row__col">
+												<div class="sglproduct-charact-row__name">Ширина</div>
+												<div class="sglproduct-charact-row__value">108 см</div>
+											</div>
+											<div class="sglproduct-charact-row__col">
+												<div class="sglproduct-charact-row__name">Высота</div>
+												<div class="sglproduct-charact-row__value">90 см</div>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="sglproduct-charact-group sglproduct-charact-group--hide">
-									<div class="sglproduct-charact-group__title">Спальное место</div>
-									<div class="sglproduct-charact-row">
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Длина</div>
-											<div class="sglproduct-charact-row__value">200 см</div>
-										</div>
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Ширина</div>
-											<div class="sglproduct-charact-row__value">150 см</div>
-										</div>
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Высота</div>
-											<div class="sglproduct-charact-row__value">43 см</div>
+									<div class="sglproduct-charact-group">
+										<div class="sglproduct-charact-group__title">Размер дивана</div>
+										<div class="sglproduct-charact-row">
+											<div class="sglproduct-charact-row__col">
+												<div class="sglproduct-charact-row__name">Длина</div>
+												<div class="sglproduct-charact-row__value">219 см</div>
+											</div>
+											<div class="sglproduct-charact-row__col">
+												<div class="sglproduct-charact-row__name">Ширина</div>
+												<div class="sglproduct-charact-row__value">108 см</div>
+											</div>
+											<div class="sglproduct-charact-row__col">
+												<div class="sglproduct-charact-row__name">Высота</div>
+												<div class="sglproduct-charact-row__value">90 см</div>
+											</div>
 										</div>
 									</div>
-								</div>
-								<div class="sglproduct-charact-group sglproduct-charact-group--hide">
-									<div class="sglproduct-charact-group__title">Спальное место</div>
-									<div class="sglproduct-charact-row">
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Длина</div>
-											<div class="sglproduct-charact-row__value">200 см</div>
+									<div class="sglproduct-charact-group">
+										<div class="sglproduct-charact-group__title">Спальное место</div>
+										<div class="sglproduct-charact-row">
+											<div class="sglproduct-charact-row__col">
+												<div class="sglproduct-charact-row__name">Длина</div>
+												<div class="sglproduct-charact-row__value">200 см</div>
+											</div>
+											<div class="sglproduct-charact-row__col">
+												<div class="sglproduct-charact-row__name">Ширина</div>
+												<div class="sglproduct-charact-row__value">150 см</div>
+											</div>
+											<div class="sglproduct-charact-row__col">
+												<div class="sglproduct-charact-row__name">Высота</div>
+												<div class="sglproduct-charact-row__value">43 см</div>
+											</div>
 										</div>
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Ширина</div>
-											<div class="sglproduct-charact-row__value">150 см</div>
+									</div>
+									<div class="sglproduct-charact-groups sglproduct-charact-groups--hide">
+										<div class="sglproduct-charact-group">
+											<div class="sglproduct-charact-group__title">Спальное место</div>
+											<div class="sglproduct-charact-row">
+												<div class="sglproduct-charact-row__col">
+													<div class="sglproduct-charact-row__name">Длина</div>
+													<div class="sglproduct-charact-row__value">200 см</div>
+												</div>
+												<div class="sglproduct-charact-row__col">
+													<div class="sglproduct-charact-row__name">Ширина</div>
+													<div class="sglproduct-charact-row__value">150 см</div>
+												</div>
+												<div class="sglproduct-charact-row__col">
+													<div class="sglproduct-charact-row__name">Высота</div>
+													<div class="sglproduct-charact-row__value">43 см</div>
+												</div>
+											</div>
 										</div>
-										<div class="sglproduct-charact-row__col">
-											<div class="sglproduct-charact-row__name">Высота</div>
-											<div class="sglproduct-charact-row__value">43 см</div>
+										<div class="sglproduct-charact-group">
+											<div class="sglproduct-charact-group__title">Спальное место</div>
+											<div class="sglproduct-charact-row">
+												<div class="sglproduct-charact-row__col">
+													<div class="sglproduct-charact-row__name">Длина</div>
+													<div class="sglproduct-charact-row__value">200 см</div>
+												</div>
+												<div class="sglproduct-charact-row__col">
+													<div class="sglproduct-charact-row__name">Ширина</div>
+													<div class="sglproduct-charact-row__value">150 см</div>
+												</div>
+												<div class="sglproduct-charact-row__col">
+													<div class="sglproduct-charact-row__name">Высота</div>
+													<div class="sglproduct-charact-row__value">43 см</div>
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -304,6 +334,160 @@
 						</div>
 
 					</div>
+
+					<div class="sglproduct-choices">
+						<div class="sglproduct-choice">
+							<div class="sglproduct-choice__title">Выбор ткани</div>
+							<div class="sglproduct-choice-accordion">
+								<div class="sglproduct-choice-accordion__title sglproduct-choice-accordion__title--active">Категория 1 <span></span></div>
+								<div class="sglproduct-choice-accordion__content">
+									<div class="sglproduct-choice__row">
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-1.png" data-fancybox="textileGallery1"><img src="images/content/textile-img-1.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Модерн коричневый</div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-2.png" data-fancybox="textileGallery1"><img src="images/content/textile-img-2.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Модерн эскада</div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-1.png" data-fancybox="textileGallery1"><img src="images/content/textile-img-1.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Solo koriza</div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-2.png" data-fancybox="textileGallery1"><img src="images/content/textile-img-2.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Модерн пепельный</div>
+												<div class="sglproduct-choice-item__price">+1200 <span>c</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="sglproduct-choice-accordion">
+								<div class="sglproduct-choice-accordion__title sglproduct-choice-accordion__title--active">Категория 2 <span></span></div>
+								<div class="sglproduct-choice-accordion__content">
+									<div class="sglproduct-choice__row">
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-1.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-1.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Модерн коричневый</div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-2.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-2.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Модерн эскада</div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-1.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-1.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Solo koriza</div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-2.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-2.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Модерн пепельный</div>
+												<div class="sglproduct-choice-item__price">+1200 <span>c</span></div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-1.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-1.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Solo koriza</div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-2.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-2.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Модерн пепельный</div>
+												<div class="sglproduct-choice-item__price">+1200 <span>c</span></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="sglproduct-choice">
+							<div class="sglproduct-choice__title">Цвета и материалы корпуса</div>
+							<div class="sglproduct-choice-accordion">
+								<div class="sglproduct-choice-accordion__title sglproduct-choice-accordion__title--active">Цвета 1 <span></span></div>
+								<div class="sglproduct-choice-accordion__content">
+									<div class="sglproduct-choice__row">
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-1.png" data-fancybox="textileGallery3"><img src="images/content/textile-img-1.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Модерн коричневый</div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-2.png" data-fancybox="textileGallery3"><img src="images/content/textile-img-2.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Модерн эскада</div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-1.png" data-fancybox="textileGallery3"><img src="images/content/textile-img-1.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Solo koriza</div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-2.png" data-fancybox="textileGallery3"><img src="images/content/textile-img-2.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Модерн пепельный</div>
+												<div class="sglproduct-choice-item__price">+1200 <span>c</span></div>
+											</div>
+										</div>
+										<div class="sglproduct-choice__col">
+											<div class="sglproduct-choice-item">
+												<div class="sglproduct-choice-item__img">
+													<a href="images/content/textile-img-1.png" data-fancybox="textileGallery3"><img src="images/content/textile-img-1.png" alt="img"></a>
+												</div>
+												<div class="sglproduct-choice-item__name">Solo koriza</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 					
 					<div class="sglproduct-tab">
 						<nav class="sglproduct-tab-nav">
@@ -327,159 +511,6 @@
 									<p>Механизм «Еврокнижка» оптимально подходит для ежедневного применения. Чтобы перевести конструкцию в режим «кровать», достаточно выдвинуть вперед сиденье, а затем привести спинку в горизонтальное положение. Когда потребуется собрать диван, эти же действия нужно выполнить в обратном порядке: сначала поднять спинку, а затем придвинуть сиденье. В диванах с такой системой трансформации всегда есть вместительный ящик для хранения белья.</p>
 									<h3>Материал</h3>
 									<p>Рогожка – материал, сочетающий высокую практичность с интересным внешним видом. Характерное шахматное плетение напоминает мешковину, но сама ткань выглядит гораздо благороднее и отличается износостойкостью. Рогожку производят из натуральных волокон: хлопкового, льняного, а для улучшения эксплуатационных качеств добавляют олефин, акрил, полиэстер. Диван с такой обивкой станет органичным дополнением к интерьеру в актуальном эко-стиле.</p>
-								</div>
-								<div class="sglproduct-choices">
-									<div class="sglproduct-choice">
-										<div class="sglproduct-choice__title">Выбор ткани</div>
-										<div class="sglproduct-choice-accordion">
-											<div class="sglproduct-choice-accordion__title sglproduct-choice-accordion__title--active">Категория 1 <span></span></div>
-											<div class="sglproduct-choice-accordion__content">
-												<div class="sglproduct-choice__row">
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-1.png" data-fancybox="textileGallery1"><img src="images/content/textile-img-1.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Модерн коричневый</div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-2.png" data-fancybox="textileGallery1"><img src="images/content/textile-img-2.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Модерн эскада</div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-1.png" data-fancybox="textileGallery1"><img src="images/content/textile-img-1.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Solo koriza</div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-2.png" data-fancybox="textileGallery1"><img src="images/content/textile-img-2.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Модерн пепельный</div>
-															<div class="sglproduct-choice-item__price">+1200 <span>c</span></div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="sglproduct-choice-accordion">
-											<div class="sglproduct-choice-accordion__title sglproduct-choice-accordion__title--active">Категория 2 <span></span></div>
-											<div class="sglproduct-choice-accordion__content">
-												<div class="sglproduct-choice__row">
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-1.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-1.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Модерн коричневый</div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-2.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-2.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Модерн эскада</div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-1.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-1.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Solo koriza</div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-2.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-2.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Модерн пепельный</div>
-															<div class="sglproduct-choice-item__price">+1200 <span>c</span></div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-1.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-1.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Solo koriza</div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-2.png" data-fancybox="textileGallery2"><img src="images/content/textile-img-2.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Модерн пепельный</div>
-															<div class="sglproduct-choice-item__price">+1200 <span>c</span></div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="sglproduct-choice">
-										<div class="sglproduct-choice__title">Цвета и материалы корпуса</div>
-										<div class="sglproduct-choice-accordion">
-											<div class="sglproduct-choice-accordion__title sglproduct-choice-accordion__title--active">Цвета 1 <span></span></div>
-											<div class="sglproduct-choice-accordion__content">
-												<div class="sglproduct-choice__row">
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-1.png" data-fancybox="textileGallery3"><img src="images/content/textile-img-1.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Модерн коричневый</div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-2.png" data-fancybox="textileGallery3"><img src="images/content/textile-img-2.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Модерн эскада</div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-1.png" data-fancybox="textileGallery3"><img src="images/content/textile-img-1.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Solo koriza</div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-2.png" data-fancybox="textileGallery3"><img src="images/content/textile-img-2.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Модерн пепельный</div>
-															<div class="sglproduct-choice-item__price">+1200 <span>c</span></div>
-														</div>
-													</div>
-													<div class="sglproduct-choice__col">
-														<div class="sglproduct-choice-item">
-															<div class="sglproduct-choice-item__img">
-																<a href="images/content/textile-img-1.png" data-fancybox="textileGallery3"><img src="images/content/textile-img-1.png" alt="img"></a>
-															</div>
-															<div class="sglproduct-choice-item__name">Solo koriza</div>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
 								</div>
 							</div>
 
@@ -596,158 +627,198 @@
 				<div class="s-items-head__left">
 					<div class="s-items-head__title">Совместимые товары</div>
 				</div>
+				<div class="s-items-head__actions">
+					<a href="#" class="b-arrow b-arrow--left js-arrow-left"></a>
+					<a href="#" class="b-arrow b-arrow--right js-arrow-right"></a>
+				</div>
 			</div>
-			<div class="products-grid">
-				<div class="products-grid__row">
-					<div class="products-grid__col products-grid__col--3">
-						<div class="product-item">
-							<div class="product-item__img">
-								<div class="product-item__labels">
-									<div class="product-item__llabels">
-										<div class="product-item__instock"><i></i>В наличии</div>
-									</div>
-									<div class="product-item__rlabels">
-										<div class="product-item__label product-item__label--new">New</div>
-										<div class="product-item__label product-item__label--discount"></div>
-										<div class="product-item__label product-item__label--hit">Хит</div>
-									</div>
+			<div class="products-slider-5">
+				<div class="products-slider__item">
+					<div class="product-item">
+						<div class="product-item__img">
+							<div class="product-item__labels">
+								<div class="product-item__llabels">
+									<div class="product-item__instock"><i></i>В наличии</div>
 								</div>
-								<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+								<div class="product-item__rlabels">
+									<div class="product-item__label product-item__label--new">New</div>
+									<div class="product-item__label product-item__label--discount"></div>
+									<div class="product-item__label product-item__label--hit">Хит</div>
+								</div>
 							</div>
-							<div class="product-item__title__body">
-								<div class="product-item__title">
-									<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
-								</div>
-								<div class="product-item__footer product-item-footer">
-									<div class="product-item-footer__prices">
-										<div class="product-item__price product-item__price--old">
-											<div class="product-item__oldprice">14 540</div>
-											<div class="product-item__pricesale">-2 200</div>
-										</div>
-										<div class="product-item__price">
-											<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
-										</div>
+							<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+						</div>
+						<div class="product-item__title__body">
+							<div class="product-item__title">
+								<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
+							</div>
+							<div class="product-item__footer product-item-footer">
+								<div class="product-item-footer__prices">
+									<div class="product-item__price product-item__price--old">
+										<div class="product-item__oldprice">14 540</div>
+										<div class="product-item__pricesale">-2 200</div>
 									</div>
-									<div class="product-item-footer__right">
-										<div class="product-item-footer__compare">
-											<a href="#" class="product-item-footer__comparebtn"></a>
-										</div>
-										<div class="product-item__cart">
-											<a href="#" class="product-item__cartbtn"></a>
-										</div>
+									<div class="product-item__price">
+										<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+									</div>
+								</div>
+								<div class="product-item-footer__right">
+									<div class="product-item-footer__compare">
+										<a href="#" class="product-item-footer__comparebtn"></a>
+									</div>
+									<div class="product-item__cart">
+										<a href="#" class="product-item__cartbtn"></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="products-grid__col products-grid__col--3">
-						<div class="product-item">
-							<div class="product-item__img">
-								<div class="product-item__labels">
-									<div class="product-item__llabels">
-										<div class="product-item__instock"><i></i>В наличии</div>
-									</div>
-									<div class="product-item__rlabels">
-										<div class="product-item__label product-item__label--new">New</div>
-										<div class="product-item__label product-item__label--discount"></div>
-										<div class="product-item__label product-item__label--hit">Хит</div>
-									</div>
+				</div>
+				<div class="products-slider__item">
+					<div class="product-item">
+						<div class="product-item__img">
+							<div class="product-item__labels">
+								<div class="product-item__llabels">
+									<div class="product-item__instock"><i></i>В наличии</div>
 								</div>
-								<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+								<div class="product-item__rlabels">
+									<div class="product-item__label product-item__label--new">New</div>
+									<div class="product-item__label product-item__label--discount"></div>
+								</div>
 							</div>
-							<div class="product-item__title__body">
-								<div class="product-item__title">
-									<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
-								</div>
-								<div class="product-item__footer product-item-footer">
-									<div class="product-item-footer__prices">
-										<div class="product-item__price product-item__price--old">
-											<div class="product-item__oldprice">14 540</div>
-											<div class="product-item__pricesale">-2 200</div>
-										</div>
-										<div class="product-item__price">
-											<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
-										</div>
+							<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+						</div>
+						<div class="product-item__title__body">
+							<div class="product-item__title">
+								<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+							</div>
+							<div class="product-item__footer product-item-footer">
+								<div class="product-item-footer__prices">
+									<div class="product-item__price">
+										<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
 									</div>
-									<div class="product-item-footer__right">
-										<div class="product-item-footer__compare">
-											<a href="#" class="product-item-footer__comparebtn"></a>
-										</div>
-										<div class="product-item__cart">
-											<a href="#" class="product-item__cartbtn"></a>
-										</div>
+								</div>
+								<div class="product-item-footer__right">
+									<div class="product-item-footer__compare">
+										<a href="#" class="product-item-footer__comparebtn"></a>
+									</div>
+									<div class="product-item__cart">
+										<a href="#" class="product-item__cartbtn"></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="products-grid__col products-grid__col--3">
-						<div class="product-item">
-							<div class="product-item__img">
-								<div class="product-item__labels">
-									<div class="product-item__llabels">
-										<div class="product-item__underorder">Под заказ</div>
-									</div>
-									<div class="product-item__rlabels">
-										<div class="product-item__label product-item__label--new">New</div>
-										<div class="product-item__label product-item__label--discount"></div>
-									</div>
+				</div>
+				<div class="products-slider__item">
+					<div class="product-item">
+						<div class="product-item__img">
+							<div class="product-item__labels">
+								<div class="product-item__llabels">
+									<div class="product-item__instock"><i></i>В наличии</div>
 								</div>
-								<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+								<div class="product-item__rlabels">
+									<div class="product-item__label product-item__label--new">New</div>
+								</div>
 							</div>
-							<div class="product-item__title__body">
-								<div class="product-item__title">
-									<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
-								</div>
-								<div class="product-item__footer product-item-footer">
-									<div class="product-item-footer__prices">
-										<div class="product-item__price">
-											<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
-										</div>
+							<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+						</div>
+						<div class="product-item__title__body">
+							<div class="product-item__title">
+								<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
+							</div>
+							<div class="product-item__footer product-item-footer">
+								<div class="product-item-footer__prices">
+									<div class="product-item__price">
+										<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
 									</div>
-									<div class="product-item-footer__right">
-										<div class="product-item-footer__compare">
-											<a href="#" class="product-item-footer__comparebtn"></a>
-										</div>
-										<div class="product-item__cart">
-											<a href="#" class="product-item__cartbtn"></a>
-										</div>
+								</div>
+								<div class="product-item-footer__right">
+									<div class="product-item-footer__compare">
+										<a href="#" class="product-item-footer__comparebtn"></a>
+									</div>
+									<div class="product-item__cart">
+										<a href="#" class="product-item__cartbtn"></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="products-grid__col products-grid__col--3">
-						<div class="product-item">
-							<div class="product-item__img">
-								<div class="product-item__labels">
-									<div class="product-item__llabels">
-										<div class="product-item__underorder">Под заказ</div>
-									</div>
-									<div class="product-item__rlabels">
-										<div class="product-item__label product-item__label--new">New</div>
-										<div class="product-item__label product-item__label--discount"></div>
-									</div>
+				</div>
+				<div class="products-slider__item">
+					<div class="product-item">
+						<div class="product-item__img">
+							<div class="product-item__labels">
+								<div class="product-item__llabels">
+									<div class="product-item__instock"><i></i>В наличии</div>
 								</div>
-								<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+								<div class="product-item__rlabels">
+									<div class="product-item__label product-item__label--new">New</div>
+									<div class="product-item__label product-item__label--discount"></div>
+								</div>
 							</div>
-							<div class="product-item__title__body">
-								<div class="product-item__title">
-									<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
-								</div>
-								<div class="product-item__footer product-item-footer">
-									<div class="product-item-footer__prices">
-										<div class="product-item__price">
-											<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
-										</div>
+							<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+						</div>
+						<div class="product-item__title__body">
+							<div class="product-item__title">
+								<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+							</div>
+							<div class="product-item__footer product-item-footer">
+								<div class="product-item-footer__prices">
+									<div class="product-item__price product-item__price--old">
+										<div class="product-item__oldprice">14 540</div>
+										<div class="product-item__pricesale">-2 200</div>
 									</div>
-									<div class="product-item-footer__right">
-										<div class="product-item-footer__compare">
-											<a href="#" class="product-item-footer__comparebtn"></a>
-										</div>
-										<div class="product-item__cart">
-											<a href="#" class="product-item__cartbtn"></a>
-										</div>
+									<div class="product-item__price">
+										<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+									</div>
+								</div>
+								<div class="product-item-footer__right">
+									<div class="product-item-footer__compare">
+										<a href="#" class="product-item-footer__comparebtn"></a>
+									</div>
+									<div class="product-item__cart">
+										<a href="#" class="product-item__cartbtn"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="products-slider__item">
+					<div class="product-item">
+						<div class="product-item__img">
+							<div class="product-item__labels">
+								<div class="product-item__llabels">
+									<div class="product-item__instock"><i></i>В наличии</div>
+								</div>
+								<div class="product-item__rlabels">
+									<div class="product-item__label product-item__label--new">New</div>
+									<div class="product-item__label product-item__label--discount"></div>
+								</div>
+							</div>
+							<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+						</div>
+						<div class="product-item__title__body">
+							<div class="product-item__title">
+								<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+							</div>
+							<div class="product-item__footer product-item-footer">
+								<div class="product-item-footer__prices">
+									<div class="product-item__price product-item__price--old">
+										<div class="product-item__oldprice">14 540</div>
+										<div class="product-item__pricesale">-2 200</div>
+									</div>
+									<div class="product-item__price">
+										<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+									</div>
+								</div>
+								<div class="product-item-footer__right">
+									<div class="product-item-footer__compare">
+										<a href="#" class="product-item-footer__comparebtn"></a>
+									</div>
+									<div class="product-item__cart">
+										<a href="#" class="product-item__cartbtn"></a>
 									</div>
 								</div>
 							</div>
@@ -763,160 +834,200 @@
 		<div class="wrapper">
 			<div class="s-items-head">
 				<div class="s-items-head__left">
-					<div class="s-items-head__title">Вы также смотрели</div>
+					<div class="s-items-head__title">Вы смотрели</div>
+				</div>
+				<div class="s-items-head__actions">
+					<a href="#" class="b-arrow b-arrow--left js-arrow-left"></a>
+					<a href="#" class="b-arrow b-arrow--right js-arrow-right"></a>
 				</div>
 			</div>
-			<div class="products-grid">
-				<div class="products-grid__row">
-					<div class="products-grid__col products-grid__col--3">
-						<div class="product-item">
-							<div class="product-item__img">
-								<div class="product-item__labels">
-									<div class="product-item__llabels">
-										<div class="product-item__instock"><i></i>В наличии</div>
-									</div>
-									<div class="product-item__rlabels">
-										<div class="product-item__label product-item__label--new">New</div>
-										<div class="product-item__label product-item__label--discount"></div>
-										<div class="product-item__label product-item__label--hit">Хит</div>
-									</div>
+			<div class="products-slider-5">
+				<div class="products-slider__item">
+					<div class="product-item">
+						<div class="product-item__img">
+							<div class="product-item__labels">
+								<div class="product-item__llabels">
+									<div class="product-item__instock"><i></i>В наличии</div>
 								</div>
-								<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+								<div class="product-item__rlabels">
+									<div class="product-item__label product-item__label--new">New</div>
+									<div class="product-item__label product-item__label--discount"></div>
+									<div class="product-item__label product-item__label--hit">Хит</div>
+								</div>
 							</div>
-							<div class="product-item__title__body">
-								<div class="product-item__title">
-									<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
-								</div>
-								<div class="product-item__footer product-item-footer">
-									<div class="product-item-footer__prices">
-										<div class="product-item__price product-item__price--old">
-											<div class="product-item__oldprice">14 540</div>
-											<div class="product-item__pricesale">-2 200</div>
-										</div>
-										<div class="product-item__price">
-											<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
-										</div>
+							<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+						</div>
+						<div class="product-item__title__body">
+							<div class="product-item__title">
+								<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
+							</div>
+							<div class="product-item__footer product-item-footer">
+								<div class="product-item-footer__prices">
+									<div class="product-item__price product-item__price--old">
+										<div class="product-item__oldprice">14 540</div>
+										<div class="product-item__pricesale">-2 200</div>
 									</div>
-									<div class="product-item-footer__right">
-										<div class="product-item-footer__compare">
-											<a href="#" class="product-item-footer__comparebtn"></a>
-										</div>
-										<div class="product-item__cart">
-											<a href="#" class="product-item__cartbtn"></a>
-										</div>
+									<div class="product-item__price">
+										<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+									</div>
+								</div>
+								<div class="product-item-footer__right">
+									<div class="product-item-footer__compare">
+										<a href="#" class="product-item-footer__comparebtn"></a>
+									</div>
+									<div class="product-item__cart">
+										<a href="#" class="product-item__cartbtn"></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="products-grid__col products-grid__col--3">
-						<div class="product-item">
-							<div class="product-item__img">
-								<div class="product-item__labels">
-									<div class="product-item__llabels">
-										<div class="product-item__instock"><i></i>В наличии</div>
-									</div>
-									<div class="product-item__rlabels">
-										<div class="product-item__label product-item__label--new">New</div>
-										<div class="product-item__label product-item__label--discount"></div>
-										<div class="product-item__label product-item__label--hit">Хит</div>
-									</div>
+				</div>
+				<div class="products-slider__item">
+					<div class="product-item">
+						<div class="product-item__img">
+							<div class="product-item__labels">
+								<div class="product-item__llabels">
+									<div class="product-item__instock"><i></i>В наличии</div>
 								</div>
-								<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+								<div class="product-item__rlabels">
+									<div class="product-item__label product-item__label--new">New</div>
+									<div class="product-item__label product-item__label--discount"></div>
+								</div>
 							</div>
-							<div class="product-item__title__body">
-								<div class="product-item__title">
-									<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
-								</div>
-								<div class="product-item__footer product-item-footer">
-									<div class="product-item-footer__prices">
-										<div class="product-item__price product-item__price--old">
-											<div class="product-item__oldprice">14 540</div>
-											<div class="product-item__pricesale">-2 200</div>
-										</div>
-										<div class="product-item__price">
-											<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
-										</div>
+							<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+						</div>
+						<div class="product-item__title__body">
+							<div class="product-item__title">
+								<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+							</div>
+							<div class="product-item__footer product-item-footer">
+								<div class="product-item-footer__prices">
+									<div class="product-item__price">
+										<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
 									</div>
-									<div class="product-item-footer__right">
-										<div class="product-item-footer__compare">
-											<a href="#" class="product-item-footer__comparebtn"></a>
-										</div>
-										<div class="product-item__cart">
-											<a href="#" class="product-item__cartbtn"></a>
-										</div>
+								</div>
+								<div class="product-item-footer__right">
+									<div class="product-item-footer__compare">
+										<a href="#" class="product-item-footer__comparebtn"></a>
+									</div>
+									<div class="product-item__cart">
+										<a href="#" class="product-item__cartbtn"></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="products-grid__col products-grid__col--3">
-						<div class="product-item">
-							<div class="product-item__img">
-								<div class="product-item__labels">
-									<div class="product-item__llabels">
-										<div class="product-item__underorder">Под заказ</div>
-									</div>
-									<div class="product-item__rlabels">
-										<div class="product-item__label product-item__label--new">New</div>
-										<div class="product-item__label product-item__label--discount"></div>
-									</div>
+				</div>
+				<div class="products-slider__item">
+					<div class="product-item">
+						<div class="product-item__img">
+							<div class="product-item__labels">
+								<div class="product-item__llabels">
+									<div class="product-item__instock"><i></i>В наличии</div>
 								</div>
-								<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+								<div class="product-item__rlabels">
+									<div class="product-item__label product-item__label--new">New</div>
+								</div>
 							</div>
-							<div class="product-item__title__body">
-								<div class="product-item__title">
-									<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
-								</div>
-								<div class="product-item__footer product-item-footer">
-									<div class="product-item-footer__prices">
-										<div class="product-item__price">
-											<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
-										</div>
+							<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+						</div>
+						<div class="product-item__title__body">
+							<div class="product-item__title">
+								<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо</a>
+							</div>
+							<div class="product-item__footer product-item-footer">
+								<div class="product-item-footer__prices">
+									<div class="product-item__price">
+										<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
 									</div>
-									<div class="product-item-footer__right">
-										<div class="product-item-footer__compare">
-											<a href="#" class="product-item-footer__comparebtn"></a>
-										</div>
-										<div class="product-item__cart">
-											<a href="#" class="product-item__cartbtn"></a>
-										</div>
+								</div>
+								<div class="product-item-footer__right">
+									<div class="product-item-footer__compare">
+										<a href="#" class="product-item-footer__comparebtn"></a>
+									</div>
+									<div class="product-item__cart">
+										<a href="#" class="product-item__cartbtn"></a>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="products-grid__col products-grid__col--3">
-						<div class="product-item">
-							<div class="product-item__img">
-								<div class="product-item__labels">
-									<div class="product-item__llabels">
-										<div class="product-item__underorder">Под заказ</div>
-									</div>
-									<div class="product-item__rlabels">
-										<div class="product-item__label product-item__label--new">New</div>
-										<div class="product-item__label product-item__label--discount"></div>
-									</div>
+				</div>
+				<div class="products-slider__item">
+					<div class="product-item">
+						<div class="product-item__img">
+							<div class="product-item__labels">
+								<div class="product-item__llabels">
+									<div class="product-item__instock"><i></i>В наличии</div>
 								</div>
-								<a href="#"><img src="images/content/product-img-1.jpg" alt="img"></a>
+								<div class="product-item__rlabels">
+									<div class="product-item__label product-item__label--new">New</div>
+									<div class="product-item__label product-item__label--discount"></div>
+								</div>
 							</div>
-							<div class="product-item__title__body">
-								<div class="product-item__title">
-									<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
-								</div>
-								<div class="product-item__footer product-item-footer">
-									<div class="product-item-footer__prices">
-										<div class="product-item__price">
-											<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
-										</div>
+							<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+						</div>
+						<div class="product-item__title__body">
+							<div class="product-item__title">
+								<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+							</div>
+							<div class="product-item__footer product-item-footer">
+								<div class="product-item-footer__prices">
+									<div class="product-item__price product-item__price--old">
+										<div class="product-item__oldprice">14 540</div>
+										<div class="product-item__pricesale">-2 200</div>
 									</div>
-									<div class="product-item-footer__right">
-										<div class="product-item-footer__compare">
-											<a href="#" class="product-item-footer__comparebtn"></a>
-										</div>
-										<div class="product-item__cart">
-											<a href="#" class="product-item__cartbtn"></a>
-										</div>
+									<div class="product-item__price">
+										<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+									</div>
+								</div>
+								<div class="product-item-footer__right">
+									<div class="product-item-footer__compare">
+										<a href="#" class="product-item-footer__comparebtn"></a>
+									</div>
+									<div class="product-item__cart">
+										<a href="#" class="product-item__cartbtn"></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="products-slider__item">
+					<div class="product-item">
+						<div class="product-item__img">
+							<div class="product-item__labels">
+								<div class="product-item__llabels">
+									<div class="product-item__instock"><i></i>В наличии</div>
+								</div>
+								<div class="product-item__rlabels">
+									<div class="product-item__label product-item__label--new">New</div>
+									<div class="product-item__label product-item__label--discount"></div>
+								</div>
+							</div>
+							<a href="#"><img src="images/content/product-img-2.jpg" alt="img"></a>
+						</div>
+						<div class="product-item__title__body">
+							<div class="product-item__title">
+								<a href="#" class="product-item__titlelink">Комод К 800 Венге-лоредо заголовок</a>
+							</div>
+							<div class="product-item__footer product-item-footer">
+								<div class="product-item-footer__prices">
+									<div class="product-item__price product-item__price--old">
+										<div class="product-item__oldprice">14 540</div>
+										<div class="product-item__pricesale">-2 200</div>
+									</div>
+									<div class="product-item__price">
+										<div class="product-item__newprice">12 340<span class="product-item__rur">a</span></div>
+									</div>
+								</div>
+								<div class="product-item-footer__right">
+									<div class="product-item-footer__compare">
+										<a href="#" class="product-item-footer__comparebtn"></a>
+									</div>
+									<div class="product-item__cart">
+										<a href="#" class="product-item__cartbtn"></a>
 									</div>
 								</div>
 							</div>
@@ -926,6 +1037,7 @@
 			</div>
 		</div>
 	</div>
+
 </div>
 
 
@@ -1164,6 +1276,7 @@
 <script src="js/jquery.fancybox.min.js"></script>
 <script src="js/wNumb.min.js"></script>
 <script src="js/nouislider.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
 <script src="js/scripts.js"></script>
 
 </body>

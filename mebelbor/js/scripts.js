@@ -34,6 +34,26 @@ $(document).ready(function() {
 
 
 
+    // Toggle search box
+
+    $('.header-search__toggler').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('header-search__toggler--active');
+        $('.header-search__dropdown').toggleClass('header-search__dropdown--active');
+    });
+
+
+    // Close search box after outside click
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).is(".header-search *")) {
+            $('.header-search__toggler').removeClass('header-search__toggler--active');
+            $('.header-search__dropdown').removeClass('header-search__dropdown--active');
+        }
+    });
+
+
+
     // Hero slider init
 
     if($('.hero-slider').length > 0) {
@@ -101,6 +121,55 @@ $(document).ready(function() {
 
 
 
+    // Products 5 elems slider init
+
+    if($('.products-slider-5').length > 0) {
+        $('.products-slider-5').slick({
+            slidesToShow: 5,
+            arrows: false,
+            responsive: [
+                {
+                    breakpoint: 1600,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: true
+                    }
+                }
+            ]
+        });
+
+        $('.js-arrow-left').click(function(e) {
+            e.preventDefault();
+            $(this).parents('.s-items').find('.products-slider-5').slick('slickPrev');
+        });
+
+        $('.js-arrow-right').click(function(e) {
+            e.preventDefault();
+            $(this).parents('.s-items').find('.products-slider-5').slick('slickNext');
+        });
+    }
+
+
+
     // Portfolio sync slider
 
     if($('.portfolio-big-slider').length > 0) {
@@ -157,13 +226,77 @@ $(document).ready(function() {
         $('.js-arrow-left').click(function(e) {
             e.preventDefault();
             $(this).parents('.portfolio-item').find('.portfolio-sm-slider').slick('slickPrev');
+            $(this).parents('.portfolio-item').find('.portfolio-big-slider').slick('slickPrev');
         });
 
         $('.js-arrow-right').click(function(e) {
             e.preventDefault();
             $(this).parents('.portfolio-item').find('.portfolio-sm-slider').slick('slickNext');
+            $(this).parents('.portfolio-item').find('.portfolio-big-slider').slick('slickNext');
         });
 
+    }
+
+
+
+    // Related posts slider init
+
+    if($('.related-posts-slider').length > 0) {
+        $('.related-posts-slider').slick({
+            slidesToShow: 4,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 1600,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 1280,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 1,
+                        dots: true
+                    }
+                }
+            ]
+        });
+    }
+
+
+
+    // Subcats slider init
+
+    if($('.subcats-slider').length > 0) {
+        $('.subcats-slider').slick({
+            slidesToShow: 1,
+            variableWidth: true,
+            prevArrow: "<div class='subcats-slider__arr subcats-slider__prev'></div>",
+            nextArrow: "<div class='subcats-slider__arr subcats-slider__next'></div>",
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        dots: true
+                    }
+                }
+            ]
+        });
     }
 
 
@@ -266,6 +399,7 @@ $(document).ready(function() {
     });
 
 
+
     // Single product tabs
 
     $('.js-product-tab').on('click', function(e) {
@@ -284,12 +418,37 @@ $(document).ready(function() {
 
 
 
+    // Single product small images scroll
+
+    if($('.sglproduct-imgsm').length > 0) {
+        $('.sglproduct-imgsm').niceScroll({
+            cursorcolor: "#999",
+            cursoropacitymin: 1,
+        });
+    }
+
+
+
     // Single product more show
     
     $('.sglproduct-charact-more__link').on('click', function(e) {
         e.preventDefault();
-        $(this).parents('.sglproduct-characts').find('.sglproduct-charact-group--hide').removeClass('sglproduct-charact-group--hide');
-        $(this).hide();
+        if($(this).hasClass('sglproduct-charact-more__link--active')) {
+            $(this)
+                .removeClass('sglproduct-charact-more__link--active')
+                .text('подробнее')
+                .parents('.sglproduct-characts')
+                .find('.sglproduct-charact-groups')
+                .addClass('sglproduct-charact-groups--hide');
+        } else {
+            $(this)
+            .addClass('sglproduct-charact-more__link--active')
+            .text('свернуть')
+            .parents('.sglproduct-characts')
+            .find('.sglproduct-charact-groups')
+            .removeClass('sglproduct-charact-groups--hide');
+        }
+        
     });
 
 
@@ -309,6 +468,142 @@ $(document).ready(function() {
         e.preventDefault();
         $(this).toggleClass('sglproduct-choice-item--active');
     });
-    
+
+
+
+    // Input increment value
+
+    $('.js-cart-minus').on('click', function(e) {
+        e.preventDefault();
+        var input = $(this).parent().find('.cart-item__value'),
+            inputValue = input.val();
+        
+        if(!(inputValue - 1) <= 0) {        
+            input.val(parseInt(inputValue) - 1);
+        }
+    });
+
+
+    // Input decrement value
+
+    $('.js-cart-plus').on('click', function(e) {
+        e.preventDefault();
+        var input = $(this).parent().find('.cart-item__value'),
+            inputValue = input.val();
+        input.val(parseInt(inputValue) + 1);
+    });
+
+
+
+    // Cart accordion
+
+    $('.js-cart-toggle').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('cart-checkout-group__trigger--active').parents('.cart-checkout-group__title').next().slideToggle();
+    });
+
+
+    $('.salons-tabs-nav__link').on('click', function(e) {
+        e.preventDefault();
+
+        if($(this).hasClass('salons-tabs-nav__link--active')) return;
+
+        var tabId = $(this).data('tab-id');
+
+        $('.salons-tabs-nav__link').removeClass('salons-tabs-nav__link--active');
+        $(this).addClass('salons-tabs-nav__link--active');
+        $('.salon-tab').removeClass('salon-tab--active');
+        $('.salon-tab--' + tabId).addClass('salon-tab--active');
+
+    });
+
+
+
+    // Contacts map 1
+
+    if($('#salon-map-1').length > 0) {
+        ymaps.ready(initMap1);
+
+        function initMap1() {
+            var myMap = new ymaps.Map('salon-map-1', {
+                center: [57.77302079714255,40.90140849999999],
+                zoom: 6
+            });
+            myMap.behaviors.disable('scrollZoom');
+
+            var point;
+            var points = [
+                [57.77302079714255,40.90140849999999],
+                [58.77302079714255,40.90140849999999],
+                [56.77302079714255,41.90140849999999]
+            ];
+
+            for(var i = 0; i < points.length; i++) {
+                point = new ymaps.Placemark(points[i], {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'images/i/i-map-placemark.png',
+                    iconImageSize: [43, 60],
+                    iconImageOffset: [-5, -5]
+                });
+                myMap.geoObjects.add(point);
+            }
+        }
+    }
+
+
+    // Contacts map 2
+
+    if($('#salon-map-2').length > 0) {
+        ymaps.ready(initMap2);
+
+        function initMap2() {
+            var myMap = new ymaps.Map('salon-map-2', {
+                center: [57.77302079714255,40.90140849999999],
+                zoom: 6
+            });
+            myMap.behaviors.disable('scrollZoom');
+
+            var point;
+            var points = [
+                [56.77302079714255,40.90140849999999],
+                [56.77302079714255,41.90140849999999],
+                [57.77302079714255,40.90140849999999]
+            ];
+
+            for(var i = 0; i < points.length; i++) {
+                point = new ymaps.Placemark(points[i], {}, {
+                    iconLayout: 'default#image',
+                    iconImageHref: 'images/i/i-map-placemark.png',
+                    iconImageSize: [43, 60],
+                    iconImageOffset: [-5, -5]
+                });
+                myMap.geoObjects.add(point);
+            }
+        }
+    }
+
+
+    // Warehouse map
+
+    if($('#warehouse-map').length > 0) {
+        ymaps.ready(initWarehouseMap);
+
+        function initWarehouseMap() {
+            var myMap = new ymaps.Map('warehouse-map', {
+                center: [57.77302079714255,40.90140849999999],
+                zoom: 6
+            });
+            myMap.behaviors.disable('scrollZoom');
+
+            var placemark = new ymaps.Placemark(myMap.getCenter(), {}, {
+                iconLayout: 'default#image',
+                iconImageHref: 'images/i/i-map-placemark.png',
+                iconImageSize: [43, 60],
+                iconImageOffset: [-5, -5]
+            });
+            myMap.geoObjects.add(placemark);
+        }
+    }
+        
 
 });
