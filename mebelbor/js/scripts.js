@@ -110,12 +110,12 @@ $(document).ready(function() {
 
         $('.js-arrow-left').click(function(e) {
             e.preventDefault();
-            $(this).parents('.s-items').find('.products-slider').slick('slickPrev');
+            $(this).parents('.s-items-head').next().slick('slickPrev');
         });
 
         $('.js-arrow-right').click(function(e) {
             e.preventDefault();
-            $(this).parents('.s-items').find('.products-slider').slick('slickNext');
+            $(this).parents('.s-items-head').next().slick('slickNext');
         });
     }
 

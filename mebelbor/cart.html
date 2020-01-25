@@ -90,7 +90,7 @@
 </header>
 
 
-<div class="s-main">
+<div class="s-main s-main--cart">
 	<div class="wrapper">
 		<div class="s-main__inner">
 			<aside class="s-main__side">
@@ -450,55 +450,30 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="cart-cost-box">
-					<div class="cart-cost-box__head">
-						<div class="cart-cost-box__title">Стоимость вашего заказа:</div>
-						<div class="cart-cost-box__value">22 050<span>c</span></div>
+				
+				<div class="cart-cost-container">
+					<div class="cart-cost-container__inner">
+						<div class="cart-cost-box">
+							<div class="cart-cost-box__head">
+								<div class="cart-cost-box__title">Стоимость вашего заказа:</div>
+								<div class="cart-cost-box__value">22 050<span>c</span></div>
+							</div>
+							<div class="cart-cost-box__notservices">Без дополнительных услуг</div>
+						</div>
+						<div class="cart-personal">
+							<label class="cart-personal__label">
+								<input type="checkbox" name="personal_data" class="cart-personal__input" checked>
+								<span class="cart-personal__check"></span>
+								<span class="cart-personal__text">Я согласен на обработку моих персональных данных <a href="#">(оферта)</a></span>
+							</label>
+						</div>
+						<div class="cart-order">
+							<a href="#" class="cart-order__btn cart-order__btn--buy">Купить в 1 клик</a>
+							<a href="#" class="cart-order__btn cart-order__btn--order">Оформить заказ</a>
+						</div>
 					</div>
-					<div class="cart-cost-box__notservices">Без дополнительных услуг</div>
 				</div>
 
-				<div class="cart-personal">
-					<label class="cart-personal__label">
-						<input type="checkbox" name="personal_data" class="cart-personal__input" checked>
-						<span class="cart-personal__check"></span>
-						<span class="cart-personal__text">Я согласен на обработку моих персональных данных <a href="#">(оферта)</a></span>
-					</label>
-				</div>
-
-				<div class="cart-order">
-					<a href="#" class="cart-order__btn cart-order__btn--buy">Купить в 1 клик</a>
-					<a href="#" class="cart-order__btn cart-order__btn--order">Оформить заказ</a>
-				</div>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-
-<div class="s-subscribe">
-	<div class="wrapper wrapper--md">
-		<div class="s-subscribe__inner">
-			<div class="s-subscribe-action">
-				<div class="s-subscribe-action__title">Подпишитесь</div>
-				<div class="s-subscribe-action__description">на рассылку интересных предложений</div>
-			</div>
-			<div class="s-subscribe-action s-subscribe-action--extend">
-				<div class="s-subscribe-action__title">Получите скидку</div>
-				<div class="s-subscribe-action__description">на первую покупку!</div>
-				<div class="s-subscribe-action__percent">5<span>%</span></div>
-			</div>
-			<div class="s-subscribe__form">
-				<form class="subscribe-form">
-					<div class="subscribe-form__inpcol">
-						<input type="text" name="sub" class="subscribe-form__input" placeholder="введите ваш email">
-					</div>
-					<div class="subscribe-form__submitcol">
-						<input type="submit" class="subscribe-form__submit" value="Подписаться">
-					</div>
-				</form>
 			</div>
 		</div>
 	</div>
