@@ -5620,6 +5620,9 @@ Adaptive styles
 	.header-actions__col {
 		margin: 0 0 0 8px;
 	}
+	.header-search__dropdown {
+		width: 240px;
+	}
 	.s-main__side {
 		width: 100%;
 	}
