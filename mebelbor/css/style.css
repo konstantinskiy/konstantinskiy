@@ -508,8 +508,11 @@ Subcats slider
 .subcats-slider__img img {
 	max-height: 100%
 }
-.subcats-slider__name {
+.subcats-slider__info {
 	margin: 0 0 0 15px;
+}
+.subcats-slider__name {
+	margin: 0 0 5px;
 	font-size: 13px;
 	line-height: 15px;
 	-webkit-transition: all 0.4s ease 0s;
@@ -518,6 +521,12 @@ Subcats slider
 }
 .subcats-slider__item:hover .subcats-slider__name {
 	color: #e00000;	
+}
+.subcats-slider__count {
+	font-size: 14px;
+	color: #e00000;
+	font-weight: 800;
+	text-align: center;
 }
 .subcats-slider__arr {
 	position: absolute;
