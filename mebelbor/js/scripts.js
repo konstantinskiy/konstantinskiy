@@ -29,7 +29,11 @@ $(document).ready(function() {
 
     $('.sidebar-subcats-head__btn').on('click', function(e) {
         e.preventDefault();
-        $(this).toggleClass('sidebar-subcats-head__btn--active').parents('.sidebar-subcats-head').next().slideToggle();
+        $(this)
+            .toggleClass('sidebar-subcats-head__btn--active')
+            .parents('.sidebar-subcats-head')
+            .next()
+            .slideToggle();
     });
 
 
