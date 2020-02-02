@@ -1,0 +1,392 @@
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, 
+em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, 
+meter, nav, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, td, video, tt,
+u, ul, var {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: top;
+}
+ol,
+ul,
+li {
+	list-style-type: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;	
+}
+blockquote,
+q {
+	quotes: none;
+}
+table,
+table td {
+	padding: 0;
+	border: none;
+	border-collapse: collapse;
+}
+embed {
+	vertical-align: top;
+}
+.video embed,
+.video object,
+.video iframe {
+	width: 100%;
+    height: auto;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+article,
+aside,
+details,
+figcaption,
+main,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+    display: block;
+}
+textarea {
+    overflow: auto;
+    vertical-align: top;
+}
+:focus,
+:active,
+:hover {
+    outline: none;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+html,
+body {
+	min-width: 320px;
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+	font-size: 16px;
+	line-height: 1;
+	overflow-x: hidden;
+}
+a {
+	color: #000;
+	text-decoration: none;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
+input,
+textarea,
+select {
+	font-family: 'Roboto', sans-serif;
+	color: #000;
+}
+input {
+	-webkit-appearance: none;
+}
+
+/*------------------------------------------------------------
+Wrapper
+------------------------------------------------------------*/
+
+.layout {
+	position: relative;
+}
+.wrapper {
+	max-width: 1200px;
+	padding: 0 15px;
+	width: 100%;
+	margin: 0 auto;
+}
+.wrapper:before,
+.wrapper:after {
+    content: "";
+    display: table;
+}
+.wrapper:after {
+    clear: both;
+}
+
+/*------------------------------------------------------------
+Beer header
+------------------------------------------------------------*/
+
+.beer-header {
+	padding: 30px 0;
+	background: #00afdb;
+}
+.beer-title {
+	color: #fff;
+	font-size: 34px;
+	font-weight: 600;
+	text-align: center;
+	letter-spacing: 2px;
+}
+.beer-title img {
+	max-width: 36px;
+}
+
+/*------------------------------------------------------------
+Beer grid
+------------------------------------------------------------*/
+
+.beer-content {
+	padding: 30px 0;
+	background: #f6fbfb;
+}
+.beer-sort {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.beer-sort__col {
+	margin: 0 30px 0 0;
+}
+.beer-sort-item {
+	display: flex;
+	align-items: center;	
+}
+.beer-sort-item__label {
+	margin: 0 10px 0 0;
+	font-weight: 400;
+}
+.beer-sort-item__select {
+	cursor: pointer;
+}
+.beer-grid {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -15px;
+}
+.beer-grid__col {
+	width: 25%;
+	margin: 30px 0 0;
+	padding: 0 15px;
+}
+.beer-item {
+	position: relative;
+	height: 100%;
+	background: #fff;
+	border: 1px solid #ebebeb;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,.1);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+}
+.beer-item__inner {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+	border-radius: 5px;
+	border: 2px solid #fff;
+	height: 100%;
+	padding: 0 0 55px;
+	position: relative;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+.beer-item:hover .beer-item__inner {
+	border-color: #00afdb;
+}
+.beer-item__head {
+	padding: 30px 15px 10px;
+}
+.beer-item__img {
+	margin: 0 0 20px;
+	text-align: center;
+}
+.beer-item__img img {
+	max-height: 200px;
+}
+.beer-item__title {
+	margin: 0 0 15px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 800;
+}
+.beer-item__title span {
+	border-bottom: 1px solid #ccc;
+}
+.beer-item__tagline {
+	margin: 0 0 5px;
+	font-size: 15px;
+	line-height: 18px;
+	font-weight: 500;
+}
+.beer-item__description {
+	color: #8c8c8c;
+	font-size: 14px;
+	line-height: 18px;
+	font-weight: 300;
+}
+.beer-item__brewed {
+	font-size: 14px;
+	line-height: 18px;
+}
+.beer-item__line {
+	border-top: 1px solid #e3e3e3;
+	padding: 10px 15px;
+	font-size: 14px;
+	line-height: 18px;
+}
+.beer-item__linekey {
+	margin: 0 0 2px;
+	font-weight: 600;
+}
+.beer-item__linevalue {
+	color: #8c8c8c;
+}
+.beer-item__footer {
+	position: absolute;
+	left: 15px;
+	bottom: 15px;
+	right: 15px;
+	display: flex;
+	align-items: center;
+	margin: 0 -5px;
+}
+.beer-item__footercol {
+	width: 50%;
+	padding: 0 5px;
+}
+.beer-item__details,
+.beer-item__order {
+	display: inline-block;
+	width: 100%;
+	padding: 10px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	text-align: center;
+	background: #00afdb;
+	border: 2px solid #00afdb;
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+}
+.beer-item__details:hover,
+.beer-item__order:hover {
+	background: #fff;
+	color: #00afdb;
+}
+
+/*----------------------------------------------------------------
+Modals
+----------------------------------------------------------------*/
+
+.beer-modal {
+	padding: 30px;
+	display: none;
+	max-width: 700px;
+	width: 100%;
+}
+.beer-modal__title {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 300;
+}
+.beer-modal__title span {
+	font-weight: 700;
+}
+
+
+
+
+
+.scroll-disable {
+	overflow: hidden; 
+}
+
+/*----------------------------------------------------------------
+Adaptive styles
+----------------------------------------------------------------*/
+
+@media only screen and (max-width: 1200px) {
+	
+	.beer-grid__col {
+		width: 33.3333%;
+	}
+
+}
+
+
+@media only screen and (max-width: 800px) {
+	
+	.beer-grid__col {
+		width: 50%;
+	}
+	
+
+
+	
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	
+
+}
+
+
+@media only screen and (max-width: 640px) {
+
+	.beer-grid__col {
+		width: 100%;
+	}
+	.beer-sort {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.beer-sort__col {
+		margin: 0 0 10px 0;
+	}
+	.beer-sort__col:last-child {
+		margin: 0;
+	}
+	
+}
+
+
+@media only screen and (max-width: 480px) {
+	
+
+
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Beer finder</title>
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+</head>
+<body>
+
+
+<header class="beer-header">
+	<div class="wrapper">
+		<h1 class="beer-title">beeRRepository <img src="icons/i-beer.svg" alt="beer-ico"></h1>
+	</div>
+</header>
+
+<div class="beer-content">
+	<div class="wrapper">
+		<div class="beer-sort">
+			<div class="beer-sort__col">
+				<div class="beer-sort-item">
+					<label class="beer-sort-item__label">Количество на странице:</label>
+					<select name="beer_items_select" class="beer-sort-item__select js-sort-items">
+						<option value="1">1</option>
+						<option value="5">5</option>
+						<option value="10" selected>10</option>
+						<option value="20">20</option>
+						<option value="30">30</option>
+						<option value="40">40</option>
+						<option value="40">50</option>
+					</select>
+				</div>
+			</div>
+			<div class="beer-sort__col">
+				<div class="beer-sort-item">
+					<label class="beer-sort-item__label">Номер страницы:</label>
+					<select name="beer_page_select" class="beer-sort-item__select js-sort-page">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div class="beer-grid"></div>
+		<a href="#order-modal" class="beer-item__order" data-fancybox-modal>Заказать</a>
+	</div>
+</div>
+
+
+<div id="beer-modal" class="beer-modal">
+	<!-- <div class="beer-modal__title">Описание пива - <span>Beer</span></div>
+	<div class="beer-modal__body">
+		<div class="beer-modal__img"></div>
+		<div class="beer-modal__content">
+			<div class="beer-modal__"></div>
+			<div class="beer-modal__content"></div>
+		</div>
+	</div> -->
+</div>
+
+
+<div id="order-modal" class="beer-modal">
+	<div class="beer-modal__title">Заказать пиво</div>
+	<div class="beer-modal__body">
+		<div class="beer-modal__img"></div>
+		<div class="beer-modal__content">
+			<div class="beer-modal__"></div>
+			<div class="beer-modal__content"></div>
+		</div>
+	</div>
+</div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
