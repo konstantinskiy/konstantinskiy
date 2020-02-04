@@ -3,6 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Beer finder</title>
+	<meta name="description" content="Beer finder">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700,800&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
@@ -15,6 +19,7 @@
 		<h1 class="beer-title">beeRRepository <img src="icons/i-beer.svg" alt="beer-ico"></h1>
 	</div>
 </header>
+
 
 <div class="beer-content">
 	<div class="wrapper">
@@ -51,10 +56,12 @@
 </div>
 
 
-<div id="beer-modal" class="beer-modal"></div>
+<div id="beer-modal" class="beer-modal">
+	<div class="beer-modal__content"></div>
+</div>
 
 
-<div id="order-modal" class="beer-modal beer-modal--order">
+<div id="order-modal" class="beer-modal">
 	<div class="order-modal-content"></div>
 	<div class="order-modal__body">
 		<form class="order-form">
