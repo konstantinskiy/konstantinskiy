@@ -54,21 +54,27 @@
 <div id="beer-modal" class="beer-modal"></div>
 
 
-<div id="order-modal" class="beer-modal">
-	<div class="beer-modal__title">Заказать пиво</div>
-	<div class="beer-modal__body">
-		<div class="beer-modal__img"></div>
-		<div class="beer-modal__content">
-			<div class="beer-modal__"></div>
-			<div class="beer-modal__content"></div>
-		</div>
+<div id="order-modal" class="beer-modal beer-modal--order">
+	<div class="order-modal-content"></div>
+	<div class="order-modal__body">
+		<form class="order-form">
+			<div class="order-form__group">
+				<input type="text" name="name" class="order-form__input" placeholder="Введите имя">
+			</div>
+			<div class="order-form__group">
+				<input type="text" name="email" class="order-form__input" placeholder="Введите E-mail">
+			</div>
+			<div class="order-form__group">
+				<input type="submit" class="order-form__submit" value="Заказать" disabled>
+			</div>
+		</form>
 	</div>
 </div>
 
 
 <script src="js/jquery-3.4.1.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
-<script src="js/app.js"></script>
+<script src="js/app.min.js"></script>
 
 </body>
 </html>
