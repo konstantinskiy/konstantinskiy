@@ -188,7 +188,6 @@ $(document).ready(function() {
                 }
 
                 response.json().then(function(data) {
-                    console.log(data);
                     data.forEach(function(item, id) {
                         let beerItemPairingArr = data[id].food_pairing;
                         let beerItemPairingList = '';
@@ -198,11 +197,10 @@ $(document).ready(function() {
                         });
                         beerItemPairingList = beerItemPairingList.slice(0, -2);
 
-                        let beerItem = `<div class="beer-item">
-                            <div class="beer-item__inner">
+                        let beerItem = `
                                 <div class="beer-item__head">
                                     <div class="beer-item__img">
-                                        <a href="${data[id].image_url}" data-fancybox><img src="${data[id].image_url}"></a>
+                                        <a href="${data[id].image_url}" data-fancybox-img><img src="${data[id].image_url}"></a>
                                     </div>
                                     <div class="beer-item__title"><span>${data[id].name}</span></div>
                                     <div class="beer-item__tagline">${data[id].tagline}</div>
@@ -219,10 +217,7 @@ $(document).ready(function() {
                                 <div class="beer-item__line">
                                     <div class="beer-item__linekey">Хорошо сочетается с:</div>
                                     <div class="beer-item__linevalue">${beerItemPairingList}</div>
-                                </div>
-                            </div>
-                        </div>`;
-                        // $('#beer-modal').empty();
+                                </div>`;
                         $('#beer-modal').append(beerItem);
                     });
                 });
@@ -233,8 +228,7 @@ $(document).ready(function() {
 
 
 
-    // $('[data-fancybox-modal]').fancybox({
-    //     selector: '.js-beer-modal',
+    // $('[data-fancybox-img]').fancybox({
     //     trapFocus: true,
     //     autoFocus: false,
     //     touch: false,
@@ -245,6 +239,9 @@ $(document).ready(function() {
     //         $('html').removeClass('scroll-disable');
     //     }
     // });
+
+
+
 
 
 
