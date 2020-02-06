@@ -184,6 +184,55 @@ Beer grid
 }
 .beer-sort-item__select {
 	cursor: pointer;
+	height: 24px;
+	border: 1px solid #ccc;
+	font-size: 15px;
+	line-height: 20px;
+	text-align: center;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+.beer-sort-item__select:hover {
+	border-color: #00afdb;
+}
+.beer-sort__btn {
+	position: relative;
+	display: inline-block;
+	padding: 8px 45px 8px 15px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	border: 2px solid #00afdb;
+	color: #00afdb;
+	background: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	text-align: center;
+}
+.beer-sort__btn:before {
+	position: absolute;
+	right: 15px;
+	top: -1px;
+	bottom: 0;
+	margin: auto;
+	content: '';
+	background: url(../icons/i-beer-blue.svg) center no-repeat;
+	width: 20px;
+	height: 20px;
+	background-size: 20px;
+	-webkit-transition: all 0.4s ease 0s;
+	-o-transition: all 0.4s ease 0s;
+	transition: all 0.4s ease 0s;
+}
+.beer-sort__btn:hover {
+	color: #fff;
+	background: #00afdb;
+}
+.beer-sort__btn:hover:before {
+	background: url(../icons/i-beer-white.svg) no-repeat;
 }
 .beer-grid {
 	display: flex;
@@ -289,7 +338,7 @@ Beer grid
 .beer-item__order {
 	display: inline-block;
 	width: 100%;
-	padding: 10px;
+	padding: 10px 0;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	-ms-border-radius: 3px;
@@ -413,15 +462,6 @@ Adaptive styles
 	.beer-grid__col {
 		width: 50%;
 	}
-		
-}
-
-
-@media only screen and (max-width: 640px) {
-
-	.beer-grid__col {
-		width: 100%;
-	}
 	.beer-sort {
 		flex-direction: column;
 		align-items: flex-start;
@@ -432,7 +472,16 @@ Adaptive styles
 	.beer-sort__col:last-child {
 		margin: 0;
 	}
-	
+		
+}
+
+
+@media only screen and (max-width: 640px) {
+
+	.beer-grid__col {
+		width: 100%;
+	}
+
 }
 
 
