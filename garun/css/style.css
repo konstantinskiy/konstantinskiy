@@ -1401,7 +1401,7 @@ Product item
 	font-weight: 600;
 }
 .product-item__titlelink:hover {
-	color: #e00000;
+	color: #ffcf02;
 }
 .product-item__footer {
 	/*margin: 10px 0 0 0;*/
