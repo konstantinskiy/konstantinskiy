@@ -73,13 +73,7 @@ $(document).ready(function() {
             arrows: false,
             responsive: [
                 {
-                    breakpoint: 1700,
-                    settings: {
-                        slidesToShow: 4,
-                    }
-                },
-                {
-                    breakpoint: 1500,
+                    breakpoint: 1600,
                     settings: {
                         slidesToShow: 3,
                     }
@@ -117,6 +111,18 @@ $(document).ready(function() {
             $(this).parents('.s-items').find('.products-slider').slick('slickNext');
         });
     }
+
+
+
+    // Change active product color
+
+    $('.js-product-color').on('click', function(e) {
+        e.preventDefault();
+
+        if($(this).hasClass('product-item__color--active')) return;
+        $(this).parents('.product-item__colors').find('.product-item__color').removeClass('product-item__color--active');
+        $(this).addClass('product-item__color--active')
+    });
 
 
 
