@@ -54,6 +54,31 @@ $(document).ready(function() {
 
 
 
+    // Show telephone dropdown
+
+    $('.header-contacts__telnumber').on('click', function(e) {
+        e.preventDefault();
+        $(this)
+            .toggleClass('header-contacts__telnumber--active')
+            .parents('.header-contacts')
+            .find('.header-contacts__drop')
+            .toggleClass('header-contacts__drop--show');
+        $('.shadow').toggleClass('shadow--show');
+    });
+
+
+    // Close telephone dropdown after outside click
+
+    $(document).on('click', function(e) {
+        if (!$(e.target).is(".header-contacts *")) {
+            $('.header-contacts__telnumber').removeClass('header-contacts__telnumber--active');
+            $('.header-contacts__drop').removeClass('header-contacts__drop--show');
+            $('.shadow').removeClass('shadow--show');
+        }
+    });
+
+
+
     // Hero slider init
 
     if($('.hero-slider').length > 0) {
@@ -88,14 +113,14 @@ $(document).ready(function() {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 2,
-                        dots: true
+                        //dots: true
                     }
                 },
                 {
                     breakpoint: 640,
                     settings: {
                         slidesToShow: 1,
-                        dots: true
+                        //dots: true
                     }
                 }
             ]
@@ -120,6 +145,7 @@ $(document).ready(function() {
         e.preventDefault();
 
         if($(this).hasClass('product-item__color--active')) return;
+
         $(this).parents('.product-item__colors').find('.product-item__color').removeClass('product-item__color--active');
         $(this).addClass('product-item__color--active')
     });

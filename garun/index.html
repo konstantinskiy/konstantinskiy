@@ -14,6 +14,7 @@
 </head>
 <body>
 
+<div class="shadow"></div>
 
 <div class="s-main">	
 	<div class="s-main__inner">
@@ -314,16 +315,8 @@
 		<div class="s-main__center">
 			<header class="header">
 				<div class="header__inner">
-					<div class="header__hamburger">
-						<a href="#" class="adaptive-menu-toggle js-adaptive-slide">
-							<span class="menu-toggle-inner">
-								<span class="menu-toggle-line menu-toggle-line--1"></span>
-								<span class="menu-toggle-line menu-toggle-line--2"></span>
-								<span class="menu-toggle-line menu-toggle-line--3"></span>
-								<span class="menu-toggle-line menu-toggle-line--4"></span>
-								<span class="menu-toggle-line menu-toggle-line--5"></span>
-							</span>
-						</a>
+					<div class="header-logo">
+						<a href="#"><img src="images/header-logo.svg" alt="Garun"></a>
 					</div>
 					<nav class="header-nav">
 						<ul>
@@ -357,6 +350,24 @@
 								<a href="tel:8(800)425-42-92" class="header-contacts__telnumber">8 (800) 425-42-92</a>
 							</div>
 						</div>
+						<div class="header-contacts__drop">
+							<div class="header-callback">
+								<div class="header-callback__title">Оставьте ваш номер и мы вам перезвоним</div>
+								<form class="header-callback-form">
+									<div class="header-callback-form__line">
+										<label class="header-callback-form__label">Телефон</label>
+										<input type="text" name="tel" class="header-callback-form__input">
+									</div>
+									<div class="header-callback-form__line">
+										<label class="header-callback-form__label">Имя</label>
+										<input type="text" name="tel" class="header-callback-form__input">
+									</div>
+									<div class="header-callback-form__line">
+										<input type="submit" class="header-callback-form__submit">
+									</div>
+								</form>
+							</div>
+						</div>
 					</div>
 					<div class="header-search">
 						<a href="#" class="header-search__toggler"></a>
@@ -370,26 +381,7 @@
 					<div class="header-login">
 						<a href="#" class="header-login__link"></a>
 					</div>
-
 					<div class="header-actions">
-						<!-- <div class="header-actions__col header-actions__col--mobile">
-							<a href="#city-modal" class="header-mobile-address" data-fancybox-modal></a>
-						</div>
-						<div class="header-actions__col header-actions__col--mobile">
-							<a href="tel:8(812)425-42-92" class="header-mobile-tel"></a>
-						</div> -->
-						<!-- <div class="header-search">
-							<a href="#" class="header-search__toggler"></a>
-							<div class="header-search__dropdown">
-								<form class="header-searchform">
-									<input type="text" class="header-searchform__input" placeholder="Поиск">
-									<input type="submit" class="header-searchform__submit" value="">
-								</form>
-							</div>
-						</div> -->
-						<!-- <div class="header-login">
-							<a href="#" class="header-login__link"></a>
-						</div> -->
 						<div class="header-actions__col">
 							<div class="header-favorite">
 								<a href="#" class="header-favorite__link"><span class="header-favorite__count">3</span></a>
@@ -407,6 +399,17 @@
 								</a>
 							</div>
 						</div>
+					</div>
+					<div class="header__hamburger">
+						<a href="#" class="adaptive-menu-toggle js-adaptive-slide">
+							<span class="menu-toggle-inner">
+								<span class="menu-toggle-line menu-toggle-line--1"></span>
+								<span class="menu-toggle-line menu-toggle-line--2"></span>
+								<span class="menu-toggle-line menu-toggle-line--3"></span>
+								<span class="menu-toggle-line menu-toggle-line--4"></span>
+								<span class="menu-toggle-line menu-toggle-line--5"></span>
+							</span>
+						</a>
 					</div>
 				</div>
 			</header>
@@ -476,9 +479,9 @@
 			</div>
 
 
-			<div class="b-actions">
-				<div class="b-actions__row">
-					<div class="b-actions__col b-actions__col--1">
+			<div class="s-actions">
+				<div class="s-actions__row">
+					<div class="s-actions__col s-actions__col--1">
 						<div class="b-action b-action-catalog">
 							<div class="b-action-catalog__content">
 								<div class="b-action-catalog__title">Скачайте наш полный каталог мебели GARUN</div>
@@ -490,22 +493,107 @@
 							<div class="b-action-catalog__img"><img src="images/content/catalog-price-img.png" alt="catalog"></div>
 						</div>
 					</div>
-					<div class="b-actions__col b-actions__col--2">
+					<div class="s-actions__col s-actions__col--2">
 						<div class="b-action b-action-cashback">
 							<div class="b-action-cashback__value">возвращаем до 20%</div>
 							<div class="b-action-cashback__title">Кэшбек за каждую совершенную покупку</div>
 							<div class="b-action-cashback__terms">
+								<a href="#" class="b-action-cashback__arr"></a>
 								<span>условия</span>
 								<span>кэшбека</span>
 							</div>
 						</div>
 					</div>
-					<div class="b-actions__col b-actions__col--3">
+					<div class="s-actions__col s-actions__col--3">
 						<div class="b-action b-action-bonus">
 							<div class="b-action-bonus__value">1000 <span>руб</span></div>
 							<div class="b-action-bonus__title">Бонус за регистрацию на сайте</div>
 							<div class="b-action-bonus__arr">
 								<a href="#" class="b-action-bonus__arrlink"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="s-interiorr">
+				<div class="content-container">
+					<div class="s-interiorr__title"><span>Интерьерные решения</span></div>
+					<div class="s-interiorr__row">
+						<div class="s-interiorr__col">
+							<div class="interiorr-item">
+								<div class="interiorr-item__img">
+									<img src="images/content/interior/interiorr-img-1.jpg" alt="img">
+									<div class="interiorr-item__label" style="background-color: #479153;">
+										<img src="images/content/label-cats/i-interior-compact.svg" alt="compact">
+									</div>
+									<div class="interiorr-item__hidden">
+										<div class="interiorr-item__description">По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некоторых людей недоумение при попытках прочитать рыбу текст.</div>
+									</div>
+								</div>
+								<div class="interiorr-item__body">
+									<div class="interiorr-item__title">
+										<a href="#" class="interiorr-item__link">Компакт</a>
+										<div class="interiorr-item__arr">
+											<a href="#" class="interiorr-item__arrlink"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="s-interiorr__col">
+							<div class="interiorr-item">
+								<div class="interiorr-item__img">
+									<img src="images/content/interior/interiorr-img-2.jpg" alt="img">
+									<div class="interiorr-item__label" style="background-color: #5373aa;">
+										<img src="images/content/label-cats/i-interior-constructor.svg" alt="compact">
+									</div>
+								</div>
+								<div class="interiorr-item__body">
+									<div class="interiorr-item__title">
+										<a href="#" class="interiorr-item__link">Конструктор</a>
+										<div class="interiorr-item__arr">
+											<a href="#" class="interiorr-item__arrlink"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="s-interiorr__col">
+							<div class="interiorr-item">
+								<div class="interiorr-item__img">
+									<img src="images/content/interior/interiorr-img-3.jpg" alt="img">
+									<div class="interiorr-item__label" style="background-color: #ce2e40;">
+										<img src="images/content/label-cats/i-interior-constructor.svg" alt="compact">
+									</div>
+								</div>
+								<div class="interiorr-item__body">
+									<div class="interiorr-item__title">
+										<a href="#" class="interiorr-item__link">Детская</a>
+										<div class="interiorr-item__arr">
+											<a href="#" class="interiorr-item__arrlink"></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="s-interiorr__col">
+							<div class="interiorr-item">
+								<div class="interiorr-item__img">
+									<img src="images/content/interior/interiorr-img-4.jpg" alt="img">
+									<div class="interiorr-item__label" style="background-color: #1781c1;">
+										<img src="images/content/label-cats/i-interior-simple.svg" alt="compact">
+									</div>
+								</div>
+								<div class="interiorr-item__body">
+									<div class="interiorr-item__title">
+										<a href="#" class="interiorr-item__link">Симпл</a>
+										<div class="interiorr-item__arr">
+											<a href="#" class="interiorr-item__arrlink"></a>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -576,7 +664,7 @@
 											<div class="product-item__label product-item__label--hit">Хит</div>
 										</div>
 										<div class="product-item__rlabels">
-											<div class="product-item__cat" style="background-color: #479153;"><img src="images/content/label-cats/i-interior-constructor.svg" alt="interior"></div>
+											<div class="product-item__cat" style="background-color: #5373aa;"><img src="images/content/label-cats/i-interior-constructor.svg" alt="interior"></div>
 										</div>
 									</div>
 									<a href="#" class="product-item__imglink"><img src="images/content/products/product-img-2.jpg" alt="img"></a>
@@ -614,6 +702,15 @@
 						<div class="products-slider__item">
 							<div class="product-item">
 								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--hit">Хит</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__cat" style="background-color: #ce2e40;"><img src="images/content/label-cats/i-interior-child.svg" alt="interior"></div>
+										</div>
+									</div>
 									<a href="#" class="product-item__imglink"><img src="images/content/products/product-img-3.jpg" alt="img"></a>
 								</div>
 								<div class="product-item__body">
@@ -644,7 +741,16 @@
 						</div>
 						<div class="products-slider__item">
 							<div class="product-item">
-								<div class="product-item__img">									
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--hit">Хит</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__cat" style="background-color: #1781c1;"><img src="images/content/label-cats/i-interior-simple.svg" alt="interior"></div>
+										</div>
+									</div>
 									<a href="#" class="product-item__imglink"><img src="images/content/products/product-img-1.jpg" alt="img"></a>
 								</div>
 								<div class="product-item__body">
@@ -676,6 +782,15 @@
 						<div class="products-slider__item">
 							<div class="product-item">
 								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--hit">Хит</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__cat" style="background-color: #479153;"><img src="images/content/label-cats/i-interior-constructor.svg" alt="interior"></div>
+										</div>
+									</div>
 									<a href="#" class="product-item__imglink"><img src="images/content/products/product-img-2.jpg" alt="img"></a>
 								</div>
 								<div class="product-item__body">
@@ -734,7 +849,7 @@
 											<div class="product-item__label product-item__label--hit">Хит</div>
 										</div>
 										<div class="product-item__rlabels">
-											<div class="product-item__interior"><img src="images/content/i-interior-compact.svg" alt="interior"></div>
+											<div class="product-item__cat" style="background-color: #479153;"><img src="images/content/label-cats/i-interior-compact.svg" alt="interior"></div>
 										</div>
 									</div>
 									<a href="#" class="product-item__imglink"><img src="images/content/products/product-img-1.jpg" alt="img"></a>
@@ -776,7 +891,7 @@
 											<div class="product-item__label product-item__label--hit">Хит</div>
 										</div>
 										<div class="product-item__rlabels">
-											<div class="product-item__interior"><img src="images/content/" alt="interior"></div>
+											<div class="product-item__cat" style="background-color: #5373aa;"><img src="images/content/label-cats/i-interior-constructor.svg" alt="interior"></div>
 										</div>
 									</div>
 									<a href="#" class="product-item__imglink"><img src="images/content/products/product-img-2.jpg" alt="img"></a>
@@ -814,6 +929,15 @@
 						<div class="products-slider__item">
 							<div class="product-item">
 								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--hit">Хит</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__cat" style="background-color: #ce2e40;"><img src="images/content/label-cats/i-interior-child.svg" alt="interior"></div>
+										</div>
+									</div>
 									<a href="#" class="product-item__imglink"><img src="images/content/products/product-img-3.jpg" alt="img"></a>
 								</div>
 								<div class="product-item__body">
@@ -844,7 +968,16 @@
 						</div>
 						<div class="products-slider__item">
 							<div class="product-item">
-								<div class="product-item__img">									
+								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--hit">Хит</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__cat" style="background-color: #1781c1;"><img src="images/content/label-cats/i-interior-simple.svg" alt="interior"></div>
+										</div>
+									</div>
 									<a href="#" class="product-item__imglink"><img src="images/content/products/product-img-1.jpg" alt="img"></a>
 								</div>
 								<div class="product-item__body">
@@ -876,6 +1009,15 @@
 						<div class="products-slider__item">
 							<div class="product-item">
 								<div class="product-item__img">
+									<div class="product-item__labels">
+										<div class="product-item__llabels">
+											<div class="product-item__label product-item__label--new">New</div>
+											<div class="product-item__label product-item__label--hit">Хит</div>
+										</div>
+										<div class="product-item__rlabels">
+											<div class="product-item__cat" style="background-color: #479153;"><img src="images/content/label-cats/i-interior-constructor.svg" alt="interior"></div>
+										</div>
+									</div>
 									<a href="#" class="product-item__imglink"><img src="images/content/products/product-img-2.jpg" alt="img"></a>
 								</div>
 								<div class="product-item__body">
@@ -911,49 +1053,46 @@
 					</div>
 				</div>
 			</div>
-		
 
 
-		
-			<!-- <div class="s-advantage">
-				<div class="advantage-grid">
-					<div class="advantage-grid__col">
-						<div class="advantage-item">
-							<a href="#" class="advantage-item__link"></a>
-							<div class="advantage-item__ico"><img src="images/content/advantages/i-sale.svg" alt="ico"></div>
-							<div class="advantage-item__text">Самые низкие цены в интернете</div>
+			<div class="s-interiorg">
+				<div class="content-container">
+					<div class="s-interiorg__title"><span>Интерьерные решения</span></div>
+					<div class="s-interiorg__row">
+						<div class="s-interiorg__col">
+							<div class="interiorg-item interiorg-item--1 interiorg-item--sm">
+								<div class="interiorg-item__content">
+									<div class="interiorg-item__img" style="background-image: url(images/content/interior/interiorg-img-1.jpg);"></div>
+								</div>
+								<div class="interiorg-item__more">
+									<a href="#" class="interiorg-item__btn">Детская<i></i></a>
+								</div>
+							</div>
+							<div class="interiorg-item interiorg-item--2 interiorg-item--sm">
+								<div class="interiorg-item__content">
+									<div class="interiorg-item__img" style="background-image: url(images/content/interior/interiorg-img-2.jpg);"></div>
+								</div>
+								<div class="interiorg-item__more">
+									<a href="#" class="interiorg-item__btn">Гостиная<i></i></a>
+								</div>
+							</div>
+						</div>
+						<div class="s-interiorg__col">
+							<div class="interiorg-item interiorg-item--3 interiorg-item--big">
+								<div class="interiorg-item__content">
+									<div class="interiorg-item__img" style="background-image: url(images/content/interior/interiorg-img-3.jpg);"></div>
+								</div>
+								<div class="interiorg-item__more">
+									<a href="#" class="interiorg-item__btn">Прихожая<i></i></a>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="advantage-grid__col">
-						<div class="advantage-item">
-							<a href="#" class="advantage-item__link"></a>
-							<div class="advantage-item__ico"><img src="images/content/advantages/i-delivery.svg" alt="ico"></div>
-							<div class="advantage-item__text">Быстрая доставка, качественная сборка</div>
-						</div>
-					</div>
-					<div class="advantage-grid__col">
-						<div class="advantage-item">
-							<a href="#" class="advantage-item__link"></a>
-							<div class="advantage-item__ico"><img src="images/content/advantages/i-furniture-instock.svg" alt="ico"></div>
-							<div class="advantage-item__text">Мебель в наличии</div>
-						</div>
-					</div>
-					<div class="advantage-grid__col">
-						<div class="advantage-item">
-							<a href="#" class="advantage-item__link"></a>
-							<div class="advantage-item__ico"><img src="images/content/advantages/i-payment.svg" alt="ico"></div>
-							<div class="advantage-item__text">Все способы оплаты</div>
-						</div>
-					</div>
-					<div class="advantage-grid__col">
-						<div class="advantage-item">
-							<a href="#" class="advantage-item__link"></a>
-							<div class="advantage-item__ico"><img src="images/content/advantages/i-credit.svg" alt="ico"></div>
-							<div class="advantage-item__text">Возможность покупки в кредит</div>
-						</div>
+					<div class="interiorg-more">
+						<a href="#" class="interiorg-more__btn">Показать все интерьеры<i></i></a>
 					</div>
 				</div>
-			</div> -->
+			</div>
 
 
 			<div class="s-about">
@@ -975,6 +1114,70 @@
 								<img src="images/content/videobg.jpg" alt="videobg">
 								<span class="s-about__play"></span>
 							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="s-advantage">
+				<div class="content-container">
+					<div class="advantage-grid">
+						<div class="advantage-grid__row">
+							<div class="advantage-grid__col">
+								<div class="advantage-item">
+									<div class="advantage-item__ico"><img src="images/content/advantages/advantage-1.png" alt="ico"></div>
+									<div class="advantage-item__text">Умное предложение под любой запрос</div>
+								</div>
+							</div>
+							<div class="advantage-grid__col">
+								<div class="advantage-item">
+									<div class="advantage-item__ico"><img src="images/content/advantages/advantage-3.png" alt="ico"></div>
+									<div class="advantage-item__text">Надежность без переплаты за бренд</div>
+								</div>
+							</div>
+							<div class="advantage-grid__col">
+								<div class="advantage-item">
+									<div class="advantage-item__ico"><img src="images/content/advantages/advantage-3.png" alt="ico"></div>
+									<div class="advantage-item__text">Гарантия 2 года, срок службы не менее 10 лет</div>
+								</div>
+							</div>
+							<div class="advantage-grid__col">
+								<div class="advantage-item">
+									<div class="advantage-item__ico"><img src="images/content/advantages/advantage-4.png" alt="ico"></div>
+									<div class="advantage-item__text">Широкий ассортимент. Выбор из множества расцветок и вариантов моделей</div>
+								</div>
+							</div>
+							<div class="advantage-grid__col">
+								<div class="advantage-item">
+									<div class="advantage-item__ico"><img src="images/content/advantages/advantage-5.png" alt="ico"></div>
+									<div class="advantage-item__text">Сертифицированные экологически чистые материалы, сделанные в РФ по европейским стандартам</div>
+								</div>
+							</div>
+							<div class="advantage-grid__col">
+								<div class="advantage-item">
+									<div class="advantage-item__ico"><img src="images/content/advantages/advantage-6.png" alt="ico"></div>
+									<div class="advantage-item__text">Автоматизированное и высокоточное производство на оборудовании из Германии и Италии</div>
+								</div>
+							</div>
+							<div class="advantage-grid__col">
+								<div class="advantage-item">
+									<div class="advantage-item__ico"><img src="images/content/advantages/advantage-7.png" alt="ico"></div>
+									<div class="advantage-item__text">Бесплатный 3d проект</div>
+								</div>
+							</div>
+							<div class="advantage-grid__col">
+								<div class="advantage-item">
+									<div class="advantage-item__ico"><img src="images/content/advantages/advantage-8.png" alt="ico"></div>
+									<div class="advantage-item__text">Работаем с 1996 года</div>
+								</div>
+							</div>
+							<div class="advantage-grid__col">
+								<div class="advantage-item">
+									<div class="advantage-item__ico"><img src="images/content/advantages/advantage-9.png" alt="ico"></div>
+									<div class="advantage-item__text">Нас рекомендуют покупатели!</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
