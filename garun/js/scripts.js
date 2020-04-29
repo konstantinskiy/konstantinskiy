@@ -104,8 +104,10 @@ $(document).ready(function() {
 
     if($('.hero-slider').length > 0) {
         $('.hero-slider').slick({
-            arrows: false,
-            dots: true,
+            arrows: true,
+            dots: false,
+            prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.7 58.5"><path d="M0 29.3L29.3 0l1.4 1.4-28 28 28 27.7-1.4 1.5L0 29.3"></path></svg></button>',
+            nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.7 58.5"><path d="M30.7 29.3L1.4 0 0 1.4l28 28L0 57l1.4 1.5 29.3-29.2"></path></svg></button>',
             responsive: [
                 {
                   breakpoint: 1500,
