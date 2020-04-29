@@ -34,6 +34,27 @@ $(document).ready(function() {
 
 
 
+    // Sidebar scroll
+
+    // if($('.s-main__side').length > 0) {
+    //     $('.s-main__side').niceScroll({
+    //         cursorcolor: "#999",
+    //         cursoropacitymin: 1,
+    //         horizrailenabled: false
+    //     });
+    // }
+
+
+    $(window).on('scroll', function() {
+        if($(this).scrollTop() > 200) {
+            $('.s-main__side').addClass('s-main__side--bottom');
+        } else {
+            $('.s-main__side').removeClass('s-main__side--bottom');
+        }
+    });
+
+
+
     // Toggle search box
 
     $('.header-search__toggler').on('click', function(e) {
@@ -84,7 +105,25 @@ $(document).ready(function() {
     if($('.hero-slider').length > 0) {
         $('.hero-slider').slick({
             arrows: false,
-            dots: true
+            dots: true,
+            responsive: [
+                {
+                  breakpoint: 1500,
+                  settings: {
+                    dots: false,
+                    arrows: true,
+                    prevArrow: '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.7 58.5"><path d="M0 29.3L29.3 0l1.4 1.4-28 28 28 27.7-1.4 1.5L0 29.3"></path></svg></button>',
+                    nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.7 58.5"><path d="M30.7 29.3L1.4 0 0 1.4l28 28L0 57l1.4 1.5 29.3-29.2"></path></svg></button>'
+                  }
+                },
+                {
+                  breakpoint: 768,
+                  settings: {
+                    dots: true,
+                    arrows: false,
+                  }
+                },
+            ]
         });
     }
 
@@ -163,6 +202,22 @@ $(document).ready(function() {
         },
         afterClose: function() {
             $('html').removeClass('scroll-disable');
+        }
+    });
+
+
+
+    // Show/hide addresses
+
+    $('.js-more-addresses').on('click', function(e) {
+        e.preventDefault();
+
+        $(this).toggleClass('address-more__btn--active');
+        $('.js-address-row').slideToggle('js-address-row--hidden').addClass('js-address-row--show');
+        if($(this).hasClass('address-more__btn--active')) {
+            $('.js-more-addresses span').text('Скрыть все магазины');
+        } else {
+            $('.js-more-addresses span').text('Показать все магазины');
         }
     });
         
