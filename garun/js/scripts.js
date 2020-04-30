@@ -34,24 +34,23 @@ $(document).ready(function() {
 
 
 
-    // Sidebar scroll
+    // Detect scroll direction and fixed/unfixed left sidebar
 
-    // if($('.s-main__side').length > 0) {
-    //     $('.s-main__side').niceScroll({
-    //         cursorcolor: "#999",
-    //         cursoropacitymin: 1,
-    //         horizrailenabled: false
-    //     });
-    // }
-
-
+    let lastScrollTop = 0;
     $(window).on('scroll', function() {
-        if($(this).scrollTop() > 200) {
-            $('.s-main__side').addClass('s-main__side--bottom');
-        } else {
-            $('.s-main__side').removeClass('s-main__side--bottom');
+        let scrollTop = $(this).scrollTop();
+        if(scrollTop < lastScrollTop) {  // if top scroll direction
+            if($(this).scrollTop() < 300) {
+                $('.s-main__side').removeClass('s-main__side--bottom');
+            }
+        } else {  // if bottom scroll direction
+            if($(this).scrollTop() > 300) {
+                $('.s-main__side').addClass('s-main__side--bottom');
+            }
         }
+        lastScrollTop = scrollTop;
     });
+
 
 
 
