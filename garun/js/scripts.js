@@ -63,6 +63,7 @@ $(document).ready(function() {
     });
 
 
+
     // Close search box after outside click
 
     $(document).on('click', function(e) {

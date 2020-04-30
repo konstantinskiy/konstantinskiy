@@ -782,12 +782,12 @@ Sidebar cats
 	content: '';
 	width: 18px;
 	height: 18px;
-	background: #e5e5e5;
+	background-color: #e5e5e5;
 	-webkit-transition: all 0.4s ease 0s;
 	-o-transition: all 0.4s ease 0s;
 	transition: all 0.4s ease 0s;
 }
-.sidebar-interior-nav__item:hover .sidebar-interior-cat__ico:after {
+.sidebar-interior-nav__item:hover .sidebar-interior-nav__ico:after {
 	background-color: #ffcf02;
 }
 .sidebar-interior-nav__text {
@@ -846,7 +846,7 @@ Sidebar cats
 .soc-nav__link {
 	position: relative;
 	display: block;
-	background-color: #ffcf02;
+	background-color: #585858;
 	width: 36px;
 	height: 36px;
 	-webkit-border-radius: 50%;
@@ -856,7 +856,7 @@ Sidebar cats
 	border-radius: 50%;
 }
 .soc-nav__link:hover {
-	background-color: #585858;
+	background-color: #ffcf02;
 }
 .soc-nav__link:before {
 	position: absolute;
