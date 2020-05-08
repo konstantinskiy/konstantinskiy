@@ -36,21 +36,28 @@ $(document).ready(function() {
 
     // Detect scroll direction and fixed/unfixed left sidebar
 
-    let lastScrollTop = 0;
-    $(window).on('scroll', function() {
-        let scrollTop = $(this).scrollTop();
-        if(scrollTop < lastScrollTop) {  // if top scroll direction
-            if($(this).scrollTop() < 300) {
-                $('.s-main__side').removeClass('s-main__side--bottom');
-            }
-        } else {  // if bottom scroll direction
-            if($(this).scrollTop() > 300) {
-                $('.s-main__side').addClass('s-main__side--bottom');
-            }
-        }
-        lastScrollTop = scrollTop;
-    });
+    function sidebarFixing() {
+        let lastScrollTop = 0;
+        let winHeight = window.innerHeight;
+        let sideHeight = $('.s-main__sidein').height();
 
+        $(window).on('scroll', function() {
+            let scrollTop = $(this).scrollTop();
+            if(sideHeight < winHeight) return;
+            if(scrollTop < lastScrollTop) {  // if top scroll direction
+                if($(this).scrollTop() < 300) {
+                    $('.s-main__side').removeClass('s-main__side--bottom');
+                }
+            } else {  // if bottom scroll direction
+                if($(this).scrollTop() > 300) {
+                    $('.s-main__side').addClass('s-main__side--bottom');
+                }
+            }
+            lastScrollTop = scrollTop;
+        });
+    }
+
+    sidebarFixing();
 
 
 
@@ -221,6 +228,43 @@ $(document).ready(function() {
         } else {
             $('.js-more-addresses span').text('Показать все магазины');
         }
+    });
+
+
+
+    // NoUI filter range sliders
+
+    $('.filter-ranges').each(function () {
+        var $this = $(this);
+        var slider = $this.find('.filter-ranges__slider')[0];
+        var inputLeft = $this.find('.filter-ranges__input--min')[0];
+        var inputRight = $this.find('.filter-ranges__input--max')[0];
+        var inputs = [inputLeft, inputRight];
+
+        var minValue = ($(inputLeft).data('min-value')) ? $(inputLeft).data('min-value') : 0;
+        var maxValue = $(inputRight).data('max-value');
+
+        var startValue = $(inputLeft).attr('placeholder');
+        var endValue = $(inputRight).attr('placeholder');
+
+        noUiSlider.create(slider, {
+            start: [startValue, endValue],
+            connect: true,
+            step: 1,
+            range: {
+                'min': [minValue],
+                'max': [maxValue]
+            }
+        });
+
+        slider.noUiSlider.on('update', function (values, handle) {
+            inputs[handle].value = values[handle];
+        });
+
+        slider.noUiSlider.on('change', function (values, handle) {
+            inputs[handle].value = values[handle];
+        });
+
     });
         
 
