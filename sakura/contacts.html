@@ -1,0 +1,530 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sakura contacts</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/datepicker.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="header-scroll">
+	<div class="wrapper">
+		<div class="header-scroll__row">
+			<div class="header-scroll__logo"><a href="#"><img src="images/sm-logo.png" alt="logo"></a></div>
+			<div class="header-scroll__menu">
+				<nav class="scroll-nav">
+					<ul>
+						<li>
+							<a href="#">Главная</a>
+						</li>
+						<li>
+							<a href="#">О нас</a>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="#">Услуги</a>
+							<ul>
+								<li>
+									<a href="#">Туры</a>
+								</li>
+								<li>
+									<a href="#">Экскурсии</a>
+								</li>
+								<li>
+									<a href="#">Блог</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</li>
+						<li class="menu-item-has-children">
+							<a href="#">Туры</a>
+							<ul>
+								<li>
+									<a href="#">Туры</a>
+								</li>
+								<li>
+									<a href="#">Экскурсии</a>
+								</li>
+								<li>
+									<a href="#">Блог</a>
+								</li>
+								<li>
+									<a href="#">Контакты</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">Экскурсии</a>
+						</li>
+						<li>
+							<a href="#">Блог</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header-scroll__whatsupp">
+				<a href="tel:+81355419960" class="header-scroll__whatsuppnum">+81 3 5541 9960</a>
+			</div>
+			<div class="header-scroll__btn">
+				<a href="#callback-modal" class="btn btn-headerscr" data-fancybox-modal><span>Оставить заявку</span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="layout">
+
+	<header class="header">
+		<div class="wrapper">
+			<div class="header-row">
+				<div class="header-row__left">
+					<div class="header-logo">
+						<a href="#"><img src="images/logo.png" alt="sakura"></a>
+					</div>
+					<div class="header-hamburger">
+						<a class="header-hamburger__link">
+							<span class="header-hamburger__toggle">
+								<span class="header-hamburger__inner">
+									<span class="header-hamburger-line header-hamburger-line--1"></span>
+									<span class="header-hamburger-line header-hamburger-line--2"></span>
+									<span class="header-hamburger-line header-hamburger-line--3"></span>
+									<span class="header-hamburger-line header-hamburger-line--4"></span>
+									<span class="header-hamburger-line header-hamburger-line--5"></span>
+								</span>
+							</span>
+							<span class="header-hamburger__text">Меню</span>
+						</a>
+					</div>
+				</div>
+				<div class="header-row__right">
+					<div class="header-top">
+						<div class="header-top__left">
+							<div class="header-top__search">
+								<form class="header-search">
+									<input type="text" name="s" class="header-search__input" placeholder="Поиск по сайту..">
+									<input type="submit" class="header-search__submit" value="">
+								</form>
+							</div>
+							<div class="header-top__orderpad">
+								<a href="#callback-modal" class="btn btn-headerorder" data-fancybox-modal><span>Оставить заявку</span></a>
+							</div>
+						</div>
+						<div class="header-top__right">
+							<div class="header-top__socials">
+								<nav class="social-nav social-nav--header">
+									<ul>
+										<li class="social-nav__item">
+											<a href="#" class="social-nav__link social-nav__link--telegram"></a>
+										</li>
+										<li class="social-nav__item">
+											<a href="#" class="social-nav__link social-nav__link--fb"></a>
+										</li>
+										<li class="social-nav__item">
+											<a href="#" class="social-nav__link social-nav__link--instagram"></a>
+										</li>
+										<li class="social-nav__item">
+											<a href="#" class="social-nav__link social-nav__link--youtube"></a>
+										</li>
+									</ul>
+								</nav>
+							</div>
+							<div class="header-top__whatsapp">
+								<a href="https://api.whatsapp.com/send?phone=81355419960" class="header-top__whatsapplnk">+81 3 5541 9960</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="header-bottom">
+					<nav class="header-nav">
+						<ul>
+							<li class="current-menu-item">Главная</li>
+							<li>
+								<a href="#">О нас</a>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="#">Услуги</a>
+								<ul>
+									<li>
+										<a href="#">Туры</a>
+									</li>
+									<li>
+										<a href="#">Экскурсии</a>
+									</li>
+									<li>
+										<a href="#">Блог</a>
+									</li>
+									<li>
+										<a href="#">Контакты</a>
+									</li>
+								</ul>
+							</li>
+							<li class="menu-item-has-children">
+								<a href="#">Туры</a>
+								<ul>
+									<li>
+										<a href="#">Туры</a>
+									</li>
+									<li>
+										<a href="#">Экскурсии</a>
+									</li>
+									<li>
+										<a href="#">Блог</a>
+									</li>
+									<li>
+										<a href="#">Контакты</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">Экскурсии</a>
+							</li>
+							<li>
+								<a href="#">Блог</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="header-order">
+						<a href="#callback-modal" class="btn btn-headerorder" data-fancybox-modal><span>Оставить заявку<i></i></span></a>
+					</div>
+				</div>
+				<div class="header-mobile">
+					<div class="header-mobile__whatsapp">
+						<a href="https://api.whatsapp.com/send?phone=81355419960" class="header-mobile__whatsappnum">+81 3 5541 9960</a>
+					</div>
+					<div class="header-mobile__order">
+						<a href="#callback-modal" class="btn header-mobile__btn" data-fancybox-modal><span>Оставить заявку</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="adaptive-slide">
+			<div class="adaptive-slide__nav">
+				<nav class="adaptive-nav">
+					<ul>
+						<li class="current-menu-item">ГЛАВНАЯ</li>
+						<li>
+							<a href="#">О нас</a>
+						</li>
+						<li>
+							<a href="#">Услуги</a>
+						</li>
+						<li>
+							<a href="#">Туры</a>
+						</li>
+						<li>
+							<a href="#">Экскурсии</a>
+						</li>
+						<li>
+							<a href="#">Блог</a>
+						</li>
+						<li>
+							<a href="#">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="adaptive-slide__bottom">
+				<div class="adaptive-slide__socials">
+					<nav class="social-nav social-nav--footer">
+						<ul>
+							<li class="social-nav__item">
+								<a href="#" class="social-nav__link social-nav__link--telegram"></a>
+							</li>
+							<li class="social-nav__item">
+								<a href="#" class="social-nav__link social-nav__link--fb"></a>
+							</li>
+							<li class="social-nav__item">
+								<a href="#" class="social-nav__link social-nav__link--instagram"></a>
+							</li>
+							<li class="social-nav__item">
+								<a href="#" class="social-nav__link social-nav__link--youtube"></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="adaptive-slide__search">
+					<form class="header-search">
+						<input type="text" name="s" class="header-search__input" placeholder="Поиск по сайту..">
+						<input type="submit" class="header-search__submit" value="">
+					</form>
+				</div>
+			</div>
+		</div>
+	</header>
+
+
+	<div class="page-head">
+		<div class="wrapper">
+			<div class="page-head__row">
+				<h1 class="page-head__title">Наши контакты</h1>
+				<div class="page-head__breadcrubms">
+					<nav class="breadcrumbs">
+						<ul>
+							<li class="breadcrumbs__item">
+								<a href="#" class="breadcrumbs__link">Главная</a>
+							</li>
+							<li class="breadcrumbs__item">Контакты</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="s-contacts s-contacts--contacts">
+		<div class="wrapper">
+			<div class="contacts-container">
+				<div class="contacts-container__left">
+					<div class="contacts-container__leftinn">
+						<div class="contacts-container__leftcol">
+							<div class="contacts-container-item">
+								<div class="contacts-container-item__title">Адрес в Японии:</div>
+								<div class="contacts-container-item__body contacts-container-item__body--address">
+									<div class="contacts-container-item__address">Nakagin Hatchobori Mansion 205, 4-13-14, Hatchobori, Chuo-ku, Tokyo 104-0032, Japan</div>
+								</div>
+							</div>
+						</div>
+						<div class="contacts-container__leftcol">
+							<div class="contacts-container-item">
+								<div class="contacts-container-item__title">Звоните нам:</div>
+								<div class="contacts-container-item__body contacts-container-item__body--tels">
+									<div class="contacts-container-item__tel">
+										<a href="tel:+81-3-5541-9960" class="contacts-container-item__num">+81-3-5541-9960</a>
+									</div>
+									<div class="contacts-container-item__tel">
+										<a href="tel:+81-3-3551-0033" class="contacts-container-item__num">+81-3-3551-0033</a> (факс)
+									</div>
+									<div class="contacts-container-item__timezone">+6 часов к МСК</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="contacts-container__president">
+					<div class="contacts-president">
+						<div class="contacts-president__avatar"><img src="images/content/president-avatar.png" alt="Анатолий Краснов"></div>
+						<div class="contacts-president__info">
+							<div class="contacts-president__post">Президент компании:</div>
+							<div class="contacts-president__name">Анатолий Краснов</div>
+							<div class="contacts-president__tel">
+								<a href="tel:+81-90-5493-9676" class="contacts-president__num">+81-90-5493-9676</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="pcontacts-line">
+		<div class="wrapper">
+			<div class="pcontacts-line__row">
+				<div class="pcontacts-line__col">
+					<div class="pcontacts-soc">
+						<div class="pcontacts-soc__title"><span>Мы</span> в социальных сетях:</div>
+						<div class="pcontacts-soc__nav">
+							<nav class="social-nav social-nav--pcontacts">
+								<ul>
+									<li class="social-nav__item">
+										<a href="#" class="social-nav__link social-nav__link--telegram"></a>
+									</li>
+									<li class="social-nav__item">
+										<a href="#" class="social-nav__link social-nav__link--fb"></a>
+									</li>
+									<li class="social-nav__item">
+										<a href="#" class="social-nav__link social-nav__link--instagram"></a>
+									</li>
+									<li class="social-nav__item">
+										<a href="#" class="social-nav__link social-nav__link--youtube"></a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="pcontacts-line__col">
+					<div class="pcontacts-messengers">
+						<div class="pcontacts-messengers__list"></div>
+						<div class="pcontacts-messengers__title">Написать менеджеру в <a href="#" class="pcontacts-messengers__link">Skype</a> или <a href="#" class="pcontacts-messengers__link">Skype</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	<div class="pcontacts-block">
+		<div class="wrapper">
+			<div class="pcontacts-form-box">
+				<div class="pcontacts-form-box__inner">
+					<div class="pcontacts-form-box__title"><span>Есть вопросы?</span> Мы готовы ответить на них!</div>
+					<form class="contacts-form">
+						<div class="contacts-form__group">
+							<div class="contacts-form__row">
+								<div class="contacts-form__col">
+									<label class="contacts-form__label">Введите имя:</label>
+									<input type="text" name="name" class="contacts-form__input" placeholder="Например: Иван">
+								</div>
+								<div class="contacts-form__col">
+									<label class="contacts-form__label">Введите телефон (whatsapp):</label>
+									<input type="text" name="tel" class="contacts-form__input" placeholder="+_ - ___ - ___ - __ - __">
+								</div>
+								<div class="contacts-form__col">
+									<label class="contacts-form__label">Введите E-mail:</label>
+									<input type="text" name="email" class="contacts-form__input" placeholder="example@mail.com">
+								</div>
+							</div>
+						</div>
+						<div class="contacts-form__group">
+							<label class="contacts-form__label">Введите ваш вопрос:</label>
+							<textarea name="text" class="contacts-form__textarea" placeholder="Текст сообщения..."></textarea>
+						</div>
+						<div class="contacts-form__group">
+							<button class="btn contacts-form__submit"><span>Продолжить</span></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<footer class="footer">
+		<div class="wrapper">
+			<div class="footer-top">
+				<div class="footer-top__first">
+					<div class="footer-top__logo"><a href="#"><img src="images/logo.png" alt="sakura"></a></div>
+					<div class="footer-top__rights">
+						<div class="footer-top__copyright">1999 - 2020 © Все права защищены</div>
+						<div class="footer-top__privacy">
+							<a href="#" class="footer-top__privacylink">Политика конфиденциальности</a>
+						</div>
+					</div>
+					<nav class="social-nav social-nav--footer">
+						<ul>
+							<li class="social-nav__item">
+								<a href="#" class="social-nav__link social-nav__link--telegram"></a>
+							</li>
+							<li class="social-nav__item">
+								<a href="#" class="social-nav__link social-nav__link--fb"></a>
+							</li>
+							<li class="social-nav__item">
+								<a href="#" class="social-nav__link social-nav__link--instagram"></a>
+							</li>
+							<li class="social-nav__item">
+								<a href="#" class="social-nav__link social-nav__link--youtube"></a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-top__navscol">
+					<nav class="footer-nav">
+						<ul>
+							<li>
+								<a href="#">Главная</a>
+							</li>
+							<li>
+								<a href="#">О нас</a>
+							</li>
+							<li>
+								<a href="#">Услуги</a>
+							</li>
+							<li>
+								<a href="#">Туры</a>
+							</li>
+							<li>
+								<a href="#">Экскурсии</a>
+							</li>
+							<li>
+								<a href="#">Контакты</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-top__navscol">
+					<nav class="footer-nav">
+						<ul>
+							<li>
+								<a href="#">Отель на олимпиаду 2021 в токио</a>
+							</li>
+							<li>
+								<a href="#">Бронирование лучших номеров в отелях</a>
+							</li>
+							<li>
+								<a href="#">Заказ отелей через booking.com</a>
+							</li>
+							<li>
+								<a href="#">Удобный трансфер в любой точке японии</a>
+							</li>
+							<li>
+								<a href="#">Визы в японию вместес “Сакура Турз”</a>
+							</li>
+							<li>
+								<a href="#">Обучение на курсах японского языка</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="footer-top__contacts">
+					<div class="footer-contacts">
+						<div class="footer-contacts__address">Nakagin Hatchobori Mansion 205, 4-13-14, Hatchobori, Chuo-ku, Tokyo 104-0032, Japan</div>
+						<div class="footer-contacts__tel">
+							<a href="tel:81355419960" class="footer-contacts__telnum">+81 3 5541 9960</a>
+						</div>
+						<div class="footer-contacts__order">
+							<a href="#callback-modal" class="btn footer-contacts__btn" data-fancybox-modal><span>Оставить заявку<i></i></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+		
+</div>
+
+
+<div id="callback-modal" class="modal">
+	<div class="modal__title">Оставить заявку</div>
+	<form class="callback-form modal-form">
+		<div class="modal-form__group">
+			<input type="text" name="name" class="modal-form__input" placeholder="Введите имя">
+		</div>
+		<div class="modal-form__group">
+			<input type="text" name="email" class="modal-form__input" placeholder="Введите E-mail">
+		</div>
+		<div class="modal-form__group">
+			<button type="submit" class="btn modal-form__submit"><span>Отправить</span></button>
+		</div>
+	</form>
+</div>
+
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/datepicker.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
