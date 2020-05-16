@@ -289,8 +289,9 @@ $(document).ready(function() {
                 };
 
                 orderData = JSON.stringify(orderData);
-                localStorage.setItem('order_form', orderData);
+                localStorage.setItem('order_step1_form', orderData);
 
+                // redirect to page with step1 data
                 window.location.href = "order.html";
             }
         });
@@ -300,8 +301,8 @@ $(document).ready(function() {
 
     // Set Order form input value from localStorage
 
-    function setAttsOrderForm() {
-        let orderFormData = JSON.parse(localStorage.getItem('order_form'));
+    function setFieldsOrderForm() {
+        let orderFormData = JSON.parse(localStorage.getItem('order_step1_form'));
         if(orderFormData !== null) {
             $('.order-form').find('select[name="order_city"]').val(orderFormData.order_city);
             $('.order-form').find('select[name="order_excursion"]').val(orderFormData.order_excursion);
@@ -311,13 +312,13 @@ $(document).ready(function() {
         }
     }
 
-    setAttsOrderForm();
+    setFieldsOrderForm();
 
 
 
-    // Validate discuss form
+    // Validate contacts page form
 
-    $('.discuss-form').each(function() {
+    $('.contacts-form').each(function() {
         $(this).validate({
             errorElement: 'div',
             rules: {
@@ -358,7 +359,7 @@ $(document).ready(function() {
 
     // Validate callback modal form
 
-    $('.consult-modal-form').each(function() {
+    $('.callback-form').each(function() {
         $(this).validate({
             errorElement: 'div',
             rules: {
@@ -366,10 +367,6 @@ $(document).ready(function() {
                     required: true,
                     minlength: 2,
                 }, 
-                tel: {
-                    requiredphone: true,
-                    minlenghtphone: true,
-                },
                 email: {
                     required: true,
                     email: true,
@@ -379,10 +376,6 @@ $(document).ready(function() {
                 name: {
                     required: '',
                     minlength: ''
-                },
-                tel: {
-                    requiredphone: '',
-                    minlenghtphone: '',
                 },
                 email: {
                     required: '',

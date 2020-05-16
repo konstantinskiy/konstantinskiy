@@ -227,12 +227,12 @@ Header fixed scroll
 	align-content: center;
 }
 .header-scroll__logo,
-.header-scroll__whatsupp {
+.header-scroll__whatsapp {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
-.header-scroll__whatsuppnum {
+.header-scroll__whatsappnum {
 	display: inline-block;
 	padding: 0 0 0 50px;
 	position: relative;
@@ -240,10 +240,10 @@ Header fixed scroll
 	font-size: 20px;
 	font-weight: 600;
 }
-.header-scroll__whatsuppnum:hover {
+.header-scroll__whatsappnum:hover {
 	color: #d8689a;
 }
-.header-scroll__whatsuppnum:before {
+.header-scroll__whatsappnum:before {
 	position: absolute;
 	left: 0;
 	top: 0;
@@ -2148,6 +2148,7 @@ Page contacts line
 }
 .pcontacts-line__row {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-between;
 }
@@ -2163,11 +2164,67 @@ Page contacts line
 .pcontacts-soc__title span {
 	font-weight: 600;
 }
-
-
-
-
-
+.pcontacts-messengers {
+	padding: 3px 30px 3px 3px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	border-radius: 30px;
+	background: #f5f5f3;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.pcontacts-messengers__list {
+	display: flex;
+	align-items: center;
+}
+.pcontacts-messenger {
+	display: block;
+	margin: 0 10px 0 0;
+	width: 54px;
+	height: 54px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-position: center; 
+}
+.pcontacts-messenger--whatsapp {
+	background-color: #446db2;
+	background-image: url(../images/i/i-whatsupp-white.svg);
+	background-size: 25px;
+}
+.pcontacts-messenger--whatsapp:hover {
+	background-color: #e69bbd;
+}
+.pcontacts-messenger--skype {
+	background-image: url(../images/i/i-skype-blue.svg);
+	background-size: 54px;
+}
+.pcontacts-messenger--skype:hover {
+	background-image: url(../images/i/i-skype-rose.svg);
+	background-size: 54px;
+}
+.pcontacts-messenger:last-child {
+	margin: 0;
+}
+.pcontacts-messengers__title {
+	margin: 0 0 0 30px;
+	font-size: 20px;
+	font-weight: 600;
+}
+.pcontacts-messengers__link {
+	color: #406ab1;
+	border-bottom: 1px solid #dbe1e9;
+}
+.pcontacts-messengers__link:hover {
+	color: #e17ba8;
+	border-bottom-color: #e17ba8;
+}
 
 /*------------------------------------------------------------
 Page contacts block
@@ -2807,6 +2864,22 @@ Adaptive styles
 	.contacts-form {
 		max-width: 700px;
 	}
+	
+	.pcontacts-line__row {
+		justify-content: center;
+	}
+	.pcontacts-line__col {
+		flex: 0 0 100%;
+		justify-content: center;
+	}
+	.pcontacts-line__col:last-child {
+		flex: 0 0 auto;
+		margin: 30px 0 0;
+	}
+	.pcontacts-soc,
+	.pcontacts-messengers {
+		justify-content: center;
+	}
 
 
 
@@ -2818,7 +2891,7 @@ Adaptive styles
 
 @media only screen and (max-width: 1280px) {
 	
-	.header-scroll__whatsupp {
+	.header-scroll__whatsapp {
 		display: none;
 	}
 	.header:after {
@@ -3256,6 +3329,12 @@ Adaptive styles
 		justify-content: left;
 	}
 	
+
+
+
+	.pcontacts-line {
+		margin: 45px 0 0;
+	}
 
 
 
@@ -3864,7 +3943,41 @@ Adaptive styles
 
 
 
-	
+
+	.pcontacts-soc {
+		display: block;
+		text-align: center;
+	}
+	.pcontacts-soc__title {
+		margin: 0 0 30px;
+		font-size: 24px;
+	}
+	.social-nav--pcontacts ul {
+		justify-content: center;
+	}
+	.pcontacts-line__col,
+	.pcontacts-line__col:last-child {
+		flex: 0 0 100%;
+	}
+	.pcontacts-messengers {
+		padding: 30px;
+		display: block;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		-ms-border-radius: 15px;
+		-o-border-radius: 15px;
+		border-radius: 15px;
+		text-align: center;
+	}
+	.pcontacts-messengers__list {
+		justify-content: center;
+	}
+	.pcontacts-messengers__title {
+		margin: 25px 0 0 0;
+	}
+	.pcontacts-block {
+		margin: 45px 0 0;
+	}
 	.pcontacts-form-box__title {
 		font-size: 24px;
 		line-height: 28px;
