@@ -187,6 +187,64 @@ $(document).ready(function() {
 
 
 
+    // Single product sync slider
+
+    if($('.sproduct-slider').length > 0) {
+
+        $('.sproduct-slider').slick({
+            asNavFor: '.sproduct-smpreslider-nav',
+            arrows: false,
+            responsive: [{
+                    breakpoint: 480,
+                    settings: {
+                        arrows: false
+                    }
+                },
+            ]
+        });
+
+        $('.sproduct-smpreslider-nav').slick({
+            slidesToShow: 4,
+            asNavFor: '.sproduct-slider',
+            arrows: false,
+            focusOnSelect: true,
+            responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                },
+                {
+                    breakpoint: 640,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 2,
+                    }
+                }
+            ]
+        });
+
+    }
+
+
+
     // Change active product color
 
     $('.js-product-color').on('click', function(e) {
@@ -265,6 +323,36 @@ $(document).ready(function() {
             inputs[handle].value = values[handle];
         });
 
+    });
+
+
+
+    // Product tabs
+
+    $('.sproduct-tabs-nav__link').on('click', function(e) {
+        e.preventDefault();
+        if($(this).hasClass('sproduct-tabs-nav__link--active')) return;
+
+        let tabId = $(this).data('tab-id');
+
+        $(this).parents('.sproduct-tabs-nav').find('.sproduct-tabs-nav__link').removeClass('sproduct-tabs-nav__link--active');
+        $(this).addClass('sproduct-tabs-nav__link--active');
+
+        $('.sproduct-tabs__content').removeClass('sproduct-tabs__content--active');
+        $('.sproduct-tabs__content').eq(tabId).addClass('sproduct-tabs__content--active');
+    });
+
+
+
+    // Product colors
+
+    $('.sproduct-color').on('click', function(e) {
+        e.preventDefault();
+
+        if($(this).hasClass('sproduct-color--active')) return false;
+
+        $(this).parents('.sproduct-colors').find('.sproduct-color--active').removeClass('sproduct-color--active');
+        $(this).addClass('sproduct-color--active');
     });
         
 
