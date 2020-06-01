@@ -3303,6 +3303,7 @@ Cart page head
 }
 .cartpage-sidebox-service__name {
 	color: #fff;
+	font-weight: 300;
 }
 .cartpage-sidebox-service__value {
 	color: #ffcf02;
@@ -3345,6 +3346,61 @@ Cart page head
 	background: #ffcf02;
 	color: #000;
 }
+.cartpage-sidebox__oferta {
+	margin: 15px 0 0;
+}
+.cartpage-label {
+	display: block;
+	padding: 0 0 0 35px;
+	position: relative;
+	cursor: pointer;
+}
+.cartpage-label__input {
+	display: none;
+    opacity: 0;
+}
+.cartpage-label__check {
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;    
+    background: #959595;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.cartpage-label__check:before {
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: url(../images/i/i-check-white.svg) center no-repeat;
+    background-size: 8px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.cartpage-label__input:checked ~ .cartpage-label__check:before {
+	opacity: 1;
+    visibility: visible;
+}
+.cartpage-label__text {
+	color: #c0c0c0;
+	font-size: 12px;
+	line-height: 16px;
+	font-weight: 300;
+}
+
 
 
 
