@@ -13,7 +13,7 @@ $(document).ready(function() {
         e.preventDefault();
         toggleAdaptiveMenu();
     });
-
+    
 
 
     // Adaptive submenu slideToggle
@@ -25,7 +25,7 @@ $(document).ready(function() {
 
 
 
-    // Subcats toggle 
+    // Subcats toggle
 
     $('.sidebar-subcats-head__btn').on('click', function(e) {
         e.preventDefault();
@@ -353,6 +353,53 @@ $(document).ready(function() {
 
         $(this).parents('.sproduct-colors').find('.sproduct-color--active').removeClass('sproduct-color--active');
         $(this).addClass('sproduct-color--active');
+    });
+
+
+
+    // Input increment value
+
+    $('.js-cartcount-minus').on('click', function(e) {
+        e.preventDefault();
+        var input = $(this).parent().find('.cartpage-item-counter__input'),
+            inputValue = input.val();
+        
+        if(!(inputValue - 1) <= 0) {        
+            input.val(parseInt(inputValue) - 1);
+        }
+    });
+
+
+
+    // Input decrement value
+
+    $('.js-cartcount-plus').on('click', function(e) {
+        e.preventDefault();
+        var input = $(this).parent().find('.cartpage-item-counter__input'),
+            inputValue = input.val();
+        input.val(parseInt(inputValue) + 1);
+    });
+
+
+
+    // Cart toggler
+    
+    $('.cartpage-toggler').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('cartpage-toggler--active');
+    });
+
+
+
+    // Cart item color
+
+    $('.cartpage-item__color').on('click', function(e) {
+        e.preventDefault();
+
+        if($(this).hasClass('cartpage-item__color--active')) return false;
+
+        $(this).parents('.cartpage-item__colors').find('.cartpage-item__color--active').removeClass('cartpage-item__color--active');
+        $(this).addClass('cartpage-item__color--active');
     });
         
 
