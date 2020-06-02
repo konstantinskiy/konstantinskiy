@@ -401,6 +401,19 @@ $(document).ready(function() {
         $(this).parents('.cartpage-item__colors').find('.cartpage-item__color--active').removeClass('cartpage-item__color--active');
         $(this).addClass('cartpage-item__color--active');
     });
+
+
+
+    // Cart fakecheck
+
+    $('.js-cart-fakecheck').on('click', function(e) {
+        e.preventDefault();
+
+        if($(this).hasClass('cart-box-fakecheck--active')) return false;
+
+        $(this).parents('.cart-box-fakechecks').find('.cart-box-fakecheck--active').removeClass('cart-box-fakecheck--active');
+        $(this).addClass('cart-box-fakecheck--active');
+    });
         
 
 });
