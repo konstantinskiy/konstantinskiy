@@ -433,7 +433,7 @@ $(document).ready(function() {
         else if($(this).data('delivery-type') == 'rf') {
             $('.cart-box-uptoflat').hide();
             $('.cart-box-addresses').show();
-        } else {
+        } else if($(this).data('delivery-type') == 'all') {
             $('.cart-box-addresses, .cart-box-uptoflat').show();
         }
 
