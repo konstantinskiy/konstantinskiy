@@ -3562,7 +3562,7 @@ Cart page head
 	visibility: visible;
 }
 .cart-box-calculate {
-	margin: 15px 0 25px;
+	margin: 10px 0 25px;
 }
 .cart-box-calculate__btn {
 	display: inline-block;
@@ -3577,6 +3577,7 @@ Cart page head
 	font-size: 12px;
 	text-transform: uppercase;
 	font-weight: 600;
+	text-align: center;
 	letter-spacing: 1px;
 }
 .cart-box-calculate__btn:hover {
@@ -4019,8 +4020,6 @@ html:not([dir=rtl]) .filter-ranges__slider.noUi-horizontal .noUi-handle {
 	padding: 0 20px;
 	cursor: pointer;
 	-webkit-appearance: none;
-   	-moz-appearance: none;
-   	appearance: none;
    	background-color: #fff;
    	background-image: url(../images/i/i-caret-bottom-grey.svg);
    	background-position: 95% center;
@@ -5447,6 +5446,10 @@ Adaptive styles
 		font-size: 16px;
 		line-height: 22px;
 	}
+	.cart-box-group__col4 {
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
 
 
 
@@ -5589,6 +5592,23 @@ Adaptive styles
 	}
 
 
+
+	.cart-box {
+		padding: 20px 15px;
+	}
+	.cart-box-group__col4,
+	.cart-box-group__col6 {
+		flex: 0 0 100%;
+		max-width: none;
+	}
+	.cart-box-bonuspay {
+		padding: 20px 15px;
+	}
+	.cart-box-bonuspay__content {
+		padding: 0 0 0 65px;
+	}
+
+
 }
 
 
@@ -5724,6 +5744,34 @@ Adaptive styles
 		font-size: 30px;
 	}
 	.cart-success-total__order {
+		max-width: none;
+	}
+
+
+
+	
+	
+	.cart-box__title {
+		font-size: 16px;
+	}
+	.cart-box-bonuspay__content {
+		padding: 70px 0 0 0;
+	}
+	.cart-box-bonuspay__content:before {
+		top: 0;
+	}
+	.cart-box-bonuspay-action {
+		display: block;
+	}
+	.cart-box-bonuspay-action__title {
+		margin: 0 0 10px;
+		max-width: none;
+	}
+	.cart-box-calculate__btn {
+		padding: 14px 5px 13px;
+		line-height: 16px;
+	}
+	.cartpage-middle__sidebar {
 		max-width: none;
 	}
 
