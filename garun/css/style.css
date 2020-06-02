@@ -3402,6 +3402,26 @@ Cart page head
 	line-height: 18px;
 	font-weight: 300;
 }
+.cart-client-types {
+	margin: 0 0 20px;
+	display: flex;
+}
+.cart-client-types__link {
+	flex: 0 0 50%;
+	max-width: 50%;
+	background: #f7f7f7;
+	padding: 18px 15px 17px;
+	color: #767676;
+	font-size: 12px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-weight: 600;
+	text-align: center;
+}
+.cart-client-types__link--active {
+	background: #ffcf02;
+	color: #000;
+}
 .cart-box {
 	margin: 0 0 20px;
 	padding: 25px;
@@ -3628,6 +3648,7 @@ Cart page head
 	color: #767676;
 	font-size: 14px;
 	line-height: 20px;
+	font-weight: 300;
 }
 .cart-box-bonuspay-action__input {
 	width: 190px;
@@ -5751,6 +5772,13 @@ Adaptive styles
 
 	
 	
+	.cart-client-types {
+		display: block;
+	}
+	.cart-client-types__link {
+		display: block;
+		max-width: none;
+	}
 	.cart-box__title {
 		font-size: 16px;
 	}
@@ -5768,6 +5796,7 @@ Adaptive styles
 		max-width: none;
 	}
 	.cart-box-calculate__btn {
+		width: 100%;
 		padding: 14px 5px 13px;
 		line-height: 16px;
 	}

@@ -448,6 +448,10 @@
             	<div class="content-container">
             		<div class="cartpage-middle__row">
             			<div class="cartpage-middle__content">
+                            <div class="cart-client-types">
+                                <a href="#" class="cart-client-types__link">Физическое лицо</a>
+                                <a href="#" class="cart-client-types__link cart-client-types__link--active">Юридическое лицо</a>
+                            </div>
             				<div class="cart-box">
                                 <div class="cart-box__title">Информация о покупателе:</div>
                                 <div class="cart-box-group">
@@ -482,7 +486,7 @@
                                                 </div>
                                             </div>
                                             <div class="cart-box-group__col6">
-                                                <div class="cart-box-fakecheck js-cart-fakecheck">
+                                                <div class="cart-box-fakecheck js-cart-fakecheck" data-delivery-type="self">
                                                     <div class="cart-box-fakecheck__ico"></div>
                                                     <div class="cart-box-fakecheck__content">
                                                         <div class="cart-box-fakecheck__title">Самовывоз</div>
@@ -491,7 +495,7 @@
                                                 </div>
                                             </div>
                                             <div class="cart-box-group__col6">
-                                                <div class="cart-box-fakecheck js-cart-fakecheck">
+                                                <div class="cart-box-fakecheck js-cart-fakecheck" data-delivery-type="rf">
                                                     <div class="cart-box-fakecheck__ico"></div>
                                                     <div class="cart-box-fakecheck__content">
                                                         <div class="cart-box-fakecheck__title">Доставка по РФ (ТК ПЭК)</div>
@@ -499,7 +503,7 @@
                                                 </div>
                                             </div>
                                             <div class="cart-box-group__col6">
-                                                <div class="cart-box-fakecheck js-cart-fakecheck">
+                                                <div class="cart-box-fakecheck js-cart-fakecheck" data-delivery-type="rf">
                                                     <div class="cart-box-fakecheck__ico"></div>
                                                     <div class="cart-box-fakecheck__content">
                                                         <div class="cart-box-fakecheck__title">Доставка по РФ (ТК Дел. Линии)</div>
@@ -523,34 +527,36 @@
                                     <div class="cart-box-calculate">
                                         <a href="#" class="cart-box-calculate__btn">рассчитать стоимость доставки</a>
                                     </div>
-                                    <div class="cart-box-fakechecks">
-                                        <div class="cart-box-group__row">
-                                            <div class="cart-box-group__col4">
-                                                <div class="cart-box-fakecheck js-cart-fakecheck">
-                                                    <div class="cart-box-fakecheck__ico"></div>
-                                                    <div class="cart-box-fakecheck__content">
-                                                        <div class="cart-box-fakecheck__title">Без подъема</div>
+                                    <div class="cart-box-uptoflat">
+                                        <div class="cart-box-fakechecks">
+                                            <div class="cart-box-group__row">
+                                                <div class="cart-box-group__col4">
+                                                    <div class="cart-box-fakecheck js-cart-fakecheck">
+                                                        <div class="cart-box-fakecheck__ico"></div>
+                                                        <div class="cart-box-fakecheck__content">
+                                                            <div class="cart-box-fakecheck__title">Без подъема</div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="cart-box-group__col4">
-                                                <div class="cart-box-fakecheck js-cart-fakecheck">
-                                                    <div class="cart-box-fakecheck__ico"></div>
-                                                    <div class="cart-box-fakecheck__content">
-                                                        <div class="cart-box-fakecheck__title">Подъем на лифте или на первый этаж</div>
-                                                        <div class="cart-box-fakecheck__description">До 10 кг бесплатно, более 10 кг - от 100р в зависимости от веса и объема заказа</div>
+                                                <div class="cart-box-group__col4">
+                                                    <div class="cart-box-fakecheck js-cart-fakecheck">
+                                                        <div class="cart-box-fakecheck__ico"></div>
+                                                        <div class="cart-box-fakecheck__content">
+                                                            <div class="cart-box-fakecheck__title">Подъем на лифте или на первый этаж</div>
+                                                            <div class="cart-box-fakecheck__description">До 10 кг бесплатно, более 10 кг - от 100р в зависимости от веса и объема заказа</div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="cart-box-group__col4">
-                                                <div class="cart-box-fakecheck js-cart-fakecheck">
-                                                    <div class="cart-box-fakecheck__ico"></div>
-                                                    <div class="cart-box-fakecheck__content">
-                                                        <div class="cart-box-fakecheck__title">Требуется подъем по лестнице</div>
-                                                        <div class="cart-box-fakecheck__description">от 100р в зависимости от веса и объема заказа</div>
-                                                        <div class="cart-box-fakecheckin">
-                                                            <input type="text" name="floors" class="cart-box-fakecheckin__input" placeholder="2">
-                                                            <div class="cart-box-fakecheckin__floors">Эт.</div>
+                                                <div class="cart-box-group__col4">
+                                                    <div class="cart-box-fakecheck js-cart-fakecheck">
+                                                        <div class="cart-box-fakecheck__ico"></div>
+                                                        <div class="cart-box-fakecheck__content">
+                                                            <div class="cart-box-fakecheck__title">Требуется подъем по лестнице</div>
+                                                            <div class="cart-box-fakecheck__description">от 100р в зависимости от веса и объема заказа</div>
+                                                            <div class="cart-box-fakecheckin">
+                                                                <input type="text" name="floors" class="cart-box-fakecheckin__input" placeholder="2">
+                                                                <div class="cart-box-fakecheckin__floors">Эт.</div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

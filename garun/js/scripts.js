@@ -404,6 +404,19 @@ $(document).ready(function() {
 
 
 
+    // Cart item color
+
+    $('.cart-client-types__link').on('click', function(e) {
+        e.preventDefault();
+
+        if($(this).hasClass('cart-client-types__link--active')) return false;
+
+        $(this).parents('.cart-client-types').find('.cart-client-types__link--active').removeClass('cart-client-types__link--active');
+        $(this).addClass('cart-client-types__link--active');
+    });
+
+
+
     // Cart fakecheck
 
     $('.js-cart-fakecheck').on('click', function(e) {
@@ -413,6 +426,17 @@ $(document).ready(function() {
 
         $(this).parents('.cart-box-fakechecks').find('.cart-box-fakecheck--active').removeClass('cart-box-fakecheck--active');
         $(this).addClass('cart-box-fakecheck--active');
+
+        if($(this).data('delivery-type') == 'self') {
+            $('.cart-box-addresses, .cart-box-uptoflat').hide();
+        }
+        else if($(this).data('delivery-type') == 'rf') {
+            $('.cart-box-uptoflat').hide();
+            $('.cart-box-addresses').show();
+        } else {
+            $('.cart-box-addresses, .cart-box-uptoflat').show();
+        }
+
     });
         
 
