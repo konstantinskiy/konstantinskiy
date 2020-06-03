@@ -312,7 +312,10 @@ $(document).ready(function() {
             range: {
                 'min': [minValue],
                 'max': [maxValue]
-            }
+            },
+            format: wNumb({
+                decimals: 0
+            })
         });
 
         slider.noUiSlider.on('update', function (values, handle) {
