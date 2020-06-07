@@ -1390,6 +1390,118 @@ Block actions
 }
 
 /*----------------------------------------------------------------
+Pagination section
+----------------------------------------------------------------*/
+
+.s-pagination {
+	margin: 50px 0 0;
+}
+.pagination ul {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.pagination--right ul {
+	justify-content: flex-end;
+}
+.pagination--right .pagination__item {
+	margin: 0 0 0 40px;
+}
+.pagination__item {
+	margin: 3px 40px 3px 0;
+	color: #000;
+	font-size: 16px;
+	line-height: 44px;
+	font-weight: 600;
+}
+.pagination__item--active {
+	border-color: #c4c4c4;
+	color: #c4c4c4;
+	font-weight: 600;
+}
+.pagination__prev,
+.pagination__next,
+.pagination__link {
+	display: block;
+	width: 48px;
+	height: 48px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	border-radius: 50%;
+	text-align: center;
+}
+.pagination__prev,
+.pagination__next {
+	position: relative;
+	border: 2px solid #c4c4c4;
+}
+.pagination__prev {
+
+}
+.pagination__next {
+
+}
+.pagination__prev:before,
+.pagination__next:before {
+	position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    width: 40px;
+    height: 40px;
+    background-size: 40px;
+    -webkit-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.pagination__prev:before {
+	margin-left: 1px;
+    background: url(../images/i/i-arrowl-md-grey.svg) center no-repeat;
+}
+.pagination__next:before {
+	margin-left: 1px;
+    background: url(../images/i/i-arrowl-md-grey.svg) center no-repeat;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.pagination__next:hover,
+.pagination__prev:hover {
+	border-color: #ffcf02;
+	background: #ffcf02;
+}
+.pagination__prev:hover:before {
+	background: url(../images/i/i-arrowl-md-black.svg) center no-repeat;
+}
+.pagination__next:hover:before {
+	background: url(../images/i/i-arrowl-md-black.svg) center no-repeat;
+	-webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.pagination__prev--active,
+.pagination__next--active {
+
+}
+.pagination__link {
+	color: #000;
+	font-size: 16px;
+	line-height: 44px;
+	font-weight: 600;
+	border: 2px solid transparent;
+}
+.pagination__link:hover {
+	color: #ffcf02;
+}
+
+/*----------------------------------------------------------------
 Section interior row
 ----------------------------------------------------------------*/
 
@@ -5307,6 +5419,14 @@ Adaptive styles
 	}
 	.s-about-collection {
 		margin: 50px 0;
+	}
+	.pagination ul,
+	.pagination--right ul {
+		justify-content: center;
+	}
+	.pagination__item,
+	.pagination--right .pagination__item {
+		margin: 3px 5px;
 	}
 
 }
