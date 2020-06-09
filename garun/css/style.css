@@ -3009,7 +3009,7 @@ Single product top
 	background-size: 20px;
 }
 .sproduct-tabs {
-	margin: 60px 0 0;
+	margin: 80px 0 0;
 }
 .sproduct-tabs-nav {
 	border-bottom: 1px solid #ccc;
@@ -5427,6 +5427,9 @@ Adaptive styles
 	.pagination__item,
 	.pagination--right .pagination__item {
 		margin: 3px 5px;
+	}
+	.sproduct-tabs {
+		margin: 40px 0 0;
 	}
 
 }
