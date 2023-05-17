@@ -1,0 +1,541 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>SPbgu index</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+<div class="adaptive-menu-container">
+	<nav class="adaptive-nav">
+		<ul>
+			<li class="adaptive-nav__item"><a href="#" class="adaptive-nav__link adaptive-nav__link--active">Главная</a></li>
+			<li class="adaptive-nav__item"><a href="#" class="adaptive-nav__link">Программы обучения</a></li>
+			<li class="adaptive-nav__item"><a href="#" class="adaptive-nav__link">Записаться на ТРКИ</a></li>
+			<li class="adaptive-nav__item"><a href="#" class="adaptive-nav__link">Онлайн тест</a></li>
+			<li class="adaptive-nav__item"><a href="#" class="adaptive-nav__link">Об инситуте</a></li>
+			<li class="adaptive-nav__item"><a href="#" class="adaptive-nav__link">Контакты</a></li>
+		</ul>
+	</nav>
+	<div class="adaptive-auth">
+		<div class="header-auth">
+			<div class="header-auth__ico"></div>
+			<div class="header-auth__content">
+				<div class="header-auth__points">0 баллов</div>
+				<div class="header-auth__links">
+					<a href="#callback-modal" class="header-auth__link" data-fancybox-modal>Войти</a>
+					<a href="#callback-modal" class="header-auth__link" data-fancybox-modal>Регистрация</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="adaptive-langs">
+		<nav class="langs-nav">
+			<ul>
+				<li class="langs-nav__item">
+					<a href="#" class="langs-nav__link langs-nav__link--active">
+						<span class="langs-nav__ico"><img src="images/i/i-ru.svg" alt="ru"></span>
+						<span class="langs-nav__name">ru</span>
+					</a>
+				</li>
+				<li class="langs-nav__item">
+					<a href="#" class="langs-nav__link">
+						<span class="langs-nav__ico"><img src="images/i/i-en.svg" alt="en"></span>
+						<span class="langs-nav__name">en</span>
+					</a>
+				</li>
+				<li class="langs-nav__item">
+					<a href="#" class="langs-nav__link">
+						<span class="langs-nav__ico"><img src="images/i/i-ch.svg" alt="ch"></span>
+						<span class="langs-nav__name">ch</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</div>
+
+
+<header class="header">
+	<div class="header__top">
+		<div class="wrapper">
+			<div class="header__inner">
+				<div class="header__hamburger">
+					<button type="button" class="adaptive-menu-toggle">
+						<span class="menu-toggle-inner">
+							<span class="menu-toggle-line menu-toggle-line--1"></span>
+							<span class="menu-toggle-line menu-toggle-line--2"></span>
+							<span class="menu-toggle-line menu-toggle-line--3"></span>
+							<span class="menu-toggle-line menu-toggle-line--4"></span>
+							<span class="menu-toggle-line menu-toggle-line--5"></span>
+						</span>
+					</button>
+				</div>
+				<div class="header__logo">
+					<a href="#" class="logo-box">
+						<span class="logo-box__ico"><img src="images/logo.png" alt="logo"></span>
+						<span class="logo-box__content">
+							<span class="logo-box__descriptor">Центр языковых практик СПбГУ</span>
+							<span class="logo-box__site">www.sitename.com</span>
+						</span>
+					</a>
+				</div>
+				<div class="header__langs">
+					<nav class="langs-nav">
+						<ul>
+							<li class="langs-nav__item">
+								<a href="#" class="langs-nav__link langs-nav__link--active">
+									<span class="langs-nav__ico"><img src="images/i/i-ru.svg" alt="ru"></span>
+									<span class="langs-nav__name">ru</span>
+								</a>
+							</li>
+							<li class="langs-nav__item">
+								<a href="#" class="langs-nav__link">
+									<span class="langs-nav__ico"><img src="images/i/i-en.svg" alt="en"></span>
+									<span class="langs-nav__name">en</span>
+								</a>
+							</li>
+							<li class="langs-nav__item">
+								<a href="#" class="langs-nav__link">
+									<span class="langs-nav__ico"><img src="images/i/i-ch.svg" alt="ch"></span>
+									<span class="langs-nav__name">ch</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="header__actions">
+					<a href="#" class="header-cart">
+						<span class="header-cart__ico"><span class="header-cart__count">4</span></span>
+						<span class="header-cart__title">Корзина</span>
+					</a>
+					<div class="header-auth">
+						<div class="header-auth__ico"></div>
+						<div class="header-auth__content">
+							<div class="header-auth__points">0 баллов</div>
+							<div class="header-auth__links">
+								<a href="#callback-modal" class="header-auth__link" data-fancybox-modal>Войти</a>
+								<a href="#callback-modal" class="header-auth__link" data-fancybox-modal>Регистрация</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div class="header__bottom">
+		<div class="wrapper">
+			<nav class="header-nav">
+				<ul>
+					<li class="header-nav__item"><a href="#" class="header-nav__link header-nav__link--active">Главная</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">Программы обучения</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">Записаться на ТРКИ</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">Онлайн тест</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">Об инситуте</a></li>
+					<li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+
+
+<div class="hero">
+	<div class="wrapper">
+		<div class="hero-slider">
+			<div class="hero-slider__item" style="background-image: url(images/content/slider-img-1.jpg);">
+				<div class="hero-slider__content">
+					<div class="hero-slider__title">Уроки и материалы по русскому языку от практиков СПбГУ</div>
+					<div class="hero-slider__more">
+						<a href="#" class="hero-slider__btn">Начать обучение</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-slider__item" style="background-image: url(images/content/slider-img-1.jpg);">
+				<div class="hero-slider__content">
+					<div class="hero-slider__title">Уроки и материалы по русскому языку</div>
+					<div class="hero-slider__more">
+						<a href="#" class="hero-slider__btn">Начать обучение</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-slider__item" style="background-image: url(images/content/slider-img-1.jpg);">
+				<div class="hero-slider__content">
+					<div class="hero-slider__title">Уроки и материалы по русскому языку от практиков СПбГУ</div>
+					<div class="hero-slider__more">
+						<a href="#" class="hero-slider__btn">Начать обучение</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="s-tests">
+	<div class="wrapper">
+		<div class="tests-grid">
+			<div class="tests-grid__row">
+				<div class="tests-grid__col">
+					<div class="test-card test-card--blue">
+						<a href="#" class="test-card__link"></a>
+						<div class="test-card__inner">
+							<div class="test-card__ico"><img src="images/content/i-test-trki.svg" alt="ico"></div>
+							<div class="test-card__content">
+								<div class="test-card__name">Пройти тест ТРКИ</div>
+								<div class="test-card__go">Пройти тест</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="tests-grid__col">
+					<div class="test-card test-card--green">
+						<a href="#" class="test-card__link"></a>
+						<div class="test-card__inner">
+							<div class="test-card__ico"><img src="images/content/i-test-language.svg" alt="ico"></div>
+							<div class="test-card__content">
+								<div class="test-card__name">Тест на владение языком</div>
+								<div class="test-card__go">Пройти тест</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="s-programs">
+	<div class="wrapper">
+		<div class="s-head">
+			<h2 class="s-head__title">Учебные программы</h2>
+			<a href="#" class="s-head__btn">Показать все</a>
+		</div>
+
+		<div class="programs-grid">
+			<div class="programs-grid__row">
+				<div class="programs-grid__col">
+					<article class="program-card">
+						<a href="#" class="program-card__link"></a>
+						<div class="program-card__side">
+							<div class="program-card__count">6</div>
+						</div>
+						<div class="program-card__content">
+							<h3 class="program-card__title">Диагностический тест</h3>
+							<div class="program-card__excerpt">Прохождение диагностического теста для определения уровня владения русским языком</div>
+							<div class="program-card__more">Узнать больше</div>
+						</div>
+					</article>
+				</div>
+				<div class="programs-grid__col">
+					<article class="program-card">
+						<a href="#" class="program-card__link"></a>
+						<div class="program-card__side">
+							<div class="program-card__count">6</div>
+						</div>
+						<div class="program-card__content">
+							<h3 class="program-card__title">Записаться на прохождение ТРКИ</h3>
+							<div class="program-card__more">Узнать больше</div>
+						</div>
+					</article>
+				</div>
+				<div class="programs-grid__col">
+					<article class="program-card">
+						<a href="#" class="program-card__link"></a>
+						<div class="program-card__side">
+							<div class="program-card__count">6</div>
+						</div>
+						<div class="program-card__content">
+							<h3 class="program-card__title">Консультация по прохождению ТРКИ</h3>
+							<div class="program-card__more">Узнать больше</div>
+						</div>
+					</article>
+				</div>
+				<div class="programs-grid__col">
+					<article class="program-card">
+						<a href="#" class="program-card__link"></a>
+						<div class="program-card__side">
+							<div class="program-card__count">4</div>
+						</div>
+						<div class="program-card__content">
+							<h3 class="program-card__title">Разговорная практика</h3>
+							<div class="program-card__more">Узнать больше</div>
+						</div>
+					</article>
+				</div>
+				<div class="programs-grid__col">
+					<article class="program-card">
+						<a href="#" class="program-card__link"></a>
+						<div class="program-card__side">
+							<div class="program-card__count">5</div>
+						</div>
+						<div class="program-card__content">
+							<h3 class="program-card__title">Подготовка к субтесту  “Говорение”</h3>
+							<div class="program-card__excerpt">Прохождение пробного субтеста со специалистом</div>
+							<div class="program-card__more">Узнать больше</div>
+						</div>
+					</article>
+				</div>
+				<div class="programs-grid__col">
+					<article class="program-card">
+						<a href="#" class="program-card__link"></a>
+						<div class="program-card__side">
+							<div class="program-card__count">6</div>
+						</div>
+						<div class="program-card__content">
+							<h3 class="program-card__title">Разговорный клуб</h3>
+							<div class="program-card__more">Узнать больше</div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="s-courses">
+	<div class="wrapper">
+		<div class="s-head">
+			<h2 class="s-head__title">Рекомендуем</h2>
+			<a href="#" class="s-head__btn">Показать все</a>
+		</div>
+
+		<div class="courses-grid">
+			<div class="courses-grid__row">
+				<div class="courses-grid__col">
+					<article class="course-card">
+						<div class="course-card__figure"><a href="#"><img src="images/content/slider-img-1.jpg" alt="img"></a></div>
+						<div class="course-card__content">
+							<h3 class="course-card__title">
+								<a href="#" class="course-card__tlink">Пример названия курса на две строки для примера</a>
+							</h3>
+							<div class="course-card__date">24.05.2021</div>
+							<div class="course-card__more"><a href="#" class="course-card__mlink">Подробнее</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="courses-grid__col">
+					<article class="course-card">
+						<div class="course-card__figure"><a href="#"><img src="images/content/slider-img-1.jpg" alt="img"></a></div>
+						<div class="course-card__content">
+							<h3 class="course-card__title">
+								<a href="#" class="course-card__tlink">Пример названия курса на две строки для примера</a>
+							</h3>
+							<div class="course-card__date">24.05.2021</div>
+							<div class="course-card__more"><a href="#" class="course-card__mlink">Подробнее</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="courses-grid__col">
+					<article class="course-card">
+						<div class="course-card__figure"><a href="#"><img src="images/content/slider-img-1.jpg" alt="img"></a></div>
+						<div class="course-card__content">
+							<h3 class="course-card__title">
+								<a href="#" class="course-card__tlink">Пример названия курса на три строки для примера, заголовок</a>
+							</h3>
+							<div class="course-card__date">24.05.2021</div>
+							<div class="course-card__more"><a href="#" class="course-card__mlink">Подробнее</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="courses-grid__col">
+					<article class="course-card">
+						<div class="course-card__figure"><a href="#"><img src="images/content/slider-img-1.jpg" alt="img"></a></div>
+						<div class="course-card__content">
+							<h3 class="course-card__title">
+								<a href="#" class="course-card__tlink">Пример названия курса на две строки для примера</a>
+							</h3>
+							<div class="course-card__date">24.05.2021</div>
+							<div class="course-card__more"><a href="#" class="course-card__mlink">Подробнее</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="courses-grid__col">
+					<article class="course-card">
+						<div class="course-card__figure"><a href="#"><img src="images/content/slider-img-1.jpg" alt="img"></a></div>
+						<div class="course-card__content">
+							<h3 class="course-card__title">
+								<a href="#" class="course-card__tlink">Пример названия курса на две строки для примера</a>
+							</h3>
+							<div class="course-card__date">24.05.2021</div>
+							<div class="course-card__more"><a href="#" class="course-card__mlink">Подробнее</a></div>
+						</div>
+					</article>
+				</div>
+				<div class="courses-grid__col">
+					<article class="course-card">
+						<div class="course-card__figure"><a href="#"><img src="images/content/slider-img-1.jpg" alt="img"></a></div>
+						<div class="course-card__content">
+							<h3 class="course-card__title">
+								<a href="#" class="course-card__tlink">Пример названия курса на три строки для примера, заголовок</a>
+							</h3>
+							<div class="course-card__date">24.05.2021</div>
+							<div class="course-card__more"><a href="#" class="course-card__mlink">Подробнее</a></div>
+						</div>
+					</article>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="s-thinking">
+	<div class="wrapper">
+		<div class="b-thinking">
+			<div class="b-thinking__content">
+				<div class="b-thinking__title">Еще раздумываете?</div>
+				<div class="b-thinking__description">Зарегистрируйтесь и бесплатной пройдите <span>placement test</span> по русскому языку!</div>
+			</div>
+			<div class="b-thinking__formbox">
+				<form class="thinking-form">
+					<div class="thinking-form__group">
+						<label class="thinking-form__label">Введите ваше имя:</label>
+						<input type="text" class="thinking-form__input" placeholder="Например: Сергей">
+					</div>
+					<div class="thinking-form__group"></div>
+						<button type="submit" class="thinking-form__submit">Зарегистрироваться</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="s-blog">
+	<div class="wrapper">
+		<div class="s-head">
+			<h2 class="s-head__title">Новости и полезные статьи</h2>
+			<a href="#" class="s-head__btn">Показать все</a>
+		</div>
+		<div class="blog-grid">
+			<div class="blog-grid__row">
+				<div class="blog-grid__col">						
+					<div class="blog-card">
+						<h3 class="blog-card__title"><a href="#" class="blog-card__tlink">У нас появился новый дизайн сайта, теперь мы вышли на новый уровень, если текста на три строки и он не...</a></h3>
+						<div class="blog-card__excerpt">Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.</div>
+						<div class="blog-card__date">24.05.2021</div>
+					</div>
+				</div>
+				<div class="blog-grid__col">						
+					<div class="blog-card">
+						<h3 class="blog-card__title"><a href="#" class="blog-card__tlink">У нас появился новый дизайн сайта, теперь мы вышли на новый уровень, если текста на три строки и он не...</a></h3>
+						<div class="blog-card__excerpt">Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле. Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле.</div>
+						<div class="blog-card__date">24.05.2021</div>
+					</div>
+				</div>
+				<div class="blog-grid__col">						
+					<div class="blog-card">
+						<h3 class="blog-card__title"><a href="#" class="blog-card__tlink">У нас появился новый дизайн сайта, теперь мы вышли на новый уровень, если текста на три строки и он не...</a></h3>
+						<div class="blog-card__excerpt">Это тестовый контент, который не должен нести никакого смысла, лишь показать наличие самого текста или продемонстрировать типографику в деле. Это тестовый контент, который не должен нести никакого смысл.</div>
+						<div class="blog-card__date">24.05.2021</div>
+					</div>
+				</div>				
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="s-bpart">
+	<div class="wrapper">
+		<div class="b-bpart">
+			<div class="b-bpart__title">Стань частью СПбГУ!</div>
+			<div class="b-bpart-grid">
+				<div class="b-bpart-grid__row">
+					<div class="b-bpart-grid__col">
+						<div class="part-card part-card--green">
+							<a href="#" class="part-card__glink"></a>
+							<div class="part-card__ico"><img src="images/content/i-bpart-1.svg" alt="ico"></div>
+							<h3 class="part-card__title">Обучение в подготовительном отделении СПБГУ</h3>
+						</div>
+					</div>
+					<div class="b-bpart-grid__col">
+						<div class="part-card part-card--blue">
+							<a href="#" class="part-card__glink"></a>
+							<div class="part-card__ico"><img src="images/content/i-bpart-2.svg" alt="ico"></div>
+							<h3 class="part-card__title">Онлайн школа СПБГУ для иностранных школьников</h3>
+						</div>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>
+</div>
+
+
+<footer class="footer">
+	<div class="wrapper">
+		<div class="footer__row">
+			<a href="#" class="logo-box">
+				<span class="logo-box__ico"><img src="images/logo.png" alt="logo"></span>
+				<span class="logo-box__content">
+					<span class="logo-box__descriptor">Центр языковых практик СПбГУ</span>
+					<span class="logo-box__site">www.sitename.com</span>
+				</span>
+			</a>
+			<div class="footer__rating footer-rating">
+				<div class="footer-rating__title">Рейтинг: 4.9</div>
+				<div class="footer-rating__stars">
+					<span class="footer-rating__star"></span>
+					<span class="footer-rating__star"></span>
+					<span class="footer-rating__star"></span>
+					<span class="footer-rating__star"></span>
+					<span class="footer-rating__star"></span>
+				</div>
+			</div>
+			<div class="footer__right">
+				<nav class="footer-nav">
+					<ul>
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">Обратиться в поддержку</a></li>
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">Об институте</a></li>
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">О проекте</a></li>
+						<li class="footer-nav__item"><a href="#" class="footer-nav__link">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="footer__helpers">
+					<div class="footer__copyright">2016 - 2021 © Все права защищены.</div>
+					<div class="footer__policy"><a href="#" class="footer__policylink">Политика конфиденциальности</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<div id="callback-modal" class="modal modal-default">
+	<div class="modal-default__title">Заказать обратный звонок</div>
+	<form class="callback-form default-form">
+		<div class="default-form__group">
+			<input type="text" name="name" class="default-form__input" placeholder="Введите ваше имя">
+		</div>
+		<div class="default-form__group">
+			<input type="text" name="tel" class="default-form__input" placeholder="+7 ___ - ___ -__ - __">
+		</div>
+		<div class="default-form__group">
+			<input type="hidden" name="form_subject" value="Модальная форма - заказать обратный звонок">
+			<button type="submit" class="default-form__submit">Отправить</button>
+		</div>
+	</form>
+</div>
+
+
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
