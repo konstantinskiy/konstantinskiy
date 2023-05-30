@@ -13,14 +13,15 @@ $(document).ready(function() {
                        #40b008 0px 0px 55px,
                        #40b008 0px 0px 75px
                     `,
-        'size': 55,
+        'sizeCm': 20,
+        'sizeChars': 4,
         'textAlign': 'left'
     }
 
 
     // Change background
 
-    $('.js-neon-getbg').on('click', function(e) {
+    $('.js-neon-changebg').on('click', function(e) {
         e.preventDefault();
         const _this = $(this);
         if (_this.hasClass('neon-backgrounds__btn--active')) return;
@@ -34,12 +35,12 @@ $(document).ready(function() {
 
 
     
-    const characts = document.querySelectorAll('.neon-sidebox__btn[data-btn-type="size"]');
-    const charactsObj = [];
-    Array.from(characts).forEach(charact => {
-        charactsObj.push(charact.getAttribute('data-size-chars'));
-    });
-    console.log(charactsObj);
+    // const characts = document.querySelectorAll('.neon-sidebox__btn[data-btn-type="size"]');
+    // const charactsObj = [];
+    // Array.from(characts).forEach(charact => {
+    //     charactsObj.push(charact.getAttribute('data-size-chars'));
+    // });
+    // console.log(charactsObj);
 
     
 
@@ -47,14 +48,12 @@ $(document).ready(function() {
 
     $('.js-neon-textarea').on('input', function(e) {
         e.preventDefault();
+
         const value = $(this).val();
 
-        const sizeValue = $('.neon-sidebox__btn--active[data-btn-type="size"]').data('size');
+        setText(value);
+       
 
-        const lengthWithoutSpaces = value.replace(/\s/g, '').length;
-        console.log(lengthWithoutSpaces);
-
-        $('.js-neon-text').text(value);
     });
 
 
@@ -176,15 +175,56 @@ $(document).ready(function() {
     };
 
     const setSize = (sizeCm, sizeChars) => {
-        const price = 55;
-        const recalcPrice = price * sizeCm;
-        $('.js-neon-price').text(recalcPrice);
-
-
+        
         const sizeH = sizeCm * 0.75;
+        const neonText = $('.js-neon-text').text();
+        
         $('.neon-container-text__lineleft span').text(sizeH + 'cm');
         $('.neon-container-text__linebottom span').text(sizeCm + 'cm');
+
+        setText(neonText);
     };
+
+
+    const setText = (text) => {
+
+        const sizeBtn = $('.neon-sidebox__btn--active[data-btn-type="size"]');
+        const sizeBtnChars = sizeBtn.data('size-chars');
+        const neonTextNotSpaces = text.replace(/\s/g, '');
+        const processedString = splitStringByChunks(neonTextNotSpaces, sizeBtnChars);        
+
+        $('.js-neon-text').html(processedString);
+    }
+
+
+    const setCalculatedPrice = (price) => {
+        
+        const currentPrice = $('.js-neon-price').text();
+        const recalcPrice = Number(currentPrice) + Number(price);
+        $('.js-neon-price').text(recalcPrice);
+
+    }
+
+
+    const splitStringByChunks = (str, chunk) => {
+        
+        let returnString = '';
+        const countLoops = Math.ceil(str.length / chunk);
+
+        for (var i = 0; i < countLoops; i++) {
+            let countStart = chunk * i;
+            let countEnd = countStart + chunk;
+
+            let substringData = str.substring(countStart, countEnd)  + '<br>';
+            if(substringData.length < chunk) {
+                substringData = str.substring(countStart, countEnd);//.replace('<br>', '');
+            }
+            returnString += substringData;
+        }
+
+        return returnString; 
+    }
+
 
     const setBackboardColor = (backboardcolor) => {
         console.log(backboardcolor);
@@ -199,9 +239,8 @@ $(document).ready(function() {
     };
 
     const setDimmer = (img, price) => {
-        const currentPrice = $('.js-neon-price').text();
-        const recalcPrice = Number(currentPrice) + Number(price);
-        $('.js-neon-price').text(recalcPrice);
+        
+        setCalculatedPrice(price);
         console.log(img);
     };
     
@@ -264,7 +303,7 @@ $(document).ready(function() {
         setFont(defaultsNeon.fontFamily);
         setTextAlign(defaultsNeon.textAlign);
         setNeon(defaultsNeon.textShadow);
-        setSize(defaultsNeon.size);
+        setSize(defaultsNeon.sizeCm, defaultsNeon.sizeChars);
     }
 
     initNeon();
