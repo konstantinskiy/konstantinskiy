@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    
+
     // Default for init
 
     const defaultsNeon = {
@@ -16,7 +16,7 @@ $(document).ready(function() {
         'sizeCm': 20,
         'sizeChars': 4,
         'textAlign': 'left'
-    }
+    };
 
 
     // Change background
@@ -35,26 +35,80 @@ $(document).ready(function() {
 
 
     
-    // const characts = document.querySelectorAll('.neon-sidebox__btn[data-btn-type="size"]');
-    // const charactsObj = [];
-    // Array.from(characts).forEach(charact => {
-    //     charactsObj.push(charact.getAttribute('data-size-chars'));
-    // });
-    // console.log(charactsObj);
-
-    
-
     // Change textarea value
 
     $('.js-neon-textarea').on('input', function(e) {
         e.preventDefault();
 
         const value = $(this).val();
-
+        const valueLength = value.length;
         setText(value);
-       
 
+        const btnSize = '.neon-sidebox__btn[data-btn-type="size"]';
+        const arrDOM = getArrFromDOM(btnSize);
+        
+        const closestBtnValue = getClosestArrValue(arrDOM, valueLength);
+
+        setActiveToSizeBtn(closestBtnValue);
+
+        // const processText = throttle(doText, 200);
+        // processText(value);
     });
+
+
+    // function doText(value) {
+    //     const valueLength = value.length;
+    //     setText(value);
+
+    //     const btnSize = '.neon-sidebox__btn[data-btn-type="size"]';
+    //     const arrDOM = getArrFromDOM(btnSize);
+        
+    //     const closestBtnValue = getClosestArrValue(arrDOM, valueLength);
+
+    //     setActiveToSizeBtn(closestBtnValue);
+    // }
+
+
+    // function throttle(callback, timeout) {
+    //     let timer = null
+    //     return function (...args) {
+
+    //         if (timer) return;
+
+    //         timer = setTimeout(() => {
+    //             callback(...args)
+
+    //             clearTimeout(timer)
+    //             timer = null
+    //         }, timeout)
+    //     }
+    // }
+
+    const getArrFromDOM = (selector) => {
+        const characts = document.querySelectorAll(selector);
+        const charactsArr = [];
+        Array.from(characts).forEach(charact => {
+            charactsArr.push(charact.getAttribute('data-size-chars'));
+        });
+
+        return charactsArr;
+    };
+
+
+    const getClosestArrValue = (arr, number) => {
+        const diffArr = arr.map(a => Math.abs(number - a));
+        const minNumber = Math.min(...diffArr);
+        const index = diffArr.findIndex(x => x === minNumber);
+        const arrValue = arr[index];
+
+        return arrValue;
+    };
+
+
+    const setActiveToSizeBtn = (value) => {
+        $('.neon-sidebox__btn--active[data-btn-type="size"]').removeClass('neon-sidebox__btn--active');
+        $(`.neon-sidebox__btn[data-btn-type="size"][data-size-chars="${value}"]`).addClass('neon-sidebox__btn--active');
+    };
 
 
     // Buttons
@@ -187,13 +241,14 @@ $(document).ready(function() {
 
 
     const setText = (text) => {
-
-        const sizeBtn = $('.neon-sidebox__btn--active[data-btn-type="size"]');
-        const sizeBtnChars = sizeBtn.data('size-chars');
-        const neonTextNotSpaces = text.replace(/\s/g, '');
-        const processedString = splitStringByChunks(neonTextNotSpaces, sizeBtnChars);        
-
-        $('.js-neon-text').html(processedString);
+        setTimeout(() => {
+            const sizeBtn = $('.neon-sidebox__btn--active[data-btn-type="size"]');
+            const sizeBtnChars = sizeBtn.data('size-chars');
+            const textNotSpaces = text.replace(/\s/g, '');
+            const processedString = splitStringByChunks(textNotSpaces, sizeBtnChars);        
+    
+            $('.js-neon-text').html(processedString);
+        }, 100);
     }
 
 
@@ -215,10 +270,11 @@ $(document).ready(function() {
             let countStart = chunk * i;
             let countEnd = countStart + chunk;
 
-            let substringData = str.substring(countStart, countEnd)  + '<br>';
-            if(substringData.length < chunk) {
-                substringData = str.substring(countStart, countEnd);//.replace('<br>', '');
+            let substringData = str.substring(countStart, countEnd);
+            if (substringData.length % chunk === 0) {
+                substringData += '<br>';
             }
+
             returnString += substringData;
         }
 
