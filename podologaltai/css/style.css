@@ -690,9 +690,9 @@ Order section
 ----------------------------------------------------------------*/
 
 .s-order {
-	background: url(../images/content/order-bg.jpg) right bottom no-repeat;
+	background: url(../images/content/order-bg.jpg) right top no-repeat;
 	background-size: cover;
-	height: 700px;
+	height: 800px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -774,11 +774,11 @@ Contacts section
 ----------------------------------------------------------------*/
 
 .s-contacts {
-	padding: 50px 0;
+	padding: 60px 0;
 }
 .b-contact {
 	height: 480px;
-	margin: 0 0 30px;
+	margin: 0 0 40px;
 	display: flex;
 }
 .b-contact:last-child {
@@ -828,7 +828,6 @@ Contacts section
 }
 
 
-
 /*----------------------------------------------------------------
 Footer
 ----------------------------------------------------------------*/
@@ -840,21 +839,33 @@ Footer
 	font-size: 14px;
 	text-align: center;
 }
-.footer__inner {
+.footer-nav {
+	margin: 0 0 15px;
+}
+.footer-nav ul {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
-.footer-nav__item {
-	margin: 0 0 20px;
+.footer-nav li {
+	margin: 10px 0;
 }
-.footer-nav__item:last-child {
-	margin: 0;
-}
-.footer-nav__link {
+.footer-nav li,
+.footer-nav a {
 	color: #fff;
+	font-size: 13px;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.footer-nav a {
+	font-family: 'RobotoBold', sans-serif;
 }
 .footer-nav a:hover {
-	color: #076442;
+	color: #65B65C;
+}
+.footer_copyright {
+	font-family: 'RobotoLight', sans-serif;
+	font-size: 12px;
 }
 
 
