@@ -1,6 +1,6 @@
-$(document).ready(function() {
+(function() {
 
-
+    
     // Default for init
 
     const defaultsNeon = {
@@ -18,27 +18,38 @@ $(document).ready(function() {
     };
 
 
+    const jsNeonText = document.querySelector('.js-neon-text');
+    const jsNeonTextarea = document.querySelector('.js-neon-textarea');
+    const jsNeonBtn = document.querySelectorAll('.js-neon-btn');
+    const jsNeonChangebg = document.querySelectorAll('.js-neon-changebg');
+    const jsNeonBg = document.querySelector('.js-neon-bg');
+    const jsNeonNumberboxInput = document.querySelector('.js-neon-numberbox-input');
+    const jsNeonNumberboxBtn = document.querySelector('.js-neon-numberbox-btn');
+    const jsNeonPrice = document.querySelector('.js-neon-price');
+    const fileInput = document.querySelector('.js-neon-input-attachment');
+
+
     // Change background
 
-    $('.js-neon-changebg').on('click', function(e) {
-        e.preventDefault();
-        const _this = $(this);
-        if (_this.hasClass('neon-backgrounds__btn--active')) return;
+    jsNeonChangebg.forEach(function(btnChangeBg) {
+        btnChangeBg.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (btnChangeBg.classList.contains('neon-backgrounds__btn--active')) return;
 
-        _this.closest('.neon-backgrounds').find('.neon-backgrounds__btn--active').removeClass('neon-backgrounds__btn--active');
-        _this.addClass('neon-backgrounds__btn--active');
+            btnChangeBg.closest('.neon-backgrounds').querySelector('.neon-backgrounds__btn--active').classList.remove('neon-backgrounds__btn--active');
+            btnChangeBg.classList.add('neon-backgrounds__btn--active');
 
-        const background = _this.data('background');
-        $('.js-neon-bg').css('background-image', `url(${background})`);
+            const background = btnChangeBg.dataset.background;
+            jsNeonBg.style.backgroundImage = `url(${background})`;
+        });
     });
-    
+
 
     // Change textarea value
 
-    $('.js-neon-textarea').on('input', function(e) {
+    jsNeonTextarea.addEventListener('input', function(e) {
         
-        let text = $(this).val();
-        text = text.replaceAll('<br><br>', '<br>');
+        let text = this.value.replaceAll('<br><br>', '<br>');
         const matches = text.match(/\n/g);
         let resLines = (matches) ? text.match(/\n/g).length : 0;
         if (text.length) {
@@ -53,8 +64,8 @@ $(document).ready(function() {
             const valueArrMaxString = getMaxLineLength(valueArrBr);
 
             const stringLength = text.length;
-            const letterHeight = $('.js-neon-numberbox-input').val();
-            const letterRatio = $('.neon-sidebox__btn--active[data-btn-type="font"]').data('font-height-ratio');
+            const letterHeight = jsNeonNumberboxInput.value;
+            const letterRatio = document.querySelector('.neon-sidebox__btn--active[data-btn-type="font"]').dataset.fontHeightRatio;
             
             let returnText = '';
             let linesCount = 0;
@@ -66,7 +77,7 @@ $(document).ready(function() {
             returnText = returnText.replaceAll('<br><br>', '<br>');
             returnText = returnText.substring(0, returnText.length - 4);
 
-            $('.js-neon-text').html(nl2br(returnText));
+            jsNeonText.innerHTML = nl2br(returnText); // jsNeonText.html(nl2br(returnText));
             calculateSizesRules(text, letterHeight, letterRatio, linesCount);
             calculateTotalPrice(stringLength, linesCount);
             calculateSizesRules(valueArrMaxString, letterHeight, letterRatio, linesCount, true);
@@ -95,110 +106,130 @@ $(document).ready(function() {
 
     // Buttons
 
-    $('.js-neon-btn').on('click', function(e) {
-        e.preventDefault();
+    jsNeonChangebg.forEach(function(btnChangeBg) {
+        btnChangeBg.addEventListener('click', function(e) {
+            e.preventDefault();
+            if (btnChangeBg.classList.contains('neon-backgrounds__btn--active')) return;
 
-        const _this = $(this);
-        if (_this.hasClass('neon-sidebox__btn--active')) return;
+            btnChangeBg.closest('.neon-backgrounds').querySelector('.neon-backgrounds__btn--active').classList.remove('neon-backgrounds__btn--active');
+            btnChangeBg.classList.add('neon-backgrounds__btn--active');
 
-        _this.closest('.neon-sidebox').find('.neon-sidebox__btn--active').removeClass('neon-sidebox__btn--active');
-        _this.addClass('neon-sidebox__btn--active');
-
-        const buttonType = _this.data('btn-type');
-        switch (buttonType) {
-            case 'font':
-                const font = _this.data('font');
-
-                setFont(font);
-            break;
-
-            case 'color':
-                const colorHex = _this.data('color-value');
-                const colorName = _this.data('color-name');
-                const textShadow = `
-                    #fff 0px 0px 5px,
-                    #fff 0px 0px 10px,
-                    #${colorHex} 0px 0px 20px,
-                    #${colorHex} 0px 0px 30px,
-                    #${colorHex} 0px 0px 40px,
-                    #${colorHex} 0px 0px 55px,
-                    #${colorHex} 0px 0px 75px
-                `;
-
-                setNeon(textShadow);
-                $('.js-color-name').text(colorName);
-                break;
-
-            case 'textAlign':
-                const textAlign = _this.data('text-align');
-
-                setTextAlign(textAlign);
-                break;
-
-            case 'backboardcolor':
-                const backboardcolorName = _this.data('backboardcolor-name');
-                const backboardcolorImg = _this.data('backboardcolor-img');
-
-                setBackboardColor(backboardcolorImg);
-                $('.js-backboardcolor-name').text(backboardcolorName);
-                break;
-
-            case 'mountingtype':
-                const mountingtypeName = _this.data('mountingtype-name');
-                const mountingtypeImg = _this.data('mountingtype-img');
-
-                setMountingType(mountingtypeImg);
-                $('.js-mountingtype-name').text(mountingtypeName);
-                break;
-
-            case 'connectiontype':
-                const connectiontypeName = _this.data('connectiontype-name');
-                const connectiontypeImg = _this.data('connectiontype-img');
-
-                setConnectionType(connectiontypeImg);
-                $('.js-connectiontype-name').text(connectiontypeName);
-                break;
-                
-            case 'dimmer':
-                const dimmerName = _this.data('dimmer-name');
-                const dimmerImg = _this.data('dimmer-img');
-                const dimmerPrice = _this.data('dimmer-price');
-
-                setDimmer(dimmerImg, dimmerPrice);
-                $('.js-dimmer-name').text(dimmerName);
-                break;
-
-            default:
-                break;
-        }
-
+            const background = btnChangeBg.dataset.background;
+            jsNeonBg.style.backgroundImage = `url(${background})`;
+        });
     });
 
 
-    $('.js-neon-numberbox-btn').on('click', function(e) {
-        e.preventDefault();
-        const neonNumberboxInput = $(this).parents('.neon-numbersbox').find('.js-neon-numberbox-input');
-        let neonNumberboxInputValue = neonNumberboxInput.val();
+    // Click button
 
-        if ( $(this).hasClass('neon-numbersbox__button--minus') ) {
+    jsNeonBtn.forEach(function(neonButton) {
+        neonButton.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            if (this.classList.contains('neon-sidebox__btn--active')) return;
+
+            console.log(this);
+
+            this.closest('.neon-sidebox').querySelector('.neon-sidebox__btn--active').classList.remove('neon-sidebox__btn--active');
+            this.classList.add('neon-sidebox__btn--active');
+
+            const buttonType = this.dataset.btnType;
+            switch (buttonType) {
+                case 'font':
+                    const font = this.dataset.font;
+                    console.log(font);
+
+                    setFont(font);
+                break;
+
+                case 'color':
+                    const colorHex = this.dataset.colorValue;
+                    const colorName = this.dataset.colorName;
+                    const textShadow = `
+                        #fff 0px 0px 5px,
+                        #fff 0px 0px 10px,
+                        #${colorHex} 0px 0px 20px,
+                        #${colorHex} 0px 0px 30px,
+                        #${colorHex} 0px 0px 40px,
+                        #${colorHex} 0px 0px 55px,
+                        #${colorHex} 0px 0px 75px
+                    `;
+
+                    setNeon(textShadow);
+                    document.querySelector('.js-color-name').innerHTML = colorName;
+                    break;
+
+                case 'textAlign':
+                    const textAlign = this.dataset.textAlign;
+
+                    setTextAlign(textAlign);
+                    break;
+
+                case 'backboardcolor':
+                    const backboardcolorName = this.dataset.backboardcolorName;
+                    const backboardcolorImg = this.dataset.backboardcolorImg;
+
+                    setBackboardColor(backboardcolorImg);
+                    document.querySelector('.js-backboardcolor-name').innerHTML = backboardcolorName;
+                    break;
+
+                case 'mountingtype':
+                    const mountingtypeName = this.dataset.mountingtypeName;
+                    const mountingtypeImg = this.dataset.mountingtypeImg;
+
+                    setMountingType(mountingtypeImg);
+                    document.querySelector('.js-mountingtype-name').innerHTML = mountingtypeName;
+                    break;
+
+                case 'connectiontype':
+                    const connectiontypeName = this.dataset.connectiontypeName;
+                    const connectiontypeImg = this.dataset.connectiontypeImg;
+
+                    setConnectionType(connectiontypeImg);
+                    document.querySelector('.js-connectiontype-name').innerHTML = connectiontypeName;
+                    break;
+                    
+                case 'dimmer':
+                    const dimmerName = this.dataset.dimmerName;
+                    const dimmerImg = this.dataset.dimmerImg;
+                    const dimmerPrice = this.dataset.dimmerPrice;
+
+                    setDimmer(dimmerImg, dimmerPrice);
+                    document.querySelector('.js-dimmer-name').innerHTML = dimmerName;
+                    break;
+
+                default:
+                    break;
+            }
+        });
+    });
+
+
+    jsNeonNumberboxBtn.addEventListener('click', function(e) {
+        e.preventDefault();
+
+        const neonNumberboxInput = this.closest('.neon-numbersbox').querySelector('.js-neon-numberbox-input');
+        let neonNumberboxInputValue = neonNumberboxInput.value;
+
+        if ( this.classList.contains('neon-numbersbox__button--minus') ) {
             if (neonNumberboxInputValue <= 10) return;
-            neonNumberboxInput.val(parseInt(neonNumberboxInputValue) - 1);
+            neonNumberboxInput.value = parseInt(neonNumberboxInputValue) - 1;
             setFontSizeRatio('minus');
         } else {
             if (neonNumberboxInputValue >= 30) return;
-            neonNumberboxInput.val(parseInt(neonNumberboxInputValue) + 1);
+            neonNumberboxInput.value = parseInt(neonNumberboxInputValue) + 1;
             setFontSizeRatio('plus');
         }
 
 
-        const text = $('.js-neon-text').text();
+        const text = jsNeonText.textContent;
         const stringLength = text.length;
-        const letterHeight = $('.js-neon-numberbox-input').val();
-        const letterRatio = $('.neon-sidebox__btn--active[data-btn-type="font"]').data('font-height-ratio');
+        const letterHeight = jsNeonNumberboxInput.value;
+        const letterRatio = document.querySelector('.neon-sidebox__btn--active[data-btn-type="font"]').dataset.fontHeightRatio;
         const stringAfterSplitting = splitStringByChunks(text, letterHeight, letterRatio);
         const linesCount = stringAfterSplitting.countLoops;
 
-        $('.js-neon-text').html(nl2br(stringAfterSplitting.finalString));
+        jsNeonText.innerHTML = nl2br(stringAfterSplitting.finalString);
 
         calculateSizesRules(text, letterHeight, letterRatio, linesCount);
         calculateTotalPrice(stringLength, stringAfterSplitting.countLoops);
@@ -223,15 +254,15 @@ $(document).ready(function() {
     // Options setters
 
     const setFont = (font) => {
-        $('.js-neon-text').css('font-family', font);
+        jsNeonText.style.fontFamily = font;
     };
 
     const setTextAlign = (position) => {
-        $('.js-neon-text').css('text-align', position);
+        jsNeonText.style.textAlign = position;
     };
 
     const setNeon = (textShadow) => {
-        $('.js-neon-text').css('text-shadow', textShadow);
+        jsNeonText.style.textShadow = textShadow;
     };
 
 
@@ -239,13 +270,13 @@ $(document).ready(function() {
         setTimeout(() => {
 
             const stringLength = text.length;
-            const letterHeight = $('.js-neon-numberbox-input').val();
-            const letterRatio = $('.neon-sidebox__btn--active[data-btn-type="font"]').data('font-height-ratio');
+            const letterHeight = jsNeonNumberboxInput.value;
+            const letterRatio = document.querySelector('.neon-sidebox__btn--active[data-btn-type="font"]').dataset.fontHeightRatio;
             
             const stringAfterSplitting = splitStringByChunks(text, letterHeight, letterRatio);
             const linesCount = stringAfterSplitting.countLoops;
             
-            $('.js-neon-text').html(nl2br(stringAfterSplitting.finalString));
+            jsNeonText.innerHTML = nl2br(stringAfterSplitting.finalString);
             calculateSizesRules(text, letterHeight, letterRatio, linesCount);
             calculateTotalPrice(stringLength, linesCount);
 
@@ -263,9 +294,9 @@ $(document).ready(function() {
         const ruleWidth = (stringLength * letterWidth >= 200) ? 200 : stringLength * letterWidth;
 
         if (!isOneLine) {
-            $('.neon-container-text__lineleft span').text(letterHeight + 'cm');
+            document.querySelector('.neon-container-text__lineleft span').textContent = letterHeight + 'cm';
         }
-        $('.neon-container-text__linebottom span').text(ruleWidth + 'cm');
+        document.querySelector('.neon-container-text__linebottom span').textContent = ruleWidth + 'cm';
     };
     
     
@@ -280,34 +311,34 @@ $(document).ready(function() {
         // Второй это при инкременте высоты буквы на 1см, на него умножаем
         // типо считаем для базовой высоты , а далее каждый инкремент на 1с высоты - это будет умножении цены на кожфф
 
-        const neonValue = $('.neon-sidebox__btn--active[data-btn-type="font"]').data('font-neon-value');
-        const fontRatio1 = $('.neon-sidebox__btn--active[data-btn-type="font"]').data('font-ratio1');
-        const fontRatio2 = $('.neon-sidebox__btn--active[data-btn-type="font"]').data('font-ratio2');
-        const fontSpr = $('.neon-sidebox__btn[data-btn-type="font"]').data('font-spr');
-        const fontSfig = $('.neon-sidebox__btn[data-btn-type="font"]').data('font-sfig');
-        const fontSprOrSfig = $('.neon-sidebox__btn[data-btn-typebg-name="shape"]').hasClass('neon-sidebox__btn--active') ? fontSfig : fontSpr;
+        const neonValue = document.querySelector('.neon-sidebox__btn--active[data-btn-type="font"]').dataset.fontNeonValue;
+        const fontRatio1 = document.querySelector('.neon-sidebox__btn--active[data-btn-type="font"]').dataset.fontRatio1;
+        const fontRatio2 = document.querySelector('.neon-sidebox__btn--active[data-btn-type="font"]').dataset.fontRatio2;
+        const fontSpr = document.querySelector('.neon-sidebox__btn[data-btn-type="font"]').dataset.fontSpr;
+        const fontSfig = document.querySelector('.neon-sidebox__btn[data-btn-type="font"]').dataset.fontSfig;
+        const fontSprOrSfig = document.querySelector('.neon-sidebox__btn[data-btn-typebg-name="shape"]').classList.contains('neon-sidebox__btn--active') ? fontSfig : fontSpr;
 
-        const fontRezNum = $('.neon-sidebox__btn--active[data-btn-type="font"]').data('font-reznum');
-        const fontRezCost = $('.neon-sidebox__btn--active[data-btn-type="font"]').data('font-rezcost');
+        const fontRezNum = document.querySelector('.neon-sidebox__btn--active[data-btn-type="font"]').dataset.fontReznum;
+        const fontRezCost = document.querySelector('.neon-sidebox__btn--active[data-btn-type="font"]').dataset.fontRezcost;
 
-        const fontLinesCountRatio = $('.neon-sidebox__btn--active[data-btn-type="font"]').data('font-linescount-ratio');
+        const fontLinesCountRatio = document.querySelector('.neon-sidebox__btn--active[data-btn-type="font"]').dataset.fontLinescountRatio;
         const linesCountRatioResult = Math.ceil(linesCount * fontLinesCountRatio);
 
-        const fontHeight1cmRatio = $('.neon-sidebox__btn--active[data-btn-type="font"]').data('font-height-ratio');
-        const fontHeightValue = $('.js-neon-numberbox-input').val();
+        const fontHeight1cmRatio = document.querySelector('.neon-sidebox__btn--active[data-btn-type="font"]').dataset.fontHeightRatio;
+        const fontHeightValue = jsNeonNumberboxInput.value;
         const fontHeightRatioPrice = fontHeight1cmRatio * fontHeightValue;
     
         const totalPrice = Math.ceil(Math.ceil(neonValue * fontRatio1) + Math.ceil(fontSprOrSfig * lenght * fontRatio2) + Math.ceil(fontRezNum * lenght) * fontRezCost + linesCountRatioResult + fontHeightRatioPrice);
 
-        $('.js-neon-price').text(totalPrice);
+        jsNeonPrice.innerText = totalPrice;
     };
 
 
     const calculatePrice = (price) => {
 
-        const currentPrice = $('.js-neon-price').text();
+        const currentPrice = jsNeonPrice.innerText;
         const recalcPrice = Number(currentPrice) + Number(price);
-        $('.js-neon-price').text(recalcPrice);
+        jsNeonPrice.innerText = recalcPrice;
 
     };
 
@@ -358,28 +389,21 @@ $(document).ready(function() {
     };
 
     const setDimmer = (img, price) => {
-        
         calculatePrice(price);
         console.log(img);
     };
     
 
     const setFontSizeRatio = (type) => {
-        const neonText = document.querySelector('.js-neon-text');
         const fontSizeRatio = 1.02;
-        const currentFontSize = parseFloat(getComputedStyle(neonText).fontSize);
+        const currentFontSize = parseFloat(getComputedStyle(jsNeonText).fontSize);
         const recalcFontSize = type === 'minus' ? (currentFontSize / fontSizeRatio) : (currentFontSize * fontSizeRatio);
 
-        $('.js-neon-text').css({
-            'fontSize': recalcFontSize
-        });
+        jsNeonText.style.fontSize = recalcFontSize;
     };
 
 
     // fileUpload
-
-    const imgLoad = document.querySelector('.js-neon-bg');
-    const fileInput = document.querySelector('.js-neon-input-attachment');
     
     fileInput.addEventListener('change', function() {
 
@@ -400,7 +424,7 @@ $(document).ready(function() {
                 }
 
                 const createObjectImage = URL.createObjectURL(file);
-                imgLoad.style.backgroundImage = `url(${createObjectImage})`;
+                jsNeonBg.style.backgroundImage = `url(${createObjectImage})`;
                 document.querySelectorAll('.neon-backgrounds__btn').forEach((bg) => {
                     bg.classList.remove('neon-backgrounds__btn--active');
                 });
@@ -429,7 +453,7 @@ $(document).ready(function() {
         setFont(defaultsNeon.fontFamily);
         setTextAlign(defaultsNeon.textAlign);
         setNeon(defaultsNeon.textShadow);
-        setText($('.js-neon-textarea').val());
+        setText(jsNeonTextarea.value);
     };
 
     initNeon();
@@ -442,4 +466,4 @@ $(document).ready(function() {
     });
 
 
-});
+})();
