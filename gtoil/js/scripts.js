@@ -211,18 +211,26 @@
     }
 
 
-    // Portfolio sync slider
+    // Post slider init
 
-    if ($('.portfolio-big-slider').length > 0) {
+    if ($('.js-post-slider').length > 0) {
+        $('.js-post-slider').slick({
+            dots: true
+        });
+    }
 
-        $('.portfolio-big-slider').slick({
-            asNavFor: '.portfolio-sm-slider',
-            arrows: false
+
+    // Product sync slider
+
+    if ($('.product-slider-big').length > 0) {
+
+        $('.product-slider-big').slick({
+            asNavFor: '.product-slider-sm',
         });
 
-        $('.portfolio-sm-slider').slick({
-            slidesToShow: 9,
-            asNavFor: '.portfolio-big-slider',
+        $('.product-slider-sm').slick({
+            slidesToShow: 4,
+            asNavFor: '.product-slider-big',
             arrows: false,
             focusOnSelect: true,
             responsive: [{
@@ -390,31 +398,6 @@
     });
     
 
-
-    
-    $('.sglproduct-charact-more__link').on('click', function(e) {
-        e.preventDefault();
-        if($(this).hasClass('sglproduct-charact-more__link--active')) {
-            $(this)
-                .removeClass('sglproduct-charact-more__link--active')
-                .text('подробнее')
-                .parents('.sglproduct-characts')
-                .find('.sglproduct-charact-groups')
-                .addClass('sglproduct-charact-groups--hide');
-        } else {
-            $(this)
-            .addClass('sglproduct-charact-more__link--active')
-            .text('свернуть')
-            .parents('.sglproduct-characts')
-            .find('.sglproduct-charact-groups')
-            .removeClass('sglproduct-charact-groups--hide');
-        }
-        
-    });
-
-
-
-
     // Single product tabs
 
     $('.js-product-tab').on('click', function(e) {
@@ -434,30 +417,6 @@
 
 
 
-    // Single product more show
-    
-    $('.sglproduct-charact-more__link').on('click', function(e) {
-        e.preventDefault();
-        if($(this).hasClass('sglproduct-charact-more__link--active')) {
-            $(this)
-                .removeClass('sglproduct-charact-more__link--active')
-                .text('подробнее')
-                .parents('.sglproduct-characts')
-                .find('.sglproduct-charact-groups')
-                .addClass('sglproduct-charact-groups--hide');
-        } else {
-            $(this)
-            .addClass('sglproduct-charact-more__link--active')
-            .text('свернуть')
-            .parents('.sglproduct-characts')
-            .find('.sglproduct-charact-groups')
-            .removeClass('sglproduct-charact-groups--hide');
-        }
-        
-    });
-
-
-
     // Product accordion
 
     $('.sglproduct-choice-accordion__title').on('click', function(e) {
@@ -467,23 +426,16 @@
 
 
 
-    // Product choice item add/remove class active
-
-    $('.sglproduct-choice-item').on('click', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('sglproduct-choice-item--active');
-    });
 
 
-
-    // Input increment value
+    // Input increment value in cart
 
     $('.js-cart-minus').on('click', function(e) {
         e.preventDefault();
-        var input = $(this).parent().find('.cart-item__value'),
+        let input = $(this).parent().find('.cart-item__value'),
             inputValue = input.val();
         
-        if(!(inputValue - 1) <= 0) {        
+        if (!(inputValue - 1) <= 0) {        
             input.val(parseInt(inputValue) - 1);
         }
     });
@@ -493,19 +445,12 @@
 
     $('.js-cart-plus').on('click', function(e) {
         e.preventDefault();
-        var input = $(this).parent().find('.cart-item__value'),
+        let input = $(this).parent().find('.cart-item__value'),
             inputValue = input.val();
         input.val(parseInt(inputValue) + 1);
     });
 
 
-
-    // Cart accordion
-
-    $('.js-cart-toggle').on('click', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('cart-checkout-group__trigger--active').parents('.cart-checkout-group__title').next().slideToggle();
-    });
 
 
 
@@ -583,8 +528,6 @@
     $.validator.addMethod("requiredphone", function (value, element) {
         return value.replace(/\D+/g, '').length > 1;
     }, "");
-
-    
 
 
     // Validation cpform
@@ -692,8 +635,6 @@
             }
         });
     }
-
-
 
 
 

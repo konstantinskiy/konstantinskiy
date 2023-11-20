@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Category</title>
+    <title>News</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
@@ -291,7 +291,7 @@
 					<nav class="breadcrubs-nav">
 						<ul>
 							<li><a href="#">Главная</a></li>
-							<li>Каталог</li>
+							<li>Новости</li>
 						</ul>
 					</nav>
 				</div>
@@ -304,253 +304,130 @@
 <div class="s-page">
 	<div class="wrapper">
 		<div class="s-page-head">
-			<h1 class="s-page-head__title">ТРК и ГРК</h1>
+			<h1 class="s-page-head__title">Новости</h1>
 		</div>
-
-		<div class="category-middle">
-			<aside class="category-middle__sidebar">
-				<div class="category-filter">
-					<button type="button" class="category-filter__btndrop js-category-filter-drop"><span></span>Фильтр</button>
-					<div class="category-filter__groups">
-						<div class="category-filter-group">
-							<div class="category-filter-group__title">Цена, ₽</div>
-							<div class="category-filter-group__row">
-								<div class="category-filter-group__col">
-									<input type="text" class="category-filter-group__input" placeholder="от 1" value="">
-								</div>
-								<div class="category-filter-group__col">
-									<input type="text" class="category-filter-group__input" placeholder="до 52 250" value="">
-								</div>
+		<div class="b-news">
+			<aside class="b-news__rside">
+				<form method="get" action="/news/" class="news-filter">
+					<div class="news-filter__group">
+						<div class="news-filter__col">
+							<div class="news-filter__item">
+								<label class="news-filter__title">Тип публикации</label>
+								<select name="type" class="news-filter__select">
+									<option value="0">Все</option>
+									<option value="1">Тип 1</option>
+									<option value="2">Тип 2</option>
+									<option value="2">Тип 3</option>
+								</select>
 							</div>
 						</div>
-						<div class="category-filter-group">
-							<div class="category-filter-group__title">Производитель</div>
-							<div class="category-filter-group__list">
-								<div class="category-filter-group__item">
-									<input id="check-group-1-1" class="category-filter-group__check" type="checkbox" name="producer" value="Топаз">
-									<label for="check-group-1-1" class="category-filter-group__label">Топаз(4)</label>
-								</div>
-								<div class="category-filter-group__item">
-									<input id="check-group-1-2" class="category-filter-group__check" type="checkbox" name="producer" value="Benza">
-									<label for="check-group-1-2" class="category-filter-group__label">Benza</label>
-								</div>
-								<div class="category-filter-group__item">
-									<input id="check-group-1-3" class="category-filter-group__check" type="checkbox" name="producer" value="Шельф">
-									<label for="check-group-1-3" class="category-filter-group__label">Шельф</label>
-								</div>
-								<div class="category-filter-group__item">
-									<input id="check-group-1-4" class="category-filter-group__check" type="checkbox" name="producer" value="Север">
-									<label for="check-group-1-4" class="category-filter-group__label">Север</label>
-								</div>
+						<div class="news-filter__col">
+							<div class="news-filter__item">
+								<label class="news-filter__title">Год публикации</label>
+								<select name="year" class="news-filter__select">
+									<option value="0">Все</option>
+									<option value="2023">2023</option>
+									<option value="2022">2022</option>
+									<option value="2021">2021</option>
+								</select>
 							</div>
-						</div>
-						<div class="category-filter-group">
-							<div class="category-filter-group__title">Параметры</div>
-							<div class="category-filter-group__list">
-								<div class="category-filter-group__item">
-									<input id="check-group-2-1" class="category-filter-group__check" type="checkbox" name="params" value="Только измерение">
-									<label for="check-group-2-1" class="category-filter-group__label">Только измерение</label>
-								</div>
-								<div class="category-filter-group__item">
-									<input id="check-group-2-2" class="category-filter-group__check" type="checkbox" name="params" value="ON/OFF-регулятор">
-									<label for="check-group-2-2" class="category-filter-group__label">ON/OFF-регулятор</label>
-								</div>
-								<div class="category-filter-group__item">
-									<input id="check-group-2-3" class="category-filter-group__check" type="checkbox" name="params" value="ПИД-регулятор">
-									<label for="check-group-2-3" class="category-filter-group__label">ПИД-регулятор</label>
-								</div>
-								<div class="category-filter-group__item">
-									<input id="check-group-2-4" class="category-filter-group__check" type="checkbox" name="params" value="Есть встроенный таймер">
-									<label for="check-group-2-4" class="category-filter-group__label">Есть встроенный таймер</label>
-								</div>
-								<div class="category-filter-group__item">
-									<input id="check-group-2-5" class="category-filter-group__check" type="checkbox" name="params" value="1-2 канала">
-									<label for="check-group-2-5" class="category-filter-group__label">1-2 канала</label>
-								</div>
-								<div class="category-filter-group__item">
-									<input id="check-group-2-6" class="category-filter-group__check" type="checkbox" name="params" value="Многоканальный">
-									<label for="check-group-2-6" class="category-filter-group__label">Многоканальный</label>
-								</div>
-								<div class="category-filter-group__item">
-									<input id="check-group-2-7" class="category-filter-group__check" type="checkbox" name="params" value="С встроенным Ех-барьером">
-									<label for="check-group-2-7" class="category-filter-group__label">С встроенным Ех-барьером</label>
-								</div>
-								<div class="category-filter-group__item">
-									<input id="check-group-2-8" class="category-filter-group__check" type="checkbox" name="params" value="RS-485">
-									<label for="check-group-2-8" class="category-filter-group__label">RS-485</label>
-								</div>
-								<div class="category-filter-group__item category-filter-group__item--hide" data-filter="forhide">
-									<input id="check-group-2-9" class="category-filter-group__check" type="checkbox" name="params" value="С питанием 12 В">
-									<label for="check-group-2-9" class="category-filter-group__label">С питанием 12 В</label>
-								</div>
-								<div class="category-filter-group__item category-filter-group__item--hide" data-filter="forhide">
-									<input id="check-group-2-10" class="category-filter-group__check" type="checkbox" name="params" value="С питанием 24 В">
-									<label for="check-group-2-10" class="category-filter-group__label">С питанием 24 В</label>
-								</div>
-								<button type="button" class="category-filter-group__showall js-category-filter-showall">Показать все</button>
-							</div>
-						</div>
-						<div class="category-filter-group">
-							<button type="button" class="category-filter-clear">Очистить фильтр</button>
 						</div>
 					</div>
-				</div>
-				<div class="category-filter-mobprice">
-					<a href="#" class="category-middle-dloadprice__button">Cкачать прайс</a>
+					<div class="news-filter__group">
+						<div class="news-filter__item">
+							<label class="news-filter__title">Поиск по ключевым словам</label>
+							<div class="news-filter__search">
+								<input type="text" class="news-filter__input" name="s" placeholder="Поиск ...">
+								<button type="submit" class="news-filter__submit"></button>
+							</div>
+						</div>
+					</div>
+				</form>
+				<div class="news-tags">
+					<div class="news-tags__title">Теги</div>
+					<div class="news-tags__list">
+						<a href="#" class="news-tags__link">#Новости</a>
+						<a href="#" class="news-tags__link">#Выставки</a>
+						<a href="#" class="news-tags__link">#Акции</a>
+						<a href="#" class="news-tags__link">#Обновления</a>
+						<a href="#" class="news-tags__link">#Важная инфорация</a>
+					</div>
 				</div>
 			</aside>
-			<div class="category-middle__content">
-				<div class="category-middle__top">
-					<div class="category-middle-sort">
-						<div class="category-middle-sort__title">Сортировать по:</div>
-						<div class="category-middle-sort__list">
-							<button type="button" class="category-middle-sort__link category-middle-sort__link--active">По популярности</button>
-							<button type="button" class="category-middle-sort__link">По цене &uarr;</button>
-							<button type="button" class="category-middle-sort__link">По цене &darr;</button>
+			<div class="b-news__content">
+				<div class="news-grid">
+					<div class="news-grid__row">
+						<div class="news-grid__col news-grid__col--6">
+							<article class="news-card news-card--dark">
+								<figure class="news-card__img">
+									<a href="#">
+										<img src="images/content/news-img-1.jpg" alt="i">
+										<div class="news-card__date">
+											<div class="news-card__day">13</div>
+											<div class="news-card__month">декабря</div>
+										</div>
+									</a>
+								</figure>
+								<div class="news-card__body">
+									<h2 class="news-card__title">
+										<a href="#" class="news-card__link">Контроллер УСПД КМ E2R2(G) прошёл аттестацию в ПАО "Россети" УСПД КМ E2R2(G) прошёл аттестацию в ПАО "Россети"</a>
+									</h2>
+									<div class="news-card__excerpt">По результатам испытаний получено положительное заключение По результатам испытаний получено положительное заключение аттестационной комисси: УСПД КМ  E2R2 (G) соответствует техническим требованиям СТО</div>
+									<div class="news-card__tags">
+										<a href="#" class="news-card__tag">#Новости</a>
+										<a href="#" class="news-card__tag">#Выставки</a>
+									</div>
+								</div>
+							</article>
 						</div>
-					</div>
-					<div class="category-middle-dloadprice">
-						<a href="#" class="category-middle-dloadprice__button">Cкачать прайс</a>
-					</div>
+						<div class="news-grid__col news-grid__col--6">
+							<article class="news-card news-card--dark">
+								<figure class="news-card__img">
+									<a href="#">
+										<img src="images/content/news-img-1.jpg" alt="i">
+										<div class="news-card__date">
+											<div class="news-card__day">13</div>
+											<div class="news-card__month">декабря</div>
+										</div>
+									</a>
+								</figure>
+								<div class="news-card__body">
+									<h2 class="news-card__title">
+										<a href="#" class="news-card__link">Контроллер УСПД КМ E2R2(G) прошёл аттестацию в ПАО "Россети"</a>
+									</h2>
+									<div class="news-card__excerpt">По результатам испытаний получено положительное заключение аттестационной комисси: УСПД КМ  E2R2 (G) соответствует техническим требованиям СТО</div>
+									<div class="news-card__tags">
+										<a href="#" class="news-card__tag">#Новости</a>
+										<a href="#" class="news-card__tag">#Выставки</a>
+									</div>
+								</div>
+							</article>
+						</div>
+						<div class="news-grid__col news-grid__col--6">
+							<article class="news-card news-card--dark">
+								<figure class="news-card__img">
+									<a href="#">
+										<img src="images/content/news-img-1.jpg" alt="i">
+										<div class="news-card__date">
+											<div class="news-card__day">13</div>
+											<div class="news-card__month">декабря</div>
+										</div>
+									</a>
+								</figure>
+								<div class="news-card__body">
+									<h2 class="news-card__title">
+										<a href="#" class="news-card__link">Контроллер УСПД КМ E2R2(G) прошёл аттестацию в ПАО "Россети"</a>
+									</h2>
+									<div class="news-card__excerpt">По результатам испытаний получено положительное заключение аттестационной комисси: УСПД КМ  E2R2 (G) соответствует техническим требованиям СТО</div>
+									<div class="news-card__tags">
+										<a href="#" class="news-card__tag">#Новости</a>
+										<a href="#" class="news-card__tag">#Выставки</a>
+									</div>
+								</div>
+							</article>
+						</div>
+					</div>					
 				</div>
-
-				<div class="category-grid">
-					<div class="category-grid__row">
-						<div class="category-grid__col">
-							<article class="product-card">
-								<div class="product-card__top">
-									<div class="product-card__articul">Артикул: 8756</div>
-									<div class="product-card__instock">В наличии</div>
-								</div>
-								<figure class="product-card__img">
-									<div class="product-card__labels">
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--economy">Экономия 500 ₽</div>
-										</div>
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--hit">Хит продаж</div>
-										</div>
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--new">Новинка</div>
-										</div>
-									</div>
-									<a href="#"><img src="images/content/products/img-1.png" alt="i"></a>
-								</figure>
-								<div class="product-card__category"><a href="#" class="product-card__categorylink">ТРК и ГРК</a></div>
-								<h2 class="product-card__title">
-									<a href="#" class="product-card__titlelink">ТРК Топаз 510</a>
-								</h2>
-								<div class="product-card__excerpt">Топливораздаточная колонка Топаз 510 предназначена для измерения объёма топлива</div>
-								<div class="product-card__bottom">
-									<div class="product-card-bottom__prices">
-										<div class="product-card-bottom__price">2 720,00 ₽</div>
-										<div class="product-card-bottom__oldprice">3 220,00 ₽</div>
-									</div>
-									<a href="#" class="product-card-bottom__card"></a>
-								</div>
-							</article>
-						</div>
-						<div class="category-grid__col">
-							<article class="product-card">
-								<div class="product-card__top">
-									<div class="product-card__articul">Артикул: 8756</div>
-									<div class="product-card__instock">В наличии</div>
-								</div>
-								<figure class="product-card__img">
-									<div class="product-card__labels">
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--economy">Экономия 500 ₽</div>
-										</div>
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--hit">Хит продаж</div>
-										</div>
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--new">Новинка</div>
-										</div>
-									</div>
-									<a href="#"><img src="images/content/products/img-2.png" alt="i"></a>
-								</figure>
-								<div class="product-card__category"><a href="#" class="product-card__categorylink">ТРК и ГРК</a></div>
-								<h2 class="product-card__title"><a href="#" class="product-card__titlelink">ТРК Топаз 510</a></h2>
-								<div class="product-card__excerpt">Топливораздаточная колонка Топаз 510 предназначена для измерения объёма топлива</div>
-								<div class="product-card__bottom">
-									<div class="product-card-bottom__prices">
-										<div class="product-card-bottom__price">2 720,00 ₽</div>
-										<div class="product-card-bottom__oldprice">3 220,00 ₽</div>
-									</div>
-									<a href="#" class="product-card-bottom__card"></a>
-								</div>
-							</article>
-						</div>
-						<div class="category-grid__col">
-							<article class="product-card">
-								<div class="product-card__top">
-									<div class="product-card__articul">Артикул: 8756</div>
-									<div class="product-card__instock">В наличии</div>
-								</div>
-								<figure class="product-card__img">
-									<div class="product-card__labels">
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--economy">Экономия 500 ₽</div>
-										</div>
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--hit">Хит продаж</div>
-										</div>
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--new">Новинка</div>
-										</div>
-									</div>
-									<a href="#"><img src="images/content/products/img-1.png" alt="i"></a>
-								</figure>
-								<div class="product-card__category"><a href="#" class="product-card__categorylink">ТРК и ГРК</a></div>
-								<h2 class="product-card__title"><a href="#" class="product-card__titlelink">ТРК Топаз 530</a></h2>
-								<div class="product-card__excerpt">Топливораздаточная колонка Топаз 510 предназначена для измерения объёма топлива</div>
-								<div class="product-card__bottom">
-									<div class="product-card-bottom__prices">
-										<div class="product-card-bottom__price">2 720,00 ₽</div>
-										<div class="product-card-bottom__oldprice">3 220,00 ₽</div>
-									</div>
-									<a href="#" class="product-card-bottom__card"></a>
-								</div>
-							</article>
-						</div>
-						<div class="category-grid__col">
-							<article class="product-card">
-								<div class="product-card__top">
-									<div class="product-card__articul">Артикул: 8756</div>
-									<div class="product-card__instock">В наличии</div>
-								</div>
-								<figure class="product-card__img">
-									<div class="product-card__labels">
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--economy">Экономия 500 ₽</div>
-										</div>
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--hit">Хит продаж</div>
-										</div>
-										<div class="product-card__labelitem">
-											<div class="product-card__label product-card__label--new">Новинка</div>
-										</div>
-									</div>
-									<a href="#"><img src="images/content/products/img-2.png" alt="i"></a>
-								</figure>
-								<div class="product-card__category"><a href="#" class="product-card__categorylink">ТРК и ГРК</a></div>
-								<h2 class="product-card__title">
-									<a href="#" class="product-card__titlelink">ТРК Топаз 510</a>
-								</h2>
-								<div class="product-card__excerpt">Топливораздаточная колонка Топаз 510 предназначена для измерения объёма топлива</div>
-								<div class="product-card__bottom">
-									<div class="product-card-bottom__prices">
-										<div class="product-card-bottom__price">2 720,00 ₽</div>
-										<div class="product-card-bottom__oldprice">3 220,00 ₽</div>
-									</div>
-									<a href="#" class="product-card-bottom__card"></a>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>
-
 				<div class="pagination-controls">
 					<div class="pagination-nav">
 						<a class="prev page-numbers" href="#">← Назад</a>
@@ -569,166 +446,8 @@
 						<button type="submit" class="pagination-controls-gotopage__submit">Перейти</button>
 					</div>
 				</div>
-
-				<div class="category-description">
-					<h2>Купить топливо-раздаточные колонки ТРК и газово-раздаточные колонки ГРК</h2>
-					<p>Терморегуляторы ОВЕН могут использоваться для измерения и регулирования температуры, давления, влажности, расхода и других физических величин в системах отопления и водоснабжения, в сушильных шкафах, печах, пастеризаторах, в холодильной технике и другом технологическом оборудовании.</p>
-					<p>Ознакомиться с ассортиментом измерительных приборов вы можете в нашем интернет-магазине СОЮЗ-ПРИБОР. Выбрать и купить подходящую модель можно всего лишь в несколько кликов. Для получения подробной технической консультации специалистов звоните на горячую линию 8-800-250-72-35. Мы ответим на любые ваши вопросы и поможем подобрать необходимое оборудование.</p>
-				</div>
-
 			</div>
-		</div>
-
-		<div class="viewed-products">
-			<div class="viewed-products__left">
-				<div class="viewed-products__title">Вы смотрели</div>
-				<div class="viewed-products__actions">
-					<button class="viewed-products__button viewed-products__button--prev js-viewed-slider-prev"></button>
-					<button class="viewed-products__button viewed-products__button--next js-viewed-slider-next"></button>
-				</div>
-			</div>
-			<div class="viewed-products__right">
-				<div class="viewed-products-slider js-viewed-products-slider">
-					<div class="viewed-products-slider__col">
-						<article class="product-card">
-							<div class="product-card__top">
-								<div class="product-card__articul">Артикул: 8756</div>
-								<div class="product-card__instock">В наличии</div>
-							</div>
-							<figure class="product-card__img">
-								<div class="product-card__labels">
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--economy">Экономия 500 ₽</div>
-									</div>
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--hit">Хит продаж</div>
-									</div>
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--new">Новинка</div>
-									</div>
-								</div>
-								<a href="#"><img src="images/content/products/img-2.png" alt="i"></a>
-							</figure>
-							<div class="product-card__category"><a href="#" class="product-card__categorylink">ТРК и ГРК</a></div>
-							<h2 class="product-card__title">
-								<a href="#" class="product-card__titlelink">ТРК Топаз 510</a>
-							</h2>
-							<div class="product-card__excerpt">Топливораздаточная колонка Топаз 510 предназначена для измерения объёма топлива</div>
-							<div class="product-card__bottom">
-								<div class="product-card-bottom__prices">
-									<div class="product-card-bottom__price">2 720,00 ₽</div>
-									<div class="product-card-bottom__oldprice">3 220,00 ₽</div>
-								</div>
-								<a href="#" class="product-card-bottom__card"></a>
-							</div>
-						</article>
-					</div>
-					<div class="viewed-products-slider__col">
-						<article class="product-card">
-							<div class="product-card__top">
-								<div class="product-card__articul">Артикул: 8756</div>
-								<div class="product-card__instock">В наличии</div>
-							</div>
-							<figure class="product-card__img">
-								<div class="product-card__labels">
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--economy">Экономия 500 ₽</div>
-									</div>
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--hit">Хит продаж</div>
-									</div>
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--new">Новинка</div>
-									</div>
-								</div>
-								<a href="#"><img src="images/content/products/img-2.png" alt="i"></a>
-							</figure>
-							<div class="product-card__category"><a href="#" class="product-card__categorylink">ТРК и ГРК</a></div>
-							<h2 class="product-card__title">
-								<a href="#" class="product-card__titlelink">ТРК Топаз 510</a>
-							</h2>
-							<div class="product-card__excerpt">Топливораздаточная колонка Топаз 510 предназначена для измерения объёма топлива</div>
-							<div class="product-card__bottom">
-								<div class="product-card-bottom__prices">
-									<div class="product-card-bottom__price">2 720,00 ₽</div>
-									<div class="product-card-bottom__oldprice">3 220,00 ₽</div>
-								</div>
-								<a href="#" class="product-card-bottom__card"></a>
-							</div>
-						</article>
-					</div>
-					<div class="viewed-products-slider__col">
-						<article class="product-card">
-							<div class="product-card__top">
-								<div class="product-card__articul">Артикул: 8756</div>
-								<div class="product-card__instock">В наличии</div>
-							</div>
-							<figure class="product-card__img">
-								<div class="product-card__labels">
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--economy">Экономия 500 ₽</div>
-									</div>
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--hit">Хит продаж</div>
-									</div>
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--new">Новинка</div>
-									</div>
-								</div>
-								<a href="#"><img src="images/content/products/img-2.png" alt="i"></a>
-							</figure>
-							<div class="product-card__category"><a href="#" class="product-card__categorylink">ТРК и ГРК</a></div>
-							<h2 class="product-card__title">
-								<a href="#" class="product-card__titlelink">ТРК Топаз 510</a>
-							</h2>
-							<div class="product-card__excerpt">Топливораздаточная колонка Топаз 510 предназначена для измерения объёма топлива</div>
-							<div class="product-card__bottom">
-								<div class="product-card-bottom__prices">
-									<div class="product-card-bottom__price">2 720,00 ₽</div>
-									<div class="product-card-bottom__oldprice">3 220,00 ₽</div>
-								</div>
-								<a href="#" class="product-card-bottom__card"></a>
-							</div>
-						</article>
-					</div>
-					<div class="viewed-products-slider__col">
-						<article class="product-card">
-							<div class="product-card__top">
-								<div class="product-card__articul">Артикул: 8756</div>
-								<div class="product-card__instock">В наличии</div>
-							</div>
-							<figure class="product-card__img">
-								<div class="product-card__labels">
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--economy">Экономия 500 ₽</div>
-									</div>
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--hit">Хит продаж</div>
-									</div>
-									<div class="product-card__labelitem">
-										<div class="product-card__label product-card__label--new">Новинка</div>
-									</div>
-								</div>
-								<a href="#"><img src="images/content/products/img-2.png" alt="i"></a>
-							</figure>
-							<div class="product-card__category"><a href="#" class="product-card__categorylink">ТРК и ГРК</a></div>
-							<h2 class="product-card__title">
-								<a href="#" class="product-card__titlelink">ТРК Топаз 510</a>
-							</h2>
-							<div class="product-card__excerpt">Топливораздаточная колонка Топаз 510 предназначена для измерения объёма топлива</div>
-							<div class="product-card__bottom">
-								<div class="product-card-bottom__prices">
-									<div class="product-card-bottom__price">2 720,00 ₽</div>
-									<div class="product-card-bottom__oldprice">3 220,00 ₽</div>
-								</div>
-								<a href="#" class="product-card-bottom__card"></a>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
-		</div>
-		
+		</div>		
 	</div>
 </div>
 
