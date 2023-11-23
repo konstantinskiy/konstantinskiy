@@ -229,18 +229,13 @@
         });
 
         $('.product-slider-sm').slick({
-            slidesToShow: 4,
+            slidesToShow: 7,
             asNavFor: '.product-slider-big',
             arrows: false,
             focusOnSelect: true,
-            responsive: [{
-                    breakpoint: 1400,
-                    settings: {
-                        slidesToShow: 7,
-                    }
-                },
+            responsive: [
                 {
-                    breakpoint: 1280,
+                    breakpoint: 1200,
                     settings: {
                         slidesToShow: 5,
                     }
@@ -248,25 +243,31 @@
                 {
                     breakpoint: 1000,
                     settings: {
-                        slidesToShow: 6,
+                        slidesToShow: 4,
                     }
                 },
                 {
                     breakpoint: 768,
                     settings: {
-                        slidesToShow: 4,
+                        slidesToShow: 6,
                     }
                 },
                 {
                     breakpoint: 640,
                     settings: {
-                        slidesToShow: 3,
+                        slidesToShow: 5,
                     }
                 },
                 {
                     breakpoint: 480,
                     settings: {
-                        slidesToShow: 2,
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 375,
+                    settings: {
+                        slidesToShow: 3,
                     }
                 }
             ]
@@ -354,7 +355,6 @@
     });
 
 
-
     // Siderbar filter show more
 
     $('.js-category-filter-showall').on('click', function(e) {
@@ -403,29 +403,58 @@
     $('.js-product-tab').on('click', function(e) {
         e.preventDefault();
         var tabId = $(this).data('tab-id');
-        if($(this).hasClass('sglproduct-tab-nav__link--active')) return;
+        if ($(this).hasClass('product-tab-nav__link--active')) return;
 
-        $('.sglproduct-tab-nav__link').removeClass('sglproduct-tab-nav__link--active');
-        $(this).addClass('sglproduct-tab-nav__link--active');
+        $('.product-tab-nav__link').removeClass('product-tab-nav__link--active');
+        $(this).addClass('product-tab-nav__link--active');
 
-        $('.sglproduct-tab-content__item')
-            .removeClass('sglproduct-tab-content__item--active')
+        $('.product-tab-content__item')
+            .removeClass('product-tab-content__item--active')
             .eq(tabId)
-            .addClass('sglproduct-tab-content__item--active');
+            .addClass('product-tab-content__item--active');
     });
 
 
+    // Cart check all items to delete
 
-
-    // Product accordion
-
-    $('.sglproduct-choice-accordion__title').on('click', function(e) {
+    $('.js-cart-checkall').on('click', function(e) {
         e.preventDefault();
-        $(this).toggleClass('sglproduct-choice-accordion__title--active').next().slideToggle();
+
+        if ($(this).hasClass('cart-head__checkall--active')) {
+            $('.cart-item').each(function() {
+                if ($(this).hasClass('cart-item--active')) {
+                    $(this).removeClass('cart-item--active');
+                }
+            });
+        } else {
+            $('.cart-item').addClass('cart-item--active');
+        }
+
+        $(this).toggleClass('cart-head__checkall--active');
     });
 
 
+    $('.js-cartitem-checkbox').on('click', function(e) {
+        $(this).parents('.cart-item').toggleClass('cart-item--active');
+    });
 
+
+    $('.js-cart-item-delete').on('click', function(e) {
+        $(this).parents('.cart-item').remove();
+        setCartQuantity();
+    });
+
+    $('.js-cart-deleteall').on('click', function(e) {
+        $('.cart-item--active').remove();
+        setCartQuantity();
+    });
+
+    
+    function setCartQuantity() {
+        const cartItems = $('.cart-item').length;
+        $('.s-page-head__title--cart span').text(cartItems);
+        $('.js-cart-quantity').text(cartItems);
+    }
 
 
     // Input increment value in cart
@@ -449,75 +478,6 @@
             inputValue = input.val();
         input.val(parseInt(inputValue) + 1);
     });
-
-
-
-
-
-    // Contacts map 1
-
-    if($('#salon-map-1').length > 0) {
-        ymaps.ready(initMap1);
-
-        function initMap1() {
-            var myMap = new ymaps.Map('salon-map-1', {
-                center: [57.77302079714255,40.90140849999999],
-                zoom: 6
-            });
-            myMap.behaviors.disable('scrollZoom');
-
-            var point;
-            var points = [
-                [57.77302079714255,40.90140849999999],
-                [58.77302079714255,40.90140849999999],
-                [56.77302079714255,41.90140849999999]
-            ];
-
-            for(var i = 0; i < points.length; i++) {
-                point = new ymaps.Placemark(points[i], {}, {
-                    iconLayout: 'default#image',
-                    iconImageHref: 'images/i/i-map-placemark.png',
-                    iconImageSize: [43, 60],
-                    iconImageOffset: [-5, -5]
-                });
-                myMap.geoObjects.add(point);
-            }
-        }
-    }
-
-
-    // Is mobile object
-
-    const isMobile = {
-        Android: function() {
-            return navigator.userAgent.match(/Android/i);
-        },
-        BlackBerry: function() {
-            return navigator.userAgent.match(/BlackBerry/i);
-        },
-        iOS: function() {
-            return navigator.userAgent.match(/iPhone|iPad|iPod/i);
-        },
-        Opera: function() {
-            return navigator.userAgent.match(/Opera Mini/i);
-        },
-        Windows: function() {
-            return navigator.userAgent.match(/IEMobile/i) || navigator.userAgent.match(/WPDesktop/i);
-        },
-        any: function() {
-            return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
-        }
-    };
-
-    if (isMobile.any()) {
-        
-    }
-
-
-
-
-
-
 
 
     // Custom telephone validator with maskeidInput
@@ -635,7 +595,6 @@
             }
         });
     }
-
 
 
 })();

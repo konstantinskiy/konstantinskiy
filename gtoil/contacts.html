@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
-    <title>Cart</title>
+    <title>Contacts</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
@@ -144,7 +144,7 @@
 					<button type="button" class="header-middle__searchbtn js-header-searchbtn"></button>
 				</div>
 				<div class="header-middle__consult">
-					<button type="button" class="header-middle__cbutton" data-fancybox-modal="" data-src="#consult-modal">Заказать консультацию</button>
+					<button type="button" class="header-middle__cbutton" data-fancybox-modal data-src="#consult-modal">Заказать консультацию</button>
 				</div>
 				<div class="header-middle__cart">
 					<a href="#" class="header-cart__link"><span class="header-cart__count">11</span></a>
@@ -291,7 +291,7 @@
 					<nav class="breadcrubs-nav">
 						<ul>
 							<li><a href="#">Главная</a></li>
-							<li>Корзина</li>
+							<li>Контакты</li>
 						</ul>
 					</nav>
 				</div>
@@ -304,158 +304,154 @@
 <div class="s-page">
 	<div class="wrapper">
 		<div class="s-page-head s-page-head--bordered">
-			<h1 class="s-page-head__title s-page-head__title--cart">Корзина<span>5</span></h1>
+			<h1 class="s-page-head__title s-page-head__title--cart">Контакты</h1>
 		</div>
 
-		<div class="cart-container">
-			<div class="cart-container__content">
-				<div class="cart-head">
-					<button type="button" class="cart-head__checkall js-cart-checkall"><span></span>Выбрать все</button>
-					<button type="button" class="cart-head__deleteall js-cart-deleteall">Удалить выбранные</button>
+		<div class="pgcontacts-group">
+			<div class="pgcontacts-top">
+				<div class="pgcontacts-top__departments">
+					<div class="pgcontacts-top__contacts">
+						<div class="pgcontacts-contact">
+							<div class="pgcontacts-contact__title">Коммерческий отдел</div>
+							<div class="pgcontacts-contact__tel">
+								<a href="tel:+79230192340" class="pgcontacts-contact__telvalue">+7 (923) 019-2340</a>
+							</div>
+							<div class="pgcontacts-contact__email">
+								<a href="mailto:support@entels.ru" class="pgcontacts-contact__emailvalue">support@entels.ru</a>
+							</div>
+						</div>
+						<div class="pgcontacts-contact">
+							<div class="pgcontacts-contact__title">Техническая поддержка</div>
+							<div class="pgcontacts-contact__tel">
+								<a href="tel:+79230192340" class="pgcontacts-contact__telvalue">+7 (923) 019-2340</a>
+							</div>
+							<div class="pgcontacts-contact__email">
+								<a href="mailto:support@gtoil.ru" class="pgcontacts-contact__emailvalue">support@gtoil.ru</a>
+							</div>
+						</div>
+					</div>
+					<div class="pgcontacts-top__callback">
+						<button type="button" class="pgcontacts-top__clbbutton" data-fancybox-modal data-src="#consult-modal">Заказать звонок</button>
+					</div>
 				</div>
-				<div class="cart-items">
-					<div class="cart-item">
-						<div class="cart-item__left">
-							<button type="button" class="cart-item__checkbox js-cartitem-checkbox"></button>
-							<div class="cart-item__img"><img src="images/content/products/product-bigimg.png" alt="img"></div>
-							<div class="cart-item__title"><a href="#" class="cart-item__titlelink">ТРК Топаз 510</a></div>
-						</div>
-						<div class="cart-item__right">
-							<div class="cart-item__col cart-item__col--actions">
-								<div class="cart-item__counter">
-									<button type="button" class="cart-item__minus js-cart-minus"></button>
-									<input type="text" class="cart-item__value" disabled value="1">
-									<button type="button" class="cart-item__plus js-cart-plus"></button>
+				<div class="pgcontacts-top__filials">
+					<div class="pgcontacts-filial">
+						<div class="pgcontacts-filial__title">Филиал в Барнауле</div>
+						<div class="pgcontacts-filial__address">656067, г. Барнаул ул. Попова дом 206Б, офис 301</div>
+					</div>
+					<div class="pgcontacts-filial">
+						<div class="pgcontacts-filial__title">Филиал в Якутске</div>
+						<div class="pgcontacts-filial__address">677004, г. Якутск, ул. Челюскина, д.57/5</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="pgcontacts-group">
+			<div class="pgcontacts-requisites">
+				<div class="pgcontacts-requisites__title">Реквизиты компании</div>
+				<div class="pgcontacts-requisites-grid">
+					<div class="pgcontacts-requisites-grid__col">
+						<div class="pgcontacts-requisite">
+							<div class="pgcontacts-requisite__name">ООО «Энерджи»</div>
+							<div class="pgcontacts-requisite__data">
+								<div class="pgcontacts-requisite-line"> 
+									<div class="pgcontacts-requisite-line__name"><span>ИНН:</span></div>
+									<div class="pgcontacts-requisite-line__value">7718540189</div>
 								</div>
-								<div class="cart-item__priceone">134 100 ₽ за 1 шт.</div>
+								<div class="pgcontacts-requisite-line">
+									<div class="pgcontacts-requisite-line__name"><span>КП:</span></div>
+									<div class="pgcontacts-requisite-line__value">772901001</div>
+								</div>
+								<div class="pgcontacts-requisite-line">
+									<div class="pgcontacts-requisite-line__name"><span>ОГРН:</span></div>
+									<div class="pgcontacts-requisite-line__value">1057746337318</div>
+								</div>
+								<div class="pgcontacts-requisite-line">
+									<div class="pgcontacts-requisite-line__name"><span>Юр. адрес:</span></div>
+									<div class="pgcontacts-requisite-line__value">121471, город Москва, Рябиновая улица, дом 69 стр 5, этаж 3 пом. II, ком. 16</div>
+								</div>
 							</div>
-							<div class="cart-item__col cart-item__col--delete">
-								<div class="cart-item__price"><span></span>134 100</span> ₽</div>
-								<button type="button" class="cart-item__delete js-cart-item-delete"></button>
+							<div class="pgcontacts-requisite__requisitefile">
+								<a href="#" class="pgcontacts-requisite__file">Скачать реквизиты файлом</a>
 							</div>
 						</div>
 					</div>
-					<div class="cart-item">
-						<div class="cart-item__left">
-							<button type="button" class="cart-item__checkbox js-cartitem-checkbox"></button>
-							<div class="cart-item__img"><img src="images/content/products/product-bigimg.png" alt="img"></div>
-							<div class="cart-item__title"><a href="#" class="cart-item__titlelink">ТРК Топаз 1510</a></div>
-						</div>
-						<div class="cart-item__right">
-							<div class="cart-item__col cart-item__col--actions">
-								<div class="cart-item__counter">
-									<button type="button" class="cart-item__minus js-cart-minus"></button>
-									<input type="text" class="cart-item__value" disabled value="1">
-									<button type="button" class="cart-item__plus js-cart-plus"></button>
+					<div class="pgcontacts-requisites-grid__col">
+						<div class="pgcontacts-requisite">
+							<div class="pgcontacts-requisite__name">ООО «Сибирские Нефтегазовые Технологии»</div>
+							<div class="pgcontacts-requisite__data">
+								<div class="pgcontacts-requisite-line"> 
+									<div class="pgcontacts-requisite-line__name"><span>ИНН:</span></div>
+									<div class="pgcontacts-requisite-line__value">2222861011</div>
 								</div>
-								<div class="cart-item__priceone">234 100 ₽ за 1 шт.</div>
-							</div>
-							<div class="cart-item__col cart-item__col--delete">
-								<div class="cart-item__price"><span></span>234 100</span> ₽</div>
-								<button type="button" class="cart-item__delete js-cart-item-delete"></button>
-							</div>
-						</div>
-					</div>
-					<div class="cart-item">
-						<div class="cart-item__left">
-							<button type="button" class="cart-item__checkbox js-cartitem-checkbox"></button>
-							<div class="cart-item__img"><img src="images/content/products/product-bigimg.png" alt="img"></div>
-							<div class="cart-item__title"><a href="#" class="cart-item__titlelink">ТРК Топаз 2510</a></div>
-						</div>
-						<div class="cart-item__right">
-							<div class="cart-item__col cart-item__col--actions">
-								<div class="cart-item__counter">
-									<button type="button" class="cart-item__minus js-cart-minus"></button>
-									<input type="text" class="cart-item__value" disabled value="1">
-									<button type="button" class="cart-item__plus js-cart-plus"></button>
+								<div class="pgcontacts-requisite-line">
+									<div class="pgcontacts-requisite-line__name"><span>КП:</span></div>
+									<div class="pgcontacts-requisite-line__value">222201001</div>
 								</div>
-								<div class="cart-item__priceone">334 100 ₽ за 1 шт.</div>
-							</div>
-							<div class="cart-item__col cart-item__col--delete">
-								<div class="cart-item__price"><span></span>334 100</span> ₽</div>
-								<button type="button" class="cart-item__delete js-cart-item-delete"></button>
-							</div>
-						</div>
-					</div>
-					<div class="cart-item">
-						<div class="cart-item__left">
-							<button type="button" class="cart-item__checkbox js-cartitem-checkbox"></button>
-							<div class="cart-item__img"><img src="images/content/products/product-bigimg.png" alt="img"></div>
-							<div class="cart-item__title"><a href="#" class="cart-item__titlelink">ТРК Топаз 3510</a></div>
-						</div>
-						<div class="cart-item__right">
-							<div class="cart-item__col cart-item__col--actions">
-								<div class="cart-item__counter">
-									<button type="button" class="cart-item__minus js-cart-minus"></button>
-									<input type="text" class="cart-item__value" disabled value="1">
-									<button type="button" class="cart-item__plus js-cart-plus"></button>
+								<div class="pgcontacts-requisite-line">
+									<div class="pgcontacts-requisite-line__name"><span>ОГРН:</span></div>
+									<div class="pgcontacts-requisite-line__value">1172225032198</div>
 								</div>
-								<div class="cart-item__priceone">334 100 ₽ за 1 шт.</div>
-							</div>
-							<div class="cart-item__col cart-item__col--delete">
-								<div class="cart-item__price"><span></span>334 100</span> ₽</div>
-								<button type="button" class="cart-item__delete js-cart-item-delete"></button>
-							</div>
-						</div>
-					</div>
-					<div class="cart-item">
-						<div class="cart-item__left">
-							<button type="button" class="cart-item__checkbox js-cartitem-checkbox"></button>
-							<div class="cart-item__img"><img src="images/content/products/product-bigimg.png" alt="img"></div>
-							<div class="cart-item__title"><a href="#" class="cart-item__titlelink">ТРК Топаз 4510</a></div>
-						</div>
-						<div class="cart-item__right">
-							<div class="cart-item__col cart-item__col--actions">
-								<div class="cart-item__counter">
-									<button type="button" class="cart-item__minus js-cart-minus"></button>
-									<input type="text" class="cart-item__value" disabled value="1">
-									<button type="button" class="cart-item__plus js-cart-plus"></button>
+								<div class="pgcontacts-requisite-line">
+									<div class="pgcontacts-requisite-line__name"><span>Юр. адрес:</span></div>
+									<div class="pgcontacts-requisite-line__value">656067, РФ, Алтайский край, г. Барнаул, ул. Попова, 206Б, офис 301</div>
 								</div>
-								<div class="cart-item__priceone">334 100 ₽ за 1 шт.</div>
 							</div>
-							<div class="cart-item__col cart-item__col--delete">
-								<div class="cart-item__price"><span></span>334 100</span> ₽</div>
-								<button type="button" class="cart-item__delete js-cart-item-delete"></button>
+							<div class="pgcontacts-requisite__requisitefile">
+								<a href="#" class="pgcontacts-requisite__file">Скачать реквизиты файлом</a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<aside class="cart-container__sidebar">
-				<div class="cart-sidestats">
-					<div class="cart-sidestat">
-						<div class="cart-sidestat__name">Товаров</div>
-						<div class="cart-sidestat__value js-cart-quantity"><span>5</span> шт.</div>
+		</div>
+
+		<div class="pgcontacts-group">
+			<div class="pgcontacts-specialists">
+				<div class="pgcontacts-specialists__row">
+					<div class="pgcontacts-specialists__col">
+						<div class="pgcontacts-specialist">
+							<figure class="pgcontacts-specialist__img"><img src="images/content/engineer.jpg" alt="i"></figure>
+							<div class="pgcontacts-specialist__name">Бурмистрова Оксана Борисовна</div>
+							<div class="pgcontacts-specialist__post">Директор</div>
+							<div class="pgcontacts-specialist__tel">
+								<a href="tel:+79230192340" class="pgcontacts-specialist__telvalue">+7 (923) 019-2340 (доб. 23)</a>
+							</div>
+							<div class="pgcontacts-specialist__email">
+								<a href="mailto:burmistrova@gtoil.ru" class="pgcontacts-specialist__emailvalue">burmistrova@gtoil.ru</a>
+							</div>
+						</div>
 					</div>
-					<div class="cart-sidestat">
-						<div class="cart-sidestat__name">Сумма с НДС</div>
-						<div class="cart-sidestat__value js-cart-totalprice"><span>670 500</span> ₽</div>
+					<div class="pgcontacts-specialists__col">
+						<div class="pgcontacts-specialist">
+							<figure class="pgcontacts-specialist__img"><img src="images/content/engineer.jpg" alt="i"></figure>
+							<div class="pgcontacts-specialist__name">Сорокина Елена Владимирована</div>
+							<div class="pgcontacts-specialist__post">Главный бухгалтер</div>
+							<div class="pgcontacts-specialist__tel">
+								<a href="tel:+79230192340" class="pgcontacts-specialist__telvalue">+7 (923) 019-2340 (доб. 25)</a>
+							</div>
+							<div class="pgcontacts-specialist__email">
+								<a href="mailto:sorokina@gtoil.ru" class="pgcontacts-specialist__emailvalue">sorokina@gtoil.ru</a>
+							</div>
+						</div>
+					</div>
+					<div class="pgcontacts-specialists__col">
+						<div class="pgcontacts-specialist">
+							<figure class="pgcontacts-specialist__img"><img src="images/content/engineer.jpg" alt="i"></figure>
+							<div class="pgcontacts-specialist__name">Бурмистров Александр Валерьевич</div>
+							<div class="pgcontacts-specialist__post">Главный конструктор</div>
+							<div class="pgcontacts-specialist__tel">
+								<a href="tel:79230192340" class="pgcontacts-specialist__telvalue">+7 (923) 019-2340 (доб. 26)</a>
+							</div>
+							<div class="pgcontacts-specialist__email">
+								<a href="mailto:remint@gtoil.ru" class="pgcontacts-specialist__emailvalue">remint@gtoil.ru</a>
+							</div>
+						</div>
 					</div>
 				</div>
-				<form class="cart-form">
-					<div class="cart-form__group">
-						<label class="cart-form__label">Ваше имя</label>
-						<input type="text" name="name" class="cart-form__input" placeholder="Как к вам обращаться?">
-					</div>
-					<div class="cart-form__group">
-						<label class="cart-form__label">Укажите город доставки</label>
-						<input type="text" name="city" class="cart-form__input" placeholder="Якутск">
-					</div>
-					<div class="cart-form__group">
-						<label class="cart-form__label">Введите телефон</label>
-						<input type="text" name="tel" class="cart-form__input" placeholder="+7 (999) 999-99-99">
-					</div>
-					<div class="cart-form__group">
-						<label class="cart-form__label">Введите Email</label>
-						<input type="text" name="email" class="cart-form__input" placeholder="mail@mail.ru">
-					</div>
-					<div class="cart-form__group">
-						<button type="submit" class="cart-form__submit">Оформить заказ</button>
-					</div>
-				</form>
-			</aside>
+			</div>
 		</div>
-		
 	</div>
 </div>
 
