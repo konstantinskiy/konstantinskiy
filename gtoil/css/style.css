@@ -2515,7 +2515,6 @@ Categories section
 }
 .catalog-item {
 	position: relative;
-	display: block;
 	height: 495px;
 	border-radius: 15px;
 	padding: 40px 15px 35px;
@@ -2558,14 +2557,15 @@ Categories section
 	right: 0;
 	bottom: 0;
 }
-.catalog-item__morebtn {
+.catalog-item__more {
 	position: relative;
 	z-index: 1;
 	display: inline-block;
+	max-width: 110px;
 	padding: 0 25px 0 0;
 	color: #EF672C;
 }
-.catalog-item__morebtn:after {
+.catalog-item__more:after {
 	position: absolute;
 	right: 0;
 	top: 0;
