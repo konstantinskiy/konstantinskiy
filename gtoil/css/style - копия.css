@@ -247,9 +247,9 @@ Header
 	background: #fff;
 	padding: 10px 15px;
 	top: 100%;
-	width: 140px;
+	width: 120px;
 	left: 50%;
-	margin: 0 0 0 -70px;
+	margin: 0 0 0 -60px;
 	z-index: -1;
 	transition: all 0.4s ease 0s;
 	transform: translateY(7px);
@@ -1078,7 +1078,7 @@ Clients map section
 	padding: 125px 0 0;
 	min-height: 970px;
 	background-color: #333;
-	background-image: url(../images/content/clients-map.png);
+	background-image: url(../images/clients-map.png);
 	background-position: top right;
 	background-repeat: no-repeat;
 }
@@ -1520,15 +1520,6 @@ Page section
 	margin: 10px 0 0;
 	font-size: 18px;
 	line-height: 1.5;
-}
-.s-search__notfound,
-.s-search__found {
-	font-family: 'GraphikLCGMedium', 'sans-serif';
-	font-size: 24px;
-	text-align: center;
-}
-.s-search__found {
-	margin: 0 0 30px;
 }
 
 
@@ -3037,20 +3028,6 @@ Entry content
 .post-slider {
 	margin: 0 0 40px;
 }
-.post-slider__item {
-	position: relative;
-	overflow: hidden;
-	height: 0;
-	padding: 0 0 50%;
-}
-.post-slider__item img {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
 .post-slider .slick-dots {
 	position: absolute;
 	z-index: 1;
@@ -3974,12 +3951,10 @@ Footer
 .footer-top__col--x2 ul {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -5px;
 }
 .footer-top__col--x2 li {
 	flex: 0 0 50%;
 	max-width: 50%;
-	padding: 0 5px;
 }
 .footer-middle {
 	border-top: 1px solid rgba(255,255,255,0.2);
@@ -4044,7 +4019,7 @@ Footer
 	background: #D95A22;
 }
 .footer-bottom {
-	border-top: 1px solid rgba(255,255,255,0.2);
+	border-top: 1px solid #fff;
 	padding: 45px 0;
 }
 .footer-bottom__cookiecopy {
@@ -4111,20 +4086,10 @@ Modal
 	border-radius: 3px;
 	text-align: center;
 }
-.modal-default__head {
-	margin: 0 0 30px 0;
-}
-.modal-default__head--success {
-	margin: 0;
-}
 .modal-default__title {
+	margin: 0 0 30px 0;
 	font-family: 'GraphikLCGSemibold', 'sans-serif';
 	font-size: 26px;
-}
-.modal-default__description {
-	margin: 10px 0 0;
-	font-size: 20px;
-	line-height: 1.2;
 }
 
 
@@ -4895,7 +4860,6 @@ Adaptive styles
 	.news-card__excerpt {
 		margin: 10px 0 0;
 		font-size: 13px;
-		white-space: unset;
 	}
 	.s-news__mobilemore {
 		margin: 25px 0 0;
@@ -5359,10 +5323,8 @@ Adaptive styles
 	.modal-default {
 		padding: 30px 15px;
 	}
-	.modal-default__head {
-		margin: 0 0 20px;
-	}
 	.modal-default__title {
+		margin: 0 0 20px;
 		font-size: 22px;
 	}
 	.modal-form__submit {
